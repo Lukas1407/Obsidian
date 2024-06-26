@@ -1,0 +1,2 @@
+- Disulfidbrücken entstehen durch die Oxidation von zwei Cystein-Resten.
+- Die Schwefelatome in den Cystein-Resten bilden eine kovalente Bindung (−S−S−), die die Tertiärstruktur stabilisiert.

@@ -1,0 +1,2 @@
+> [!summary] Definition
+> The piezoelectric effect results from the linear electromechanical interaction between the mechanical and electrical states in crystalline materials. The piezoelectric effect is a reversible process: materials exhibiting the piezoelectric effect also exhibit the reverse piezoelectric effect, the internal generation of a mechanical strain resulting from an applied electric field.

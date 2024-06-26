@@ -1,0 +1,7 @@
+- Heisenberg's uncertainty principle states that it is impossible to simultaneously know the exact position and momentum of a particle with infinite precision.
+- Mathematically, this is expressed as:$$ \Delta x \cdot \Delta p \geq \frac{\hbar}{2}$$where:
+    - $\Delta x$ is the uncertainty in position.
+    - $\Delta p$ is the uncertainty in momentum.
+    - $\hbar$ is the reduced Planck's constant.
+- This principle implies that the more precisely we know a particle's position, the less precisely we can know its momentum, and vice versa.
+- It fundamentally limits the precision with which we can make measurements and describes the inherent uncertainties in quantum systems.

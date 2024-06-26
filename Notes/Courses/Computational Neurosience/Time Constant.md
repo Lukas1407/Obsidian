@@ -1,0 +1,2 @@
+A time constant is defined by the amount of time needed for a system to get closer to equilibrium by a factor of $\frac{1}{e}$. 
+Even if a system is not approaching equilibrium, one can often calculate the instantaneous time constants that tell us how quickly things are changing.

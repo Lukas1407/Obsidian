@@ -1,0 +1,1 @@
+This is a technique for increasing the size and diversity of the training data by applying random transformations to the original data. For example, in image classification, data augmentation can include flipping, rotating, cropping, scaling, and adding noise to the images.

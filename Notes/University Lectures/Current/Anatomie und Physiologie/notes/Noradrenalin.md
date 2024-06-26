@@ -1,0 +1,1 @@
+ - Wirkt primär blutdrucksteigernd und ist ebenfalls ein Katecholamin.

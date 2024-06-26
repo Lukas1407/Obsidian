@@ -1,0 +1,2 @@
+The **threshold potential** is the critical level to which a [[Membrane potential]] must be [[Depolarization|depolarized]] to initiate an [[Action Potential]].
+Most often, the threshold potential is a membrane potential value between –50 and –55 mV.

@@ -1,0 +1,3 @@
+- extensively uses grouped convolution 
+- Problem: When only using grouped convolution, information of the groups is never mixed (left). A red group filter would only work on information from previous red filters. 
+- Solution: channel shuffle layer (right). Channels are now mixed so that the next red filter can also consider information from the green and blue group![[Pasted image 20240226100505.png]]

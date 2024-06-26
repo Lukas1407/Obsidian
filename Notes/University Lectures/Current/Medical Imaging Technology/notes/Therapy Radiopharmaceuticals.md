@@ -1,0 +1,2 @@
+> [!abstract] Definition
+>  Therapy Radiopharmaceuticals are designed to treat diseases by delivering radiation directly to the diseased organ or tumor. The goal is to administer the **maximum radiation dose** to the target area to effectively treat the disease while **minimizing exposure** to healthy organs or tissues that are at risk of radiation damage. This targeted approach helps to maximize the therapeutic effect while reducing potential side effects

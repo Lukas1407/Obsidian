@@ -1,0 +1,5 @@
+- Das **Rückenmark (Medulla spinalis)** bildet zusammen mit dem Gehirn das **Zentralnervensystem (ZNS)**.
+- Es ist im **Rückenmarkskanal**, der von den Wirbelkörpern der Wirbelsäule gebildet wird, eingebettet.
+- Das Rückenmark ist der **Ausgangspunkt (Wurzeln)** für die Spinalnerven, die Informationen zwischen dem Körper und dem ZNS übertragen.
+- Es ist von **drei Spinalhäuten (Meningen)** umgeben, die einen Schutz bieten.
+- Die Struktur des Rückenmarks besteht aus **grauer Substanz (innen)** und **weißer Substanz (außen)**.

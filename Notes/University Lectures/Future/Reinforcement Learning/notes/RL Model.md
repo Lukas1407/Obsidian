@@ -1,0 +1,6 @@
+- We often do not have the actual model of the environment available 
+	- Too complex
+- This is why we learn the Transition-Model and Reward-Model form data
+	- Transition-Model: $\hat p(s'|s,a)\approx p(s'|s,a)$
+	- Reward-Model: $\hat r(s,a) \approx r(s,a)$
+- Problem: Error prone

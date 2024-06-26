@@ -1,0 +1,1 @@
+A bottom-up hierarchical image segmentation approach and object proposal generation for recognition, called Multiscale Combinatorial Grouping (MCG).

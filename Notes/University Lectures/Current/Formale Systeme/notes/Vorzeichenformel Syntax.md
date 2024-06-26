@@ -1,0 +1,7 @@
+- **Vorzeichenformel Syntax:**
+  - Eine Vorzeichenformel hat die Form $0A$ oder $1A$, wobei $A$ eine logische Formel ist.
+  - Die Vorzeichen $0$ und $1$ sind zusätzliche Symbole, die der logischen Aussage $A$ vorangestellt werden.
+- **Vorzeichenformel Semantik:**
+  - Die Semantik dieser Vorzeichenformeln wird durch die Wahrheitswerte der Aussagen definiert:
+    - $\text{val}_I(0A) = \text{val}_I(¬A)$: Der Wert der Vorzeichenformel $0A$ entspricht dem Wert der Negation von $A$.
+    - $\text{val}_I(1A) = \text{val}_I(A)$: Der Wert der Vorzeichenformel $1A$ entspricht dem Wert von $A$.

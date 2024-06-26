@@ -1,0 +1,136 @@
+## Inhalt
+- [[Anatomie]]
+- [[Physiologie]]
+- [[Organisationsebenen des Menschen]]
+- [[Anatomie des Menschen – Größenordnungen]]
+- [[Homöostase (physiologisch)]]
+- [[Metabolismus]]
+- [[Biomolekülen]]
+- [[Proteine]]
+- [[Kohlenhydrate]]
+- [[Lipide]]
+- [[Lipide]], [[Kohlenhydrate]] und [[Proteine]] bilden die 3 Makromoleküle der Nahrungsbestandteile
+- [[Nukleinbasen]]
+- [[Zytologie]]
+- [[Transportprozesse im Körper]]
+- [[Proteinbiosynthese]]
+- [[mRNA Impfstoff]]
+- [[DNA Impfstoff]]
+- [[Zellatmung]]
+- [[Membrane potential|Transmembranpotential]]
+- [[Ion Channels|Ionenkanäle]]
+- [[Action Potential|Aktionspotential]]
+- [[Neuron]]
+- [[Skelettmuskulatur]]
+- [[Gewebe]]
+- [[Organe]]
+- [[Zellkontakt]]
+- [[Human Eye|Menschliches Auge]]
+- [[Photorezeptoren]]
+- [[Visuelle Signaltransduktion]]
+- [[Human Ear|Menschliches Ohr]]
+- [[Nervous System|Nervensystem]]
+- [[Cortex]]
+- [[Herzkreislaufsystem]]
+- [[Blutdruckkomponenten]]
+- [[Respiratorische System]]
+- [[Atemmechanik (Ventilation)]]
+- [[Sauerstofftransport im Blut]]
+- [[Sauerstoffbildungskurve]]
+- [[Verdauungssystem]]
+- [[Hormone]]
+- [[Wasser im menschlichen Körper]]
+- [[Harnsystem]]
+- [[Wasser- und Elektrolythaushalt]]
+
+## Nach dem Studium dieses Kapitels Sollten Sie in der Lage sein
+- Die Organisationsebenen biologischer Systeme zu strukturieren und den Komponenten entsprechende Funktionen zuzuordnen. 
+- Das Konzept der Homöostase zu erklären. 
+- Beispiele für negative und positive Rückkopplungen in physiologischen Regelkreisen zu erklären.
+- Den Begriff Metabolismus zu definieren 
+- Den Zusammenhang zwischen Anabolismus und Katabolismus in Organismen zu erklären 
+- Biomoleküle chemisch und funktional einzuordnen 
+- Die chemische Grundstruktur von Aminosäuren zu erklären und Beispiele für proteinogene Aminosäuren zu nennen
+- Die grundlegenden Mechanismen zur Bildung von Proteinen und zur Ausbildung deren Primär-, Sekundär-, Tertiär-, und Quartärstruktur zu erklären
+- Die molekulare Struktur und die Eigenschaften von Kohlehydraten, Nukleosiden und Lipiden zu erklären. 
+- Die chemischen Reaktionen zur Ausbildung monomanerer und polymerer Strukturen zu erklären. 
+- Beispiele für die Physiologischen Funktionen der Biomoleküle zu nennen und zu erklären. 
+- Die Biomoleküle chemisch und funktional einzuordnen.
+- Die wesentlichen Thesen der Zelltheorie zu nenne und zu erklären. 
+- Den generelle Aufbauprinzip von Zellen zu erklären. 
+- Die wesentlichen Zellbestandteile zu nennen und deren strukturelle und funktionelle Eigenschaften zu erklären
+- Die Transportprozesse durch die Zellmembran systematisch einzuteilen. 
+- Passive und aktive Transportprozesse nennen und erklären. 
+- Selektivitätsfunktionen nennen und erklären
+- das „Zentrale Dogma der Molekularbiologie“ zu erklären und zu diskutieren. 
+- die wesentlichen Schritte und Abläufe der Proteinbiosynthese darzustellen und zu erklären. 
+- die allgemeinen Funktionsprinzipien von mRNA- und DNA-Impfstoffen zu erklären.
+- die Zellatmung in ihren Teilschritten und in ihrer Gesamtheit darzustellen und zu erklären, 
+- die relevanten Reaktionsgleichungen, Stoffbilanzen und Energiebilanzen darzustellen, 
+- die grundlegenden Prinzipien, wie z.B. Enzymkatalyse, Transportprozesse, Redoxreaktionen, Energietransfer zu erklären.
+- Die Grundlagen der Elektrophysiologie zu erklären (Transmembranpotential, Ruhepotential, Aktionspotential) 
+- Die grundlegenden Mechanismen der neuronalen Signalleitung und Signalübertragung darzustellen und zu erklären
+- Den Aufbau von Skelettmuskeln und das Prinzip der Muskelkontraktion zu erklären. 
+- ie Abläufe bei der neuronalen Muskelsteuerung zu beschreiben 
+- Die Abläufe bei der Muskelkontraktion zu beschreiben und zu erklären.
+- Die Definition für Gewebe und Organe zu nennen. 
+- Den generellen Gewebekomponenten (Zellen / Zellverbindungen und Matrix) erklären. 
+- Die 4 Gewebetypen und deren Unterstrukturen und Komponenten nennen und deren Funktionen zuordnen.
+- die Anatomie des menschlichen Auges und die Komponenten des vorderen und hinteren Abschnitts zu beschreiben 
+- Die Funktionen des vorderen und des hinteren Abschnitts zu erklären 
+- Den Aufbau der Retina (Netzhaut) beschreiben 
+- Die Funktion der Photorezeptoren erklären 
+- Die Abläufe bei der Adaption und Akkommodation des Auges erklären
+- Die Anatomie des menschlichen Ohrs und die Komponenten des Mittelohrs und den Innenohrs zu nennen und zu beschreiben. 
+- Die Funktion des Mittelohrs zu erklären (Impedanzanpassung, Verstärkung) 
+- Den Aufbau und die mechanischen Eigenschaften der Cochlea zu beschreiben
+- Den Aufbau und die Funktion des Corti-Organs zu beschreiben
+- Die Funktion der inneren und äußeren Haarzellen zu erklären 
+- Den aktiven Verstärkungsmechanismus der Cochlea zu erklären
+- Anatomische und funktionelle Systematiken zur Gliederung des menschlichen Nervensystems zu nennen und zu erklären,
+- den Aufbau des Gehirns und des Rückenmarks und deren anatomische und funktionelle Gliederung zu erklären,
+- Funktionen und Strukturen des somatischen und des autonomen Nervensystems zu erklären,
+- die relevanten medizinischen Fachtermini korrekt zu verwenden.
+- Die Wesentlichen Komponenten der der Anatomie des menschlichen Herzens zu nenne und zu beschreiben. 
+- Den Aufbau des Herzens und die Einbindung der Herzens in das HerzKreislaufsystem beschreiben und erklären. 
+- Die Funktionsweise des Herzens und den Ablauf eines Herzschlags erklären. 
+- Die elektrische Erregungsbildung und Erregungsausbreitung des Herzens beschreiben und erklären
+- Den anatomischen Aufbau und die Funktion der verschiednen Blutgefäßtypen zu erklären. 
+- Die Struktur des kapillären Gefäßnetzes zu beschreiben und die Austauschprozesse zu erklären. 
+- Die Komponenten des Blutdrucks zu erklären. 
+- Grundlegende Regelprozesse für den Blutdruck zu nennen.
+- Den anatomischen Aufbau und die Funktion des oberen und unteren Bronchialtraktes zu beschreiben und zu erklären.
+- Den Aufbau der Lungen und die Atemfunktion zu beschreiben und erklären.
+- Das Grundprinzip der Atmungsregulation zu nennen
+- Die verschiednen Transportmechanismen für den Gastransport im Körper zu nennen und zu erklären.. 
+- Die Sauerstoffbindung an Hämoglobin zu erklären. 
+- Den Transport von CO2 zu erklären.
+- Den Aufbau und die Einteilungen des Verdauungssystems und den Aufbau der beteiligten Organe zu beschreiben. 
+- Die spezielle Anatomie der Verdauungsorgane zu beschreiben und deren Funktionen zu erklären 
+- Die Histologie des Verdauungstrakte hinsichtlich gemeinsamer Struktur- und Funktionsprinzipien zu erklären 
+- Den Aufbau und die Funktion spezieller Zelltypen der Verdauungsorgane zu erklären 
+- Zusammensetzung und Funktion des intestinalen Mikrobioms zu erklären
+- Die an der Verdauung beteiligten Prozesse zu erklären und und deren organspezifische Ausprägungen zu beschreiben. 
+- Die Steuerung und Regelung der Verdauungsprozesse zu erklären 
+- Die Rollen und das Zusammenspiel der an der Verdauung beteiligten Organe zu beschreiben 
+- Die Sekretion wichtiger Verdauungssekrete zu erkläre
+- die Grundprinzipien der endokrinen (hormonellen) Signalübertragung darzulegen 
+- die chemisch Klassen der Hormone einzuteilen 
+- die 1st messenger 2nd messenger Kaskade zu erklären 
+- neuroendokrine Signalwege zu erklären 
+- die Insulinfreisetzung und di Regelung der Insulinproduktion zu erklären
+- die wichtigsten endokrinen Organe zu nennen. 
+- Die Funktionen von Hypothalamus Hypophyse und Epiphyse, sowie deren wichtigste euroendokrinen Signalwege zu erklären 
+- Die Funktionen der Nebennierenrinde und deren wichtigsten Signalwege zu erklären 
+- Die Eigenschaften der Hormone Adrenalin und Cortisol zu erklären
+- Den Begriff Homöostase zu definieren 
+- Den ampholytischen Charakter des Wassermoleküls zu erklären 
+- Das Säure-Base-Konzept nach Brönstedt und die Definition des pH-Wertes zu erklären 
+- Die Wirkungsweise von Puffersystemen, insbesondere am Beispiel des Bicarbonatpuffers zu erklären und zu berechnen 
+- Den Säure-Basen-Haushalt im Normalfall und bei Störungen zu beschreiben
+- Die Wasserbilanz des Körpers darzulegen 
+- Die Anatomie und die Funktionen des Harnsystems und seiner Komponenten zu erklären 
+- Den Aufbau und die Funktion des Nephrons zu beschreiben und zu erklären 
+- Die passiven und aktiven Transportprozesse in einem Nephron zu erklären 
+- Die Regelkreise des Wasser-Elektrolyt-Haushalts zu erklären 
+- Typische Störungen des Wasser-Elektrolyt-Haushalts einzuordnen

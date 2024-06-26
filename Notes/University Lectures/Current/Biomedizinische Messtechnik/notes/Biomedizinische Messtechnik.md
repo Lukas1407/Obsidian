@@ -1,0 +1,92 @@
+> [!abstract] Definition
+>  Die biomedizinische Messtechnik befasst sich mit der Entwicklung und Anwendung von Geräten und Methoden zur Messung physikalischer Größen, die für biologische und medizinische Zwecke relevant sind. Dies umfasst die Messung von Länge, Masse, Kraft, Druck, elektrischer Stromstärke, Temperatur oder Zeit. Ein wichtiger Aspekt dabei ist die genaue Erfassung und Modellierung von Messdaten, um Messabweichungen zu korrigieren und die Messungen auf einheitliche Bedingungen zu reduzieren.
+
+## Inhalt
+### BMM 1
+- [[Atemmessung]] 
+- [[Vitalparameter]]
+- [[Diagnose]]
+- [[Messtechnik]]
+- [[Biomedizinische Technik]]
+- [[Messsignal]]
+- [[Biosignal]]
+- [[Biometrie]]
+- [[Messung im Sinne der Messtechnik]]
+- [[Messkette]]
+- [[Temperatur]]
+- [[Temperatursensor]]
+- [[Blutdruckmessung]]
+- [[Drucksensoren]]
+- [[Pulsoximetrie]]
+- [[Plethysmographie]]
+- [[Photometrie]]
+- [[Sauerstofftransport im Blut]]
+- [[Elektrokardiographie]]
+- [[Hautübergang]]
+### BMM 2
+- [[Tonometrie]]
+- [[Glaukom]]
+- [[Inzidenz]]
+- [[Prävalenz]]
+- [[Palpation]]
+- [[Audiologie]]
+- [[Audiologische Messtechnik]]
+- [[Tympanometrie]]
+- [[Schalldruckpegel]]
+- [[Impedanzaudiometrie]]
+- [[Stapediusreflexmessung]]
+- [[Corti-Organ]]
+- [[Otoakustischen Emissionen (OAE)]]
+
+## Fragenkatalog
+### BMM 2
+- Was ist Glaukom?
+- Was versteht man unter Okulärere Hypertension / Hypertonie? 
+- Was versteht man unter Pathogenese? Was versteht man unter Risikofaktoren? 
+- Bezüglich Glaukom? 
+- Was versteht man unter Inzidenz / Prävalenz / Heilungsrate / Sterberate? 
+- Wie ist der Zusammenhang?
+-  Warum kann eine Senkung des Augendrucks in vielen Fällen zu einer Verlangsamung des Krankheitsverlaufs führen, obwohl ein erhöhter Augendruck nicht ursächlich ist? 
+- Wie baut sich der Augeninnendruck auf und wie wird er geregelt? 
+- Wo liegt der Normbereich für den Augeninnendruck? 
+- Welchen Schwankungen unterliegt der Augeninnendruck? 
+- Wie dick ist die menschliche Cornea? Was versteht man unter Messprinzip, Messmethode, Messverfahren, Messeinrichtung ? 
+- Wie funktioniert die Goldmann-Applanationstonometrie? 
+- Wie funktioniert die Dynamic-contour Tonometrie? 
+- Wie funktioniert die Luftpuls-Applanationstonometrie? 
+- Worin bestehen die wesentlichen messtechnischen Unterschiede der drei Messverfahren? 
+- Worin unterscheiden sich die Verfahren hinsichtlich ihrer Anforderungen an die Patientensicherheit?
+- In welche zwei Gruppen lassen sich die audiometrischen Messverfahren aufteilen? 
+- Welche Messverfahren finden sich in den beiden Gruppen? 
+- Welche diagnostischen Aussagen lassen sich mit Hilfe des Stimmgabeltests machen? 
+- Welche Abschnitte der akustischen Wahrnehmungskette lassen sich mit den audiometrischem Messverfahren sondieren? 
+- Wie entsteht ein Tonaudiogramm? (Signalquelle, Messaufbau, Signalverarbeitung) 
+- Welche diagnostischen Aussagen lassen sich aus dem Tonaudiogramm ableiten? 
+- Wie ist die Einheit des Schalldruckpegel (SPL) in der Audiometrie (dB-HL) definiert? 
+- Wie funktioniert die Geräuschaudiometrie? Welche zusätzlichen Informationen können daraus abgeleitet werden? 
+- Wie funktioniert die Tympanometrie (Ablauf, Parameter)? 
+-  Welcher Messaufbau wird für die Tympanometrie benötigt? 
+- Wie sind die akustische Flussimpedanz und die Admittanz definiert? 
+-  Aus welchen Anteilen setzt sich die Systemimpedanz bei der Tympanometrie zusammen? 
+- Was versteht man unter der Compliance des Trommelfells? Welche Faktoren können die Compliance beeinflussen?
+-  Wie sieht ein Tympanogramm eines gesunden Menschen aus? Welche Einheiten werden für die Achsenskalierung verwendet? 
+- Welche diagnostischen Parameter werden aus dem Tympanogramm abgeleitet? 
+- Wie funktioniert die Stapediusreflexmessung (Ablauf, Parameter)? 
+- Was ist der Stapediusreflex? 
+- Welche diagnostische Frage kann durch diese Messung abgeklärt werden?
+- Wie erfolgt die Schallübertragung im Mittelohr? 
+- Wie hoch ist die effektive Schalldruckverstärkung über das Mittelohr? 
+- Was versteht man unter der Impedanzanpassung durch das Mittelohr? 
+- Welche (3) physikalisch-anatomische Modellvorstellungen wurden zur Funktionsweise der Cochlea entwickelt? 
+- Wie unterscheiden sich die Modelle hinsichtlich der mechanischen Schallantwort (Schallausbreitung) auf der Basiliarmembran?
+- Wie ist das Corti-Organ aufgebaut? (schematisch) 
+- Welche Funktion haben die Haarzellen (Stereozillien)?
+- Worin unterscheiden sich die inneren und äußeren Haarzellen? 
+- Wie funktioniert die „aktive Cochlea“? 
+- Welche Eigenschaften hat der Verstärkungsmechanismus? 
+- Wie entstehen die otoakustischen Emissionen? 
+- Wie werden OAE gemessen? 13. Worin liegen die messtechnischen Herausforderungen? 
+-  Welche diagnostischen Fragestellungen können mit dieser Methode untersucht werden? 
+- Welches sind die Vorteile / Nachteile im Vergleich zur Tonaudiometrie? 
+- Was versteht man unter dem otoakustischen Distorsionsprodukt (DPOAE)?
+- Wie erfolgt die Messung?

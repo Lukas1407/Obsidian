@@ -1,0 +1,16 @@
+- Commonly, neural networks are trained with 32-bit floating point (FP32) inputs and weight parameters 
+- This ensures a large range of representable numbers at the cost of storage space and computational power 
+- Using a smaller data type such as FP16 (half precision) would ensure more lightweight and more performant models and also faster training!![[Pasted image 20240226100916.png]]
+- Problem: Representable range of FP16 is small, due to 5-bit exponent and 10-bit mantissa 
+	- Gradients below 2-24 are rounded towards 0! 
+	- This actually happens quite a lot during training
+	- -> Result: Training diverges with FP16 although it would have converged with a FP32 data type
+- Solution: Using a mixed precision approach with both FP16 and FP32 while also scaling the loss to an appropriate range
+
+- Benefits of mixed precision training: 
+	- Half precision math throughput can be 2x-8x faster than single precision on modern GPUs 
+	- Weights stored on GPU take less space
+	- Batch size can be increased
+	- Data transfers from/to the GPU are faster 
+	- Results mostly stay the same and can even increase in same cases 
+	- Easy to use in most deep learning frameworks such as PyTorch

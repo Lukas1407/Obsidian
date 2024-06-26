@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "614ba97286e55102",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7d2123c3ac002c6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "de51d16f9b83ff3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thermal Anomaly Detection/Approaches.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a2a4740f60d9339",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thermal Anomaly Detection/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fadf6881735a1a48",
+    "type": "split",
+    "children": [
+      {
+        "id": "c063c7e643ebc049",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15b8fedb5bc9a61a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0e0cac3c9d4feae8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b2a455936b812310",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f89c94aed8142611",
+    "type": "split",
+    "children": [
+      {
+        "id": "a1cc03baec8c8696",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "24ad94d132bd0256",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Thermal Anomaly Detection/Approaches.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "84a9899ce3587b8c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Thermal Anomaly Detection/Approaches.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "119628ad49fbb513",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0e3c3a57b10f9376",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Thermal Anomaly Detection/Approaches.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "de51d16f9b83ff3d",
+  "lastOpenFiles": [
+    "Thermal Anomaly Detection/Untitled.md",
+    "Thermal Anomaly Detection/Approaches.md",
+    "Welcome.md",
+    "Thermal Anomaly Detection"
+  ]
+}

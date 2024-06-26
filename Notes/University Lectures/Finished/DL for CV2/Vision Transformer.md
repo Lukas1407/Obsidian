@@ -1,0 +1,1 @@
+- The image is split into $16\times16$ patches which are then flattened, after that these vectors can be processed in a normal [[Transformer]]

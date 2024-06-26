@@ -1,0 +1,2 @@
+> [!summary] Definition
+>  The sensory nervous system is a part of the [[Nervous System]] responsible for processing sensory information. A sensory system consists of [[Sensory Neurons]] (including the sensory receptor cells), neural pathways, and parts of the [[Brain]] involved in sensory [[Perception]] and  [[Interoception]].

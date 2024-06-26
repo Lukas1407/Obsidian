@@ -1,0 +1,4 @@
+- Der Liquor cerebrospinalis ist eine klare, farblose Flüssigkeit, die das Gehirn und das Rückenmark umgibt und schützt.
+- Er wird in den Gefäßschlingen des Plexus Choroideus innerhalb der Hirnventrikel gebildet und fließt durch die inneren und äußeren Liquorräume. 
+- Die äußeren Liquorräume sind der Subarachnoidalraum und seine Fortsetzung im Rückenmark, während die inneren Liquorräume die vier Ventrikel des Gehirns umfassen
+- Der Liquor wird schließlich über die Arachnoidalzotten in das venöse System abgeleitet.

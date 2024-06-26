@@ -1,0 +1,5 @@
+- Toggle file explorer `Ctrl + B`
+- Open file with name `Ctrl + P`
+- Scrolling with Keyboard `Ctrl + up/down`
+- Close Tab `Ctrl + W`
+- Insert Line below even when not at the end of a line `Ctrl + Enter`

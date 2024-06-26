@@ -1,0 +1,18 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "mobileToolbarCommands": [
+    "editor:insert-wikilink",
+    "highlightr-plugin:Orange",
+    "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-new-tab",
+    "editor:undo",
+    "editor:redo",
+    "editor:toggle-code",
+    "editor:open-link-in-new-leaf",
+    "editor:configure-toolbar"
+  ],
+  "mobilePullAction": "obsidian-excalidraw-plugin:excalidraw-autocreate-popout",
+  "attachmentFolderPath": "./images",
+  "showUnsupportedFiles": true,
+  "showRibbon": false
+}

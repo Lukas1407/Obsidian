@@ -1,0 +1,2 @@
+> [!abstract] Definition
+>  Die Prävalenz bezeichnet die Gesamtzahl aller Fälle (neue und bestehende) einer Krankheit, die zu einem bestimmten Zeitpunkt in einer Bevölkerung vorhanden sind. Sie gibt an, wie verbreitet eine Krankheit ist und umfasst sowohl neue als auch länger bestehende Erkrankungen.

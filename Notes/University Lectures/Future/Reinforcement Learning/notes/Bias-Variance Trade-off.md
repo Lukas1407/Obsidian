@@ -1,0 +1,4 @@
+- **Bias**: This refers to the error that is introduced by approximating a real-world problem, which may be complex, by a much simpler model. In the context of the web page, high bias would suggest that the model is too simple and cannot capture the complexity of the data, leading to underfitting.
+- **Variance**: This pertains to the error that occurs due to the model’s sensitivity to the fluctuations in the training set. High variance indicates that the model is too complex and captures noise as if it were a part of the pattern, resulting in overfitting.
+    
+- **Trade-off**: The trade-off is about finding the right balance between bias and variance. You want a model that is complex enough to capture the true structure of the data (low bias) but not so complex that it doesn’t generalize well to unseen data (low variance).

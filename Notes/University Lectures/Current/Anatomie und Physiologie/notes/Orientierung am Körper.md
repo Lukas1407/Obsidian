@@ -1,0 +1,1 @@
+![[Pasted image 20240413142617.png#invert|]]

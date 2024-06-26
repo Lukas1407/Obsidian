@@ -1,0 +1,1 @@
+Actions are useful when a <mark style="background: #FFB86CA6;">response may take a significant length of time</mark>. They allow a client to track the progress of a request, get the final outcome, and optionally cancel the request before it completes.

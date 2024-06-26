@@ -1,0 +1,7 @@
+- **Entropie**: Lebewesen sind offene Systeme mit niedriger Entropie und hohem Ordnungsgrad, die ihre Ordnung durch Energiezufuhr aufrechterhalten.
+- **Energieaustausch**: Sie sind energetisch gekoppelt mit Prozessen, die notwendige Energie für den Aufbau organischer Stoffe liefern.
+- Stoffaustausch: Lebewesen bestehen aus Wasser, organischen Kohlenstoffverbindungen und mineralischen Strukturen und **tauschen** Stoffe mit ihrer Umgebung aus.
+- **Informationsaustausch**: Jede Zelle enthält Erbgut mit Anweisungen für Wachstum und Lebensprozesse, und es findet ein Informationsaustausch statt.
+- **Reaktion auf Reize**: Lebewesen reagieren auf Reize aus der Umwelt, was ihre Anpassungsfähigkeit und Überlebensfähigkeit unterstützt.
+- **Wachstum**: Sie wachsen und differenzieren sich in verschiedene Organe mit spezifischen Funktionen für das Gesamtsystem.
+- **Selbstreproduktion**: Lebewesen reproduzieren sich selbst, was durch die Reproduktion von genetischem Material ermöglicht wird.

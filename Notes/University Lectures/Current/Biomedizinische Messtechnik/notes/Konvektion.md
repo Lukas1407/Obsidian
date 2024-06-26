@@ -1,0 +1,1 @@
+Konvektion ist der Wärmetransport in Flüssigkeiten und Gasen. Hierbei bewegen sich die erwärmten Fluide aufgrund ihrer geringeren Dichte nach oben, während kühlere Fluide nach unten sinken, was zu einer zirkulierenden Bewegung führt. Dieser Prozess ist beispielsweise verantwortlich für das Heizen von Wasser in einem Topf oder die Verteilung von warmer Luft in einem Raum

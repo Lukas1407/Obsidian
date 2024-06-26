@@ -1,0 +1,41 @@
+- The definition of an MDP 
+- Why do we need discounting? 
+- The definition of the optimal and the policy based V- and Q- Functions 
+- What is the bellman principle of optimality? 
+- How the value iteration algorithm works
+-  How the policy iteration algorithm works 
+- What are the conceptual differences?
+-  What are the limitations of these approaches?
+ - What we mean by Monte Carlo estimates
+ -  Why TD learning can be seen as a combination of MC and Dynamic Programming
+ -  What is the TD error? 
+ - How Q-Learning works 
+ - What Value function approximation is 
+ - Why Q-Learning is not actual gradient ascent? 
+ - How to fix Q-learning for deep neural networks?
+ -  Why do we get the over-estimation effect and how to fix it?
+![[Pasted image 20240314081615.png#invert|700]]
+![[Pasted image 20240314081718.png#invert|700]]
+- What are the advantages/disadvantages of policy search vs value-based methods 
+- What is the main idea of policy gradient algorithms? 
+- What kind of policies are used in discrete action and continuous action domains? 
+- How can we use the log-ratio trick to compute the policy gradient? 
+- Why can we compute gradients even if the reward or the dynamics are not differentiable? 
+- Explain the intuition of the REINFORCE update equation 
+- Why do we need a baseline in policy gradient algorithms? 
+- Why is optimizing the advantage beneficial to optimizing the Q-function? 
+- How can we exploit temporal structure for policy gradients?
+-  What is the role of the critic in actor-critic methods? 
+- Which methods do you know for computing the critic?
+- Why trust regions are important for policy gradients? 
+- Which divergence is typically used for the trust region and what are its properties? 
+- How does Lagrangian optimization work and why is it often easier to solve the dual than solving the primal objective. 
+- How to implement trust-regions with discrete actions using Lagrangian optimization? 
+- How natural gradients are connected to trust regions? 
+- How the Fisher Information Matrix is used in the natural gradient algorithms? 
+- How the natural gradient can be computed (in 2 ways) 
+- What is compatible function approximation and how is it connected to natural gradients? 
+- How does the natural gradient update looks like using compatible function approximation? 
+- When is the natural gradient update implementing the exact trust region update? 
+- Why are natural gradients difficult to use for bigger networks? 
+- What is the main idea of PPO (clipped version) and what are the benefits?

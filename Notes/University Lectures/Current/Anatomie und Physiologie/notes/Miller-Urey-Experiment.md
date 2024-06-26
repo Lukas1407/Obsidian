@@ -1,0 +1,4 @@
+- Simulation der Vorgänge in der Ur-Atmosphäre 
+- Wie sind die ersten Biomoleküle entstanden?
+	- -> In Ur-Atmosphäre mit Energie (Blitze)
+- 

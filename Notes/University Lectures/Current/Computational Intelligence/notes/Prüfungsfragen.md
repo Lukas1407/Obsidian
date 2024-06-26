@@ -1,0 +1,35 @@
+- Definition Computational Intelligence
+- Warum benötigt man Computational Intelligence
+- Abgrenzung zu ähnlichen Gebieten
+- gegeben technische Beispielsysteme: was wären Aufgaben für Computational Intelligence?
+- Aufstellen eines Optimierungsproblems aus einer technische Beschreibung
+- Erläuterung der grundlegenden Begriffe und Strategien für Optimierungsproblemen
+- Grundlegende Suchstrategien
+- Grundidee von Tricks (Reparaturverfahren, Surrogatefunktionen)
+- Basiswissen aus der biologischen Evolution
+- Besonderheiten Evolutionärer Algorithmen im Ingenieurwesen
+- Wichtige Begriffe und Definitionen
+- Ablauf EA-Basisalgorithmus
+- Mutation und Rekombination bei binärer Kodierung (auch berechnen)
+- Für technische Beispiele: geeignete Kodierung
+- Ausgewählte Grundprinzipien für verschiedene Schritte des Basisalgorithmus (u.a. Akzeptanz Nachkommen, Abbruchbedingen usw.) 
+- insbesondere Genetische Operatoren für verschiedene Kodierungen 
+- Interpretation der Ergebnisse multikriterieller Optimierungen, Pareto-Mengen 
+- Grundidee Nachbarschaftsmodelle Grundidee memetischer Algorithmen 
+- Operatoren und Strategien für memetische Algorithmen 
+- Einordnung Stärken und Schwächen EA und memetische Algorithmen 
+- Kodierungen und dazu passende Operatoren für technische Beispiele
+- Grundidee der 4 Methheursitiken
+- Einsortierung/Vergleich der Algorithmen mit EA Schema
+- Vorteile/Besonderheiten der 4 Algorithmen
+- Unterschiede Mamdani, Singelton und TS Systeme
+- Für ein einfaches technisches Beispiel:
+	- Wahl geegneter Ein- und Ausgabegrößen
+	- Aufstellen einer Regelbasis
+	- Berechnung der Inferenz
+- Unterschiede von Varianten in der Inferenz
+- Erweitern Sie das Netz (Folie 290) um ein 3. Neuron in verdeckter Schicht! 
+	- Fragen: Welche Parameter kommen dazu? Welche Terme kommen dazu? Ermöglicht die Erweiterung den Aufbau anderer Funktionen? Unter welchen Voraussetzungen beeinflusst das 3. Neuron den Ausgang nicht?
+- Berechnung einer Faltung eines Bildes 
+- Erläuterung grundlegender Begriffe und Strategien 
+- Darstellung des Trainings und der Trainingsparameter

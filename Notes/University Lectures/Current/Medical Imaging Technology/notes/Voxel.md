@@ -1,0 +1,5 @@
+- A **voxel** is the fundamental unit of a **3D volume** or **3D image**.
+- It extends the concept of a pixel into the third dimension.
+- Voxel data is commonly used in medical imaging (such as CT scans and MRI) and computer graphics.
+- Each voxel represents a small volume element within the 3D space.
+- In medical imaging, voxels store information about tissue density, attenuation, or other properties.

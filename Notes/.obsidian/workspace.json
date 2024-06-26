@@ -1,0 +1,274 @@
+{
+  "main": {
+    "id": "70640a355c7ea185",
+    "type": "split",
+    "children": [
+      {
+        "id": "fbbd866fb88f0ef4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c787c9ad86ab4144",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Formale Systeme/notes/Formale Systeme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "adbc8506fc5fd1e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7c476dc1e79da1d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Formale Systeme/notes/Omega-Strukturen.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "73fad221df09b14c",
+    "type": "split",
+    "children": [
+      {
+        "id": "3bcf1f711f479d5e",
+        "type": "tabs",
+        "dimension": 71.20954003407155,
+        "children": [
+          {
+            "id": "fe6fda8b5d3c97d9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "42c3e66d6a18aeed",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "e2d5877c59d1a271",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "e5d81ef363e6aad6",
+        "type": "tabs",
+        "dimension": 28.79045996592845,
+        "children": [
+          {
+            "id": "785b9852cdae2079",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 289.5
+  },
+  "right": {
+    "id": "59a9d4a25d24dd44",
+    "type": "split",
+    "children": [
+      {
+        "id": "47c55f163724204e",
+        "type": "tabs",
+        "dimension": 68.0306905370844,
+        "children": [
+          {
+            "id": "7bffd68f3e07a41b",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "2a18b6abba14ce71",
+        "type": "tabs",
+        "dimension": 31.9693094629156,
+        "children": [
+          {
+            "id": "525a2ceb22f5a15a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "164fe6bf0ca0d133",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d7b52cc6005274b6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6ef1b157567c7634",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md"
+              }
+            }
+          },
+          {
+            "id": "441b1c9aa34d05bc",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 355.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": true,
+      "canvas:Create new canvas": true,
+      "daily-notes:Open today's daily note": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": true,
+      "table-editor-obsidian:Advanced Tables Toolbar": true,
+      "obsidian-day-planner:Timeline": true,
+      "templater-obsidian:Templater": true,
+      "omnisearch:Omnisearch": true,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
+    }
+  },
+  "active": "adbc8506fc5fd1e6",
+  "lastOpenFiles": [
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112615.png",
+    "University Lectures/Current/Formale Systeme/notes/Omega-Strukturen.md",
+    "University Lectures/Current/Formale Systeme/notes/Formale Systeme.md",
+    "University Lectures/Current/Formale Systeme/slides/Formale-Systeme_wichtige_themenpdf",
+    "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112252.png",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112248.png",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112243.png",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112240.png",
+    "University Lectures/Current/Formale Systeme/notes/Büchi-Automat.md",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626111721.png",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626110416.png",
+    "University Lectures/Current/Formale Systeme/notes/attachment-url.md",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626110358.png",
+    "University Lectures/Current/Formale Systeme/notes/Unendliche Wörter.md",
+    "University Lectures/Current/Formale Systeme/notes/Reguläre Ausdrücke.md",
+    "University Lectures/Current/Formale Systeme/notes/Deterministische endliche Automaten (DEA).md",
+    "University Lectures/Current/Formale Systeme/notes/Endliche Automaten.md",
+    "University Lectures/Current/Formale Systeme/notes/Vollständige endliche Automaten.md",
+    "University Lectures/Current/Formale Systeme/notes/Nichtdeterministische endliche Automaten (NEA).md",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626105802.png",
+    "University Lectures/Current/Formale Systeme/notes/Java Modeling Language (JML).md",
+    "University Lectures/Current/Formale Systeme/notes/Entscheidbarkeit modaler Logiken.md",
+    "University Lectures/Current/Formale Systeme/notes/Charakterisierung und Charakterisierungstheorie in der Modallogik.md",
+    "University Lectures/Current/Formale Systeme/notes/Relative Allgemeingültigkeit.md",
+    "University Lectures/Current/Formale Systeme/notes/Modallogik und Prädikatenlogik.md",
+    "University Lectures/Current/Formale Systeme/notes/Kripke-Strukturen.md",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626104214.png",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626104101.png",
+    "University Lectures/Current/Formale Systeme/notes/Formeln der Modalen Aussagenlogik.md",
+    "University Lectures/Current/Formale Systeme/notes/Bakery-Algorithmus.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Magnetic Resonance Imaging (MRI).md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Medical Imaging Technology.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/MRI - Spin Echo.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/MRI - Pulse Sequence.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/MRI - Free Induction Decay (FID).md",
+    "University Lectures/Current/Formale Systeme/notes/Modale Logik.md",
+    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
+    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined (3).pdf",
+    "University Lectures/Current/Computergrafik/notes/images",
+    "University Lectures/Current/Computergrafik/slides/Computergrafik_slides.pdf",
+    "University Lectures/Current/Computergrafik/slides/Computergrafik_übung.pdf",
+    "University Lectures/Current/Computergrafik/slides",
+    "University Lectures/Current/Computergrafik/notes",
+    "University Lectures/Current/Computergrafik",
+    "University Lectures/Current/Formale Systeme/notes/images",
+    "Obsidian/Untitled.canvas"
+  ]
+}

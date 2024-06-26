@@ -1,0 +1,6 @@
+- $1\times 1$ convolutions are extensively used
+- Basic building block is the "Fire module" 
+	- First "squeeze" input: Reduce number of channels with cheap $1\times 1$ convolutions 
+	- Then "expand" with a combination of $1\times 1$ (cheap) and $3\times 3$ (spatial information) filters 
+- Concatenate output of $1\times 1$ and $3\times 3$ convolutions
+- ->Lowers both computation time and parameter count

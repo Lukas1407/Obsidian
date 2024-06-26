@@ -1,0 +1,1 @@
+"Das Erfüllbarkeitsproblem der Aussagenlogik (SAT) ist NP-vollständig."

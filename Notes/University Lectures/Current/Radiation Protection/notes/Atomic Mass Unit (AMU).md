@@ -1,0 +1,4 @@
+- **Definition**: $1 u$ is defined as one-twelfth ($\frac{1}{12}$​) of the mass of a carbon-12 ($^{12}C$) atom.
+- **Value**:
+    - $1 u = \frac{1g}{N_A} = 1.6605387 \times 10^{-27}$ kg.
+    - This conversion helps in expressing atomic and molecular masses in a convenient unit.

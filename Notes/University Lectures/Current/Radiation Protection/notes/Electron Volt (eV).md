@@ -1,0 +1,1 @@
+The amount of energy gained or lost by an electron when it is accelerated through an electric potential difference of one volt.

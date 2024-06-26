@@ -1,0 +1,8 @@
+- PET-MRI combines PET with MRI, offering unique advantages:
+    - **Higher Tissue Contrast**: MRI provides excellent soft tissue contrast, surpassing CT. This is especially useful for visualizing structures like the brain, spinal cord, and joints.
+    - **Insight into Molecular Phenomena**: PET-MRI can reveal molecular processes at a cellular level, providing information about metabolism, perfusion, and diffusion.
+    - Perfusion and Diffusion Imaging: MRI allows perfusion and diffusion imaging, providing insights into blood flow and tissue microstructure.
+    - MR Spectroscopy: PET-MRI enables MR spectroscopy without adding radiation dose to the patient.
+    - **Challenges**:
+        - **Sensitivity to Magnetic Fields**: PET systems are sensitive to magnetic fields, which can affect image quality.
+        - **Integration Challenges**: Combining PET and MRI requires specialized hardware and synchronization.
