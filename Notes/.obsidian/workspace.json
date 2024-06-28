@@ -8,43 +8,67 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c787c9ad86ab4144",
+            "id": "77f826d86d00cd06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Formale Systeme/notes/Formale Systeme.md",
+                "file": "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "adbc8506fc5fd1e6",
+            "id": "21803c12466e9004",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
+                "file": "University Lectures/Current/Software Technik 2/notes/Command-Query Separation (CQS).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7c476dc1e79da1d2",
+            "id": "52ef8661b0ebfe5d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Formale Systeme/notes/Omega-Strukturen.md",
+                "file": "University Lectures/Current/Software Technik 2/notes/Clean Code.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3019c5ceaedf63c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Software Technik 2/notes/Object-Oriented Design (OOD).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de48cd4b269e03df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -143,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
+                "file": "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
+                "file": "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md"
+                "file": "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md"
               }
             }
           },
@@ -221,54 +245,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "adbc8506fc5fd1e6",
+  "active": "de48cd4b269e03df",
   "lastOpenFiles": [
+    "University Lectures/Current/Software Technik 2/notes/Object-Oriented Design (OOD).md",
+    "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md",
+    "University Lectures/Current/Software Technik 2/notes/Law of Demeter.md",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628123133.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628123115.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628123046.png",
+    "University Lectures/Current/Software Technik 2/notes/SOLID Principle.md",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122618.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122600.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122519.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122448.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122202.png",
+    "University Lectures/Current/Software Technik 2/notes/images",
+    "University Lectures/Current/Software Technik 2/notes/Information Hiding Principle.md",
+    "University Lectures/Current/Software Technik 2/notes/Command-Query Separation (CQS).md",
+    "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md",
+    "University Lectures/Current/Software Technik 2/notes/Lehman's Law.md",
+    "University Lectures/Current/Software Technik 2/notes/Clean Code.md",
+    "University Lectures/Current/Software Technik 2/slides/Software-Technik2_slides.pdf",
+    "University Lectures/Current/Software Technik 2/notes",
+    "University Lectures/Current/Software Technik 2/slides",
+    "University Lectures/Current/Software Technik 2",
+    "University Lectures/Current/Formale Systeme/notes/Formale Systeme.md",
+    "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
     "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112615.png",
     "University Lectures/Current/Formale Systeme/notes/Omega-Strukturen.md",
-    "University Lectures/Current/Formale Systeme/notes/Formale Systeme.md",
     "University Lectures/Current/Formale Systeme/slides/Formale-Systeme_wichtige_themenpdf",
-    "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
     "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112252.png",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112248.png",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112243.png",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112240.png",
     "University Lectures/Current/Formale Systeme/notes/Büchi-Automat.md",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626111721.png",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626110416.png",
     "University Lectures/Current/Formale Systeme/notes/attachment-url.md",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626110358.png",
     "University Lectures/Current/Formale Systeme/notes/Unendliche Wörter.md",
     "University Lectures/Current/Formale Systeme/notes/Reguläre Ausdrücke.md",
     "University Lectures/Current/Formale Systeme/notes/Deterministische endliche Automaten (DEA).md",
     "University Lectures/Current/Formale Systeme/notes/Endliche Automaten.md",
     "University Lectures/Current/Formale Systeme/notes/Vollständige endliche Automaten.md",
     "University Lectures/Current/Formale Systeme/notes/Nichtdeterministische endliche Automaten (NEA).md",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626105802.png",
     "University Lectures/Current/Formale Systeme/notes/Java Modeling Language (JML).md",
     "University Lectures/Current/Formale Systeme/notes/Entscheidbarkeit modaler Logiken.md",
     "University Lectures/Current/Formale Systeme/notes/Charakterisierung und Charakterisierungstheorie in der Modallogik.md",
     "University Lectures/Current/Formale Systeme/notes/Relative Allgemeingültigkeit.md",
     "University Lectures/Current/Formale Systeme/notes/Modallogik und Prädikatenlogik.md",
     "University Lectures/Current/Formale Systeme/notes/Kripke-Strukturen.md",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626104214.png",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626104101.png",
-    "University Lectures/Current/Formale Systeme/notes/Formeln der Modalen Aussagenlogik.md",
-    "University Lectures/Current/Formale Systeme/notes/Bakery-Algorithmus.md",
-    "University Lectures/Current/Medical Imaging Technology/notes/Magnetic Resonance Imaging (MRI).md",
-    "University Lectures/Current/Medical Imaging Technology/notes/Medical Imaging Technology.md",
-    "University Lectures/Current/Medical Imaging Technology/notes/MRI - Spin Echo.md",
-    "University Lectures/Current/Medical Imaging Technology/notes/MRI - Pulse Sequence.md",
-    "University Lectures/Current/Medical Imaging Technology/notes/MRI - Free Induction Decay (FID).md",
-    "University Lectures/Current/Formale Systeme/notes/Modale Logik.md",
     "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
     "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined (3).pdf",
     "University Lectures/Current/Computergrafik/notes/images",
     "University Lectures/Current/Computergrafik/slides/Computergrafik_slides.pdf",
-    "University Lectures/Current/Computergrafik/slides/Computergrafik_übung.pdf",
-    "University Lectures/Current/Computergrafik/slides",
-    "University Lectures/Current/Computergrafik/notes",
-    "University Lectures/Current/Computergrafik",
-    "University Lectures/Current/Formale Systeme/notes/images",
     "Obsidian/Untitled.canvas"
   ]
 }
