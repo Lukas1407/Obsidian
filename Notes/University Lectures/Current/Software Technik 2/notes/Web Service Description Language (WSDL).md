@@ -1,0 +1,1 @@
+- WSDL is an XML-based language used for describing the functionalities offered by a web service. It defines a web service, its location, and the operations (or methods) the service exposes. This includes specifying network endpoints, or "ports," and binding these to a concrete network address for the actual communications.

@@ -4,71 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "fbbd866fb88f0ef4",
+        "id": "c80a41416d2d35f6",
         "type": "tabs",
         "children": [
           {
-            "id": "77f826d86d00cd06",
+            "id": "c20aa35336dc6b2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md",
+                "file": "University Lectures/Current/Medical Imaging Technology/notes/Medical Imaging Technology.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "21803c12466e9004",
+            "id": "32788023b937b85c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Command-Query Separation (CQS).md",
+                "file": "University Lectures/Current/Medical Imaging Technology/notes/Magnetic Resonance Imaging (MRI).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "52ef8661b0ebfe5d",
+            "id": "95f366eefbf66566",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Clean Code.md",
+                "file": "University Lectures/Current/Medical Imaging Technology/notes/MRI - Shimming.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3019c5ceaedf63c6",
+            "id": "f23b27eebd512085",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Object-Oriented Design (OOD).md",
+                "file": "University Lectures/Current/Medical Imaging Technology/notes/Circularly Polarized (CP) Coils.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "de48cd4b269e03df",
+            "id": "b567f4ee321aedde",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md",
+                "file": "University Lectures/Current/Medical Imaging Technology/notes/Linearly Polarized (LP) Coils.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"University Lectures/Current/Medical Imaging Technology/slides/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md",
+                "file": "University Lectures/Current/Medical Imaging Technology/notes/Magnetic Resonance Imaging (MRI).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md",
+                "file": "University Lectures/Current/Medical Imaging Technology/notes/Magnetic Resonance Imaging (MRI).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md"
+                "file": "University Lectures/Current/Medical Imaging Technology/notes/Magnetic Resonance Imaging (MRI).md"
               }
             }
           },
@@ -239,58 +239,55 @@
       "obsidian-day-planner:Timeline": true,
       "templater-obsidian:Templater": true,
       "omnisearch:Omnisearch": true,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "de48cd4b269e03df",
+  "active": "32788023b937b85c",
   "lastOpenFiles": [
-    "University Lectures/Current/Software Technik 2/notes/Object-Oriented Design (OOD).md",
-    "University Lectures/Current/Software Technik 2/notes/Boy Scout Rule.md",
-    "University Lectures/Current/Software Technik 2/notes/Law of Demeter.md",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628123133.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628123115.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628123046.png",
-    "University Lectures/Current/Software Technik 2/notes/SOLID Principle.md",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122618.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122600.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122519.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122448.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240628122202.png",
-    "University Lectures/Current/Software Technik 2/notes/images",
-    "University Lectures/Current/Software Technik 2/notes/Information Hiding Principle.md",
-    "University Lectures/Current/Software Technik 2/notes/Command-Query Separation (CQS).md",
+    "University Lectures/Current/Medical Imaging Technology/exercises/Exercice Lecture 8_9 sulution.pdf",
+    "University Lectures/Current/Medical Imaging Technology/notes/Quadrature Detection.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Magnetic Resonance Imaging (MRI).md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Pulse Modulator.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Frequency Synthesizer.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Medical Imaging Technology.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/MRI - Shimming.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Fourier Transform.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Circularly Polarized (CP) Coils.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/images/Pasted image 20240703100509.png",
+    "University Lectures/Current/Medical Imaging Technology/notes/images/Pasted image 20240703100507.png",
+    "University Lectures/Current/Medical Imaging Technology/notes/images/Circular.Polarization.Circularly.Polarized.Light_Left.Hand.Animation.305x190.255Colors.gif",
+    "University Lectures/Current/Medical Imaging Technology/notes/Linearly Polarized (LP) Coils.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/images/EM-Wave.gif",
+    "University Lectures/Current/Medical Imaging Technology/notes/images/Pasted image 20240703100319.png",
+    "University Lectures/Current/Medical Imaging Technology/slides/MIT1_slides_combined.pdf",
+    "University Lectures/Current/Medical Imaging Technology/notes/Superconductor.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/images/Pasted image 20240703094245.png",
+    "University Lectures/Current/Medical Imaging Technology/notes/Magnetic Gradient Field.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/images/Pasted image 20240703092749.png",
+    "University Lectures/Current/Medical Imaging Technology/notes/images/Pasted image 20240703092730.png",
+    "University Lectures/Current/Medical Imaging Technology/notes/images/Pasted image 20240703092222.png",
+    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
     "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md",
-    "University Lectures/Current/Software Technik 2/notes/Lehman's Law.md",
-    "University Lectures/Current/Software Technik 2/notes/Clean Code.md",
+    "University Lectures/Current/Radiation Protection/notes/Internal Conversion.md",
+    "University Lectures/Current/Radiation Protection/notes/Radiation Protection.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Radioactive Decay.md",
+    "University Lectures/Current/Software Technik 2/notes/Microservice.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Maximum Entropy Reinforcement Learning.md",
+    "University Lectures/Current/Software Technik 2/notes/Palladio Component Model (PCM).md",
+    "University Lectures/Current/Software Technik 2/notes/Composite Component.md",
+    "University Lectures/Current/Software Technik 2/notes/Service Effect Specification (SEFF).md",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240701160911.png",
+    "University Lectures/Current/Software Technik 2/notes/Component Model.md",
+    "University Lectures/Current/Software Technik 2/notes/Research-based Component Models.md",
+    "University Lectures/Current/Software Technik 2/notes/Component Jigsaw Puzzle.md",
+    "University Lectures/Current/Software Technik 2/notes/Core Web Service Technologies.md",
+    "University Lectures/Current/Software Technik 2/notes/Universal Description, Discovery and Integration (UDDI).md",
     "University Lectures/Current/Software Technik 2/slides/Software-Technik2_slides.pdf",
+    "University Lectures/Current/Software Technik 2/notes/images",
     "University Lectures/Current/Software Technik 2/notes",
     "University Lectures/Current/Software Technik 2/slides",
     "University Lectures/Current/Software Technik 2",
-    "University Lectures/Current/Formale Systeme/notes/Formale Systeme.md",
-    "University Lectures/Current/Formale Systeme/notes/Lineare Temporale Logik (LTL).md",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112615.png",
-    "University Lectures/Current/Formale Systeme/notes/Omega-Strukturen.md",
     "University Lectures/Current/Formale Systeme/slides/Formale-Systeme_wichtige_themenpdf",
-    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240626112252.png",
-    "University Lectures/Current/Formale Systeme/notes/Büchi-Automat.md",
-    "University Lectures/Current/Formale Systeme/notes/attachment-url.md",
-    "University Lectures/Current/Formale Systeme/notes/Unendliche Wörter.md",
-    "University Lectures/Current/Formale Systeme/notes/Reguläre Ausdrücke.md",
-    "University Lectures/Current/Formale Systeme/notes/Deterministische endliche Automaten (DEA).md",
-    "University Lectures/Current/Formale Systeme/notes/Endliche Automaten.md",
-    "University Lectures/Current/Formale Systeme/notes/Vollständige endliche Automaten.md",
-    "University Lectures/Current/Formale Systeme/notes/Nichtdeterministische endliche Automaten (NEA).md",
-    "University Lectures/Current/Formale Systeme/notes/Java Modeling Language (JML).md",
-    "University Lectures/Current/Formale Systeme/notes/Entscheidbarkeit modaler Logiken.md",
-    "University Lectures/Current/Formale Systeme/notes/Charakterisierung und Charakterisierungstheorie in der Modallogik.md",
-    "University Lectures/Current/Formale Systeme/notes/Relative Allgemeingültigkeit.md",
-    "University Lectures/Current/Formale Systeme/notes/Modallogik und Prädikatenlogik.md",
-    "University Lectures/Current/Formale Systeme/notes/Kripke-Strukturen.md",
-    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
-    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined (3).pdf",
     "University Lectures/Current/Computergrafik/notes/images",
     "University Lectures/Current/Computergrafik/slides/Computergrafik_slides.pdf",
     "Obsidian/Untitled.canvas"

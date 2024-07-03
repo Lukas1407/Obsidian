@@ -1,0 +1,1 @@
+UDDI is a platform-independent framework for describing services, discovering businesses, and integrating business services using the Internet. UDDI is used to maintain a repository of web services and their descriptions which can be queried to locate and link with third-party web services.

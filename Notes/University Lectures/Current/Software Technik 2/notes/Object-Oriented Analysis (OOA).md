@@ -1,0 +1,5 @@
+- **Purpose**: OOA is primarily concerned with modeling the relevant concepts of the real world or the application domain. This is about understanding and describing the domain the software will operate in.
+- **Focus**: During OOA, the goal is to capture the essence of the data and their relationships in the domain without being influenced by implementation constraints or technological considerations. This is often manifested as a **Domain Model** which includes classes that represent real-world entities and their relationships.
+- **Key Activities**:
+    - **Modeling Application Concepts**: Identifying and defining the key entities, their attributes, and relationships as they exist in the real world.
+    - **Capturing Requirements**: The analysis seeks to establish what the system needs to do from a user and stakeholder perspective.

@@ -46,3 +46,30 @@ $$P→D+d1​+d2​+⋯$$
 - $exp(0)=1$:$$\textcolor{orange}{N(t)=N_{0}*exp(-\alpha t)}$$
 ## Radioactive Decay in Medical Imaging
 ![[Pasted image 20240506133927.png#invert|600]]
+
+## Kinetics
+- **Statistical Process:** Radioactive decay is inherently random at the atomic level. Although we can predict the behavior of a large number of atoms, we cannot precisely predict when a single atom will decay.
+- **Independent Nuclei:** The decay of one nucleus does not affect another. Each nucleus decays independently.
+- **Property of Nuclide:** The probability of decay, characterized by the decay constant (\(\lambda\)), is a specific property of each type of nuclide and does not depend on external conditions like temperature or pressure.
+- **Unpredictable Event:** The exact time when a single atom will decay is unpredictable.
+### Exponential Decay Law
+- **Formulas:**
+  - $N = N_0 \cdot e^{-\lambda t}$: This formula represents the number of undecayed atoms at any time $t$. $N_0$ is the initial number of atoms, "$\lambda$"is the decay constant, and $e$ is the base of natural logarithms.
+  - $A = A_0 \cdot e^{-\lambda t}$: This formula represents the activity of the nuclide, where $A_0$ is the initial activity. Activity is defined as the rate of decay or the number of disintegrations per second, measured in Becquerels ($Bq$).
+### Key Concepts
+- **Decay Constant ($\lambda$)**: This constant represents the probability per unit time that an atom will decay. It is specific to each nuclide.
+- **Activity ($A$)**: It is the measure of how many atoms in a sample decay per second. Higher activity means more atoms are decaying in each second.
+### Half-Life and Mean Lifetime
+- **Half-Life ($T$)**: The time required for half of the radioactive nuclides in a sample to decay. It is calculated using the formula $T = \frac{\ln(2)}{\lambda}$, where $\ln(2)$ is approximately 0.693.
+- **Mean Lifetime $\tau$**: The average lifespan of a radioactive nuclide before it decays. It's calculated as $\tau = \frac{1}{\lambda}$.
+### Beer Forth Decay
+- **Exponential Decay Law for Beer Froth:** The formula $h = h_0 \cdot e^{-\lambda t}$ represents the height of beer froth over time. $h_0$ is the initial height of the froth, $\lambda$ is the decay constant (specific to the froth’s rate of dissipation), and $t$ is the time elapsed. This formula illustrates that the froth's height decreases exponentially, similar to the decay of radioactive substances.
+### Radioactive Decay – Kinetics
+- **Activity:** This is the term used to describe the rate at which radioactive decay events occur, specifically the average number of decays per second. It is measured in Becquerels (Bq), where 1 Bq equals 1 decay per second.
+- **Historical Measurement (Curie):** The Curie (Ci) is a historical unit of radioactivity defined as the activity of one gram of Radium-226, which equals approximately $3.7 \times 10^{10}$ Bq. This unit gives a sense of how activity was measured based on a specific and well-known radioactive substance.
+### Further Radioactivity Measurements
+- **Activity Concentration:** This measures the activity per unit volume, useful in environmental and safety assessments to determine the amount of radioactivity in a given volume of material, air, or water. It's commonly expressed in Bq/m³ or Bq/L.
+- **Surface Contamination:** This refers to the amount of radioactive material present on a surface area, measured in Bq/m². It is crucial for safety regulations in environments where radioactive contamination can occur.
+- **Specific Activity:** This measures the radioactivity per unit mass of a substance, expressed in Bq/g. It indicates how much radioactivity is concentrated in a material, important for understanding the potential hazard of the material and for its use in medical and industrial applications.
+
+

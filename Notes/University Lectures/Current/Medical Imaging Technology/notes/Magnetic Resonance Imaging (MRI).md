@@ -413,3 +413,82 @@ This formula expresses the transverse magnetization $M_{xy}$ as a function of se
 ## Exercise
 ![[Pasted image 20240625090007.png#invert|600]]
 ![[Pasted image 20240625090036.png#invert|600]]
+### Solution
+- [[Exercice Lecture 8_9 sulution.pdf]]
+## Spatial Encoding
+The detected signals represent the sum of responses from all excited tissues within the MRI scanner's field. To create a detailed image, the MRI system must determine the origin of these signals within the body. This process is known as spatial encoding. It requires a method to link (encode) the detected signals to specific locations or volumes (voxels) within the body.
+- To achieve spatial encoding, MRI uses [[Magnetic Gradient Field]]
+## Instrumentation
+![[Pasted image 20240703094245.png#invert|400]]
+### Main Components Inside the Scanner:
+#### Magnet:
+  - This is the core component of an MRI scanner. It creates a powerful and uniform magnetic field, typically using superconducting coils that are cooled with liquid helium. The main magnetic field, denoted as $B_0$, aligns the magnetic moments of the nuclei in the body.
+##### Classification by Shape
+MRI magnets can primarily be classified by their shape, which affects the design of the scanner and the patient experience.
+- **Cylindrical-Closed Bore:**
+    - **Description:** These are the most common type of MRI scanners. They feature a long, narrow tube or bore where the patient lies during the scan. The magnet has a cylindrical shape with the magnetic field oriented along the head-to-feet direction of the patient.
+    - **Advantages:** Offers high field strength and uniformity, which results in higher resolution images and faster scan times.
+    - **Considerations:** Some patients may experience claustrophobia due to the enclosed space.
+- **Open Bore:**
+    - **Description:** Open MRI scanners are designed with larger or open sides, making them less claustrophobic. The magnetic field in open MRI systems is typically oriented perpendicular to the head-feet direction, running horizontally through the body.
+    - **Advantages:** More comfortable for patients, particularly those who are claustrophobic, obese, or children who may require a parent's presence.
+    - **Considerations:** Typically have lower field strength than closed bore systems, which can result in longer scan times and potentially less detailed images.
+##### Classification by How the Field is Generated
+The technology used to generate the magnetic field also classifies MRI systems:
+- **[[Superconductor|Superconducting]] Coils:**
+    - **Description:** These are the most widely used systems in clinical settings. The coils are made from superconducting materials that, when cooled to very low temperatures (using liquid helium), can carry electricity without resistance, allowing for very high and stable magnetic fields.
+    - **Field Strengths:** Common clinical scanners operate at 1.5 to 3 Tesla. Research scanners can go up to 7 Tesla and are now being introduced into clinical settings. There are also specialized ultra-high-field MRI systems, such as 12 Tesla, mainly used for research and small animal studies.
+    - **Advantages:** High field strength allows for very high-resolution images and efficient scanning.
+- **Permanent Magnets:**
+    - **Description:** Some open MRI systems use permanent magnets, which do not require electricity to maintain the magnetic field. These are less common in clinical settings.
+    - **Field Strengths:** Generally lower than those of superconducting systems.
+    - **Advantages:** Lower operational costs since there's no need for cooling to superconducting temperatures.
+    - **Considerations:** The lower field strength limits the resolution and speed of the MRI scans.
+- **Resistive Coils (Obsolete):**
+    - **Description:** Older systems used resistive electromagnets, which require a continuous supply of electricity to maintain the magnetic field.
+    - **Considerations:** These are largely obsolete in modern MRI applications due to their inefficiency and the high costs associated with the power and cooling required.
+#### Gradient Coils:
+  - These coils are used to superimpose variable magnetic fields on top of the main magnetic field at different strengths and directions. This variation allows for spatial encoding of the MRI signals, enabling the machine to create images that can differentiate between different locations within the body.
+#### RF Coil:
+  - Radio Frequency (RF) coils are used to transmit RF pulses into the body to disturb the alignment of the magnetized nuclei and to receive the signals emitted by the nuclei as they return to their equilibrium state. There are different types of RF coils for different types of scans, some designed for transmitting, others for receiving, and some do both.
+##### RF Coils as Transmitters
+- **Function:** When used as transmitters, RF coils generate an oscillating or rotating magnetic field, known as $B_1$​, which is perpendicular to the static main magnetic field ($B_0$​). This perpendicular arrangement is crucial for effectively manipulating the magnetic moments of the nuclei in the body.
+- **Mechanism:** The $B_1$​ field is applied at the Larmor frequency, which corresponds to the frequency at which the nuclei precess in the $B_0$​ field. By broadcasting at this frequency, RF coils can effectively flip or tilt the spins of the nuclei, moving them out of alignment with $B_0$​. This displacement is what allows the nuclei to emit signals as they realign with $B_0$​, which are then detected to create MRI images.
+- [[Linearly Polarized (LP) Coils]]
+- [[Circularly Polarized (CP) Coils]]
+##### RF Coils as Receivers
+- **Function:** As receivers, RF coils detect the MR signals emitted by the nuclei as they relax back into alignment with the $B_0$​ field after the RF pulse is switched off. The signals detected are essentially small electromagnetic waves emitted by the precessing nuclei.
+- **Sensitivity:** The design and positioning of the receiver coils are critical for capturing these signals effectively. Receiver coils are often placed as close as possible to the anatomy being imaged to enhance signal detection, which improves the signal-to-noise ratio (SNR) of the resulting image.
+- [[Frequency Synthesizer]]
+- [[Pulse Modulator]]
+- The orientation and placement of the coil in the xy-plane affect how the signal is detected. Coils can be aligned along the x or y axes to detect linearly polarized waves.
+- **Using Two Coils in Quadrature ([[Circularly Polarized (CP) Coils|CP]]):** By placing two coils, each on the x and y axes, and receiving signals in quadrature (90 degrees phase shifted relative to each other), the setup captures more comprehensive data. This technique effectively increases the received signal strength by a factor of $\sqrt{2}$​ because it harnesses the signal components from two perpendicular directions.
+- [[Quadrature Detection]]
+##### RF Coils as Both
+- Some coils are designed to function both as transmitters and receivers. These are known as transmit-receive (TR) coils. In smaller, specialized scanners (like those used for extremities), a single coil can efficiently manage both transmitting and receiving, simplifying the system and potentially increasing the sensitivity.
+- **Separation of Coils:** In modern MRI scanners, transmitting and receiving functions are often separated into different coils. This separation optimizes each coil's function—transmit coils are optimized for homogeneous B1B_1B1​ field distribution, while receive coils are optimized for sensitivity and signal-to-noise ratio.
+- **Site-Specific Coils:** These are designed not only to capture the MR signal efficiently but also to immobilize the part of the body being scanned, thereby reducing motion artifacts. Examples include head coils, knee coils, and breast coils.
+#### Shield:
+  - The shield is designed to contain the electromagnetic fields within the scanner and prevent external RF signals from interfering with the MRI signals.
+#### Patient Table:
+  - This is where the patient lies during the MRI scan. It can be moved into and out of the central hole of the magnet where the scanning takes place.
+### System Control and Data Acquisition Components:
+#### RF Detector:
+  - This component detects the RF signals emitted by the nuclei in the body during the scan. These signals are then sent to a digitizer.
+#### Digitizer:
+  - Converts the analog RF signals received from the RF detector into digital form so that they can be processed by the computer.
+#### RF Amp (RF Amplifier):
+  - Amplifies the RF signals to be strong enough to excite the nuclei in the body.
+#### RF Source:
+  - Generates the RF waves that are necessary to excite the magnetic moments of the nuclei.
+#### Gradient Amp:
+  - Provides the necessary power to the gradient coils, allowing them to generate the gradient magnetic fields required for spatial encoding.
+#### Gradient Pulse Programmer:
+  - Controls the timing and shape of the pulses sent to the gradient coils.
+#### Pulse Programmer:
+  - Manages the timing and sequence of both the RF and gradient pulses according to the specifics of the scan being performed.
+#### Computer:
+  - The central processing unit that controls all other components, processes the received signals, and reconstructs images based on the MRI data. It runs software that allows technicians to set scanning parameters, view the images, and perform analyses.
+### Output:
+#### Film or Digital Display:
+  - The processed images can be viewed on digital displays or printed on film for diagnostic purposes.

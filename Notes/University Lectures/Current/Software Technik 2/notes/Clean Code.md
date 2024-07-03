@@ -32,3 +32,4 @@ Clean code, which is simple, readable, and well-organized, is much easier to mod
 ### 9. Follows a defined Structure
 - If you’re thinking about clean code, you should also think about your code’s underlying structure
 - -> [[Object-Oriented Design (OOD)]]
+- 

@@ -102,6 +102,7 @@
 - [[PET-CT]]
 - [[PET-MRI]]
 - [[Magnetic Resonance Imaging (MRI)]]
+- [[MRI - Shimming]]
 
 ## Exam
 - 2 pages of hand written formulas are allowed!!

@@ -1,16 +1,16 @@
 {
   "settings": {
-    "migrated": 5,
+    "migrated": 6,
     "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "BoSwt",
       "BoBxImage",
       "BoBxFolder",
       "BoBxEditAlt",
-      "BoRadiationSvgrepoCom(1)",
-      "BoRadiation"
+      "BoRadiationSvgrepoCom(1)"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [
@@ -25,6 +25,12 @@
         "icon": "BoBxEditAlt",
         "for": "everything",
         "order": 1
+      },
+      {
+        "rule": "slides",
+        "icon": "BoBxFolder",
+        "for": "everything",
+        "order": 2
       }
     ],
     "extraMargin": {
@@ -49,10 +55,6 @@
   "University Lectures/Current/Medical Imaging Technology/books": "BoBxBook",
   "University Lectures/Current/Medical Imaging Technology/notes": "BoBxEditAlt",
   "University Lectures/Current/Medical Imaging Technology/slides": "BoBxFolder",
-  "University Lectures/Future/Reinforcement Learning": "BoReinforcementLearning",
-  "University Lectures/Future/Reinforcement Learning/images": "BoBxImage",
-  "University Lectures/Future/Reinforcement Learning/notes": "BoBxEditAlt",
-  "University Lectures/Future/Reinforcement Learning/notes/Questions.md": "BoBxCheckboxChecked",
   "University Lectures/Finished/Human Computer Interaction": "BoHci",
   "University Lectures/Finished/Human Computer Interaction/images": "BoBxImage",
   "University Lectures/Finished/Evolution": "BoEvolution",
@@ -101,5 +103,10 @@
   "University Lectures/Current/Formale Systeme/slides": "BoBxFolder",
   "University Lectures/Current/Computergrafik/slides": "BoBxFolder",
   "University Lectures/Current/Computergrafik/notes/images": "BoBxImage",
-  "University Lectures/Current/Software Technik 2/slides": "BoBxFolder"
+  "University Lectures/Current/Software Technik 2/slides": "BoBxFolder",
+  "University Lectures/Current/Software Technik 2": "BoSwt",
+  "University Lectures/Current/Reinforcement Learning": "BoReinforcementLearning",
+  "University Lectures/Current/Reinforcement Learning/images": "BoBxImage",
+  "University Lectures/Current/Reinforcement Learning/notes": "BoBxEditAlt",
+  "University Lectures/Current/Reinforcement Learning/notes/Questions.md": "BoBxCheckboxChecked"
 }
