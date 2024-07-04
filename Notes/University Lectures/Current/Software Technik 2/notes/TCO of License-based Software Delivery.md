@@ -1,0 +1,12 @@
+**TCO** refers to the complete cost of ownership over the life cycle of an asset, such as software. In the context of license-based software delivery, TCO includes a wide range of expenses:
+- **Software Licenses**: The upfront cost for the rights to use the software.
+- **Hardware Costs**: Expenses associated with purchasing and maintaining the physical infrastructure required to run the software.
+- **Software Updates and Contracts**: Costs for obtaining software updates and maintenance services to ensure the software remains functional and secure.
+- **Patches and Fixes**: Expenses related to applying corrections and enhancements to fix bugs or vulnerabilities.
+- **Backups**: Costs involved in creating and storing data backups to prevent data loss.
+- **Incident & Change Management**: The administrative costs of handling system changes and resolving issues.
+- **Systems Monitoring and Management**: Expenses for ongoing monitoring and managing the system’s performance and security.
+- **Ensuring Availability and Reliability**: Costs to ensure that the software is consistently available and performs reliably.
+- **Human Resources**: Labor costs associated with managing and maintaining the software and hardware.
+- **Energy Costs**: The electricity and other energy costs associated with powering the servers and related infrastructure.
+- **Other Associated Costs**: Additional miscellaneous expenses that contribute to the operation and maintenance of the IT environment.

@@ -1,0 +1,1 @@
+Elasticity is the ability of a ressource management system to provide ressources according to varying demand.

@@ -117,18 +117,115 @@ This design principle suggests that in a microservices architecture, the complex
 4. **Simple Communication**: Communication between services is facilitated through simple, stateless mechanisms such as HTTP and REST. This simplicity ensures that the services remain loosely coupled and the architecture scalable.
 
 ### Decentralized Governance
-
-#### Concept
-
 Decentralized governance in microservices architecture allows individual teams to make decisions regarding the technology and practices best suited to their specific services. This independence encourages innovation and agility within teams.
-
 #### Characteristics
-
 1. **Tool Production**: Microservices teams often develop tools that can be reused by others within the organization. This approach leverages practical solutions that have proven effective in real-world applications.
 2. **Shared Libraries and Tools**: Tools and libraries developed by one team are shared across the organization, promoting a culture of collaboration and reuse. This practice helps in maintaining consistency while allowing flexibility where needed.
 3. **Evolving Service Contracts**: Microservices adopt patterns like the Tolerant Reader and Consumer-Driven Contracts to manage changes in service interfaces without breaking functionality. These patterns allow services to evolve their APIs independently while maintaining backward compatibility.
-
 #### Applied Patterns
+##### Tolerant Reader
+- The Tolerant Reader pattern is about building services that are robust to changes in the data they consume. This pattern encourages services to ignore unknown fields and make minimal assumptions about the data structure. This approach is particularly useful in a microservices environment where different teams may evolve their service APIs independently.
+**Benefits**:
+- Increases the robustness of services against changes in the data format or structure sent by other services.
+- Helps maintain compatibility even as services evolve, reducing the risk of disruptions due to tightly coupled dependencies.
+##### Consumer-Driven Contracts
+**Concept**:
+- In Consumer-Driven Contracts (CDC), the consumers of a service participate in defining the expectations of the service’s output. This approach ensures that a service meets the actual needs of its consumers, rather than theoretical or outdated requirements.
+**Operation**:
+- Before a service is called, the consumer specifies what it needs from the service, which can include aspects of the data schema, service interfaces, and policies.
+- The service then implements a contract that encompasses the union of all its consumers' needs, which it must satisfy.
+**Benefits**:
+- Ensures that services are developed with a clear understanding of consumer requirements, which enhances service usability and relevance.
+- Facilitates independent service evolution while maintaining compatibility, as changes to the service are verified against the contract specified by the consumer.
+### Decentralized Data Management
+- Microservices architectures often decentralize data management, allowing each service to manage its own database. This could involve different instances of the same database technology or entirely different database systems tailored to the service’s specific needs.
+**Challenges**:
+- Managing consistency across these decentralized databases can be complex, especially in transactions that span multiple services.
+- Ensures data isolation and autonomy but requires sophisticated strategies to maintain data integrity and consistency.
+### Infrastructure Automation
+- Infrastructure automation is integral to managing microservices, especially for teams practicing Continuous Integration (CI) and Continuous Delivery (CD).
+**Practices**:
+- Automation covers the provisioning, scaling, and management of the infrastructure. It includes automated setups for testing, deployment, and monitoring.
+- Common tools include Docker for containerization, Kubernetes for orchestration, and Jenkins for continuous integration.
+**Benefits**:
+- Reduces the potential for human error in deployment processes.
+- Supports frequent and reliable service updates and rollbacks, enabling rapid iteration and responsiveness to changes.
+## Internals of Microservices
+![[Pasted image 20240704080113.png#invert|400]]
+### Components of the Microservice Architecture
+1. **Resources**:
+   - Act as the entry points for incoming requests.
+   - They map application-level protocols to domain objects, performing initial request validation and generating appropriate responses based on the outcomes of business transactions.
+2. **Service Layer**:
+   - Coordinates high-level business logic and service operations.
+   - Orchestrates the flow of data between the domain layer and repositories, managing the core functionalities of the application.
+3. **Domain**:
+   - Represents the business domain with a model comprising all the necessary business logic.
+   - Domain objects handle specific business rules and interact closely with repositories to perform data operations.
+4. **Repositories**:
+   - Manage collections of domain entities and handle persistence operations.
+   - Typically backed by a database or other persistent storage mechanisms, they abstract the complexity of data handling from the domain logic.
+5. **Data Mappers / ORM (Object-Relational Mapping)**:
+   - Facilitate interaction between the domain objects and the database.
+   - Translate between the database's relational structure and the application's object model, simplifying data manipulation and queries.
+6. **External Datastore**:
+   - Stores data outside the microservice, usually in a separate database.
+   - Accessed by the service through data mappers or ORM tools, managing state persistence beyond the lifetime of individual request transactions.
+7. **Gateways**:
+   - Act as brokers between the microservice and external services.
+   - Encapsulate the logic for sending requests to and receiving responses from external services, handling data marshalling and network communication.
+8. **HTTP Client**:
+   - Utilized by gateways to manage the technical aspects of API communication, such as making HTTP requests and handling responses.
+   - Ensures reliable interaction with external services, handling errors and retries as necessary.
+### Interactions and Communications
+- **Internal Communications**: Within the microservice, communications are typically fine-grained, involving frequent and detailed interactions between components like the domain, service layer, and repositories.
+- **External Communications**: Interactions with external services and datastores are more coarse-grained to minimize network chattiness and latency. These communications must be designed carefully to ensure performance and resilience, given the risk of network issues and service outages.
+### Design Considerations
+- **Network Resilience**: Since external communications cross network boundaries, the architecture must be resilient to network failures. This includes implementing strategies for error handling, fallbacks, and retries within the gateways.
+- **Testing**: The distributed nature of microservices and the presence of external communications require sophisticated testing strategies. Testing must account for variable network conditions, external service availability, and the potential for longer execution times.
 
-- **Tolerant Reader**: Services are designed to handle changes in the data they consume without breaking. This pattern allows services to ignore additional fields and manage missing data gracefully, which is crucial in a dynamic environment where service contracts can change frequently.
-- **Consumer-Driven Contracts**: This pattern allows the consumers of a service to contribute to the service’s contract tests, ensuring that the service meets the consumers' needs and expectations. It fosters a development environment where upstream and downstream services can evolve without fear of breaking existing integrations.
+## Clean Architecture and Microservices
+- **Component as Microservice**: In the context of Clean Architecture, a "component" can be thought of as a microservice. Each microservice is a self-contained component that includes specific business capabilities, adhering to the principles of Clean Architecture by ensuring that dependencies are controlled and interactions are managed through well-defined interfaces.
+- **Decoupled System Design**: Clean Architecture promotes the decoupling of software components, making it an ideal architectural style for microservices. This decoupling facilitates the microservices' ability to function, evolve, and scale independently without affecting the rest of the system.
+## Design for Failure
+- **Resilience by Design**: Microservices must be designed to handle failures gracefully. This involves strategies to detect, isolate, and recover from failures without user intervention.
+- **Online Monitoring**: Effective monitoring is key in microservices architectures. It involves continuously checking both technical metrics (like database queries per second) and business metrics (like transaction volumes). This dual focus helps quickly identify and address issues before they affect the system's overall performance.
+- **Resilience Testing and Tools**: Tools like Netflix's Simian Army are used to test the resilience of microservices by intentionally introducing failures (such as shutting down servers or severing network connections) to ensure that the system can handle and recover from real-life issues. These tools help validate the effectiveness of resilience strategies under controlled conditions.
+- **Circuit Breaker Pattern**: This pattern is crucial in a microservices environment. It prevents a network or service failure from cascading to other parts of the system. Here’s how it works:
+    - **Detection**: The circuit breaker detects failures and monitors for a threshold to be exceeded.
+    - **Open State**: Once the failures reach a certain threshold, the circuit breaker trips, and the circuit opens, stopping the flow of calls to the failing service, preventing further strain.
+    - **Fallback**: During this open state, fallback mechanisms can be triggered to maintain service availability, such as returning a default response or invoking a backup service.
+    - **Recovery**: The circuit remains open for a predetermined period, after which it enters a half-open state to test if the underlying problem has been fixed. If the service is stable, the circuit closes; otherwise, it reopens until stability is restored.
+## Evolutionary Design in Microservices
+1. **Service Decomposition**:
+   - **Purpose**: Allows developers to manage and adapt changes in applications more effectively by breaking the system into smaller, manageable pieces.
+   - **Criteria for Decomposition**: Components are chosen based on their ability to be replaced or upgraded independently without impacting other parts of the system.
+2. **Design Principles**:
+   - **User Functionality Over Technology**: When slicing up an application into microservices, the focus is on user functionality rather than technological layers (as typically seen in n-tier architectures). This means services are defined around business capabilities.
+   - **Independent Components**: The ideal component should be such that rewriting it does not affect its collaborators. This independence facilitates easier updates and maintenance.
+3. **Versioning**:
+   - **Avoid Manual Versioning**: Efforts are made to design systems that minimize the need for manual control over versioning by using techniques that allow services to be backward compatible or side-by-side operable.
+## When to Use Microservices
+#### Benefits
+- **Strong Module Boundaries**: Enhances the modular structure, crucial for managing large teams by ensuring clear separation of responsibilities.
+- **Independent Deployment**: Each microservice can be deployed independently, reducing the risk of system-wide failures due to a single service’s issues.
+- **Technology Diversity**: Allows the use of different programming languages, frameworks, and databases within the same application, optimizing each service’s stack for its specific needs.
+#### Costs
+- **Distribution Challenges**: Distributed systems are inherently complex to program due to issues like latency and the unreliability of network calls.
+- **Eventual Consistency**: Strong consistency is hard to achieve in distributed systems, requiring developers to handle eventual consistency, where data across the system may not be immediately consistent but achieves consistency over time.
+- **Operational Complexity**: Requires a skilled operations team to manage numerous services, particularly with frequent deployments and updates.
+### Graph Analysis: Microservices vs. Monolith Productivity
+![[Pasted image 20240704080543.png#invert|600]]
+- **Low Complexity**: Monoliths may be more productive due to their simplicity and less overhead in managing distributed components.
+- **High Complexity**: Microservices tend to be more productive as they reduce coupling between components, making the system easier to manage despite the inherent complexities of each service.
+### Conclusion
+Choosing between microservices and a monolithic approach depends on various factors, including team size, system complexity, and operational capabilities. Microservices offer significant advantages in flexibility, scalability, and resilience but require careful management and sophisticated operational practices to handle their complexity and distributed nature. This decision should align with the long-term strategic goals of the organization and the specific requirements of the application being developed.
+
+## How to begin a new Microservice Project
+### Option 1: Start with a Clean Monolith, Separate Later
+- **Simplicity and YAGNI (You Ain't Gonna Need It)**: This approach adheres to the principle of not building features or using technologies until they are actually needed. Starting with a monolith means focusing on building and validating business functionalities without the overhead of managing multiple services.
+- **Unclear Service Boundaries**: Early in a project, it's often not clear what the boundaries between different parts of the application should be. Starting with a monolith allows the team to gain better insight into the domain and business needs, which can inform a more effective and informed separation into microservices later on.
+- **Prepare with Clean Architecture**: Even within a monolith, applying principles of clean architecture (like decoupling components and maintaining clear interfaces) can prepare the system for a smoother transition to microservices in the future.
+### Option 2: Start with Microservices
+- **Enforces Modularity**: By starting with microservices, the project inherently adopts a modular structure from the beginning. Each service is built around a specific business capability, promoting better separation of concerns.
+- **Avoids Future Messiness**: There's a common belief that monolithic applications tend to grow messy and entangled over time, making them hard to scale or adapt. Starting with microservices can preempt these issues by keeping boundaries enforced and dependencies minimized.

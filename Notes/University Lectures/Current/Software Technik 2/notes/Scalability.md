@@ -1,0 +1,1 @@
+Scalability is the ability of an application to counter high load through the utilisation of more ressources.

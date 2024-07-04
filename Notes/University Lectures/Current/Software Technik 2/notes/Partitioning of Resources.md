@@ -1,0 +1,4 @@
+Partitioning is the division of a computer's resources such as memory, storage, and processing power to support multiple users or environments independently.
+
+- **Classical Solution (Physical Resource Sets - PRS)**: Traditionally, resources are partitioned by allocating separate physical servers for different applications or customers. This method provides strong isolation but is less flexible and can be more expensive.
+- **Cloud Solution (Virtual Resource Sets - VRS)**: In the cloud, resources are partitioned virtually using software. This method allows multiple virtual environments to coexist on the same physical hardware, leading to better resource utilization and scalability.

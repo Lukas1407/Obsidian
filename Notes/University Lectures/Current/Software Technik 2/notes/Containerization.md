@@ -1,0 +1,5 @@
+Containerization is a lightweight form of virtualization that involves encapsulating an application and its dependencies into a container that can run on any system. This container includes not only the application and its runtime environment, but also the necessary system tools and libraries.
+
+- **Container**: A standardized unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
+- **Directly Run on Host OS**: Unlike virtual machines that require a guest operating system, containers share the host system’s kernel but can be isolated in terms of running processes, file systems, and network.
+- **Container Engine**: The runtime environment that builds, runs, and manages containers. Popular examples include Docker, Podman, and Kubernetes for orchestration.
