@@ -1,0 +1,5 @@
+**Software process models** are frameworks that provide a structured approach to software development. They describe the sequence of activities involved in the creation and maintenance of software products, including roles, responsibilities, and deliverables. The key points of these models are:
+1. **Activities and Order**: The process model specifies which activities should be performed and the sequence in which they should be carried out. This sequence helps in organizing and streamlining the development process.
+2. **Roles and Responsibilities**: Clear guidelines on who should perform which tasks, helping in defining a clear structure for team collaboration and accountability.
+3. **Artifacts and Milestones**: These models define what documents, code, or other outputs should be produced and when. They help in tracking progress and ensure that key deliverables are completed on time.
+4. **Techniques and Tools**: Some models also recommend specific techniques and tools to be used during the development process, enhancing efficiency and effectiveness.
