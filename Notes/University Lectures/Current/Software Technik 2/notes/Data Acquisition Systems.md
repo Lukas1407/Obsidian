@@ -1,0 +1,3 @@
+- These are specialized real-time systems that focus on collecting and processing data from various sensors. The emphasis is often on handling large volumes of data efficiently.
+- An example provided is the Large Hadron Collider at CERN, which generates massive amounts of data that require real-time processing to be meaningful for scientific research.
+![[Pasted image 20240707142837.png#invert|400]]

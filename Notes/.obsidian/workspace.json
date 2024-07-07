@@ -20,43 +20,31 @@
             }
           },
           {
-            "id": "2cc74f85e34edfa4",
+            "id": "2e018262de6dff41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Software Development Processes.md",
+                "file": "University Lectures/Current/Software Technik 2/notes/Safety & Reliability Pattern.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "13211158be867b52",
+            "id": "3dee74c164c74152",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Agile Methods.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "614297cf2a4f9256",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Scrum.md",
+                "file": "University Lectures/Current/Software Technik 2/notes/Real-Time Patterns.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -155,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Scrum.md",
+                "file": "University Lectures/Current/Software Technik 2/notes/Safety & Reliability Pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Scrum.md",
+                "file": "University Lectures/Current/Software Technik 2/notes/Safety & Reliability Pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Scrum.md"
+                "file": "University Lectures/Current/Software Technik 2/notes/Safety & Reliability Pattern.md"
               }
             }
           },
@@ -230,44 +218,46 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "614297cf2a4f9256",
+  "active": "2e018262de6dff41",
   "lastOpenFiles": [
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707092201.png",
-    "University Lectures/Current/Software Technik 2/notes/Agile Methods.md",
-    "University Lectures/Current/Software Technik 2/notes/Scrum.md",
-    "University Lectures/Current/Software Technik 2/notes/Extreme Programming (XP).md",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707091535.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707091324.png",
-    "University Lectures/Current/Software Technik 2/notes/Software Development Processes.md",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144352.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144337.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144258.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144246.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144143.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144142.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144141.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144124.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144103.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144025.png",
+    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707143904.png",
     "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md",
-    "University Lectures/Current/Software Technik 2/notes/Software Process Model.md",
-    "University Lectures/Current/Software Technik 2/notes/Rational Unified Process (RUP).md",
-    "University Lectures/Current/Software Technik 2/notes/Unified Process (UP).md",
-    "University Lectures/Current/Software Technik 2/notes/V-Model.md",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707090351.png",
-    "University Lectures/Current/Software Technik 2/notes/Waterfall Model.md",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707090312.png",
-    "University Lectures/Current/Software Technik 2/notes/Domain-Driven Design Strategic Design.md",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707085825.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707085817.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707085807.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707085752.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707085742.png",
-    "University Lectures/Current/Software Technik 2/notes/images/swt5.png",
-    "University Lectures/Current/Software Technik 2/notes/Domain-Driven Design Building Blocks.md",
-    "University Lectures/Current/Software Technik 2/notes/Model-Driven Design (MDD).md",
-    "University Lectures/Current/Software Technik 2/notes/Domain-Driven Design (DDD).md",
-    "University Lectures/Current/Software Technik 2/notes/Cloud Computing.md",
-    "University Lectures/Current/Software Technik 2/notes/MapReduce.md",
-    "University Lectures/Current/Software Technik 2/notes/Simple Controller Architecture for Resilience.md",
-    "University Lectures/Current/Software Technik 2/notes/Grep The Web.md",
-    "University Lectures/Current/Software Technik 2/notes/Multi-Tenant Architecture.md",
-    "University Lectures/Current/Software Technik 2/notes/Single-Tenant Architecture.md",
-    "University Lectures/Current/Software Technik 2/notes/Software as a Service (SaaS).md",
-    "University Lectures/Current/Software Technik 2/notes/TCO of License-based Software Delivery.md",
-    "University Lectures/Current/Software Technik 2/notes/Platform as a Service (PaaS).md",
-    "University Lectures/Current/Software Technik 2/notes/Infrastructure as a Service (IaaS).md",
-    "University Lectures/Current/Software Technik 2/notes/Virtualization.md",
+    "University Lectures/Current/Software Technik 2/notes/Safety & Reliability Pattern.md",
+    "University Lectures/Current/Software Technik 2/notes/Real-Time Patterns.md",
+    "University Lectures/Current/Software Technik 2/notes/Fault-Error-Failure Chain.md",
+    "University Lectures/Current/Software Technik 2/notes/Safety & Reliability.md",
+    "University Lectures/Current/Software Technik 2/notes/Real-time Systems.md",
+    "Sensor/Actuator Systems.md",
+    "Sensor/images",
+    "Sensor",
+    "University Lectures/Current/Software Technik 2/notes/Data Acquisition Systems.md",
+    "University Lectures/Current/Software Technik 2/notes/Monitoring & Control Systems.md",
+    "University Lectures/Current/Software Technik 2/notes/Interrupts vs. Periodic Processes.md",
+    "University Lectures/Current/Software Technik 2/notes/Stimulus-Response Systems.md",
+    "University Lectures/Current/Software Technik 2/notes/Software Quality.md",
+    "University Lectures/Current/Software Technik 2/notes/Use Case Diagrams (UCD).md",
+    "University Lectures/Current/Software Technik 2/notes/Use Cases in Software Development.md",
+    "University Lectures/Current/Software Technik 2/notes/Shaping Heuristics.md",
+    "University Lectures/Current/Software Technik 2/notes/Model-based Requirements Elicitation.md",
+    "University Lectures/Current/Software Technik 2/notes/Elementary Business Processes (EBP).md",
+    "University Lectures/Current/Software Technik 2/notes/Requirements Engineering.md",
+    "University Lectures/Current/Software Technik 2/notes/Requirements Prioritization.md",
+    "University Lectures/Current/Software Technik 2/notes/Requirements Validation.md",
+    "University Lectures/Current/Software Technik 2/notes/Writing Recommendations for Requirements.md",
+    "University Lectures/Current/Software Technik 2/notes/Software Requirements Specification (SRS).md",
+    "University Lectures/Current/Software Technik 2/notes/Psychological Interaction Patterns.md",
+    "University Lectures/Current/Software Technik 2/notes/Reviews.md",
+    "University Lectures/Current/Software Technik 2/notes/Code Reading Techniques.md",
     "University Lectures/Current/Medical Imaging Technology/exercises/Exercice Lecture 8_9 sulution.pdf",
     "University Lectures/Current/Medical Imaging Technology/slides/MIT1_slides_combined.pdf",
     "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
@@ -276,8 +266,6 @@
     "University Lectures/Current/Software Technik 2/notes",
     "University Lectures/Current/Software Technik 2/slides",
     "University Lectures/Current/Software Technik 2",
-    "University Lectures/Current/Formale Systeme/slides/Formale-Systeme_wichtige_themenpdf",
-    "University Lectures/Current/Computergrafik/notes/images",
     "Obsidian/Untitled.canvas"
   ]
 }
