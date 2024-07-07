@@ -1,0 +1,1 @@
+- Refers to the character or guiding beliefs of a person, group, or institution. In software engineering, it relates to the ethical consciousness and the moral attitudes that guide engineers in their professional activities.

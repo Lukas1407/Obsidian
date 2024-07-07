@@ -1,0 +1,1 @@
+Deals with the philosophical study of morality, focusing on what is right and wrong in human conduct. For software engineers, this involves methodical consideration of the moral implications of their work.
