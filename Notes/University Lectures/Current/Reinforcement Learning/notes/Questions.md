@@ -39,3 +39,10 @@
 - When is the natural gradient update implementing the exact trust region update? 
 - Why are natural gradients difficult to use for bigger networks? 
 - What is the main idea of PPO (clipped version) and what are the benefits?
+- Why are off-policy methods more efficient then onpolicy methods 
+- How can we achieve off-policy RL with continuous actions 
+- What are the different options to optimize the actor? • Why do we have a bias in actor critic algorithms and how to fix it?
+- What type of gradient is DDPG using and why can we not apply the same gradient for the sampled return? 
+- What is the objective of max-ent reinforcement learning and why is that useful?
+- How to we obtain the policy update in SAC? 
+- What is the reparametrization trick and when should it be preferred to the likelihood policy gradients?

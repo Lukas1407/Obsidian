@@ -1,5 +1,5 @@
 > [!summary] Definition
-> Policy optimization is a family of algorithms in reinforcement learning (RL) that directly optimize the [[Policy]] without necessarily relying on a v[[Value-Function]].
+> Policy optimization is a family of algorithms in reinforcement learning (RL) that directly optimize the [[Policy]] without necessarily relying on a [[Value-Function]].
 > 
 
 - Policy optimization algorithms directly adjust the policy parameters to maximize the expected return
@@ -18,7 +18,7 @@
 ### Goal
 - Find the best parameters for that policy $$\theta^{*}=arg\max_{\theta}\mathbb{E}_{\tau\sim p_{\theta}}(\tau)\left[\sum_{t}^{T}\gamma^{t}r(s_{t},a_{t}) \right]$$
 ### Computing the Gradient
-- Objective: $$J(\theta)=\mathbb{E}_{\tau\sim p_{\theta}(\tau)}\left[\sum_{t}\gamma^{t}r(s_{t},a_{t}) \right]=\int p_{\theta}(\tau)R(\tau)d\tau$$
+- Objective: $$J(\theta)=\mathbb{E}_{\tau\sim p_{\theta}(\tau)}\left[\sum_{t}\gamma^{t}r(s_{t},a_{t}) \right]=\int p_{\theta}(\tau)R(\tau)d\tau\approx \frac{1}{N}\sum_{i}\sum_{t}\gamma^{t}r(s_{i,t},a_{i,t})$$
 - Gradient:$$\nabla_{\theta}J(\theta)=\int\nabla_{\theta}p_{\theta}(\tau)R(\tau)d\tau = \int \underbrace{p_{\theta}(\tau)\nabla_{\theta}\log p_{\theta}(\tau) R(\tau)d\tau}_{\text{Log-ratio trick}}$$
 	- Uses the [[Log-Ratio Trick]]
 	- Can be evaluated via sampling ([[Monte-Carlo Estimation]]):$$\nabla_{\theta}J(\theta)\approx\frac{1}{N}\sum_{i}\left(\underbrace{\sum_{t}\nabla_{\theta}\log \pi_{\theta}(a_{i,t}|s_{i,t})}_{\text{Gradient of Log-Likelihood}} \right)\left(\underbrace{\sum_{t}\gamma^{t}r(s_{i,t}, a_{i,t})}_{\text{Return}}\right)$$
@@ -32,9 +32,9 @@
 		- We would need the transition model for the path derivatives: To compute the path derivatives, you would need a model of the environment’s dynamics, known as the transition model, which describes the probability of moving to the next state given the current state and action. This is typically not required in policy gradient methods, which are often model-free.
 - How to compute $\nabla_{\theta}\log p_{\theta}(\tau)$:$$\begin{align}p_{\theta}(\tau)&=p(s_{0})\prod_{t=0}^{T-1}\pi_{\theta}(a_{t}|s_{t})p(s_{t+1}|s_{t},a_{t}) \\ \log p_{\theta}(\tau)&=\log p(s_{0})+\sum_{t=0}^{T-1}\log \pi_{\theta}(a_{t}|s_{t})+\sum_{t=0}^{T-1}\log p(s_{t+1}|s_{t},a_{t}) \\ \nabla_{\theta}\log p_{\theta}(\tau)&= \nabla_{\theta}\log p(s_{0})+\sum_{t=0}^{T-1}\nabla_{\theta}\log \pi_{\theta}(a_{t}|s_{t})+\sum_{t=0}^{T-1}\nabla_{\theta}\log p(s_{t+1}|s_{t},a_{t}) \\ &=\sum_{t=0}^{T-1}\nabla_{\theta}\log \pi_{\theta}(a_{t}|s_{t}) \end{align}$$
 	- -> No model is required!
-### REINFORCE Algorithm
+## REINFORCE Algorithm
 ![[Pasted image 20240315084047.png#invert|600]]
-- Converges to local optimum of J
+- Converges to local optimum of $J$
 - But: 
 	- Learning rates very hard to tune 
 	- Needs tons of samples
@@ -52,7 +52,7 @@ As formulated thus far:
 - Past rewards $k < t$ do not depend on $a_{i,t}$: 
 	- $\sum_{k=0}^{t-1}\gamma^{t}r(s_{i,k},a_{i,k})$
 	- Rewards received before time $t$ cannot be influenced by the action taken at time $t$, because those rewards have already been determined by previous actions. In other words, the outcome of past actions cannot be changed by current or future actions.
-- Future rewards $k \ge t$) do depend on $a_{i,t}$: 
+- Future rewards $k \ge t$ do depend on $a_{i,t}$: 
 	- $\sum_{k=t}^{T}\gamma^{t}r(s_{i,k},a_{i,k})$
 	- The action $a_{i,t}$ can influence the state transitions and the rewards received from time $t$ onwards. Therefore, future rewards are dependent on the current action, as it can alter the trajectory of states and subsequent rewards.
 - -> Terms that do not depend on $a_{i,t}$ can be removed!
@@ -123,6 +123,20 @@ Importance Sampling allows us to estimate properties of a particular distributio
 
 ## Policy Gradient Algorithm
 ![[Pasted image 20240403091906.png#invert|]]
+### Implicit Policy Gradient Objective
+This objective seeks to adjust the policy parameters $\theta$ in a way that maximizes the expected return of actions taken under the policy. The gradient for updating the policy parameters is given by a specific formula involving a reweighting of samples based on their advantage, which is computed as the product of the probability ratio and the advantage estimate:
+
+$$ \nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i=1}^{N} \sum_{t=1}^{T} \frac{\pi_\theta(a_{i,t} | s_{i,t})}{\pi_{\text{old}}(a_{i,t} | s_{i,t})} \nabla_\theta \log \pi_\theta(a_{i,t} | s_{i,t}) \hat{A}^{\pi_{\text{old}}}(s_{i,t}, a_{i,t}) $$
+#### Components:
+- **$\pi_\theta(a|s)$**: The policy parameterized by $\theta$, which determines the probability of taking action $a$ in state $s$.
+- **$\pi_{\text{old}}(a|s)$**: The old policy, under which the data was collected.
+- **$\hat{A}^{\pi_{\text{old}}}$**: The advantage function under the old policy, estimating how much better or worse taking action $a$ in state $s$ is compared to the average.
+- **Probability Ratio**: $\frac{\pi_\theta(a|s)}{\pi_{\text{old}}(a|s)}$ adjusts for the change in policy, focusing updates on improving decisions that are better than what the old policy suggested.
+#### Comparison to Supervised Learning
+In supervised learning, specifically in the context of maximum likelihood estimation (often used in imitation learning), the goal is to maximize the likelihood of observed actions given the states:
+
+$$ \nabla_\theta \text{LogLik}(\theta) = \sum_{a_i, s_i} \nabla_\theta \log \pi_\theta(a_i|s_i) $$
+This approach assumes a static dataset, where actions $a_i$ taken in states $s_i$ are treated as labels provided by a demonstrator (optimal or near-optimal behavior). The model (policy) is trained to replicate these actions.
 ## Gradient Step Size Regulation
 Typically, we also learn the exploration noise of the policy
 - The policies often start with high variance to encourage exploration. As learning progresses, the variance is reduced to refine the policy.
@@ -151,10 +165,33 @@ Solution: Trust Regions
 	- It helps to maintain a sufficient level of exploration by avoiding a too rapid decrease in variance.
 	- Monotonic improvement guarantees can be established, meaning that the performance of the policy is guaranteed to improve or remain the same with each update.
 - How to solve a contained optimization problem? -> [[Lagrangian Multipliers]]:
-![[Pasted image 20240404093917.png#invert|700]]
-![[Pasted image 20240404094039.png#invert|700]]
-- <mark style="background: #FF5582A6;">But</mark>: only valid for discrete actions and no states
+#### Solution
+The main goal is to maximize a policy's expected reward while keeping its deviation from a baseline policy within a defined limit, measured by the Kullback-Leibler (KL) divergence. This constraint ensures that the new policy does not stray too far from what has previously been established as reasonably effective, thus stabilizing the learning process.
+- The problem is formulated as:
+$$ \arg\max_{\pi} \sum_a \pi(a) r(a) \quad \text{s.t.} \quad KL(\pi \| q) \leq \epsilon, $$where $\pi(a)$ is the policy being optimized, $r(a)$ is the reward for action $a$, $q(a)$ is the baseline or old policy, and $\epsilon$ is a small positive number defining the trust region.
+- The Lagrangian for this constrained optimization problem is:
+$$ L(\pi, \eta, \lambda) = \sum_a \pi(a) r(a) + \eta \left( \epsilon - \sum_a \pi(a) \log \frac{\pi(a)}{q(a)} \right) + \lambda \left( \sum_a \pi(a) - 1 \right), $$
+where $\eta$ is the Lagrange multiplier for the KL divergence constraint, and $\lambda$ enforces the probability distribution constraint $\sum_a \pi(a) = 1$.
+
+##### Primal Solution
+Taking the derivative of the Lagrangian with respect to $\pi(a)$ and setting it to zero gives:
+$$ \frac{\partial L}{\partial \pi(a)} = r(a) - \eta \left( \log \frac{\pi(a)}{q(a)} + 1 \right) + \lambda = 0. $$
+Solving for $\pi(a)$ gives:
+$$ \pi(a) = q(a) \exp \left( \frac{r(a)}{\eta} - 1 \right) \exp \left( -\frac{\lambda}{\eta} \right). $$
+This can be simplified to:
+$$ \pi(a) = q(a) \exp \left( \frac{r(a) - \lambda + \eta}{\eta} \right). $$
+
+##### Normalization
+To ensure that $\pi$ is a valid probability distribution (i.e., sums to 1), normalize $\pi(a)$ across all actions:
+$$ \pi(a) = \frac{q(a) \exp \left( \frac{r(a)}{\eta} \right)}{\sum_b q(b) \exp \left( \frac{r(b)}{\eta} \right)}. $$
+
+##### Dual Problem
+The dual of this optimization problem involves finding the optimal $\eta$ that maximizes the dual function:
+$$ \max_{\eta > 0} \eta \epsilon + \eta \log \left( \sum_a q(a) \exp \left( \frac{r(a)}{\eta} \right) \right). $$
+This dual problem is typically solved using numerical optimization techniques as it might not have a closed-form solution.
+#### Problem
+- Only valid for discrete actions and no states
 - How can we do this for parametric policies such as Neural Networks?
-	1. [[Natural Gradients]] and Trust-Region Policy Optimization ([[Natural gradients and Trust-Region Policy Optimization (TRPO)|TRPO]])
+	1. [[Natural Gradients]] and Trust-Region Policy Optimization ([[Trust-Region Policy Optimization (TRPO)|TRPO]])
 	2. [[Proximal Policy Optimization (PPO)]]
 	3. [[Differential Trust Region Layers]]

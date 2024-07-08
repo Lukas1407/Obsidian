@@ -5,19 +5,53 @@
 ### 1. Initialization
 - Start with an arbitrary [[Policy]] $\pi$, which is a mapping from states to actions.
 ### 2. Policy Evaluation
-- Calculate the [[Value-Function#State-Value Function/V-Function|state-value function]] $V^\pi(s)$ for the current policy $\pi$. This involves assessing how good it is to follow the current policy from each state, in terms of expected rewards.
-![[Pasted image 20240310122152.png#invert|]]
+- Calculate the [[Value-Function#State-Value Function/V-Function|state-value function]] $V^\pi(s)$ for the current policy $\pi$. 
+- This involves assessing how good it is to follow the current policy from each state, in terms of expected rewards.
+![[Pasted image 20240310122152.png#invert|600]]
 - Iterative use of the [[Value-Function#Bellmann Equation|bellmann equation]]
+#### Sample-based Policy Evaluation
+- Since the full model of the environment may not be available or the state space may be too large, the expectations in the policy evaluation can be approximated using sampled transition trajectory $\tau=(s_{0},a_{0},r_{0},s_{1},a_{1},r_{1}...)$ rather than summing over all possible transitions.
+1. **Sampling an Action**: An action $a_t$ is sampled according to the policy's distribution $\pi(\cdot|s_t)$.
+2. **Sampling the Next State**: The next state $s_{t+1}$ is sampled from the probability distribution $P(\cdot|s_t, a_t)$, which might typically be derived from interacting with the environment.
+3. **Computing a New Target**: For the current timestep $t$, compute the target $y_t$ which is an estimate of the expected return from state $s_t$ given the sampled action and the next state:
+   $$ y_t = r(s_t, a_t) + \gamma V^\pi(s_{t+1}) $$
+
+- To incorporate the sampled estimate into the current value function estimate, a moving average approach is used:
+
+$$ V^\pi(s_t) \leftarrow (1 - \alpha) V^\pi(s_t) + \alpha y_t $$
+
+- 2 Options:
+	- [[Temporal Difference Learning]]
+	- [[Monte-Carlo Estimation]]
 ### 3. Policy Improvement
 - Update the policy by making it greedy with respect to the current value function. This means for each state, choose the action that maximizes the expected return using the current value estimates.
 - Can be done using the [[Value-Function#Action-Value Function/Q-Function|Q-Function]] or the [[Value-Function#State-Value Function/V-Function|V-Function]]:
 	- $$\pi_{new}(s)=arg\max_{a}Q^{\pi}(s,a)$$
 	- $$\pi_{new}(s)= arg\max_{a}\left(r(s,a)+\gamma\sum_{s'}p(s'|s,a)V_{k-q}^{\pi}(s')\right)$$
+- It can be shown that $Q^{\pi_{new}}(s,a)\ge Q^{\pi}(s,a)$ -> the new policy performs strictly better (or equally good) than the old policy in every state
+#### Stochastic Formulation of Policy Improvement
+##### Using the V-Function
+The policy improvement step using the V-function (Value function) is shown here:
+
+$$ \pi_{\text{new}}(a|s) = \begin{cases} 
+1, & \text{if } a = \arg\max_{a'} \left(r(s, a') + \gamma \sum_{s'} p(s'|s, a') V^{\pi}(s')\right) \\
+0, & \text{else} 
+\end{cases} $$
+
+- The policy is updated such that the action which maximizes the expected return (considering immediate rewards and discounted future value of subsequent states) is chosen deterministically (the probability of choosing  is set to 1) for each state . All other actions have a probability of 0.
+##### Using the Q-Function
+The policy improvement step using the Q-function (Action-Value function) is shown here:
+
+$$ \pi_{\text{new}}(a|s) = \begin{cases} 
+1, & \text{if } a = \arg\max_{a'} Q^\pi(s, a') \\
+0, & \text{else} 
+\end{cases} $$
+- **Policy Improvement**: The policy is similarly updated deterministically. The action $a'$ that maximizes the Q-value in state $s$ is chosen with a probability of 1. This simplifies the decision-making process as it directly uses the action-value function without needing to consider the transition probabilities and rewards separately as in the V-function case.
 ### 4. Iteration
 - Repeat the policy evaluation and improvement steps until the policy no longer changes, indicating convergence.
-
+## Summary
 The policy iteration algorithm can be summarized by the following steps:
-![[Pasted image 20240310123530.png#invert|]]
+![[Pasted image 20240310123530.png#invert|600]]
 
 ## Convergence 
 -  It is guaranteed to converge to the optimal policy and value function for a finite [[Markov Decision Process|MDP]], as there is only a finite number of policies.

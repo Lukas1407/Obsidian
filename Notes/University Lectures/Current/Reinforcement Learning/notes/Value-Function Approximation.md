@@ -14,43 +14,63 @@
 
 ## Fitting a Value Function
 “Fitting” in the context of value functions refers to the process of adjusting the parameters of a model (value function) so that it best represents the relationship between states, actions, and rewards based on the data (experiences) collected from the environment.
-1. **Fit Monte-Carlo Returns**:
-    - This method involves using the [[Markov Decision Process#Return|Return]] from complete episodes to fit the value function by directly minimizing the regression loss:$$L=\sum_{t}(V_{\theta}(s_{t})-R_{t})^2$$
-    - The idea is to run many episodes using the current policy, record the returns for each state-action pair, and then use these returns to estimate the value function directly.
-    - Pros: 
-        - Can use any supervised learning method (e.g. [[Backpropagation]]) 
-        - Yields unbiased estimate of the Value Function (Approximates the real targets) 
-        - Always converges (its just regression...) 
-    - Cons:
-        - High variance in returns $R_t$, therefore requires tons of training data
-        - Can not use the last few transitions of an episode as training data
-        - At least if we end the episode just because of the episode-length
-2. **Q-Learning with Neural Networks**:
-    - Neural networks can be used as function approximators to estimate the Q-values for state-action pairs.
-    - In this approach, the neural network’s weights are adjusted to minimize the difference between the predicted Q-values and the target Q-values (calculated using the Bellman equation).
-    - This method allows handling large or continuous state spaces and can generalize to unseen states and actions.
-3. **Fitted Q-Iteration**:
-    - Fitted Q-Iteration is a batch learning method where the Q-function is fitted using a dataset of transitions (state, action, reward, next state).
-    - The algorithm iteratively updates the Q-values by fitting a model to predict the maximum future rewards for each state-action pair in the dataset.
-    - It’s an off-policy method, meaning it can learn from data collected from a different policy than the one currently being optimized.
-
+### 1. Fit Monte-Carlo Returns
+Monte Carlo (MC) methods involve using complete episodes of interaction with the environment to directly calculate the returns (total accumulated reward) for each state visited. The value of a state is estimated by averaging the returns from that state across multiple episodes, considering only the first visit to the state within each episode for a pure "first-visit MC" approach, or all visits in an "every-visit MC" approach.
+**Steps:**
+- **Collect Data:** Play out full episodes while following a certain policy, recording the states visited and rewards obtained.
+- **Calculate Returns:** For each state encountered in an episode, calculate the total return from that state to the end of the episode.
+- **Regression on Returns:** Fit the value function $V(s)$ by regressing these observed returns against the states. This can be done using linear regression, neural networks, or any other regression model.
+**Pros and Cons from Image:**
+- **Pros:**
+  - Can use any supervised learning method.
+  - Yields an unbiased estimate of the value function.
+  - Always converges (as it's essentially a regression problem).
+- **Cons:**
+  - High variance in returns, necessitating lots of data to achieve reliable estimates.
+  - Can't use the last few transitions of an episode as training data if episodes end due to time limits or other administrative censors.
+### 2. Q-Learning with Neural Networks
+This approach uses Q-learning, an off-policy TD (temporal difference) learning algorithm, enhanced with the function approximation capabilities of neural networks, often referred to as Deep Q-Networks (DQN).
+**Steps:**
+- **Action-Value Updates:** For each transition (s, a, r, s'), update the Q-values based on the formula $Q(s, a) \leftarrow Q(s, a) + \alpha (r + \gamma \max_{a'} Q(s', a') - Q(s, a))$.
+- **Neural Network as Function Approximator:** Instead of maintaining a table of Q-values for each state-action pair, a neural network is trained to approximate these Q-values. The inputs to the network are states, and the outputs are Q-values for each possible action.
+**Pros:**
+- Powerful in high-dimensional spaces due to the generalization capabilities of neural networks.
+- Does not require the model of the environment, as it learns from observed transitions.
+**Cons:**
+- Can be unstable or diverge if not carefully implemented due to the inherent approximations and the use of the max operator in noisy environments.
+### 3. Fitted Q-Iteration
+Fitted Q-Iteration is a batch-based reinforcement learning algorithm where a regression model is used to fit the Q-function iteratively.
+**Steps:**
+- **Batch Updates:** Instead of updating the Q-values online (after each transition), this method involves collecting a batch of transitions and then performing an update for all these transitions in one go.
+- **Regression on Q-Values:** Use a regression model to approximate the Q-function. For each transition in the batch, calculate the target Q-value as $r + \gamma \max_{a'} Q(s', a')$, and then update the regression model to minimize the difference between predicted and target Q-values.
+**Pros:**
+- Stable and effective in environments where collecting data is expensive.
+- Suitable for offline learning, using previously collected data.
+**Cons:**
+- Requires a large and representative dataset of transitions.
+- The convergence depends heavily on the quality of the regression model and the representativeness of the data used.
 ## Approximate Q-Learning
 - Updating the Q-function with gradient descent
-$$\begin{align*}
-\theta_{\text{new}} &= \theta - \alpha \frac{d}{d\theta} L_t \\
-&= \theta - \alpha \frac{d}{d\theta} (Q(\theta(s_t, a_t)) - y_t)^2\\
-&= \theta - 2\alpha(Q(\theta(s_t, a_t)) - y_t) \frac{d}{d\theta} Q(\theta(s_t, a_t))\\
-\end{align*}
-$$
-- Gradient Descent Update Rule: The parameters are updated in the direction that reduces the loss, which is the difference between the predicted Q-values and the target values (actual rewards plus the discounted value of the next state).
-- Parameter Update with [[Temporal Difference Learning|TD Error]]: The parameters are updated by moving in the direction of the gradient of the Q-function scaled by the TD error. This ensures that the parameters are adjusted to reduce the prediction error.
+- -> This is crucial in environments where the state or action spaces are too large or complex to use traditional Q-learning with a look-up table.
+- To minimize the loss $L_t = \left(Q_\theta(s_t, a_t) - y_t\right)^2$, we use gradient descent. The parameters $\theta$ are updated by moving in the direction that most reduces the loss. This is done by computing the gradient of $L_t$ with respect to $\theta$ and updating $\theta$ in the opposite direction of this gradient:
+$$ \theta_{\text{new}} = \theta - \alpha \frac{d}{d\theta} L_t $$where $\alpha$ is the learning rate, a hyperparameter that controls how much the parameters change in response to the calculated error.
+- Expanding the gradient computation gives:
+
+$$ \frac{d}{d\theta} L_t = \frac{d}{d\theta} \left(Q_\theta(s_t, a_t) - y_t\right)^2 = 2(Q_\theta(s_t, a_t) - y_t) \frac{d}{d\theta} Q_\theta(s_t, a_t) $$
+- Thus, the update equation becomes:
+$$ \theta_{\text{new}} = \theta - 2\alpha (Q_\theta(s_t, a_t) - y_t) \frac{d}{d\theta} Q_\theta(s_t, a_t) $$
+
+
+### Parameter Update with [[Temporal Difference Learning|TD Error]]
+- The parameters are updated by moving in the direction of the gradient of the Q-function scaled by the TD error. 
+- This ensures that the parameters are adjusted to reduce the prediction error.
 
 $$\begin{align*}\theta_{\text{new}} &= \theta + \alpha(r(s'_t,a'_t) + \gamma \max_{a'}Q(\theta(s'_t+1,a')) - Q(\theta(s'_t,a'_t))) \frac{d}{d\theta}Q(\theta(s'_t,a'_t))\\
 &= \theta + \alpha\delta_{t} \frac{d}{d\theta}Q_{\theta}(s'_t,a'_t)
 \end{align*}$$
 - $\frac{d}{d\theta}Q_{\theta}(s_t,a_t)$: The gradient of the Q-function with respect to its parameters. This tells us in which direction to change the parameters to increase the Q-value for the state-action pair $(s_t, a_t)$
 - In approximate Q-learning, the gradient of the Q-function is multiplied with the TD error to update the parameter vector, which allows the model to learn from the experiences and improve the policy iteratively
-![[Pasted image 20240313093558.png#invert|For simplicity, the terminal states are neglected]]
+![[Pasted image 20240313093558.png#invert|600]]
 ### Problem
 - **No Clearly Defined Objective**: In many machine learning tasks, there is a clear objective function that you’re trying to optimize. For example, in supervised learning, you might minimize the difference between your predictions and the true labels. However, here the objective isn’t fixed because the targets (the optimal future values) are not known in advance and change as the agent learns.
 - **Changing Targets**: The target values $y_{t}=r(s_{t},a_{t})+\gamma \max_{a'}Q^{\pi}(s_{t+1},a')$  in Q-learning are based on the current estimate of the future rewards. As the agent learns and updates its policy, these estimates change. This means that the ‘ground truth’ the agent is trying to learn from is a moving target, which complicates the learning process.
@@ -100,6 +120,7 @@ $$
 1. **Sequential States Correlation**: In reinforcement learning, sequential states are often correlated because they result from actions taken in similar situations.When using neural networks for function approximation in Q-Learning, this correlation can lead to overfitting to recent sequences of states and actions, while forgetting learned knowledge of earlier states and actions -> [[Catastrophic Forgetting]]
 	- Solution: [[Value-Function Approximation#Q-Learning with Replay Buffers|Q-Learning with Replay Buffers]]
 2. **Non-Stationary Targets**: The target value in Q-Learning is the expected future rewards, which is constantly changing as the Q-values are updated. This non-stationarity can be problematic for neural networks, which are designed to learn from stationary distributions. As the Q-values update, the neural network must adapt to a moving target, which can lead to divergence or oscillations in the learned values.
+	- Solution: [[Value-Function Approximation#Target Networks|Target Networks]]
 ### Q-Learning with Replay Buffers
 - Keep a batch of trajectories collected for a different policy -> [[Off-Policy]]
 - Update the parameters using samples from that batch
@@ -169,10 +190,3 @@ $$y_{t}^{[n]}=\sum_{k=t}^{t+n}\gamma^{k-t}r(s_{k},a_{k})+\gamma^{n}\max_{a'}Q_{\
 		- Ignoring the Problem: Sometimes, even if the data includes off-policy actions, the algorithm can still learn effectively. This is because the bias introduced might not significantly affect the learning process.
 		- Cutting the Trace: If an action is [[Off-Policy]], you can cut the trace there. This means you only consider rewards up to that point for updating the Q-value.
 		- Dynamically Choosing N: By dynamically adjusting N, you can ensure that the data used for the N-step return is [[On-Policy]]. This works well when most of the data is [[On-Policy]] and the action space is small.
-### Distributional RL
-- Focuses on estimating the **distribution** of expected returns, rather than just the expectation
-- It uses a **distributional Bellman equation**, which is similar to the regular Bellman operator but works with distributions.
-- Advantages:
-	- Can be learned by [[Loss Function#Categorical Cross-Entropy Loss (CCE)|cross-entropy-loss]]
-	- Less sensitive to outliers that [[Loss Function#Mean Squared Error (MSE)|MSE]]
-	- 

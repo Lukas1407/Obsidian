@@ -1,0 +1,7 @@
+**Model-based RL** methods, on the other hand, involve the agent learning or using a model of the environment’s dynamics. This model predicts the next state and the reward given the current state and action. The agent uses this model to simulate and plan ahead, making decisions based on predicted future states and rewards.
+#### Characteristics:
+- **Planning:** The agent can "think ahead" by simulating future states using the learned model, allowing for more informed decision-making.
+- **Efficiency:** These methods can be more sample efficient, meaning they may require fewer interactions with the actual environment to learn effective policies because the model allows for "imaginary" trials in simulated environments.
+- **Examples:** Common model-based algorithms include Dyna-Q, where a model is learned alongside a value function, and more complex approaches that use tree search methods like Monte Carlo Tree Search (MCTS) integrated with neural networks.
+#### Usage:
+Model-based methods are particularly useful in environments where it is feasible to learn an accurate model, or where the environment is known. They are advantageous when the cost of sampling the environment is high or when fast decision-making is needed after the model has been learned.

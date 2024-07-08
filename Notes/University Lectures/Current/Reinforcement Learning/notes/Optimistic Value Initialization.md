@@ -3,3 +3,4 @@
 
 - Since the agent starts with high expectations for all actions, it will explore different actions to correct these estimates
 - Optimistic value initialization naturally balances exploration and exploitation without the need for additional exploration mechanisms like epsilon-greedy or Boltzmann policies. Initially, the agent explores due to high Q-values, but as it learns, exploration decreases, and exploitation increases.
+![[Pasted image 20240708081455.png#invert|400]]

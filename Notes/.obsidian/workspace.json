@@ -13,13 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md",
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cfe35d83ef45c382",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4cc51c38d45edb41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Off-Policy Actor-Critic Algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f9702599bfe6c221",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Soft-Actor Critic (SAC).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9eae33ccafd4263b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Variational Inference.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -118,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md",
+                "file": "Variational Inference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md",
+                "file": "Variational Inference.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md"
+                "file": "Variational Inference.md"
               }
             }
           },
@@ -193,54 +242,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "40919fd0cbae7b99",
+  "active": "9eae33ccafd4263b",
   "lastOpenFiles": [
-    "University Lectures/Current/Software Technik 2/notes/Ethos and Ethics in Software Engineering.md",
-    "University Lectures/Current/Software Technik 2/notes/Software Technik 2.md",
-    "University Lectures/Current/Software Technik 2/notes/Ethics.md",
-    "University Lectures/Current/Software Technik 2/notes/Ethos.md",
-    "University Lectures/Current/Software Technik 2/notes/Cryptography.md",
-    "University Lectures/Current/Software Technik 2/notes/Software Security.md",
-    "University Lectures/Current/Software Technik 2/notes/Principles for Building Secure Software.md",
-    "University Lectures/Current/Software Technik 2/notes/Safety & Reliability Pattern.md",
+    "Variational Inference.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Questions.md",
+    "Soft-Actor Critic (SAC).md",
+    "images/Pasted image 20240708123401.png",
+    "images",
+    "University Lectures/Current/Reinforcement Learning/notes/Off-Policy Actor-Critic Algorithms.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Maximum Entropy Reinforcement Learning.md",
+    "Twin-Delayed DDPG (TD3).md",
+    "Deep Deterministic Policy Gradient (DDPG).md",
+    "University Lectures/Current/Reinforcement Learning/notes/QT-Opt.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Differential Trust Region Layers.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Trust Region Policy Optimization (TRPO).md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Proximal Policy Optimization (PPO).md",
+    "University Lectures/Current/Reinforcement Learning/notes/Trust-Region Policy Optimization (TRPO).md",
+    "University Lectures/Current/Reinforcement Learning/notes/Natural Gradients.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Fisher Information Matrix (FIM).md",
+    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240404094039.png",
+    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240404093917.png",
+    "University Lectures/Current/Reinforcement Learning/notes/Lagrangian Multipliers.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Value-Function.md",
+    "Distributional RL.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Value-Function Approximation.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
+    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240708104420.png",
+    "University Lectures/Current/Reinforcement Learning/notes/Log-Ratio Trick.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Bias-Variance Trade-off.md",
+    "University Lectures/Current/Reinforcement Learning/notes/images/VI_example-ezgif.com-speed.gif",
+    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240708082827.png",
+    "University Lectures/Current/Reinforcement Learning/notes/images/Untitled.png",
+    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240708081455.png",
+    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240309122455.png",
+    "University Lectures/Current/Reinforcement Learning/books",
+    "University Lectures/Current/Reinforcement Learning/exercises/6_offline_rl_solutions.ipynb",
+    "University Lectures/Current/Reinforcement Learning/exercises/6_offline_rl.ipynb",
+    "University Lectures/Current/Reinforcement Learning/exercises/5_stochastic_search_upload.ipynb",
+    "University Lectures/Current/Reinforcement Learning/exercises/5_stochastic_search_solutions.ipynb",
+    "University Lectures/Current/Reinforcement Learning/exercises/4_mbrl_solutions.ipynb",
+    "University Lectures/Current/Reinforcement Learning/exercises/4_mbrl.ipynb",
+    "University Lectures/Current/Reinforcement Learning/exercises/3_policy_gradients_solutions.ipynb",
+    "University Lectures/Current/Reinforcement Learning/exercises/3_policy_gradients.ipynb",
     "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144352.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144337.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144258.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144246.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144143.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144142.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144141.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144124.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144103.png",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144025.png",
-    "University Lectures/Current/Software Technik 2/notes/Real-Time Patterns.md",
-    "University Lectures/Current/Software Technik 2/notes/Fault-Error-Failure Chain.md",
-    "University Lectures/Current/Software Technik 2/notes/Safety & Reliability.md",
-    "University Lectures/Current/Software Technik 2/notes/Real-time Systems.md",
-    "Sensor/Actuator Systems.md",
-    "Sensor/images",
-    "Sensor",
-    "University Lectures/Current/Software Technik 2/notes/Data Acquisition Systems.md",
-    "University Lectures/Current/Software Technik 2/notes/Monitoring & Control Systems.md",
-    "University Lectures/Current/Software Technik 2/notes/Interrupts vs. Periodic Processes.md",
-    "University Lectures/Current/Software Technik 2/notes/Stimulus-Response Systems.md",
-    "University Lectures/Current/Software Technik 2/notes/Software Quality.md",
-    "University Lectures/Current/Software Technik 2/notes/Use Case Diagrams (UCD).md",
-    "University Lectures/Current/Software Technik 2/notes/Use Cases in Software Development.md",
-    "University Lectures/Current/Software Technik 2/notes/Shaping Heuristics.md",
-    "University Lectures/Current/Software Technik 2/notes/Model-based Requirements Elicitation.md",
-    "University Lectures/Current/Software Technik 2/notes/Elementary Business Processes (EBP).md",
-    "University Lectures/Current/Software Technik 2/notes/Requirements Engineering.md",
-    "University Lectures/Current/Software Technik 2/notes/Requirements Prioritization.md",
-    "University Lectures/Current/Software Technik 2/notes/Requirements Validation.md",
-    "University Lectures/Current/Medical Imaging Technology/exercises/Exercice Lecture 8_9 sulution.pdf",
-    "University Lectures/Current/Medical Imaging Technology/slides/MIT1_slides_combined.pdf",
-    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
-    "University Lectures/Current/Software Technik 2/slides/Software-Technik2_slides.pdf",
-    "University Lectures/Current/Software Technik 2/notes/images",
-    "University Lectures/Current/Software Technik 2/notes",
-    "University Lectures/Current/Software Technik 2/slides",
-    "University Lectures/Current/Software Technik 2",
     "Obsidian/Untitled.canvas"
   ]
 }

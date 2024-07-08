@@ -106,7 +106,7 @@
   "University Lectures/Current/Software Technik 2/slides": "BoBxFolder",
   "University Lectures/Current/Software Technik 2": "BoSwt",
   "University Lectures/Current/Reinforcement Learning": "BoReinforcementLearning",
-  "University Lectures/Current/Reinforcement Learning/images": "BoBxImage",
   "University Lectures/Current/Reinforcement Learning/notes": "BoBxEditAlt",
-  "University Lectures/Current/Reinforcement Learning/notes/Questions.md": "BoBxCheckboxChecked"
+  "University Lectures/Current/Reinforcement Learning/notes/Questions.md": "BoBxCheckboxChecked",
+  "University Lectures/Current/Reinforcement Learning/notes/images": "BoBxImage"
 }

@@ -6,7 +6,7 @@ A more sophisticated explorations strategy than [[Epsilon-Greedy Action Selectio
 
 ![[Entropy]]
 
-- Maximum Entropy Objective: This objective introduces a trade-off between exploitation (choosing actions with high ( q )-values) and exploration (ensuring high entropy)2. The equation for the Maximum Entropy Objective is:$$\pi^* = \text{argmax}_\pi \left( \sum_a \pi(a) \left( q(a) + \frac{H(\pi)}{\tau} \right) \right),$$where $\tau$ is a temperature parameter that controls the trade-off. A higher $\tau$ encourages more exploration, while a lower $\tau$ favors exploitation.
+- Maximum Entropy Objective: This objective introduces a trade-off between exploitation (choosing actions with high q-values) and exploration (ensuring high entropy). The equation for the Maximum Entropy Objective is:$$\pi^* = \text{argmax}_\pi \left( \sum_a \pi(a) \left( q(a) + \frac{H(\pi)}{\tau} \right) \right),$$where $\tau$ is a temperature parameter that controls the trade-off. A higher $\tau$ encourages more exploration, while a lower $\tau$ favors exploitation.
 
 ## Soft-Max/Boltzmann Policy
 - The policy derived from the Maximum Entropy Objective is often referred to as the soft-max or Boltzmann policy and looks like this: $$\pi^*(a) = \frac{\exp(q(a))}{Z} = \frac{\exp(\tau q(a))}{\sum_{a'}\exp(\tau q(a'))}

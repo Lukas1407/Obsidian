@@ -12,7 +12,7 @@ a_{t}\leftarrow
 $$
 
 ## Results
-![[Pasted image 20240310100726.png#invert|]]
+![[Pasted image 20240310100726.png#invert|400]]
 - The curve representing the performance of an epsilon-greedy policy can be noisy due to the randomness introduced by exploration. Even when a good policy is being exploited, occasional exploration (choosing a random action) can result in receiving lower rewards, thus creating fluctuations in the performance curve.
 - Higher values of epsilon increase the amount of exploration, which can lead to discovering better policies. However, too much exploration can also mean that the agent spends less time exploiting the best-known actions, which can slow down the learning process and lead to a lower overall reward.
 - If epsilon is set too high, the agent will mostly explore, choosing random actions most of the time. This can prevent the agent from sufficiently exploiting the best-known actions to accumulate a higher reward. Essentially, the agent would be behaving more randomly, which is not conducive to learning a good policy.

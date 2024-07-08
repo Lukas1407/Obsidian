@@ -9,7 +9,7 @@ A MDP is a 4-tuple $(S,A,p,r)$:
 - $r(s,a)$: the reward when being in state $s$ and choosing action $a$
 - $\mu_{0}(s)$: the distribution over start stats
 - Maybe a terminal state
-![[Pasted image 20240309122455.png#invert|Example of a MDP with 3 states and 2 actions and 2 rewards]]
+![[Pasted image 20240309122455.png#invert|400]]
 ### Markov Property
 - The action outcomes only depend on the current state, not on history
 - $$p(S_{t+1}=s'|S_{t}=s_{t},A_{t}=a_{t},...,S_{0}=s_{0},A_{0}=a_{0})=p(S_{t+1}=s'|S_{t}=s_{t},A_{t}=a_{t})$$
@@ -25,7 +25,7 @@ A MDP is a 4-tuple $(S,A,p,r)$:
 	- For $\gamma=0$, only the next time step will be taken into account
 ### Return
 - The return $R$ is the discounted reward over all times steps
-- $R=\sum_{t=0}^{\infty}\gamma^{t}r(s_{t},a_{t})$ 
+- $$R=\sum_{t=0}^{\infty}\gamma^{t}r(s_{t},a_{t})$$ 
 ### Infinite Reward?
 - Problem: What if the game lasts forever? Do we get infinite rewards? 
 - Solutions:
@@ -35,6 +35,7 @@ A MDP is a 4-tuple $(S,A,p,r)$:
 
 ## MDP Search Trees
 - When we know everything, e.i. all state transitions and rewards, we can solve a MDP as a search tree
+![[Untitled.png#invert|600]]
 - Problem:
 	- Computationally inefficient due to the repetition of states and the potentially infinite horizon of the MDP
 	- No reuse of computation, tree has to be computed from every state

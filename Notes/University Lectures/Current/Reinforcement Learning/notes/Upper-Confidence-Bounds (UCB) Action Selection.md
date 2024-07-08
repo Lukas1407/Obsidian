@@ -2,9 +2,8 @@
 > [!summary] Idea
 >  The strategy suggests being optimistic about actions with high potential, even if their estimated value is not the highest. This approach encourages exploration of actions that might be undervalued.
 
-![[Pasted image 20240310103516.png#invert|]]
 - The brackets show the [[Confidence Bounds]] 
-![[Pasted image 20240310103612.png#invert|]]
+![[Pasted image 20240310103612.png#invert|600]]
 
 ## UCB Action Selection
 $$a_t = \operatorname*{argmax} \limits_{a} \left[ q(a) + c\sqrt{\frac{\log t}{N_t(a)}} \right],

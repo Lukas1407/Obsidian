@@ -1,0 +1,7 @@
+**Model-free RL** methods are those in which the agent learns to make decisions based solely on the observed rewards and states, without constructing a model of the environment’s dynamics. The agent does not attempt to understand how its actions affect the future states; it only learns what actions are best to take, given the current state.
+#### Characteristics:
+- **Direct Learning:** The agent learns values or policies that relate directly to the actions it should take, without needing to predict the environment’s response to those actions.
+- **Simplicity:** These methods are generally simpler and require less computation during learning because they do not need to maintain and update a model of the environment.
+- **Examples:** Popular model-free algorithms include Q-learning, SARSA (State-Action-Reward-State-Action), and [[Value-Function Approximation#Deep Q-Learning Network (DQN)|Deep Q-Networks (DQN)]].
+#### Usage:
+Model-free methods are often used in environments where the dynamics are either too complex to model accurately or where an explicit model of the environment is unnecessary. They can be very effective but might require more interactions with the environment to learn an optimal policy compared to model-based approaches.
