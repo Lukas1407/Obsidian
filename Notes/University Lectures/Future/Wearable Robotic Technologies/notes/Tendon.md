@@ -1,0 +1,1 @@
+Tendons are fibrous connective tissues that attach muscles to bones, allowing for the transmission of forces necessary to move the bones. In the hand, tendons are intricately routed through narrow spaces and around bones to facilitate complex movements.

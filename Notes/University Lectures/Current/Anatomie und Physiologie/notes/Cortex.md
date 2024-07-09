@@ -6,7 +6,6 @@
 - Er hat eine Dicke von **2 bis 5 mm**.
 - Seine Struktur ist **geschichtet** und besteht aus **sechs Schichten**.
 ## Anatomische Gliederung
-    
 -  Das Großhirn ist in **zwei Hemisphären** unterteilt: die linke und die rechte Gehirnhälfte.
 - Es gibt **vier Haupt-Hirnlappen**:
 	- **Frontallappen:** Beteiligt an kognitiven Funktionen, Persönlichkeit, Motorik und Sprache.
@@ -15,7 +14,7 @@
 	- **Temporallappen:** Enthält Bereiche für das Hören, Gedächtnis und Emotionen.
 ## Funktionelle Gliederung
 - Der Cortex cerebri ist in verschiedene **funktionelle Zentren, Areale und Felder** unterteilt:
-	- **Motorcortex:** Steuert willkürliche Bewegungen und liegt im Frontallappen.
+	- **[[Primary Motor Cortex]]:** Steuert willkürliche Bewegungen und liegt im Frontallappen.
 	- *Somatosensorischer Cortex: Verarbeitet sensorische Informationen aus dem Körper, wie Berührung und Temperatur.
 	- **Auditiver Cortex:** Zuständig für das Hören und liegt im Temporallappen.
 	- Visueller Cortex: Verarbeitet visuelle Reize und befindet sich im Okzipitallappen.

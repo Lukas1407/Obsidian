@@ -1,0 +1,7 @@
+![[Pasted image 20240709084338.png#invert|300]]
+1. **Augmentation**: This suggests that wearable humanoids can enhance human capabilities, possibly through increasing strength, stamina, or cognitive abilities, allowing people to perform beyond their natural limits.
+2. **Compensation**: Wearable humanoids might be used to compensate for physical or neurological deficits. This could include aiding those with mobility issues, or providing sensory enhancements for individuals with impairments.
+3. **Personalized Rehabilitation**: These devices could be tailored to individual rehabilitation needs, helping people recover from injuries or surgeries more effectively by providing customized support and therapy.
+4. **Training and Coaching**: Wearable humanoids could be used in sports or skills training, providing real-time feedback and guidance, which could improve learning and performance in various disciplines.
+5. **Telepresence**: This aspect refers to the use of wearable humanoids to project a person's presence to a different location. This can be particularly useful for remote work, virtual meetings, or controlling machinery from a distance.
+6. **Protection**: Wearable humanoids could also play a role in personal safety, whether by physically shielding the body or by monitoring health parameters and alerting users to potential health issues.

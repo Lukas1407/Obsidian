@@ -103,6 +103,7 @@
 - [[PET-MRI]]
 - [[Magnetic Resonance Imaging (MRI)]]
 - [[MRI - Shimming]]
+- [[Image Reconstruction in MRI]]
 
 ## Exam
 - 2 pages of hand written formulas are allowed!!

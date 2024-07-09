@@ -67,7 +67,7 @@
 - [[Interrupts vs. Periodic Processes]]
 - [[Monitoring & Control Systems]]
 - [[Data Acquisition Systems]]
-- [[Sensor/Actuator Systems]]
+- [[Actuator Systems]]
 - [[Safety & Reliability]]
 - [[Fault-Error-Failure Chain]]
 - [[Real-Time Patterns]]

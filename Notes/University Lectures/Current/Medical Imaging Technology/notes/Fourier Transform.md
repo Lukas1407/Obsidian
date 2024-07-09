@@ -15,7 +15,18 @@
 - It transforms a sequence of complex numbers from the **time domain** into the **frequency domain**.
 - The DFT provides a **frequency domain representation** of the original input sequence.
 - It’s particularly useful because many signals can be more easily analyzed and manipulated in the frequency domain than in the time domain.
+1. **DFT Definition:**
+   - The DFT converts a sequence of N complex or real numbers $x[n]$ from the time domain into frequencies $X[\omega]$. The formula given is:
+     $$
+     X[\omega] = \frac{1}{N} \sum_{n=0}^{N-1} x[n] e^{-j 2\pi \omega n / N}
+     $$
+   - Here, $j$ is the imaginary unit, $n$ is the time index, $\omega$ is the frequency index, and $N$ is the total number of points.
 
+2. **Frequency Distribution in DFT Output:**
+   - The zeroth element $X[0]$ represents the DC (Direct Current) component.
+   - The first $N/2$ elements represent positive frequencies.
+   - The remaining $N/2-1$ elements represent negative frequencies.
+   - An FFT shift is often performed to align the spectrum so that zero frequency is at the center.
 ### Fourier Transform and Function Types
 1. **Fourier Transform Basics**:
    - The Fourier Transform $F(x(t)) = X(\omega)$ of a function $x(t)$ is given by:

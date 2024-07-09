@@ -65,23 +65,8 @@ For example:
 - 3D prints for extreme light weight but low load parts
 
 ## Kinematics/Morphology
-### Joint types
-1. Linear Joints:
-	- Linear joints facilitate parallel motion between adjacent links. In other words, the input and output links slide in a straight line, resulting in translational motion. These joints are essential for tasks like pick-and-place, where precise linear movement is required.
-2. Rotary Joints:
-	- Rotary joints allow rotational motion between the links. There are three types of rotary joints:
-	1. Revolute Joints (Hinge Joints): These joints enable rotation around a single axis. Think of a door hinge—it allows the door to swing open and closed. Revolute joints are common in robotic arms for tasks like assembly and welding.
-	2. Prismatic Joints (Linear Joints): Unlike revolute joints, prismatic joints allow linear movement along a single axis. Imagine a drawer sliding in and out—it’s a prismatic joint. These are useful for extending or retracting parts of a robot.
-	3. Fixed Joints: These joints do not allow any movement. They keep adjacent links rigidly connected. While fixed joints are not directly involved in motion, they provide stability to the overall robot structure.
-3. Other Types:
-	- Twisting Joints: These joints allow twisting or torsional motion between links. They are less common but find applications in specialized robots.
-	- Orthogonal Joints: These joints create motion at right angles to each other. They combine linear and rotational movements.
-	- Revolving Joints: These joints allow circular motion around an axis. Think of a rotating platform or turntable.
-![[Pasted image 20240229104944.png#invert|]]
-- Problem with ball-and-socket joint:
-	- Are very complex to model, as they allow movement along 3 axis
-	- Its usually approximated using 3 rotational joints
-	- ![[Pasted image 20240229105139.jpg|200]]
+![[Joints]]
+
 
 ## Drive Types
 1. Pneumatic: Expanding and compressing air

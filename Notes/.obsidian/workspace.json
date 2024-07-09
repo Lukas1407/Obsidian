@@ -4,71 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "742c96c9a5b03e01",
+        "id": "b8ac8e95e9df6fe3",
         "type": "tabs",
         "children": [
           {
-            "id": "40919fd0cbae7b99",
+            "id": "fcc41109364c8cad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Wearable Robotic Technologies.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cfe35d83ef45c382",
+            "id": "d3cee60ae1e9db0b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Questions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4cc51c38d45edb41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Off-Policy Actor-Critic Algorithms.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f9702599bfe6c221",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Soft-Actor Critic (SAC).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9eae33ccafd4263b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Variational Inference.md",
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Variational Inference.md",
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Variational Inference.md",
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -207,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Variational Inference.md"
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md"
               }
             }
           },
@@ -242,54 +206,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9eae33ccafd4263b",
+  "active": "d3cee60ae1e9db0b",
   "lastOpenFiles": [
-    "Variational Inference.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Questions.md",
-    "Soft-Actor Critic (SAC).md",
-    "images/Pasted image 20240708123401.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709120154.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Wearable Robotic Technologies.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Free Body Diagram (FBD).md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709115645.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Foot.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114706.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114624.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Knee.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114356.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114325.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114304.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114228.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Hip.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114018.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709113959.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/hiüp.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Spine.md",
+    "Courses/Computational Neurosience/Spinal Cord.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Transmission of Muscle Force to Bone.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Human Shoulder-Arm System.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Elbow.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Shoulder.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Human Hand.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Tendon.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Human Axes.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Body Movements.md",
+    "University Lectures/Current/Anatomie und Physiologie/notes/Primary Motor Cortex.md",
+    "University Lectures/Future/Wearable Robotic Technologies/slides/zusammenfassung-von-anziehbare-robotertechnologien-ss2020_compress.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Cortical Homunculus.md",
+    "University Lectures/Finished/BioBots/notes/Senses/Somatosensory System.md",
+    "University Lectures/Current/Anatomie und Physiologie/notes/Cortex.md",
+    "University Lectures/Finished/BioBots/notes/Robotics/Joints.md",
+    "University Lectures/Finished/BioBots/notes/Robotics/images",
+    "University Lectures/Finished/BioBots/notes/Robotics/Robotics.md",
+    "University Lectures/Current/Medical Imaging Technology/notes/Human Planes.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Transformative Impact of Wearable Humanoids.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Anthropomatics.md",
+    "University Lectures/Future/Wearable Robotic Technologies/slides/WRT_slides.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/slides",
+    "University Lectures/Future/Wearable Robotic Technologies/notes",
+    "University Lectures/Future/Wearable Robotic Technologies",
+    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
+    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
     "images",
-    "University Lectures/Current/Reinforcement Learning/notes/Off-Policy Actor-Critic Algorithms.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Maximum Entropy Reinforcement Learning.md",
-    "Twin-Delayed DDPG (TD3).md",
-    "Deep Deterministic Policy Gradient (DDPG).md",
-    "University Lectures/Current/Reinforcement Learning/notes/QT-Opt.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Differential Trust Region Layers.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Trust Region Policy Optimization (TRPO).md",
-    "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Proximal Policy Optimization (PPO).md",
-    "University Lectures/Current/Reinforcement Learning/notes/Trust-Region Policy Optimization (TRPO).md",
-    "University Lectures/Current/Reinforcement Learning/notes/Natural Gradients.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Fisher Information Matrix (FIM).md",
-    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240404094039.png",
-    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240404093917.png",
-    "University Lectures/Current/Reinforcement Learning/notes/Lagrangian Multipliers.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Value-Function.md",
-    "Distributional RL.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Value-Function Approximation.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
-    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240708104420.png",
-    "University Lectures/Current/Reinforcement Learning/notes/Log-Ratio Trick.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Bias-Variance Trade-off.md",
-    "University Lectures/Current/Reinforcement Learning/notes/images/VI_example-ezgif.com-speed.gif",
-    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240708082827.png",
-    "University Lectures/Current/Reinforcement Learning/notes/images/Untitled.png",
-    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240708081455.png",
-    "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20240309122455.png",
-    "University Lectures/Current/Reinforcement Learning/books",
-    "University Lectures/Current/Reinforcement Learning/exercises/6_offline_rl_solutions.ipynb",
-    "University Lectures/Current/Reinforcement Learning/exercises/6_offline_rl.ipynb",
-    "University Lectures/Current/Reinforcement Learning/exercises/5_stochastic_search_upload.ipynb",
-    "University Lectures/Current/Reinforcement Learning/exercises/5_stochastic_search_solutions.ipynb",
-    "University Lectures/Current/Reinforcement Learning/exercises/4_mbrl_solutions.ipynb",
-    "University Lectures/Current/Reinforcement Learning/exercises/4_mbrl.ipynb",
-    "University Lectures/Current/Reinforcement Learning/exercises/3_policy_gradients_solutions.ipynb",
-    "University Lectures/Current/Reinforcement Learning/exercises/3_policy_gradients.ipynb",
-    "University Lectures/Current/Software Technik 2/notes/images/Pasted image 20240707144352.png",
     "Obsidian/Untitled.canvas"
   ]
 }
