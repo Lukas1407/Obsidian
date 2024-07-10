@@ -1,0 +1,1 @@
+- Pain is sensed by free nerve endings directly in the Dermis

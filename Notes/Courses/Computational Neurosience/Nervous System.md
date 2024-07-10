@@ -19,7 +19,7 @@
 - **Enterisches Nervensystem:** Steuert die Funktionen des Magen-Darm-Traktes und kann unabhängig oder durch das autonome Nervensystem kontrolliert werden.
 #### Funktionelle Klassifikation der Neuronen
 - Sensorische Neurone: Leiten Informationen von den Sinneszellen zum Gehirn. Sie werden auch als afferente Nerven bezeichnet1.
-- Motoneurone: Leiten Reize des Gehirns zur Ausführung bestimmter Bewegungen und Kontraktionen an Muskel- und Drüsenzellen weiter
+- [[Motoneuron]]: Leiten Reize des Gehirns zur Ausführung bestimmter Bewegungen und Kontraktionen an Muskel- und Drüsenzellen weiter
 - Interneurone: Die meisten Nervenzellen im menschlichen Körper sind sogenannte Interneurone. Sie verarbeiten Informationen innerhalb des ZNS
 - Exterozeptoren: Übermitteln Informationen von der Außenwelt über Berührung, Temperatur, Druck und komplexere Sinne wie Sehen, Riechen, Schmecken und Hören.
 - Propriozeptoren: Überwachen Position und Bewegung von Skelettmuskeln und Gelenken.

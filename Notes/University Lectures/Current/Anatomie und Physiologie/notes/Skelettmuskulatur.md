@@ -1,7 +1,7 @@
 > [!tldr] Definition
 > Die Skelettmuskulatur, auch quergestreifte Muskulatur genannt, ist für willkürliche Bewegungen zuständig und zeigt unter dem Mikroskop eine charakteristische Querstreifung.
 
-- Motorische Endplatte: Die Verbindungsstelle zwischen einem motorischen Neuron und einer Muskelfaser, wo die Übertragung von Nervensignalen auf die Muskelfaser stattfindet
+- Motorische Endplatte: Die Verbindungsstelle zwischen einem [[Motoneuron|motorischen Neuron]] und einer Muskelfaser, wo die Übertragung von Nervensignalen auf die Muskelfaser stattfindet
 - Neuromuskuläre/Motorische Einheit: Ein motorisches Neuron und alle Muskelfasern, die es innerviert. Kleine motorische Einheiten steuern etwa 100-300 Muskelfasern, während große motorische Einheiten bis zu 2000 Muskelfasern steuern können
 ## Organisationsebenen
 1. **Skelettmuskel**: Der gesamte Muskel, der aus vielen Muskelfaserbündeln besteht.

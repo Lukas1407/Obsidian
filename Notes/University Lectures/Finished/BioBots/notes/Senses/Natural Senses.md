@@ -8,7 +8,7 @@ During sensation, sense organs collect various stimuli (such as a sound or smell
 2. [[Vision]]
 3. [[Vestibular]]
 4. [[Smell]]
-5. [[Touch]]
+5. [[Touch (Haptic Perception)]]
 6. [[Taste]]
 7. [[Electroreception]]
 8. [[Infrared sensing]]

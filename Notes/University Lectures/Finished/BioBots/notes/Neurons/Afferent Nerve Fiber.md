@@ -1,2 +1,2 @@
 > [!summary] Definition
-> Afferent nerve fibers are [[Axon|axons]] (nerve fibers) of [[Sensory Neurons]] that carry sensory information from [[Sensory Receptors]] to the [[Central Nervous System]]. Many afferent projections arrive at a particular [[Brain]] region. 
+> Afferent nerve fibers are [[Axon|axons]] (nerve fibers) of [[Sensory Neurons]] that carry sensory information from [[Sensory Receptors]] to the [[Central Nervous System (CNS)]]. Many afferent projections arrive at a particular [[Brain]] region. 

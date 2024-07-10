@@ -1,0 +1,12 @@
+- Detect mechanical forces such as stretch or pressure in muscles and other tissues.
+- **Merkel Discs**:
+    - **Location**: Found in the basal epidermis and hair follicles.
+    - **Function**: Sensitive to light touch, they provide detailed information about the surface textures and shapes, crucial for fine tactile discrimination.
+- **Free Nerve Endings**:
+    - **Location**: Distributed throughout the dermis.
+    - **Function**: Primarily responsible for sensing pain, temperature, and crude touch. These receptors detect potentially harmful stimuli, triggering protective reflexes and pain sensations.
+- **Corpuscles**:
+    - **Types**:
+        - **Meissner's Corpuscles**: Located in the dermal papillae, particularly in areas like fingertips and lips, these receptors are sensitive to light touch and changes in texture.
+        - **Pacinian Corpuscles**: Also found deeper in the dermis and subcutaneous tissue, they detect deep pressure and vibration.
+    - **Characteristics**: These corpuscles have a high density in areas highly sensitive to touch, such as fingertips and lips, enhancing tactile acuity and haptic perception.

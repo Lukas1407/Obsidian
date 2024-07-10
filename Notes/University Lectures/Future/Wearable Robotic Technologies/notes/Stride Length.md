@@ -1,0 +1,2 @@
+> [!abstract] Definition
+> The linear distance between two successive placements of the same foot, essentially measuring how far you move with each cycle of steps. It is double the step length since a stride consists of two steps (one by each foot). 

@@ -1,0 +1,3 @@
+- A nociceptor is a sensory neuron that responds to damaging or potentially damaging stimuli by sending "possible threat" signals to the spinal cord and the brain
+- -> [[Pain Perception]]
+- This is typically done through free nerve endings directly in the Dermis

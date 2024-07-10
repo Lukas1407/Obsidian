@@ -31,11 +31,11 @@
 | **Nägel**                                             | Schützen und festigen Finger- und Zehennägel                                                                                                                                    |
 | **Rezeptoren**                                        | Empfangen Reize durch Berührung, Druck, Temperatur und Schmerz                                                                                                                  |
 | ** Subkutis**                                         | Speichert Fett<br>Verbindet die Haut mit den tieferen Strukturen                                                                                                                |
-| **[[Central Nervous System\|ZNS]]**                   | Kontrollzentrum für das Nervensystem<br>Verarbeitet Eindrücke<br>Übernimmt kurzzeitig die Kontrolle über die Aktivitäten anderer Systeme                                        |
+| **[[Central Nervous System (CNS)\|ZNS]]**                   | Kontrollzentrum für das Nervensystem<br>Verarbeitet Eindrücke<br>Übernimmt kurzzeitig die Kontrolle über die Aktivitäten anderer Systeme                                        |
 | **Gehirn**                                            | Vollführt komplexe integrative Leistungen<br>Kontrolliert sowohl willkürliche ans auch unwillkürliche Aktivitäten                                                               |
 | **Rückenmark**                                        | Leitet Informationen zum und vom Gehirn<br>Vollführt einfache integrative Leistungen <br>Steuert viele einfache unwillkürliche Aktivitäten                                      |
 | **Sinnesorgane**                                      | Vermitteln Sinneseindrücke                                                                                                                                                      |
-| [[Peripheral Nervous System\|PNS]]                    | Verbindet das ZNS mit anderen Systemen und Sinnesorganen                                                                                                                        |
+| [[Peripheral Nervous System (PNS)\|PNS]]                    | Verbindet das ZNS mit anderen Systemen und Sinnesorganen                                                                                                                        |
 ## Organsysteme
 - Gruppen von Organen, die zusammenarbeiten, um gemeinsame Funktionen auszuführen, wie das Verdauungssystem oder das Atmungssystem
 

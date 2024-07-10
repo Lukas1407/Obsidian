@@ -1,0 +1,5 @@
+Ground Reaction Forces are the forces exerted by the ground on the body in response to the forces the body exerts on the ground. These are measured during walking to understand the dynamics of movement and are crucial for evaluating gait efficiency and diagnosing potential issues.
+## Types of GRF:
+ - **Vertical GRF**: This is the primary force component and acts upward, opposing the gravitational pull on the body. The first image shows this as the vertical component of the GRF, which fluctuates as each foot strikes the ground and lifts off, seen in the peaks corresponding to the stance phases of each foot.
+ - **Anterior-Posterior GRF**: These forces are directional and relate to the movement of the body over the feet. As shown in panel D of the first image, the force moves from anterior (forward) during heel strike, to posterior (backward) as the foot rolls forward towards toe-off. This helps in propelling the body forward.
+ - **Medial-Lateral GRF**: Shown in panel E of the first image, these forces act sideways and are generally smaller. They reflect the side-to-side stability of the gait and are important for maintaining balance.

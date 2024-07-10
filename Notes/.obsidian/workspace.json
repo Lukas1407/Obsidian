@@ -20,12 +20,24 @@
             }
           },
           {
-            "id": "d3cee60ae1e9db0b",
+            "id": "b63360c7af15c6ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md",
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c0c65cca529c4cd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Master Motor Map (MMM).md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md",
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md",
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md"
+                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md"
               }
             }
           },
@@ -206,54 +218,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d3cee60ae1e9db0b",
+  "active": "b63360c7af15c6ca",
   "lastOpenFiles": [
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709120154.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710104642.png",
     "University Lectures/Future/Wearable Robotic Technologies/notes/Wearable Robotic Technologies.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Biomechanics of the Ankle Joint.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Free Body Diagram (FBD).md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709115645.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Foot.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114706.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114624.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Knee.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114356.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114325.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114304.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114228.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Hip.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709114018.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240709113959.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/hiüp.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Spine.md",
-    "Courses/Computational Neurosience/Spinal Cord.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Transmission of Muscle Force to Bone.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Human Shoulder-Arm System.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Elbow.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Shoulder.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Human Hand.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Tendon.md",
-    "University Lectures/Current/Medical Imaging Technology/notes/Human Axes.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Body Movements.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Primary Motor Cortex.md",
-    "University Lectures/Future/Wearable Robotic Technologies/slides/zusammenfassung-von-anziehbare-robotertechnologien-ss2020_compress.pdf",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Cortical Homunculus.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710103807.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710103452.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710103431.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Master Motor Map (MMM).md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Statistic Anthropomorphic Model.md",
+    "Statistic/Anthropomorphic Model.md",
+    "Statistic",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Dynamic Model.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Kinematic Model.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710093804.png",
+    "University Lectures/Future/Wearable Robotic Technologies/papers/Terlemez2014.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/papers/Mandery2016b.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/papers",
+    "University Lectures/Current/Anatomie und Physiologie/notes/Proprioceptors.md",
+    "University Lectures/Current/Anatomie und Physiologie/notes/Sensory Receptors.md",
     "University Lectures/Finished/BioBots/notes/Senses/Somatosensory System.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Cortex.md",
-    "University Lectures/Finished/BioBots/notes/Robotics/Joints.md",
+    "University Lectures/Finished/BioBots/notes/Senses/Proprioception.md",
+    "University Lectures/Finished/BioBots/notes/Senses/Touch (Haptic Perception).md",
+    "University Lectures/Finished/BioBots/notes/Senses/images/Pasted image 20240710092552.png",
+    "University Lectures/Finished/BioBots/notes/Senses/images",
+    "University Lectures/Current/Anatomie und Physiologie/notes/Nociceptors.md",
+    "University Lectures/Finished/BioBots/notes/Senses/Pain Perception.md",
+    "University Lectures/Current/Anatomie und Physiologie/notes/Mechanoreceptors.md",
+    "University Lectures/Finished/BioBots/notes/Reflex.md",
+    "University Lectures/Finished/BioBots/notes/images/Pasted image 20240710091457.png",
+    "University Lectures/Finished/BioBots/notes/images/Pasted image 20240710091439.png",
+    "University Lectures/Finished/BioBots/notes/images/Pasted image 20240710091418.png",
+    "University Lectures/Finished/BioBots/notes/images/Pasted image 20240710091400.png",
+    "University Lectures/Finished/BioBots/notes/images/Pasted image 20240710091344.png",
+    "University Lectures/Current/Anatomie und Physiologie/notes/Primary Motor Cortex.md",
+    "University Lectures/Finished/BioBots/notes/Senses/Sensory Nervous System.md",
+    "Courses/Computational Neurosience/Motor Unit.md",
+    "Courses/Computational Neurosience/Motoneuron.md",
+    "University Lectures/Current/Anatomie und Physiologie/notes/Skelettmuskulatur.md",
+    "Courses/Computational Neurosience/Nervous System.md",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/Neuro-Musculoskeletal System.md",
+    "Courses/Computational Neurosience/Peripheral Nervous System (PNS).md",
+    "Courses/Computational Neurosience/Central Nervous System (CNS).md",
+    "University Lectures/Future/Wearable Robotic Technologies/slides/zusammenfassung-von-anziehbare-robotertechnologien-ss2020_compress.pdf",
     "University Lectures/Finished/BioBots/notes/Robotics/images",
-    "University Lectures/Finished/BioBots/notes/Robotics/Robotics.md",
-    "University Lectures/Current/Medical Imaging Technology/notes/Human Planes.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Transformative Impact of Wearable Humanoids.md",
     "University Lectures/Future/Wearable Robotic Technologies/notes/images",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Anthropomatics.md",
     "University Lectures/Future/Wearable Robotic Technologies/slides/WRT_slides.pdf",
     "University Lectures/Future/Wearable Robotic Technologies/slides",
-    "University Lectures/Future/Wearable Robotic Technologies/notes",
-    "University Lectures/Future/Wearable Robotic Technologies",
-    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
-    "University Lectures/Current/Medical Imaging Technology/slides/MIT2_slides_combined.pdf",
-    "images",
     "Obsidian/Untitled.canvas"
   ]
 }

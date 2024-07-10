@@ -1,2 +1,0 @@
-> [!summary] 
-> The peripheral nervous system (PNS) is one of two components that make up the [[Nervous System]], with the other part being the [[Central Nervous System]] (CNS). The PNS consists of [[Nerves]] and [[Ganglia]], which lie outside the [[Brain]] and the [[Spinal Cord]]. The main function of the PNS is to connect the [[Central Nervous System|CNS]] to the limbs and organs, essentially serving as a relay between the brain and [[Spinal Cord]] and the rest of the body. 

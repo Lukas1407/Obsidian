@@ -34,3 +34,17 @@ Smooth muscle is present in many parts of the body, including:
 - **Respiratory Tract:** Helping regulate airway constriction and dilation.
 
 Despite being structurally similar across different organs, the stimuli that activate smooth muscle vary, allowing it to fulfill specific functions at the right times. For example, mesangial cells in the kidneys, which resemble smooth muscle cells, help regulate blood filtration. The adaptability of smooth muscle is crucial for maintaining homeostasis and responding to the body’s changing needs.
+
+## Key Properties of Muscles
+1. **Irritability (Excitability)**:
+   - **Definition**: The ability of muscle tissue to respond to a stimulus.
+   - **Mechanism**: When stimulated by motor neurons, which release neurotransmitters, muscle fibers react by initiating contraction.
+2. **Contractility**:
+   - **Definition**: The capacity of a muscle to generate force by shortening against resistance.
+   - **Extent**: Some skeletal muscles can shorten to about 50-70% of their resting length, allowing for significant movement and force generation.
+3. **Extensibility**:
+   - **Definition**: The capability of a muscle to stretch or extend beyond its normal resting length.
+   - **Dependence**: Muscles themselves cannot elongate actively; they require an external force or the action of an opposing muscle for this extension.
+4. **Elasticity**:
+   - **Definition**: The ability of muscle to return to its original length after being stretched.
+   - **Limit**: If a muscle is overstretched beyond its capacity, it risks damage or tearing.

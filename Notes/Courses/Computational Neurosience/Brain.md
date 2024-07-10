@@ -2,7 +2,7 @@ The brain consumes $1/4$ of the energy while only being $1/15$ of the body's mas
 ![[Neuron#^517305]]
 The brain consists of different [[Brain Regions]], responsible for different tasks.
 ## Signal Processing
-- The [[Central Nervous System]] is responsible for the signal transport
+- The [[Central Nervous System (CNS)]] is responsible for the signal transport
 - The Brain is responsible for the signal processing
 - Problem: Our brain gets bombarded with a lot more information than we can process:
 	- $10⁷$ bits/s from seeing 
