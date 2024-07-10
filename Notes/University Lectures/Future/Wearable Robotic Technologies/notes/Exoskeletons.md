@@ -19,13 +19,16 @@
    - **Parallel**: Joints and limbs have concurrent connections, often resulting in more robust and stable configurations.
    - **Hybrid**: Combines elements of both serial and parallel configurations.
 ### Actuation:
-   - **Electric**: Powered by electric motors, often used for precise control.
-   - **Pneumatic**: Utilizes air pressure for movement, offering lightweight solutions.
-   - **Hydraulic**: Uses fluid pressure to achieve high force output, suitable for heavy-duty applications.
+- **Electric (72%)**: Most common due to their ease of control, efficiency, and quiet operation.
+- **Hydraulic (5%)**: Used for applications requiring high force and precise control but are less common due to their bulk and maintenance requirements.
+- **Pneumatic (20%)**: Frequently used where lighter and more compliant actuation systems are needed, though they can be less precise.
+- **Other (3%)**: Includes newer or less common technologies.
 ### **Power Transmission**:
-   - **Gear**: Uses gears to transmit power efficiently.
-   - **Cable**: Uses cables, which can make the system lighter and more flexible.
-   - **Belt**: Uses belts to transmit power, which can reduce noise and vibration.
+- **Motor - Cable Drive (26%)**: Uses cables to transfer force, allowing for flexible configurations and reduced weight.
+- **Motor - Gear Drive (21%)**: Utilizes gears to increase torque output, suitable for compact designs needing high power.
+- **Motor - Other (25%)**: Could include belts, chains, or direct drives, each with unique advantages for specific applications.
+- **Pneumatic - Pneumatic (14%)** and **Pneumatic - Other (8%)**: Pneumatic systems using air pressure, often in more specialized applications.
+- **Hydraulic - Oil (3%)**: Employs hydraulic fluid to transmit power, offering high force and precise control.
 ### Control Methods:
    - **Impedance**: Modifies mechanical impedance to adapt to changes in the environment.
    - **Force**: Direct force control for robust interactions.
@@ -35,9 +38,26 @@
    - **FMG (Force Myography)**: Uses pressure sensors over muscles to detect changes in muscle shape.
    - **Mechanical**: Direct mechanical linkage to the human body.
 ### Application Areas:
-   - **Rehabilitation**: Assists with recovery from injury by supporting weakened limbs.
-   - **Augmentation**: Enhances the strength or endurance of the wearer.
-   - **Substitution**: Replaces lost functionality, such as in cases of limb amputation.
+#### Rehabilitation
+- **Purpose**: These exoskeletons are designed to aid in the rehabilitation process of patients recovering from injuries or medical conditions affecting their mobility.
+- **Key Features**:
+    - **Monitoring Health and Progress**: Capable of gathering data to assess the patient's recovery over time.
+    - **Adaptability**: Ability to adjust its support as the patient's condition improves or changes.
+    - **Torque and Trajectories**: Provides sufficient torque to fully assist or perform movements if the patient is unable to do so themselves, with precise control over the movement paths.
+    - **Power Source**: Can be either tethered (connected to a power source) or battery-operated, depending on the need for mobility and the duration of use.
+#### Augmentation
+- **Purpose**: Augmentation exoskeletons are used to enhance the physical capabilities of the user, often in industrial or military applications.
+- **Key Features**:
+    - **Natural Motion Follow**: Designed to complement and enhance the user’s natural movements without obstructive interference.
+    - **Torque**: Provides additional force to assist in tasks, reducing the user’s physical strain.
+    - **Actuation Speed**: Fast actuation to keep pace with dynamic movements.
+    - **Kinematic Compatibility and Battery**: Must have good kinematic alignment with the user’s body and sufficient battery capacity for extended use without frequent recharges.
+#### Substitution
+- **Purpose**: Aimed at completely substituting the motor functionality for individuals with severe disabilities or to perform specific tasks that are otherwise humanly impossible.
+- **Key Features**:
+    - **Daily Activities**: Enables users to perform daily activities independently.
+    - **Torque and Trajectories**: Provides strong enough torque to support or carry the user’s full weight and can generate complete movement trajectories needed for various activities.
+    - **Battery Capacity**: Requires a robust battery system to ensure prolonged use without frequent recharging.
 ### Assistance Type
 - What comes after one ensures the kinematic compatibility?
 - Kinematic compatibility is easy to observe 
@@ -78,7 +98,7 @@
 - **Example Applications**:
     - Substitution of lost functionalities, such as for stroke survivors.
     - Rehabilitation to assist recovery from injuries.
-- **Example Devices**: NEUROExos, Ekso Bionic Suit, HAL, KIT-EXO.
+- **Example Devices**: [[NEUROExos]], Ekso Bionic Suit, HAL, KIT-EXO.
 ### 3. Kinematically Different Exoskeletons
 **Description**: These also attach to every segment of the limb but use multiple joints for each human joint, providing greater flexibility and potentially more precise control.
 - **Advantages**:
@@ -90,7 +110,7 @@
 - **Example Applications**:
     - Extensively used in rehabilitation for more comprehensive support.
     - Strength augmentation for physically demanding tasks to reduce fatigue and injury risk.
-- **Example Devices**: HARMONY, iT-Knee, UtahKnee.
+- **Example Devices**: [[HARMONY]], iT-Knee, UtahKnee, [[CAREX]]
 ### 4. Soft Exosuits
 **Description**: Made from soft fabrics and actuated typically via Bowden cables, these suits offer support without rigid structures, focusing on enhancing basic movements.
 - **Advantages**:
@@ -102,7 +122,7 @@
 - **Example Applications**:
     - Gait assistance for patients with muscle weakness, aiding in everyday mobility.
     - Augmentation of healthy users in activities that require extended physical effort.
-- **Example Devices**: Harvard Soft Exosuit, Myosuit.
+- **Example Devices**: Harvard Soft Exosuit, Myosuit, [[CRUX]]
 
 ## Kinematic Incompatibilities (Misalignments)
 - The critical issue of kinematic incompatibilities or misalignments between a wearable exoskeleton and the human limb it is intended to assist or enhance. 
@@ -165,3 +185,129 @@ Given the challenges posed by both macro- and micro-misalignments, designing exo
 ### Implications for Exoskeleton Design
 - **Lightweight Construction**: To minimize the negative effects of added mass, exoskeletons should be as lightweight as possible, especially in components attached to the feet or other moving parts of the body.
 - **Optimal Mass Distribution**: Designers need to consider where to place additional mass to minimize its impact on the wearer's energy expenditure. Placing mass closer to the body's core (e.g., waist) rather than the extremities can help reduce the metabolic cost.
+## Exoskeleton Evaluation – Biofeedback
+The evaluation of exoskeletons in terms of their effectiveness and user impact often involves biofeedback metrics like muscle activity, heart rate, and analysis of respiratory gases. Each of these metrics provides insights into how much effort a user is exerting while using the exoskeleton and can indicate the device's effectiveness or areas for improvement.
+### Muscle Activity
+- **What it Measures**: Muscle activity is directly measured through techniques like electromyography (EMG), which records the electrical activity produced by skeletal muscles. Lower muscle activity while using the exoskeleton suggests that the device is effectively reducing the user's effort.
+- **Challenges**:
+    - **Limited Coverage**: Typically, only a few muscles are measured directly due to practical limitations. This can lead to incomplete data, as the human body might compensate by increasing effort in muscles that are not being monitored.
+    - **Co-contraction**: This refers to the simultaneous contraction of agonist and antagonist muscles, which might increase despite reduced activity in the targeted muscles, thus complicating the interpretation of muscle activity data.
+![[Pasted image 20240710105451.png#invert|400]]
+- Shows how different spring stiffness in an exoskeleton affects metabolic expenditure and muscle activity. Notably, a specific stiffness (around 100 N m rad^-1) is shown to minimize metabolic rate, indicating an optimal balance that potentially reduces user effort.
+### Heart Rate
+- **What it Measures**: Heart rate monitoring is another common method to infer user effort. Generally, a lower heart rate during task performance would indicate less physical strain.
+- **Challenges**:
+    - **Confounding Factors**: Heart rate can be influenced by a variety of factors beyond physical exertion, such as emotional stress, environmental conditions, and individual health status. This variability can make heart rate a less reliable indicator of physical effort alone.
+![[Pasted image 20240710105514.png#invert|200]]
+- Illustrates the relationship between exercise intensity and heart rate. This graph could be used to study how using an exoskeleton affects heart rate at various levels of physical activity, although the specific context for exoskeleton use isn't provided in this graph alone.
+### Respiratory Gases
+- **How it is Measured**: This method involves analyzing the gases that the user inhales and exhales, specifically looking at oxygen consumption.
+- **Process**:
+    - **Measurement of Oxygen Uptake**: The difference between the amount of oxygen inhaled and the amount exhaled during respiration is measured. A decrease in exhaled oxygen relative to inhaled oxygen indicates that more oxygen is being utilized by the body, which implies greater metabolic activity and energy expenditure.
+- **Reliability**: Analyzing respiratory gases is considered more reliable than the previous methods because it provides a direct measure of metabolic rate. However, it is more complex and can be tedious, requiring specific equipment and controlled testing environments.
+## Design Process for Arm Exoskeletons
+### 1. **Definition of Requirements**
+- **Task Analysis**: Initially, the tasks for which the exoskeleton is intended must be clearly defined. For arm exoskeletons, this often involves analyzing movements required in activities of daily living (ADLs). The process for designing lower limb exoskeletons follows a similar structure but focuses on different tasks relevant to leg function.
+- **Motion Recording**: Movements of the human arm are recorded using advanced motion capture systems (like Vicon with 10 cameras) to gather precise data on how the arm moves during various activities. This data is crucial for designing joints and mechanisms that can mimic or support these movements.
+- **Alternative Data Sources**: Besides direct motion capture, designers can also use existing motion databases or literature to inform their designs, especially if certain specific movements have been well-documented previously.
+### 2. **Motion Analysis**
+- **Activities Selection**: The specific activities selected for analysis often include general reaching tasks, functional tasks like eating and drinking, and hygiene-related tasks. These categories cover a broad range of essential daily activities that an exoskeleton might need to assist with.
+- **Torque Calculation**: Understanding the forces involved in arm movements is crucial. Torque calculations can be performed using software like Cosmos/Motion in Solidworks, or through analytical approaches using tools like Autolev or Online Dynamics.
+### 3. **Human Motion Analysis**
+- **Joint Angle and Torque Distribution**: Analyzing the statistical distribution of joint angles and torques during these activities helps in understanding the natural range and force with which human joints operate. This step is essential for ensuring that the exoskeleton can accommodate and support these natural movements without causing strain or discomfort.
+### 4. **Joint Kinematic and Dynamic Analysis**
+- **Range of Motion (ROM)**: Identifying the range of motion required for each joint in the arm ensures that the exoskeleton can fully support or enhance all necessary movements.
+- **Root Mean Square (RMS)**: This statistical measure can be used to analyze the variability and typical values of joint angles and torques, providing a robust foundation for design decisions.
+- **Workspace and Torque Requirements**: From the pilot study on ADL, designers generate data tables that detail the workspace (the volume of space within which all necessary movements occur) and torque requirements for the exoskeleton. This data highlights critical areas like elbow flexion-extension and forearm prono-supination, where a significant range of motion (up to 150°) is necessary.
+### Joint Configurations
+- Three exoskeleton configurations that achieve rotation about the long axis of a limb segment
+![[Pasted image 20240710110353.png#invert|300]]
+#### Configuration a) Proximally Placed Single DOF
+- **Description**: This configuration places a single degree of freedom (DOF) joint proximally (near the base) along the limb segment. The joint’s axis of rotation aligns with the limb's anatomical axis.
+- **Advantages**:
+  - Simplicity in design allows for easier integration and maintenance.
+  - Placing heavy components like bearings and actuators close to the body reduces the inertia effects, which can lower power consumption.
+- **Disadvantages**:
+  - Placement may cause interference during certain movements, such as shoulder abduction, where the natural movement of the shoulder can be restricted by the exoskeleton’s structure.
+#### Configuration b) Circumferentially Placed Single DOF
+- **Description**: This setup positions the single-DOF joint axially between the ends of the limb segment. It uses a bearing whose minimum radius is larger than the limb's maximum radius to allow free rotation around the segment axis.
+- **Advantages**:
+  - Reduces the human-machine interference found in configuration a) by positioning the joint away from areas where the limb has extensive interaction with the exoskeleton.
+- **Disadvantages**:
+  - Full 360-degree bearings can interfere with the torso, particularly when the arm is at rest or during movements bringing the arm close to the body.
+  - Modifications like using a partial bearing attached to the proximal link of the exoskeleton can alleviate this interference but may compromise the range of motion.
+#### Configuration c) Three Parallel, Non-Collinear DOFs
+- **Description**: Involves a primary axis that is displaced away from the anatomical axis, supplemented by at least two additional non-collinear axes to correct for the displacement and ensure accurate rotation.
+- **Advantages**:
+  - Avoids the interference issues noted in configurations a) and b) by laterally displacing the joint axis from the limb's natural axis of rotation.
+- **Disadvantages**:
+  - Adds significant complexity and weight to the exoskeleton design because of the additional joints required to maintain proper rotation dynamics.
+  - This complexity can increase the cost, maintenance requirements, and reduce reliability if not designed meticulously.
+### Strength-to-Weight and Energy-to-Weight Ratios
+- **Importance**: These ratios are crucial for the feasibility and functionality of exoskeletons. The strength-to-weight ratio relates to the amount of weight a material or structure can support relative to its weight, crucial for making exoskeletons both strong and lightweight. The energy-to-weight ratio concerns the amount of energy a power supply can deliver relative to its weight, important for the autonomy and mobility of the exoskeleton.
+- **Challenges**: Currently, the available materials, electric motors, and power supplies may not offer the optimal balance necessary for developing mobile, partial-body upper limb exoskeletons. These limitations can affect the exoskeleton's performance, making it either too heavy or insufficiently powerful for extended use without frequent recharges.
+- **Implications**: Because of these limitations, there is often a need to design full-body exoskeletons that can distribute the weight of power supplies, onboard controllers, and other hardware more effectively across the user's body. This distribution helps manage the weight and maintain balance, although it complicates the design and increases the overall size of the exoskeleton.
+### Safety Considerations
+- **Levels of Safety**:
+  - **Mechanical Safety**: Ensures that the exoskeleton does not cause physical harm through sharp edges, pinch points, or uncontrolled movements.
+  - **Hardware Safety**: Involves reliable and fail-safe mechanical components, robust electrical systems, and emergency stop mechanisms.
+  - **Software Safety**: Includes software that can handle errors gracefully, manage unexpected inputs without crashing, and ensure reliable control over all operations.
+- **Self-Collisions**: An essential safety concern where parts of the exoskeleton might collide with the user's own body or with other parts of the exoskeleton, potentially causing injury or damage.
+- **Human-Exoskeleton Interface**:
+  - **Non-invasive Interfaces**: Interfaces that do not penetrate the skin and include straps, vests, and cuffs. These are generally safer and less likely to cause complications.
+  - **Invasive Interfaces**: Interfaces that involve surgical implants or other methods that penetrate the skin, offering more direct control at a higher risk of infection and other medical complications.
+### Singularity Analysis
+- **Mechanical Singularities**: Points in the range of motion of a joint system where the control or behavior of the exoskeleton becomes undefined or highly unpredictable. These can occur if the alignment of rotational axes causes the mechanical degrees of freedom to overlap or align precisely.
+- **Example Issues**:
+  - **Between Joints 1 and 3**: Around the shoulder internal-external rotation axis in configurations (a) and (b), where typical configurations can lead to limitations in movement or control difficulties.
+  - **Between Joints 3 and 5**: Occurs in full elbow extension, where the arm is fully straightened, potentially leading to control instability or mechanical lock-up.
+- **Solutions**: Rearranging joints to move mechanical singularities to less used locations of the exoskeleton’s range of motion can mitigate these issues, enhancing both the safety and functionality of the device.
+
+## Hand Exoskeletons
+Designing hand exoskeletons poses unique challenges and requirements due to the complex anatomy and functional importance of the human hand. These devices must meet specific criteria to ensure they are effective and comfortable for users. Here’s a breakdown of the requirements and challenges associated with hand exoskeletons:
+### Requirements of Hand Exoskeletons
+#### 1. **Wearability**
+- **Lightweight Structure**: The exoskeleton must be light enough not to burden the user or impede natural movements.
+- **Portable Actuation System**: It needs a portable system that can generate the necessary forces to assist or resist during hand movements without requiring fixed, bulky external equipment.
+#### 2. **Adaptability**
+- **Versatility in Fit**: The device should accommodate various hand sizes, shapes, and ranges of motion (ROM). Research indicates that up to four different biomechanical models are necessary to cover the entire population adequately.
+- **Rehabilitation Utility**: The exoskeleton should support multiple rehabilitation protocols to cater to different hand disorders, making it a versatile tool in therapeutic settings.
+#### 3. **Comfort**
+- **Ergonomic Design**: The mechanism should be lightweight and feature a well-distributed human-exoskeleton interface that avoids discomfort or safety hazards. Proper alignment is crucial to prevent stress on the musculoskeletal structure.
+### Challenges of Hand Exoskeletons
+![[Pasted image 20240710122334.png#invert|200]]
+#### 1. **Alignment and Anatomy**
+- The intricate structure of the hand, with its complex joints and limited space, makes it difficult to design exoskeletons that align well without interfering with natural movement.
+- Achieving a perfect alignment with the hand’s anatomy, particularly at the joints, is a major technical challenge due to the dynamic nature of hand movements.
+#### 2. **Joint-Specific Issues**
+- **Finger Joints**: 
+  - **DIP and PIP Joints**: These are primarily hinge joints where misalignments are minimal but still crucial for precise movement.
+  - **MCP Joints**: These ellipsoidal joints present several difficulties:
+    - The distance between MCP and PIP joints changes during flexion.
+    - The center of rotation at these joints also shifts during movement.
+    - Traditional designs struggle to align actuation systems like pulleys with the joint’s rotational axis due to these changes.
+#### 3. **Thumb Challenges**
+- **Opposition and Manipulation**: The thumb plays a critical role in grasping and manipulation tasks, making its functionality crucial in hand exoskeleton designs.
+- **Design Solutions**: Some portable exoskeletons, such as the HandExos, specifically address thumb opposition to enhance the device's effectiveness in supporting hand functions.
+### Hand Structure and Synergies
+- **High-Dimensional Configuration Space**: The hand comprises 27 bones, 18 joints, and 21 degrees of freedom (DoFs), managed by 39 intrinsic and extrinsic muscles. This complexity makes direct replication challenging in robotic systems like exoskeletons.
+- **Synergies**: These are simplified control strategies that allow complex hand movements to be achieved by coordinating the activation of multiple joints and muscles. Synergies reduce the dimensionality of hand control, making it more feasible to replicate with robotics.
+- **Types of Synergies**:
+  - **Postural Synergies**: Involve patterns of joint rotations that typically occur together, such as the flexion-extension movements of the DIP (distal interphalangeal) and PIP (proximal interphalangeal) joints.
+  - **Muscle Actuation Synergies**: Include coordinated movements like abduction (movement away from the central axis of the body) and adduction (movement toward the body).
+### Muscle Synergies
+- **Definition**: Muscle synergies refer to the invariant, coordinated activations of groups of muscles that the central nervous system uses to create patterns of muscle activity for movement execution.
+- **Observation and Extraction**: These are typically observed through electromyography (EMG) studies, which monitor muscle activations.
+- **Types**:
+  - **Static Synergies**: Analyze muscle activations during a static grasp using dimensionality reduction techniques like principal component analysis (PCA).
+  - **Synchronous Synergies**: Involve time-dependent linear combinations of static synergies.
+  - **Time-Variant Synergies**: Describe entire motion patterns as linear combinations of time-dependent synergy trajectories, allowing for dynamic modeling of hand movements.
+### Application to Robotics
+- **Design Relevance**: Understanding and applying hand synergies in robotic design, such as hand exoskeletons, allows for the development of more natural, efficient, and capable robotic systems.
+- **Implementation**:
+  - **Exploration Techniques**: These can include analysis based on brain control or muscle activation, manipulation task trajectories, and grasping data. PCA and other statistical methods are often used to identify and extract these synergies.
+  - **Optimization**: In robotic hands, synergies can guide the optimization of tendon routing to replicate the complex motions of the human hand more accurately.
+### Challenges and Considerations
+- **Decodability of Tasks**: While synergies provide a powerful framework for reducing the complexity of hand movements, they do not automatically explain the specific tasks the hand can perform. The relationship between specific synergies and tasks often requires additional analysis.
+- **Biomechanical Couplings**: Synergies reveal the biomechanical relationships between muscle activations, offering insights into the structural and functional constraints within which the human hand operates.
+
