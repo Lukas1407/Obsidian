@@ -23,10 +23,10 @@ Zusätzlich hat die Formel $C$ nur solche Variablen (auch **Atome** genannt), di
   - Eine mögliche Interpolante ist $P_1$, da $P_1$ sowohl in $A$ als auch in $B$ vorkommt.
   - Hier ist $P_1 \land P_2 \models P_1$  und $P_1 \models P_1$
 
-#### Beispiel 3:  $P_1 \rightarrow P_1 lor P_3$
+#### Beispiel 3:  $P_1 \rightarrow P_1 \lor P_3$
 - Formeln:
   -  $A = P_1$
-  -  $B = P_1 lor P_3$ 
+  -  $B = P_1 \lor P_3$ 
 - **Interpolante  $C$** :
   - Eine mögliche Interpolante ist $P_1$, da $P_1$ sowohl in $A$ als auch in B vorkommt.
   - Hier ist $P_1 \models P_1 \lor P_3$ und $P_1 \models P_1$

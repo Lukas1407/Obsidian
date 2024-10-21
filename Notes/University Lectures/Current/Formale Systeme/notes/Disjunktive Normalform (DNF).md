@@ -7,10 +7,6 @@
   - Jede Zeile, in der die Formel wahr ist, entspricht einem Minterm.
   - Diese Minterme werden dann zu einer disjunktiven Normalform kombiniert.
 
-- **Direktes Ablesen der KNF**:
-  - Jede Zeile, in der die Formel falsch ist, entspricht einem Maxterm (Negation).
-  - Diese Maxterme werden dann zu einer konjunktiven Normalform kombiniert.
-
 ### Beispiel für die Herstellung der Normalformen
 Nehmen wir eine logische Formel: $$A = (P \land \neg Q) \lor R$$
 #### Wahrheitstafel für $A$

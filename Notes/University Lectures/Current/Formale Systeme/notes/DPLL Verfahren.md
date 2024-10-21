@@ -2,7 +2,6 @@
 > Das Davis-Putnam-Logemann-Loveland-Verfahren, kurz DPLL-Verfahren, ist ein zentrales Verfahren zur Lösung des Erfüllbarkeitsproblems ([[SAT Problem]]) für logische Formeln in [[Konjunktive Normalform (KNF)]].
 
 ## Grundlegende Konzepte des DPLL-Verfahrens 
-
 1. **Literale und Variablen**:
    - Ein Literal ist eine Variable oder deren Negation (z.B. $A$ oder $\neg A$).
 2. **[[Klausel]]**:
@@ -47,42 +46,6 @@ $$C = (A \lor \neg B) \land (\neg A \lor B \lor C) \land (\neg C \lor B) \land (
 
 Die Formel ist erfüllbar, da wir eine Zuweisung gefunden haben: $A = wahr$, $B = wahr$, $C = wahr$.
 
-## Python-Implementierung
-Hier ist eine Python-Implementierung des DPLL-Verfahrens, die dieses Beispiel veranschaulicht:
-
-```python
-def dpll(clauses, assignment):
-    # Entfernen von erfüllten Klauseln
-    clauses = [clause for clause in clauses if not any(literal in assignment for literal in clause)]
-    
-    # Entfernen von negierten Literalen
-    clauses = [[literal for literal in clause if -literal not in assignment] for clause in clauses]
-
-    # Leere Klausel bedeutet unerfüllbar
-    if any(len(clause) == 0 for clause in clauses):
-        return False
-    
-    # Keine Klauseln mehr, bedeutet erfüllbar
-    if not clauses:
-        return True
-
-    # Einheitsklausel-Ausbreitung
-    for clause in clauses:
-        if len(clause) == 1:
-            literal = clause[0]
-            return dpll(clauses, assignment + [literal])
-
-    # Variable wählen und zuweisen
-    literal = clauses[0][0]
-    return dpll(clauses, assignment + [literal]) or dpll(clauses, assignment + [-literal])
-
-# Definition der Klauseln
-clauses = [[1, -2], [-1, 2, 3], [-3, 2], [-1, -3]]
-
-# Start des DPLL-Verfahrens
-result = dpll(clauses, [])
-print(f"Die Formel ist {'erfüllbar' if result else 'unerfüllbar'}")
-```
 ## Theorem DPLL
 1. **Terminierung**:
    - Der DPLL-Algorithmus terminiert für jede Eingabe. Das bedeutet, dass der Algorithmus immer zu einem Ergebnis kommt und nicht in einer Endlosschleife festhängt.

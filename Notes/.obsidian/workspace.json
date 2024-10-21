@@ -4,31 +4,63 @@
     "type": "split",
     "children": [
       {
-        "id": "b8ac8e95e9df6fe3",
+        "id": "9764da439b425cc3",
         "type": "tabs",
         "children": [
           {
-            "id": "fcc41109364c8cad",
+            "id": "e4069c7b85effd66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Wearable Robotic Technologies.md",
+                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation"
             }
           },
           {
-            "id": "b63360c7af15c6ca",
+            "id": "89b3f8767ecd9ad1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md",
+                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Normatives Argumentieren und empirisches Wissen.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Normatives Argumentieren und empirisches Wissen"
+            }
+          },
+          {
+            "id": "8572a2d931e8dd8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Deskriptiv vs. Normativ.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Deskriptiv vs. Normativ"
+            }
+          },
+          {
+            "id": "308be2f50143090f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Ethik.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ethik"
             }
           }
         ],
@@ -58,7 +90,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -66,7 +100,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -76,7 +112,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTime"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
         ],
@@ -92,7 +130,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
@@ -115,7 +155,9 @@
             "type": "leaf",
             "state": {
               "type": "timeline",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Day Planner Timeline"
             }
           }
         ]
@@ -131,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md",
+                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Normatives Argumentieren und empirisches Wissen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +181,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Normatives Argumentieren und empirisches Wissen"
             }
           },
           {
@@ -148,10 +192,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md",
+                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Normatives Argumentieren und empirisches Wissen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Normatives Argumentieren und empirisches Wissen"
             }
           },
           {
@@ -162,7 +208,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -171,8 +219,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md"
-              }
+                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Normatives Argumentieren und empirisches Wissen.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Normatives Argumentieren und empirisches Wissen"
             }
           },
           {
@@ -180,7 +230,9 @@
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
-              "state": {}
+              "state": {},
+              "icon": "viewIcon",
+              "title": "Markdown-Autocomplete"
             }
           }
         ],
@@ -206,54 +258,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b63360c7af15c6ca",
+  "active": "89b3f8767ecd9ad1",
   "lastOpenFiles": [
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710122334.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/CRUX.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710111352.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Exoskeletons.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/CAREX.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710111302.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/HARMONY.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710111104.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/NEUROExos.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710111037.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Master Motor Map (MMM).md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710110353.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710105514.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710105451.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710104642.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Wearable Robotic Technologies.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710103807.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240710103452.png",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Statistic Anthropomorphic Model.md",
-    "Statistic/Anthropomorphic Model.md",
-    "Statistic",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Dynamic Model.md",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/Kinematic Model.md",
-    "University Lectures/Future/Wearable Robotic Technologies/papers/Terlemez2014.pdf",
-    "University Lectures/Future/Wearable Robotic Technologies/papers/Mandery2016b.pdf",
-    "University Lectures/Future/Wearable Robotic Technologies/papers",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Proprioceptors.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Sensory Receptors.md",
-    "University Lectures/Finished/BioBots/notes/Senses/Somatosensory System.md",
-    "University Lectures/Finished/BioBots/notes/Senses/Proprioception.md",
-    "University Lectures/Finished/BioBots/notes/Senses/Touch (Haptic Perception).md",
-    "University Lectures/Finished/BioBots/notes/Senses/images",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Nociceptors.md",
-    "University Lectures/Finished/BioBots/notes/Senses/Pain Perception.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Mechanoreceptors.md",
-    "University Lectures/Finished/BioBots/notes/Reflex.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Primary Motor Cortex.md",
-    "University Lectures/Finished/BioBots/notes/Senses/Sensory Nervous System.md",
-    "Courses/Computational Neurosience/Motor Unit.md",
-    "Courses/Computational Neurosience/Motoneuron.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Skelettmuskulatur.md",
-    "University Lectures/Future/Wearable Robotic Technologies/slides/zusammenfassung-von-anziehbare-robotertechnologien-ss2020_compress.pdf",
-    "University Lectures/Finished/BioBots/notes/Robotics/images",
-    "University Lectures/Future/Wearable Robotic Technologies/notes/images",
-    "University Lectures/Future/Wearable Robotic Technologies/slides/WRT_slides.pdf",
-    "University Lectures/Future/Wearable Robotic Technologies/slides",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Deskriptiv vs. Normativ.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Ethik.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Normatives Argumentieren und empirisches Wissen.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Dieselskandal.md",
+    "FZI/Paper/instancesegmentation_case_2024/Plant Parameters.md",
+    "FZI/Paper/instancesegmentation_case_2024/Model Evaluation.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Gemeinsam Verantwortung übernehmen.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Zentrale moralische Beurteilungsgrundsätze.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Kritisches Argumentieren.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortung.md",
+    "University Lectures/Current/Formale Systeme/notes/Formale Systeme.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation",
+    "FZI/Paper/Few-Shot Semantic Segmentation/Few-Shot Semantic Segmentation.md",
+    "FZI/Paper/instancesegmentation_case_2024/Ideas.md",
+    "FZI/Paper/Few-Shot Semantic Segmentation",
+    "FZI/Paper/instancesegmentation_case_2024/Multi-Task-Learning.md",
+    "University Lectures/Current/Formale Systeme/notes/Pränex Normalform (PNF).md",
+    "University Lectures/Current/Formale Systeme/notes/Negations Normalform (NNF).md",
+    "University Lectures/Current/Formale Systeme/notes/Hoare Kalkül.md",
+    "University Lectures/Current/Formale Systeme/notes/Prädikatenlogik.md",
+    "FZI/Paper/instancesegmentation_case_2024",
+    "FZI/Paper",
+    "University Lectures/Current/Formale Systeme/notes/DPLL Verfahren.md",
+    "University Lectures/Current/Formale Systeme/notes/SAT Problem.md",
+    "University Lectures/Current/Formale Systeme/notes/Disjunktive Normalform (DNF).md",
+    "University Lectures/Current/Formale Systeme/notes/Craigsche Interpolationslemma.md",
+    "University Lectures/Current/Formale Systeme/notes/Boolesche Funktion.md",
+    "University Lectures/Current/Formale Systeme/notes/Aussagenlogik - Signatur.md",
+    "University Lectures/Current/Formale Systeme/notes/Aussagenlogik.md",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240612085145.png",
+    "University Lectures/Current/Formale Systeme/notes/images/Pasted image 20240612084722.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240716121412.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240716121148.png",
+    "University Lectures/Future/Wearable Robotic Technologies/papers/Markovic_2015_J._Neural_Eng._12_066022.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/papers/Markovic_2014_J._Neural_Eng._11_046001.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240716115908.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240716115832.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240716115811.png",
+    "University Lectures/Future/Wearable Robotic Technologies/papers/s40137-013-0044-8.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240715125853.png",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240715125736.png",
+    "University Lectures/Future/Wearable Robotic Technologies/papers/fnbot-16-815716.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/papers/Weiner2018a.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/papers/Design_of_the_TUAT_Karlsruhe_humanoid_hand.pdf",
+    "University Lectures/Future/Wearable Robotic Technologies/notes/images/Pasted image 20240715124103.png",
     "Obsidian/Untitled.canvas"
   ]
 }

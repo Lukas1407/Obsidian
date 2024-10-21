@@ -1,4 +1,4 @@
-- Die Semantik beschäftigt sich mit der Bedeutung der Aussagen und der Frage, welche Aussagen unter welchen Bedingungen wahr sind.
+- Die Semantik beschäftigt sich mit der Bedeutung der Aussagen und der Frage, <mark style="background: #FFB86CA6;">welche Aussagen</mark> unter welchen Bedingungen <mark style="background: #FFB86CA6;">wahr sind</mark>.
 - Sie definiert die Interpretationen oder Modelle, die festlegen, wie die einzelnen Symbole und Ausdrücke der Sprache zu verstehen sind.
 ## Warum ist das wichtig?
 - Ohne eine Semantik wüssten wir nicht, was unsere Aussagen tatsächlich bedeuten oder wie wir sie interpretieren sollen.

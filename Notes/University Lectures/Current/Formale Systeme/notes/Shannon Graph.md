@@ -31,11 +31,10 @@
   - Ein nichtterminaler Knoten $v$ repräsentiert eine Variable $P_{\text{index}(v)}$.
   - Die Kante, die mit 0 gekennzeichnet ist, führt zum Knoten für den Fall, dass $P_{\text{index}(v)}$ „falsch“ ist.
   - Die Kante, die mit 1 gekennzeichnet ist, führt zum Knoten für den Fall, dass $P_{\text{index}(v)}$ „wahr“ ist.
+### Pfad im Shannon-Graphen
 ![[Pasted image 20240612084722.png#invert|400]]
-## Beispiel
+## Beispiel einer Funktion $f(P_{1},P_{2},P_{3})$
 ![[Pasted image 20240612085145.png#invert|600]]
-
-
 ## Korrespondenz zwischen Shannon-Graphen und normierten Shannon-Formeln
 1. **Variablen als Knoten**:
    - Jede Variable $P_i$ in einer normierten Shannon-Formel entspricht einem Knoten im Shannon-Graphen mit dem Index $i$.
@@ -46,7 +45,7 @@
 3. **Terminale Knoten**:
    - Die terminalen Knoten in einem Shannon-Graphen (0 oder 1) entsprechen den logischen Endwerten der Booleschen Funktion in der normierten Shannon-Formel.
 4. **Pfadwahl und Rekursion**:
-   - Die Wahl des Pfades in einem Shannon-Graphen entspricht der rekursiven Auflösung der normierten Shannon-Formel.
+   - <mark style="background: #FFB86CA6;">Die Wahl des Pfades in einem Shannon-Graphen entspricht der rekursiven Auflösung der normierten Shannon-Formel</mark>.
    - Jeder Pfad durch den Graphen entspricht einer Folge von logischen Entscheidungen, die in der normierten Shannon-Formel durch den $\text{sh}$-Operator dargestellt werden.
 
 ## Reduzierter Shannon Graph (ordered binary decision diagram: (O)BDD)

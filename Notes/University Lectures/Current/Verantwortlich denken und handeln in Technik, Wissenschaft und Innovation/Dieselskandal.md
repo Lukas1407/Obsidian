@@ -1,0 +1,3 @@
+- Amerikanische Behörden entdeckten 2015 unzulässig hohe Abgaswerte bei VW-Fahrzeugen.
+- **Illegaler Trick**: VW installierte eine Software, die erkannte, wenn Fahrzeuge getestet wurden und nur dann die Abgaswerte verringerte.
+- **Folgen**: Milliardenstrafen für VW, Vertrauensverlust in deutsche Qualitätsarbeit, langfristige juristische und wirtschaftliche Folgen.

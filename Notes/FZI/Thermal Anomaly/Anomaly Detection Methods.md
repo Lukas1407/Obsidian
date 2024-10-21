@@ -1,12 +1,28 @@
 ## Statistical Methods
 - [[Z-Score Analysis]]
 - [[Moving Average]]
+- **Mean and Standard Deviation**: Calculate the mean and standard deviation of the temperature measurements. Anomalies can be identified as readings that lie outside a certain number of standard deviations from the mean.
 ## ML Methods
 - [[Clustering Algorithms]]
 - [[Autoencoder]]
 ## Time Series Analysis
 - [[Seasonal Decomposition]]
 - [[Recurrent Neural Network (RNN)]]
+- [[Autoregressive Integrated Moving Average (ARIMA)]]
+- [[Exponential Smoothing State Space Model (ETS)]]
+##  Pattern Recognition
+- **Fourier Transform**: Apply Fourier Transform to analyze the frequency domain of the temperature data and identify unusual frequency components indicating anomalies.
+- **[[Wavelet Transform]]**: Use wavelet transforms to detect sudden changes in the temperature data at different scales.
+## Change Point Detection
+- [[Cumulative Sum (CUSUM) for Detecting Shifts in Mean Level]]
+- [[Bayesian Change Point Detection]]
+## Threshold-Based Methods
+- **Fixed Thresholds**: Define fixed upper and lower thresholds based on historical data or domain knowledge, and flag readings outside these thresholds as anomalies.
+- **Dynamic Thresholds**: Use adaptive thresholds that change over time based on the behavior of the temperature data.
+
+## Energy-Based Methods
+- **[[Thermal Energy Analysis]]**: Calculate the thermal energy changes over time to detect sudden spikes or drops that could indicate anomalies.
+
 
 ## Panoptic Segmentation Integration
 - Apply anomaly detection methods within the context of each object type. For example, temperature anomalies on a human should be treated differently from those on machinery.

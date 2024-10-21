@@ -1,4 +1,4 @@
-- Die Syntax in der Logik beschreibt die Regeln und Struktur einer Sprache.
+- Die Syntax in der Logik beschreibt <mark style="background: #FFB86CA6;">die Regeln und Struktur einer Sprache</mark>.
 - Sie legt fest, wie man korrekte Aussagen oder Formeln bildet.
 ## Warum ist das wichtig?
 - Ohne klare Regeln könnten wir nicht sicherstellen, dass wir in einer gemeinsamen und verständlichen Sprache sprechen.

@@ -12,12 +12,12 @@ Die Elemente einer Signatur heißen:
 ## Verwendung der Signatur
 ### Warum ist eine Signatur wichtig?
 - Eine Signatur legt den Rahmen fest, innerhalb dessen wir unsere logischen Aussagen formulieren.
-- Sie definiert die Basisbausteine, aus denen wir komplexere logische Ausdrücke bilden können.
+- Sie <mark style="background: #FFB86CA6;">definiert die Basisbausteine</mark>, aus denen wir komplexere logische Ausdrücke bilden können.
 ### Beispielhafte Nutzung
 - Mit einer Signatur $\Sigma = \{P_0, P_1, P_2\}$ können wir Aussagen wie $P_0 \wedge \neg P_1$ oder $P_2 \vee P_0$​ bilden.
 - Diese Aussagen können dann mit logischen Operationen kombiniert werden, um komplexere Aussagen zu erstellen.
 ## Definition der Menge der Formeln $\text{For}^0_\Sigma$
-- $\text{For}^0_\Sigma$ ist die Menge and Formeln die über $\Sigma$ definiert werden kann
+- $\text{For}^0_\Sigma$ ist die Menge an Formeln die über $\Sigma$ definiert werden kann
 ### Grundlegende Elemente
 - $1\in \text{For}^0_\Sigma$
 - $0\in \text{For}^0_\Sigma$
@@ -30,7 +30,7 @@ Die Elemente einer Signatur heißen:
 	- $(A\rightarrow B)$
 	- $(A\leftrightarrow B)$
 ## Modell einer Formel $A\in \text{For}^0_\Sigma$
-- Eine [[Aussagenlogik - Interpretation]] $I$ über der Signatur $\Sigma$ wird als Modell einer Formel $A$ bezeichnet, wenn die Auswertung von $A$ unter dieser [[Aussagenlogik - Interpretation|Interpretation]] wahr ist.
+- Eine [[Aussagenlogik - Interpretation]] $I$ über der Signatur $\Sigma$ wird als <mark style="background: #FFB86CA6;">Modell einer Formel</mark> $A$ bezeichnet, <mark style="background: #FFB86CA6;">wenn die Auswertung</mark> von $A$ unter dieser [[Aussagenlogik - Interpretation|Interpretation]] <mark style="background: #FFB86CA6;">wahr ist</mark>.
 - Formal: $I$ ist ein Modell von $A$, wenn $$\text{val}_{I}(A)=W$$
 ## Modell einer Formelmenge $M\subseteq\text{For}^0_\Sigma$
 - Eine [[Aussagenlogik - Interpretation|Interpretation]] $I$ ist ein Modell einer Menge von Formeln $M$, wenn sie ein Modell für jede einzelne Formel in M ist.
@@ -40,11 +40,11 @@ Die Elemente einer Signatur heißen:
 - Formal: $A$ ist allgemeingültig, wenn für jede Interpretation $I$ über $\Sigma$ gilt:$$ \text{val}_I(A) = W$$
 ### Beispiele
 #### Selbstimplikation ($A\rightarrow A$)
-- **Beschreibung:** Eine Aussage AAA impliziert sich selbst.
+- **Beschreibung:** Eine Aussage $A$ impliziert sich selbst.
 #### Tertium non datur $(¬A ∨ A$)
 - **Beschreibung:** Auch bekannt als das Gesetz des ausgeschlossenen Dritten.
 - **Bedeutung:** Eine Aussage ist entweder wahr oder falsch; es gibt keine dritte Möglichkeit.
-- **Beispiel:** Entweder es regnet (AAA) oder es regnet nicht (¬A\neg A¬A).
+- **Beispiel:** Entweder es regnet $A$ oder es regnet nicht ($\neg A$).
 #### Abschwächung ($A → (B → A)$)
 - **Beschreibung:** Eine Aussage $A$ bleibt wahr, unabhängig von der Implikation $B \rightarrow A$
 - **Bedeutung:** Wenn $A$ wahr ist, dann ist die Implikation $B \rightarrow A$ immer wahr, unabhängig von $A$.
@@ -105,7 +105,7 @@ Die Elemente einer Signatur heißen:
 ### Beispiel
 - Wenn $M = \{P \rightarrow Q, P\}$ ist und $A=Q$, dann bedeutet $M\models A$, dass aus den Formeln in $M$ folgt, dass $Q$ wahr ist, wenn $P$ wahr ist.
 ## Logische Äquivalenz ($A≡B$)
-- Gelesen: „AAA und BBB sind logisch äquivalent“.
+- Gelesen: „$A$ und $B$ sind logisch äquivalent“.
 - $A$ und $B$ sind zwei Formeln über der gleichen Signatur $\Sigma$
 - $A$ und $B$ sind logisch äquivalent, wenn aus $A$ $B$ folgt und aus $B$ $A$ folgt. Das bedeutet, dass beide Formeln unter allen möglichen Interpretationen denselben Wahrheitswert haben.
 ### Formal

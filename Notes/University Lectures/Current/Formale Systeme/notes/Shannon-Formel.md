@@ -65,7 +65,7 @@ $$\neg\text{sh}(A,B, C)\leftrightarrow\text{sh}(A,\neg B, \neg C)$$
 > Zu jeder aussagenlogischen Formel $F$ gibt es eine äquivalente normierte sh-Formel $F_{sh}$. 
 
 - Das bedeutet, dass wir jede logische Formel in eine normierte Shannon-Formel umwandeln können, die die gleiche logische Bedeutung hat und dieselben Wahrheitswerte für alle Belegungen der Variablen liefert.
-### Konstruktion normierter Shannon-Formeln
+### Konstruktion normierter Shannon-Formeln (nicht in den Folien!)
 - Nehmen wir eine logische Formel $F$:$$F = (P_1 \land (P_2 \lor \neg P_3)) \lor \neg P_4$$
 **Schritt 1: Fixierung der Ordnung**
 - Wir ordnen die Variablen in der Reihenfolge $P_1 < P_2 < P_3 < P_4$.
@@ -74,12 +74,15 @@ $$\neg\text{sh}(A,B, C)\leftrightarrow\text{sh}(A,\neg B, \neg C)$$
   - $F_{\neg P_1}$ ist die Formel, die $F$ beschreibt, wenn $P_1$ „falsch“ ist.
   - $F_{P_1}$ ist die Formel, die $F$ beschreibt, wenn $P_1$ „wahr“ ist.
 **Schritt 3: Vereinfachung der Formeln für $F_{\neg P_1}$ und $F_{P_1}$**
-- Wenn $P_1$ „falsch“ ist ($\neg P_1$), wird die Formel $F$ zu:$$F_{\neg P_1} = (P_2 \lor \neg P_3) \lor \neg P_4$$
-- Wenn $P_1$ „wahr“ ist ($P_1$), wird die Formel $F$ zu:$$F_{P_1} = P_2 \lor \neg P_3$$
-**Schritt 4: Wiederhole den Prozess für die restlichen Variablen in der Ordnung**
-- Setze $P_2$ als die nächste Variable und verfeinere $F_{\neg P_1}$ und $F_{P_1}$ weiter:$$\text{sh}(P_2, F_{\neg P_1, \neg P_2}, F_{\neg P_1, P_2})$$
-  $$\text{sh}(P_2, F_{P_1, \neg P_2}, F_{P_1, P_2})$$
+- Wenn $P_1$ „falsch“ ist ($\neg P_1$), wird die Formel $F$ zu:$$F_{\neg P_{1}}= \neg P_4$$
+- Wenn $P_1$ „wahr“ ist ($P_1$), wird die Formel $F$ zu:$$F_{P_1} = (P_{2}\lor \neg P_{3}) \lor \neg P_4$$
+- In Shannon-Form also:$$sh(P_{1},\neg P_{4}, (P_{2}\lor\neg P_{4})\lor\neg P_{4})$$
 
-- Setze diesen Prozess fort, bis alle Variablen durchgegangen sind.
-**Schritt 5: Endgültige normierte Shannon-Formel**
-- Am Ende haben wir eine normierte Shannon-Formel:$$F_{sh} = \text{sh}(P_1, \text{sh}(P_2, \ldots), \text{sh}(P_2, \ldots))$$
+	- oder mit $$\text{sh}(P_{1},P_{2}, P_{3})\leftrightarrow(\neg P_{1}\lor P_{3})\land(P_{1}\lor P_{2})$$$$\neg P_{1}\lor((P_{2}\lor \neg P_{3}) \lor \neg P_{4)}\land P_{1}\lor(\neg P_4)$$
+**Schritt 4: Wiederholen für für die restlichen Variablen**
+- <mark style="background: #FFB86CA6;">Die vorherigen Variablen werden ignoriert!</mark>
+- Wenn $P_2$ „falsch“ ist ($\neg P_2$), wird die Formel $F$ zu:$$F_{\neg P_{2}}= \neg P_{3}\lor\neg P_4$$
+- Wenn $P_1$ „wahr“ ist ($P_1$), wird die Formel $F$ zu:$$F_{P_1} = 1$$
+- In Shannon-Form also:$$\neg P_{2}\lor(1)\land P_{2}\lor(\neg P_{3}\lor \neg P_{4})$$
+**Schritt 5: Zusammensetzen**
+- $$sh(P_{1}, sh(P_{2},...))$$

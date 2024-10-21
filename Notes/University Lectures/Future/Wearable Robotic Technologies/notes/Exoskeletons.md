@@ -311,3 +311,90 @@ Designing hand exoskeletons poses unique challenges and requirements due to the 
 - **Decodability of Tasks**: While synergies provide a powerful framework for reducing the complexity of hand movements, they do not automatically explain the specific tasks the hand can perform. The relationship between specific synergies and tasks often requires additional analysis.
 - **Biomechanical Couplings**: Synergies reveal the biomechanical relationships between muscle activations, offering insights into the structural and functional constraints within which the human hand operates.
 
+## Types of Hand Exoskeletons
+1. **Non-wearable**: These are typically stationary setups used for rehabilitation or specialized tasks like surgical simulation. They aren’t designed for continuous personal use or mobility.
+2. **End-point based exoskeletons**: These systems interact with the user only at specific points (e.g., fingertips), rather than fitting along the contours of the entire limb.
+3. **Kinematically different to the human limb**: These exoskeletons do not mimic the exact joint articulation of the human hand, which can lead to a different feel and range of movement.
+4. **Wearable**:
+   - **End-point based**: Similar to their non-wearable counterparts but designed for active, personal use.
+   - **Kinematically equivalent to the human limb**: These mimic the natural movements and degrees of freedom of the human hand.
+   - **Kinematically different**: These may include additional or fewer degrees of freedom than the human hand or arrange them differently to enhance certain types of functionality.
+5. **Soft exoskeletons**: Made from flexible materials that conform to the body more naturally, offering comfort and a broader range of unimpeded movement.
+### Non-Wearable Hand Exoskeletons:
+- **Phantom and Touch Haptic Devices**: Developed by 3D Systems, these are sophisticated tools primarily used in non-mobile settings like labs or design studios. They provide precise haptic feedback, which is crucial for applications requiring detailed manual interaction such as CAD and surgical simulation.
+  - **Phantom**: This device is used to simulate interactive environments where precise manipulation of digital objects is necessary. It can track movements in six degrees of freedom and provide force feedback, which helps in creating a realistic sense of touch.
+  - **Touch**: Similar to Phantom, but uses a stylus interface. It's especially useful in applications where fine control of a cursor or other digital tools is necessary.
+- **Gifu University Hand**: A more complex and robust system, it aims to rehabilitate the human hand by mimicking natural movements through data obtained from a healthy hand wearing a data glove. This system is capable of controlling a significant number of DOFs (18 in total), including individual fingers and the wrist.
+  - **Actuation and Sensing**: Powered by servo motors and equipped with rotary motor encoders and three-axis force sensors, this exoskeleton provides detailed feedback and control, essential for effective rehabilitation.
+  - **Drawbacks**: The requirement for the user to wear two gloves reduces direct tactile interaction with the environment, which can diminish the effectiveness of therapy or task performance. Additionally, the numerous servomotors required for operation add significant weight, potentially limiting the duration of use and comfort.
+### Wearable Hand Exoskeletons
+#### End-point based
+These exoskeletons are simpler in design because they only need to fixate at the fingertips, avoiding the need to align with each finger joint. They control the movement of the fingers by manipulating the position of the fingertips.
+- **Pros**: Easier to control and install; does not require encasing the entire finger structure.
+- **Cons**: Limited control over individual finger joints; can only manipulate the overall position and orientation of the fingers.
+##### Four-Fingered Light-Weight Exoskeleton:
+This specific design is a practical application of the "end-point based" and "kinematically different" exoskeleton concepts. It aims to provide controlled manipulation of the fingers within their natural workspace without encasing the palm or obstructing its movements.
+- **Main Features**:
+    - **Bidirectional Forces**: Capable of exerting forces in both directions on the finger phalanges, allowing for both pushing and pulling motions.
+    - **Adaptability**: Designed to accommodate different hand sizes and the natural workspace of human fingers.
+    - **Free Palm Design**: Ensures that the palm remains unobstructed, enhancing comfort and usability.
+    - **Support for Four Fingers**: Targets the four main fingers, excluding the thumb, for simplicity and effectiveness.
+- **Mechanical Design**:
+    - **Direct Driven Mechanism with Bevel Gears**: Provides precise control over finger movement.
+    - **Adjustable Linkages**: For palm, proximal, and medial finger phalanges to accommodate various finger lengths.
+    - **Active and Passive DoFs**: Active degrees of freedom (DoF) for flexion/extension; passive DoF for abduction/adduction to allow natural lateral movements of the fingers.
+- **Specifications and Sensing**:
+    - **5W DC Motor**: Powers the movement.
+    - **Position and Force Sensors**: Located between key structural elements to measure and control the forces exerted and the position of the exoskeleton.
+- **Analysis Tools**:
+    - **Fingertip Force Sensors and CyberGlove**: Used in experimental setups to analyze the effectiveness of the exoskeleton in replicating natural finger movements and exerting sufficient force for various tasks.
+#### Kinematically equivalent
+These mimic the exact joint structure of the human hand, aiming to replicate each finger's natural movements precisely.
+- **Pros**: Allows for very natural and intuitive control of each finger.
+- **Cons**: More complex in terms of design and alignment of joints; typically heavier and more cumbersome.
+##### HANDEXOS
+1. **Center of Rotation Alignment**:
+   - The exoskeleton's joints are designed to coincide with the human joints, ensuring movements feel natural and intuitive.
+   - This precise alignment, however, introduces challenges, such as the need for extra space between the fingers and a high potential for misalignments due to individual anatomical differences.
+2. **HANDEXOS Design**:
+   - **Optimization Goals**: The design focuses on enhancing kinematic compatibility, wearability, and portability.
+   - **Structure**: It features a combination of active and passive Degrees of Freedom (DoFs).
+     - **Active DoFs**: These are responsible for the actuation and transmission of power from the robot to the human limb.
+     - **Passive DoFs**: These allow the human limb to naturally determine the joint axis positions, accommodating personal anatomical variations.
+3. **Joint-Specific Designs**:
+   - **PIP and DIP Joints (Proximal and Distal Interphalangeal Joints)**:
+     - These joints are aligned directly with the exoskeleton, aiming for a straightforward mechanical correspondence.
+     - A soft neoprene cover at the interface helps absorb minor misalignments, enhancing comfort and reducing the risk of pressure points.
+   - **MCP Joint (Metacarpophalangeal Joint)**:
+     - Features a more complex self-aligning architecture using a parallel chain consisting of one prismatic joint and two revolute joints (PRR configuration). This setup allows for more sophisticated movements and adjustments, decoupling joint rotation from translation, which is crucial for complex finger movements.
+4. **Cable-Driven Actuation System**:
+   - The use of cables in antagonistic pairs (opposite wrapping directions) allows for bidirectional actuation, providing control over both flexion and extension movements.
+   - This system decreases the inertia of moving parts, enhancing response times and reducing the overall strain on the wearer.
+   - By locating motors along the arm rather than in the hand or fingers, the system enhances wearability and reduces the load on the fingers, making the exoskeleton more comfortable and less obtrusive.
+5. **Underactuation**:
+   - Utilizes underactuation to control multiple joints with fewer motors, simplifying the system while covering all necessary motions for the fingers and thumb.
+   - This design choice reduces weight and complexity, making the system more practical for everyday use and potentially more affordable.
+#### Kinematically different
+- These may simplify or complicate the joint structure compared to the human hand, depending on the design goals, such as enhancing strength or dexterity for specific tasks.
+    - **Pros**: Can be optimized for specific functionalities or ergonomic improvements.
+    - **Cons**: May feel less natural compared to the human hand's movement.
+##### Key Concepts and Examples
+1. **Remote Center of Rotation Structure**:
+    - These exoskeletons do not align the mechanical joint axes directly with human joint axes.
+    - This approach can solve alignment problems and enhance adaptability but may introduce complexity and reduce compliance (the ability to adapt or conform to the wearer’s movements).
+2. **Non-anthropomorphic, Redundant Structures**:
+    - Incorporate additional active or passive joints to allow the structure to self-align with the human limb, which is critical for applications like stroke patient grasp assistance and training.
+    - This design can include underactuated finger motion, where multiple fingers are driven by a single motor, often through rigid synergistic coupling, simplifying the design and reducing weight.
+#### Soft Exosuits
+Made from flexible materials and actuated using mechanisms like cables or soft actuators.
+- **Pros**: Highly comfortable and lightweight; good for long-term wear.
+- **Cons**: May offer less precise control of finger movements due to the flexible nature of the materials.
+1. These systems use flexible or underactuated structures that do not require rigid mechanical alignments, allowing the human hand to provide the skeletal framework for movement.
+    - **Example**: NASA and General Motors developed a robotic glove designed to assist astronauts and mechanics by reducing the force exerted during tasks. This glove uses tendon-driven mechanisms and soft pneumatic actuators to enhance grip strength and endurance, reducing the risk of injury from repetitive tasks.
+2. **Force Myography for Control**:
+    
+    - Utilizes sensors to detect changes in muscle size or the pressure exerted by muscles under the skin, helping to control the exoskeleton through natural user intention.
+3. **Technological Integration and User Assistance**:
+    
+    - Examples include exoskeletons that integrate sensors to detect when a tool is grasped, automatically adjusting tendon tensions to maintain grip without continuous user effort.
+    - Devices are designed to be lightweight and wearable, often incorporating advanced materials and battery technology to maximize functionality and user comfort.

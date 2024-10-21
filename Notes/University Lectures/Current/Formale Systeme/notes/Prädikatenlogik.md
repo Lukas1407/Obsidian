@@ -39,17 +39,17 @@
 ### Eigenschaften und Begriffe
 - **Paarweise disjunkt:** Die Mengen $F_\Sigma$ (Funktionssymbole), $P_\Sigma$ (Prädikatsymbole) und die Menge der Sondersymbole sind paarweise disjunkt, d.h., sie haben keine gemeinsamen Elemente.
 ### Funktions- und Prädikatsymbole
-- **Funktionssymbol ($f \in F_\Sigma$)**: Ein Symbol, das eine Funktion darstellt, die Objekte (Individuen) der Domäne nimmt und ein weiteres Objekt zurückgibt. Die Anzahl der Argumente, die ein Funktionssymbol akzeptiert, wird als Stelligkeit bezeichnet.
+- **Funktionssymbol ($f \in F_\Sigma$)**: <mark style="background: #FFB86CA6;">Ein Symbol, das eine Funktion darstellt</mark>, die Objekte (Individuen) der Domäne nimmt und ein weiteres Objekt zurückgibt. Die Anzahl der Argumente, die ein Funktionssymbol akzeptiert, wird als Stelligkeit bezeichnet.
     - Ein $n$-stelliges Funktionssymbol $f$ hat $\alpha_\Sigma(f) = n$. Zum Beispiel ist $f(x, y)$ ein 2-stelliges Funktionssymbol.
     - Ein null-stelliges Funktionssymbol heißt auch **Konstantensymbol** oder kurz **Konstante**. Es repräsentiert ein einzelnes festes Objekt der Domäne.
-- **Prädikatsymbol ($p \in P_\Sigma$)**: Ein Symbol, das eine Aussage über Objekte der Domäne macht. Die Anzahl der Argumente, die ein Prädikatsymbol akzeptiert, wird ebenfalls als Stelligkeit bezeichnet.
+- **Prädikatsymbol ($p \in P_\Sigma$)**: <mark style="background: #FFB86CA6;">Ein Symbol, das eine Aussage über Objekte der Domäne macht</mark>. Die Anzahl der Argumente, die ein Prädikatsymbol akzeptiert, wird ebenfalls als Stelligkeit bezeichnet.
     - Ein $n$-stelliges Prädikatsymbol $p$ hat $\alpha_\Sigma(p) = n$. Zum Beispiel ist $P(x, y, z)$ ein 3-stelliges Prädikatsymbol.
     - Ein null-stelliges Prädikatsymbol ist eine Aussage, die ohne Argumente auskommt. Es wird auch als **aussagenlogisches Atom** bezeichnet, weil es eine eigenständige Aussage ist, die wahr oder falsch sein kann, wie eine gewöhnliche Aussage in der Aussagenlogik.
 
 ## Definition Terme
 **Term ($\Sigma)$**, die Menge der Terme über $\Sigma$, ist induktiv definiert durch:
 1. **Variablen als Terme:**$$\text{Var} \subseteq \text{Term}_\Sigma$$
-   Jede Variable $x \in \text{Var}$ ist ein Term. Die Menge der Variablen, die als Terme gelten, ist also eine Teilmenge der Menge der Terme \(\text{Term}_\Sigma\).
+   Jede Variable $x \in \text{Var}$ ist ein Term. Die Menge der Variablen, die als Terme gelten, ist also eine Teilmenge der Menge der Terme $\text{Term}_\Sigma$.
 
 2. **Funktionssymbole und Terme:**
   $$ \text{Sei } f \in F_\Sigma \text{ und } \alpha_\Sigma(f) = n$$, $$\text{und seien } t_1, t_2, \ldots, t_n \in \text{Term}_\Sigma$$, $$\text{dann ist } f(t_1, t_2, \ldots, t_n) \in \text{Term}_\Sigma$$
@@ -145,13 +145,13 @@ In der Prädikatenlogik erster Stufe ist es wichtig, die verschiedenen Arten von
      $$\text{Frei}(A) = \{\}$$
    - Das bedeutet, dass jede Variable in der Formel entweder durch einen Allquantor $forall$ oder einen Existenzquantor $exists$ gebunden ist.
 2. **Allabschluss (∀-Abschluss)**
-   - Wenn die Menge der freien Variablen von $A$ $\text{Frei}(A) = \{ x_1, x_2, \ldots, x_n \}$ ist, dann ist der **Allabschluss** von $A$:
+   - Wenn die Menge der freien Variablen von $A$ $\text{Frei}(A) = \{ x_1, x_2, \ldots, x_n \}$ ist, dann ist der <mark style="background: #FFB86CA6;">Allabschluss</mark> von $A$:
      $$\forall x_1 \, \forall x_2 \, \ldots \, \forall x_n \, A$$
    - Abkürzend schreiben wir:
     $$ \text{Cl}_\forall A$$
    - Der Allabschluss ist eine neue Formel, in der alle ursprünglich freien Variablen von $A$ durch Allquantoren gebunden werden.
 3. **Existenzabschluss (∃-Abschluss)**
-   - Wenn die Menge der freien Variablen von $A$ $\text{Frei}(A) = \{ x_1, x_2, \ldots, x_n \}$ ist, dann ist der **Existenzabschluss** von $A$:$$\exists x_1 \, \exists x_2 \, \ldots \, \exists x_n \, A$$
+   - Wenn die Menge der freien Variablen von $A$ $\text{Frei}(A) = \{ x_1, x_2, \ldots, x_n \}$ ist, dann ist der <mark style="background: #FFB86CA6;">Existenzabschluss</mark> von $A$:$$\exists x_1 \, \exists x_2 \, \ldots \, \exists x_n \, A$$
    - Abkürzend schreiben wir: $$ \text{Cl}_\exists A$$
    - Der Existenzabschluss ist eine neue Formel, in der alle ursprünglich freien Variablen von $A$ durch Existenzquantoren gebunden werden.
 4. **Eigenschaft geschlossener Formeln**
@@ -184,7 +184,7 @@ In der Prädikatenlogik erster Stufe ermöglicht die **Substitution** das Ersetz
    - Eine **Substitution** ist eine Abbildung:$$
      \sigma : \text{Var} \to \text{Term}_\Sigma
      $$
-     - Das bedeutet, dass jede Variable $x$ in der Menge der Variablen (Var) durch einen Term aus der Menge der Terme \(\text{Term}_\Sigma\) ersetzt wird.
+     - Das bedeutet, dass jede Variable $x$ in der Menge der Variablen durch einen Term aus der Menge der Terme $\text{Term}_\Sigma$ ersetzt wird.
    - Für fast alle $x \in \text{Var}$ gilt:$$
      \sigma(x) = x
      $$
@@ -224,7 +224,7 @@ In der Prädikatenlogik erster Stufe ermöglicht die **Substitution** das Ersetz
      - Hier wird $x$ durch $a$ und $y$ durch $f(b)$ ersetzt. $z$ bleibt unverändert, da $\sigma(z) = z$.
 
 3. **Grundsubstitution**
-   - Eine Substitution \(\sigma\) ist eine Grundsubstitution, wenn alle Ersetzungen Grundterme sind, z.B.:$$
+   - Eine Substitution $\sigma$ ist eine Grundsubstitution, wenn alle Ersetzungen Grundterme sind, z.B.:$$
      \sigma = \{ x / a, y / b \}
      $$
      - Hier sind $a$ und $b$ Konstanten, sodass keine Variablen in den Ersetzungen vorkommen.
@@ -295,16 +295,16 @@ In der Prädikatenlogik erster Stufe ermöglicht die **Substitution** das Ersetz
   $$
 - Erklärung:
   - $x$ wird durch $a$ ersetzt, sowohl in $P(x)$ als auch in $Q(x, y, z)$.
-  - $y$ bleibt in der Existenzquantifikation gebunden und wird nicht durch $b$ ersetzt, da nur freie Variablen ersetzt werden.
+  - $y$ bleibt in der Existenzquantifikation gebunden und wird nicht durch $b$ ersetzt, da <mark style="background: #FFB86CA6;">nur freie Variablen ersetzt werden</mark>.
 
 ## Definition: Kollisionsfreie Substitutionen
 > [!abstract] Definition
-> In der Prädikatenlogik erster Stufe sind **kollisionsfreie Substitutionen** wichtig, um sicherzustellen, dass die Anwendung einer Substitution auf eine Formel nicht zu unbeabsichtigten Änderungen in der Bedeutung der Formel führt. Insbesondere sollen keine gebundenen Variablen durch die Substitution in Konflikt mit freien Variablen geraten. 
+> In der Prädikatenlogik erster Stufe sind **kollisionsfreie Substitutionen** wichtig, um sicherzustellen, dass <mark style="background: #FFB86CA6;">die Anwendung einer Substitution auf eine Formel nicht zu unbeabsichtigten Änderungen in der Bedeutung der Formel führt</mark>. Insbesondere sollen keine gebundenen Variablen durch die Substitution in Konflikt mit freien Variablen geraten. 
 
 -> Eine Substitution $\sigma$ heißt **kollisionsfrei** für eine Formel $A$, wenn für jede Variable $z$ und jede Stelle des freien Auftretens von $z$ in $A$ gilt:
-Diese Stelle liegt nicht im Wirkungsbereich eines Präfixes $\forall x$ oder $\exists x$, bei dem $x$ eine Variable in $\sigma(z)$ ist.
+<mark style="background: #FFB86CA6;">Diese Stelle liegt nicht im Wirkungsbereich eines Präfixes</mark> $\forall x$ oder $\exists x$, bei dem $x$ eine Variable in $\sigma(z)$ ist.
 ### Erklärung
-  - Eine **Kollision** tritt auf, wenn eine freie Variable durch eine Substitution ersetzt wird, deren Ergebnis eine Variable enthält, die innerhalb eines Wirkungsbereichs eines Quantors derselben Variable liegt. Dies kann die logische Struktur und Bedeutung der Formel ungewollt verändern.
+  - <mark style="background: #FFB86CA6;">Eine Kollision tritt auf, wenn eine freie Variable durch eine Substitution ersetzt wird, deren Ergebnis eine Variable enthält, die innerhalb eines Wirkungsbereichs eines Quantors derselben Variable liegt</mark>. Dies kann die logische Struktur und Bedeutung der Formel ungewollt verändern.
 ### Beispiel zur Verdeutlichung
 #### Beispiel: Nicht kollisionsfreie Substitution
 - Gegebene Formel:$$
@@ -344,9 +344,11 @@ Diese Stelle liegt nicht im Wirkungsbereich eines Präfixes $\forall x$ oder $\e
 - Bei einer Substitution $\sigma = \{ x_1 / t_1, x_2 / t_2, \ldots, x_n / t_n \}$ muss für jede Variable $x_i$ und jeden Term $t_i$ sichergestellt werden, dass die Ersetzung $x_i$ durch $t_i$ keine Kollisionen mit bestehenden gebundenen Variablen in der Formel $A$ verursacht.
 - Es darf keine Variable $x$ in $t_i$ geben, die innerhalb eines Wirkungsbereichs eines Quantors auftritt, der $x$ bindet, da dies die logische Struktur der Formel verändern würde.
 
-In der Prädikatenlogik erster Stufe beschreibt die **Komposition von Substitutionen** das aufeinanderfolgende Anwenden zweier Substitutionen auf eine Variable. Dabei wird eine Substitution zuerst angewendet, und das Ergebnis wird dann der zweiten Substitution unterzogen. Hier ist die Definition und eine Erklärung der Komposition von Substitutionen:
 
 ## Definition: Komposition von Substitutionen
+> [!abstract] Definition
+> In der Prädikatenlogik erster Stufe beschreibt die **Komposition von Substitutionen** <mark style="background: #FFB86CA6;">das aufeinanderfolgende Anwenden zweier Substitutionen auf eine Variable.</mark> Dabei wird eine Substitution zuerst angewendet, und das Ergebnis wird dann der zweiten Substitution unterzogen. 
+
 Sind $\sigma$ und $\tau$ Substitutionen, dann definieren wir die **Komposition von $\tau$ mit $\sigma$** durch:$$
 (\tau \circ \sigma)(x) = \tau(\sigma(x))
 $$
@@ -396,7 +398,6 @@ Die Komposition ermöglicht eine flexiblere und effektivere Handhabung von Varia
   - Bei der Anwendung von Substitutionen sollte man sicherstellen, dass keine Kollisionen entstehen, d.h., dass durch die Ersetzung keine unbeabsichtigten Bindungen von Variablen entstehen.
 
 ## Theorem zur Anwendung struktureller Induktion auf Terme
-
 1. **Aussage**: Wenn für einen Term $t \in \text{Term}_\Sigma$ und zwei Substitutionen $\sigma$ und $\tau$ die Gleichung $\sigma(t) = \tau(t)$ gilt, dann gilt $\sigma(s) = \tau(s)$ für jeden Teilterm $s$ von $t$.
 ### Beweis
 Der Beweis erfolgt mittels struktureller Induktion nach dem Aufbau des Terms $t$.
@@ -568,6 +569,7 @@ $$
 
 ## Definition: Allgemeinster Unifikator (mgu)
 - Ein **allgemeinster Unifikator (most general unifier, mgu)** ist eine Substitution, die eine Menge von Termen so vereinheitlicht, dass jede andere Substitution, die dieselbe Menge unifiziert, eine Erweiterung dieser allgemeinsten Substitution ist.
+- -> <mark style="background: #FFB86CA6;">Also die kürzeste Unifikation</mark>
 - Sei $T \subseteq \text{Term}_\Sigma$ eine Menge von Termen über einer Signatur $\Sigma$. Eine Substitution $\mu$ heißt **allgemeinster Unifikator** oder **mgu** von $T$, wenn die folgenden Bedingungen erfüllt sind:
 1. **Unifikation von $T$**:$$
    \mu \text{ unifiziert } T
@@ -618,7 +620,7 @@ $$
      $$
 
 ## Theorem: Eindeutigkeit des allgemeinsten Unifikators
-Sei $T$ eine unifizierbare, nichtleere Menge von Termen. Dann ist der allgemeinste Unifikator von $T$ bis auf Variablenumbenennung eindeutig bestimmt. Das bedeutet:
+Sei $T$ eine unifizierbare, nichtleere Menge von Termen. Dann ist der allgemeinste Unifikator von $T$ <mark style="background: #FFB86CA6;">bis auf Variablenumbenennung eindeutig bestimmt</mark>. Das bedeutet:
 - Sind $\mu$ und $\mu'$ zwei allgemeinste Unifikatoren von $T$ mit $\mu(T) = \{t\}$ und $\mu'(T) = \{t'\}$, dann gibt es eine Umbenennung $\pi$ der Variablen von $t$, so dass:$$
   t' = \pi(t)
   $$
@@ -748,7 +750,7 @@ $$
 - **Strukturelle Argumentation**:
   - Der Unifikationsalgorithmus verarbeitet Terme, indem er sie schrittweise in einfachere Terme zerlegt.
   - In jedem Schritt wird entweder eine Variable durch einen Term ersetzt oder Funktionssymbole und deren Argumente werden verglichen und weiter zerlegt.
-  - Da $T$ endlich ist und der Algorithmus in jedem Schritt Terme reduziert, kann dieser Prozess nur eine endliche Anzahl von Schritten durchführen, bevor er entweder einen Unifikator findet oder feststellt, dass die Terme nicht unifizierbar sind.
+  - Da $T$ <mark style="background: #FFB86CA6;">endlich ist</mark> und der Algorithmus in jedem Schritt Terme reduziert, <mark style="background: #FFB86CA6;">kann dieser Prozess nur eine endliche Anzahl von Schritten durchführen</mark>, bevor er entweder einen Unifikator findet oder feststellt, dass die Terme nicht unifizierbar sind.
 - **Beispiel**:
   - Nehmen wir eine Menge von Termen $T = \{ f(x), f(a) \}$:
     - Der Algorithmus würde erkennen, dass $x$ durch $a$ ersetzt werden muss, was in einem Schritt möglich ist.
@@ -1089,7 +1091,7 @@ $$ q(x) \rightarrow \exists y \, (\text{in}(y, x) \land \text{kl}(y)) $$
 
 
 ## Koinzidenzlemma: Theorem
-Das Theorem besagt im Wesentlichen, dass die Auswertung eines Terms oder einer Formel unabhängig von der spezifischen Variablenbelegung ist, solange diese Belegung für die relevanten Variablen (d.h. die Variablen, die tatsächlich in dem Term oder der Formel vorkommen) übereinstimmt.
+Das Theorem besagt im Wesentlichen, dass <mark style="background: #FFB86CA6;">die Auswertung eines Terms oder einer Formel unabhängig von der spezifischen Variablenbelegung ist</mark>, solange diese Belegung für die relevanten Variablen (d.h. die Variablen, die tatsächlich in dem Term oder der Formel vorkommen) übereinstimmt.
 ### 1. Koinzidenz für Terme
 **Aussage**:
 - Für einen Term $t$ gilt: Wenn $\beta(x) = \gamma(x)$ für alle $x \in \text{Var}(t)$, dann ist $\text{val}_D, \beta(t) = \text{val}_D, \gamma(t)$.

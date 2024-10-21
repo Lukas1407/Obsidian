@@ -13,9 +13,9 @@
 ### Beispiel: Einfache logische Formel
 - **Formel $F$**: $(x_1 \lor \neg x_2) \land (x_2 \lor x_3) \land (\neg x_1 \lor \neg x_3)$
   - Diese Formel besteht aus drei Klauseln:
-    - $(x_1 \lor \neg x_2)$: $x_1 $oder nicht $x_2 $müssen wahr sein.
-    - $(x_2 \lor x_3)$: $x_2 $oder $x_3 $müssen wahr sein.
-    - $(\neg x_1 \lor \neg x_3)$: nicht $x_1 $oder nicht $x_3 $müssen wahr sein.
+    - $(x_1 \lor \neg x_2)$: $x_1$ oder nicht $x_{2}$ müssen wahr sein.
+    - $(x_2 \lor x_3)$: $x_2$ oder $x_3$ müssen wahr sein.
+    - $(\neg x_1 \lor \neg x_3)$: nicht $x_1$ oder nicht $x_3$ müssen wahr sein.
 - **Frage**: Ist $F$ erfüllbar?
   - Wir suchen eine Zuweisung der Variablen $x_1, x_2, x_3$, die die Formel wahr macht.
 #### Zuweisung testen
@@ -46,11 +46,11 @@
 3. **2-KNF (Krom-Formeln)**:
    - **Definition**: Eine 2-KNF-Formel ist eine spezielle Form der KNF, bei der jede Disjunktion höchstens zwei Literale enthält.
    - **Beispiel**: $F = (x \lor \neg y) \land (y \lor z) \land (\neg x \lor z)$.
-   - **Komplexität**: Das Erfüllbarkeitsproblem für 2-KNF-Formeln ist polynomial entscheidbar, da es effiziente Algorithmen gibt, die in polynomialer Zeit feststellen können, ob eine solche Formel erfüllbar ist.
+   - **Komplexität**: Das <mark style="background: #FFB86CA6;">Erfüllbarkeitsproblem für 2-KNF-Formeln ist polynomial entscheidbar</mark>, da es effiziente Algorithmen gibt, die in polynomialer Zeit feststellen können, ob eine solche Formel erfüllbar ist.
 4. **DNF (Disjunktive Normalform)**:
    - **Definition**: Eine Formel in DNF ist eine Disjunktion (ODER-Verknüpfung) von Konjunktionen (UND-Verknüpfungen) von Literalen.
    - **Beispiel**: $F = (x \land \neg y) \lor (y \land z) \lor (\neg x \land \neg z)$.
-   - **Komplexität**: Das Erfüllbarkeitsproblem für DNF-Formeln ist polynomial entscheidbar. Da jede Klausel eine Belegung direkt erfüllt, ist die Entscheidung, ob die Formel wahr ist, einfach.
+   - **Komplexität**: Das <mark style="background: #FFB86CA6;">Erfüllbarkeitsproblem für DNF-Formeln ist polynomial entscheidbar</mark>. Da jede Klausel eine Belegung direkt erfüllt, ist die Entscheidung, ob die Formel wahr ist, einfach.
 5. **[[Horn-Formel|Horn-Formeln]]**:
    - **Definition**: Eine [[Horn-Formel]] ist eine spezielle Form der KNF, bei der jede Klausel höchstens ein positives Literal enthält.
    - **Beispiel**: $F = (\neg x \lor \neg y \lor z) \land (\neg z \lor w) \land (\neg w)$.

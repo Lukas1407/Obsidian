@@ -3,7 +3,7 @@ Eine Horn-Formel ist eine Formel in der Aussagenlogik, die folgende Eigenschafte
 1. **[[Konjunktive Normalform (KNF)]]**:
    Die Formel muss in konjunktiver Normalform vorliegen. Das bedeutet, sie ist eine Konjunktion von Klauseln, wobei jede Klausel eine Disjunktion von Literalen ist.
 2. **Beschränkung auf positive Literale**:
-   Jede Klausel in der Horn-Formel enthält höchstens ein positives Literal. Ein positives Literal ist eine Variable ohne Negation (zum Beispiel $A$), während ein negatives Literal eine negierte Variable ist (zum Beispiel $\neg B$).
+  <mark style="background: #FFB86CA6;"> Jede Klausel in der Horn-Formel enthält höchstens ein positives Literal</mark>. Ein positives Literal ist eine Variable <mark style="background: #FFB86CA6;">ohne Negation</mark> (zum Beispiel $A$), während ein negatives Literal eine negierte Variable ist (zum Beispiel $\neg B$).
 ### Alternative Schreibweise
 - **Disjunktive Form**: $\neg B_1 \lor \neg B_2 \lor \ldots \lor \neg B_m \lor A$
   - Das bedeutet, dass zumindest eines der negativen Literale nicht wahr sein muss oder das positive Literal wahr ist.
@@ -28,7 +28,7 @@ Alternative Schreibweise:
 - **Implikative Form**: $P \land Q \rightarrow R$
   - Diese Form zeigt, dass $R$ wahr ist, wenn sowohl $P$ als auch $Q$ wahr sind.
 ### Wichtige Eigenschaften von Horn-Formeln
-- **Erfüllbarkeitsproblem**: Das Erfüllbarkeitsproblem für Horn-Formeln ist effizient lösbar (in quadratischer Zeit). Das bedeutet, dass es für Horn-Formeln effizient entschieden werden kann, ob es eine Belegung der Variablen gibt, die die Formel wahr macht.
+- **Erfüllbarkeitsproblem**: Das <mark style="background: #FFB86CA6;">Erfüllbarkeitsproblem für Horn-Formeln ist effizient lösbar</mark> (in quadratischer Zeit). Das bedeutet, dass es für Horn-Formeln effizient entschieden werden kann, ob es eine Belegung der Variablen gibt, die die Formel wahr macht.
 - **Nicht NP-vollständig**: Im Gegensatz zu allgemeinen logischen Formeln sind Horn-Formeln nicht NP-vollständig, sondern können in polynomialer Zeit gelöst werden.
 
 ## Erfüllbarkeitstest für Horn-Formeln
@@ -59,6 +59,38 @@ Der Erfüllbarkeitstest für Horn-Formeln kann verwendet werden, um zu bestimmen
    - Wir suchen Klauseln, deren Bedingung (der Rumpf) vollständig erfüllt ist (alle $B_i$ sind markiert).
      - Wenn der Kopf dieser Klausel 0 ist, führt dies zu einem Widerspruch, und die Formel ist unerfüllbar.
      - Wenn der Kopf ein positives Literal ist, wird dieses markiert, da die Bedingung bereits erfüllt ist.
+### Beispiel
+$$
+C = (\neg A \lor B) \land (\neg B \lor C) \land (\neg C) \land A
+$$
+Das entspricht den Klauseln:
+- $D_1: \neg A \lor B$
+- $D_2: \neg B \lor C$
+- $D_3: \neg C$
+- $D_4: A$
+#### 1. **Initialisierung:**
+   - Die Horn-Formel $C$ ist bereits in konjunktiver Normalform gegeben:
+     $$
+     C = (\neg A \lor B) \land (\neg B \lor C) \land (\neg C) \land A
+     $$
+   - Markieren der **Fakten**: Ein Fakt ist eine Klausel, die kein negatives Literal enthält. Die Klausel $A$ ist ein Fakt, weil sie nur ein positives Literal $A$ enthält.
+   - Markiere $A$.
+#### 2. **Überprüfung auf leere Klauseln:**
+   - Es gibt keine leere Klausel (den Ausdruck $\Box$), daher fahren wir mit dem nächsten Schritt fort.
+#### 3. **Überprüfung auf Fakten:**
+   - Wir haben bereits den Fakt $A$ markiert. Das bedeutet, wir müssen weiter prüfen.
+#### 4. **Schritt 1: Rumpf-Überprüfung (Propagieren der Markierungen):**
+   - Wir suchen nach einer Klausel, deren **Rumpf** (d.h., der Teil ohne das positive Literal) vollständig markiert ist und deren Kopf noch nicht markiert ist.
+   - Betrachten wir die Klauseln nacheinander:
+     - **Klausel $D_1$:** $\neg A \lor B$
+       - $A$ ist markiert, und $\neg A$ bedeutet, dass $B$ wahr sein muss. Daher markieren wir $B$.
+     - **Klausel $D_2$:** $\neg B \lor C$
+       - $B$ ist jetzt markiert, daher wird $C$ ebenfalls markiert.
+     - **Klausel $D_3$:** $\neg C$
+       - $C$ ist markiert, aber $\neg C$ erfordert, dass $C$ falsch ist. Dies führt zu einem Widerspruch, da $C$ markiert ist.
+#### 5. **Ende:**
+   - Da es einen Widerspruch gibt (die Klausel $\neg C$ verlangt, dass $C$ falsch ist, obwohl $C$ bereits markiert wurde), ist die Formel **unerfüllbar**.
+Die Horn-Formel $C = (\neg A \lor B) \land (\neg B \lor C) \land (\neg C) \land A$ ist **unerfüllbar**, da wir einen Widerspruch erhalten haben, als wir $C$ markiert haben und gleichzeitig $\neg C$ erfüllen mussten.
 ### Beispiel
 ![[erfllbarkeits-test-ezgif.com-speed.gif#invert|600]]
 ```python

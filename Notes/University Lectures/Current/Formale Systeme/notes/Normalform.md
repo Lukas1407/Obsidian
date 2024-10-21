@@ -10,7 +10,7 @@ Lass uns diese Aussagen genauer untersuchen, um zu verstehen, warum die Erfüllb
   2. Prüfe, ob es eine Konjunktion gibt, die keine widersprüchlichen Literale enthält (wie $P$ und $\neg P$ in derselben Konjunktion).
 - **Polynomielle Zeit**:
   - Jede Konjunktion in der DNF kann in linearer Zeit in Bezug auf die Anzahl der Variablen überprüft werden.
-  - Da die DNF eine polynomielle Anzahl von Konjunktionen hat, ist die Überprüfung der Erfüllbarkeit in polynomieller Zeit möglich.
+  - <mark style="background: #FFB86CA6;">Da die DNF eine polynomielle Anzahl von Konjunktionen hat</mark>, ist die Überprüfung der Erfüllbarkeit in polynomieller Zeit möglich.
 ### Beispiel
 - Für die Formel $D = (P \land \neg Q) \lor (Q \land R) \lor (\neg P \land R)$:
 - Wir prüfen jede Konjunktion:
@@ -33,8 +33,8 @@ Für die Formel $K = (P \lor \neg Q) \land (Q \lor R) \land (\neg P \lor R)$:
 - Da jede Disjunktion wahr ist, ist $K$ allgemein gültig.
 ## Umgekehrte Probleme: Erfüllbarkeit von KNF und Allgemeingültigkeit von DNF
 ### Erfüllbarkeit von KNF
-- **Schwierig**: Die Erfüllbarkeit von KNF-Formeln zu überprüfen ist NP-vollständig. Das bedeutet, dass die Überprüfung, ob eine KNF-Formel erfüllbar ist, im Allgemeinen schwieriger und zeitaufwändiger ist.
+- **Schwierig**: Die Erfüllbarkeit von KNF-Formeln zu überprüfen ist <mark style="background: #FF5582A6;">NP-vollständig</mark>. Das bedeutet, dass die Überprüfung, ob eine KNF-Formel erfüllbar ist, im Allgemeinen schwieriger und zeitaufwändiger ist.
 - **Grund**: Man muss potenziell eine große Anzahl von Variablenkombinationen durchprobieren, um eine zu finden, die die Formel wahr macht.
 ### Allgemeingültigkeit von DNF
-- **Schwierig**: Die Allgemeingültigkeit von DNF-Formeln zu überprüfen ist ebenfalls NP-vollständig.
+- **Schwierig**: Die Allgemeingültigkeit von DNF-Formeln zu überprüfen ist ebenfalls <mark style="background: #FF5582A6;">NP-vollständig</mark>.
 - **Grund**: Man müsste sicherstellen, dass jede mögliche Variablenkombination in mindestens einer Konjunktion der DNF zu wahr führt, was eine sehr große Anzahl von Prüfungen erfordert.

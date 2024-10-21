@@ -1,4 +1,4 @@
-- Kalküle sind Regeln oder Algorithmen, die uns helfen, den Wahrheitsgehalt von Aussagen zu prüfen.
+- Kalküle sind Regeln oder <mark style="background: #FFB86CA6;">Algorithmen, die uns helfen, den Wahrheitsgehalt von Aussagen zu prüfen</mark>.
 - Sie geben uns Verfahren zur Verfügung, um zu bestimmen, ob eine Aussage wahr ist, ob eine Aussage aus anderen Aussagen folgt, oder ob sie unter allen Umständen wahr ist (Allgemeingültigkeit).
 ## Warum ist das wichtig?
 - Kalküle ermöglichen es uns, logisch zu schlussfolgern und Argumente formal zu überprüfen.
