@@ -3,7 +3,7 @@
 
 ## Aufbau
 - Nukleotide bestehen aus [[Nukleoside|Nukleosiden]], die mit einer oder mehreren [[Phosphatgruppe|Phosphatgruppen]] verestert sind.
-- Ein Nukleotid beginnt als [[Nukleoside|Nukleosid]], das aus einer [[Nukleinbasen|Nukleobase]] (Adenin, Guanin, Cytosin, Thymin oder Uracil) und einer Pentose (Ribose in RNA, Desoxyribose in DNA) besteht
+- Ein Nukleotid beginnt als [[Nukleoside|Nukleosid]], das aus einer [[Nukleinbasen|Nukleobase]] (Adenin, Guanin, Cytosin, Thymin oder Uracil) und einem Pentosezucker (Ribose in RNA, Desoxyribose in DNA) besteht
 - Nukleotide enthalten zusätzlich eine oder mehrere [[Phosphatgruppe|Phosphatgruppen]], die an das [[Nukleoside|Nukleosid]] über eine Esterbindung am 5’-Kohlenstoffatom der Pentose gebunden sind
 ## Säureanhydridbindungen:
 - An die erste Phosphatgruppe können weitere Phosphatgruppen über Säureanhydridbindungen gekoppelt werden. Diese Bindungen sind energiereich und spielen eine wichtige Rolle bei der Energieübertragung in Zellen.

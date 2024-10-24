@@ -1,4 +1,10 @@
-
+## Something we know after 50 years of software development
+- Putting more people on a late project makes it later
+- Errors are more frequent during design & requirement phase
+	- -> And more difficult to fix
+- Testing can only show the presence of errors but not their absence
+- A system that is used will be changed
+- Only what is hidden can be changed without risk
 ## Content
 - [[Clean Code]]
 - [[Command-Query Separation (CQS)]]

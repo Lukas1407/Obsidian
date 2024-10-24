@@ -49,7 +49,8 @@
     "iconColorInFrontmatterFieldName": "iconColor",
     "iconsInLinksEnabled": true,
     "debugMode": false,
-    "iconInTitlePosition": "above"
+    "iconInTitlePosition": "above",
+    "lucideIconPackType": "native"
   },
   "Organization": "BoBxCheck",
   "University Lectures/Current/Medical Imaging Technology/books": "BoBxBook",
