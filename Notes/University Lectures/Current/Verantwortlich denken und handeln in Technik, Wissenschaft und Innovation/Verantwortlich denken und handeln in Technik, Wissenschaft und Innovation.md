@@ -1,4 +1,4 @@
-
+ 
 ## Begriffe
 ### Moral
 - Werte, Normen und Urteile mit universellem Geltungsanspruch
@@ -44,18 +44,18 @@ Die Verantwortung wird auf drei Ebenen analysiert:
 - [[Normatives Argumentieren und empirisches Wissen]]
 - [[Verantwortung]]
 - [[Kritisches Argumentieren]]
-### 2. Retrospektive Verantwortungszuschreibung: Unterscheidung moralischer von juristischer Beurteilung und Rolle von kausaler Verantwortung
+### Retrospektive Verantwortungszuschreibung: Unterscheidung moralischer von juristischer Beurteilung und Rolle von kausaler Verantwortung
 - **Unterscheidung**: Zwischen moralischer und juristischer Verantwortung muss klar unterschieden werden. Juristische Verantwortung basiert auf Gesetzen, moralische auf ethischen Grundsätzen.
 - **Beispiel**: Entwicklungsingenieur entwickelten die Abschalteinrichtung, waren jedoch weisungsgebunden. Die juristische Verantwortung liegt bei jenen, die die Entscheidungen trafen.
 - **Verantwortungsdiffusion**: In großen Organisationen ist die Zuweisung der kausalen Verantwortung oft schwierig, was es erschwert, Einzelpersonen juristisch oder moralisch zur Rechenschaft zu ziehen.
-### 3. Sein-Sollen Fehlschluss in Verteidigungsargumenten
+### Sein-Sollen Fehlschluss in Verteidigungsargumenten
 - **Fehlschluss**: Häufig versuchen Akteure ihr Verhalten zu rechtfertigen, indem sie argumentieren, dass „alle in der Branche das tun.“ Dies ist ein Sein-Sollen-Fehlschluss, weil aus einem deskriptiven Faktum keine normative Legitimation abgeleitet werden kann.
-### 4. Retrospektive moralische Beurteilung der beteiligten Akteur
+### Retrospektive moralische Beurteilung der beteiligten Akteur
 - **Beurteilung**: Entwicklungsingenieur und das Management tragen beide moralische Verantwortung. Die Ingenieur hatten das technische Wissen, um den Schaden vorherzusehen, während das Management die Zielvorgaben machte.
 - **Whistleblowing**: Einige Ingenieur verhielten sich moralisch vorbildlich, indem sie als Whistleblower auf die Missstände hinwiesen, trotz persönlicher Risiken.
-### 5. Relevanz retrospektiver moralischer Beurteilung
+### Relevanz retrospektiver moralischer Beurteilung
 - **Folgen**: Retrospektive moralische Analysen sind nicht nur akademisch, sondern haben praktische Konsequenzen. Der Dieselabgasskandal hat beispielsweise dazu beigetragen, dass der gesetzliche Schutz für Whistleblower gestärkt wurde.
-### 6. Prospektive Verantwortungsübernahme in organisationalen Kontexten
+### Prospektive Verantwortungsübernahme in organisationalen Kontexten
 - **Verantwortungsübernahme**: Unternehmen müssen Strukturen schaffen, die ethisches Handeln fördern, z.B. durch Schulungen oder organisatorische Prozesse, die ethische Reflexion in Entscheidungsprozesse einbinden.
 - **Management und Ingenieur**: Beide haben eine besondere Rolle in der Förderung ethischen Handelns – Ingenieur
     durch ihre Expertise in technischen Machbarkeitsstudien und das Management durch die Schaffung einer offenen Organisationskultur.

@@ -11,11 +11,11 @@ Es gibt drei weit verbreitete moralische Beurteilungsgrundsätze:
 3. **Der Charakter der handelnden Person und konkrete Werte (Tugendethik)**:
     - Der moralische Wert einer Handlung wird anhand des Charakters der handelnden Person beurteilt. Moralisch gute Handlungen resultieren aus moralisch guten Charaktereigenschaften.
     - **Beispiel**: Ein Whistleblower zeigt Mut und Ehrlichkeit, was moralisch gute Charaktereigenschaften sind.
-### 3. Konfligierende Beurteilungen aufgrund unterschiedlicher Beurteilungsgrundsätze
+### Konfligierende Beurteilungen aufgrund unterschiedlicher Beurteilungsgrundsätze
 - **Problem**: Die drei Grundsätze führen nicht immer zum gleichen moralischen Urteil.
 - **Beispiel**: Ein wütender Mob will eine unschuldige Person lynchen.
     - Folgenorientierte Abwägung könnte sagen, dass man den Mob nicht aufhalten sollte, um größere Unruhen zu vermeiden.
     - Die deontologische Position besagt, dass es immer falsch ist, eine unschuldige Person zu töten, unabhängig von den Folgen.
     - Die Tugendethik würde betonen, dass es feige wäre, das Lynchen zuzulassen, und dass man mutig eingreifen sollte.
-### 4. Die kontinuierliche kritische Reflexion moralischer Begründung
+### Die kontinuierliche kritische Reflexion moralischer Begründung
 - **Reflexion**: Die drei Grundsätze bieten unterschiedliche Ansätze zur Begründung moralischer Urteile. Es ist wichtig, diese Grundsätze in der ethischen Reflexion kontinuierlich zu hinterfragen und gegebenenfalls abzuwägen.

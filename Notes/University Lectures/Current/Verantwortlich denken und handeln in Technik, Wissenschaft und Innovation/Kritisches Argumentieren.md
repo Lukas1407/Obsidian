@@ -61,62 +61,62 @@
         1. **Begriffsklärung**: Was genau bedeutet „moralische Verantwortung“ und „Umwelt“? Welche Formen von Tourismus gibt es und wie wirken sie sich aus?
         2. **Präzisierung**: Ist die moralische Verantwortung ausreichend, um ein Verbot zu rechtfertigen? Betrifft das Verbot alle Arten von Tourismus oder nur bestimmte?
         3. **Empirisches Wissen**: Inwieweit schadet Tourismus der Umwelt wirklich? Empirisches Wissen ist wichtig, um das Argument zu stützen.
-### 2. Bejahung des Nachsatzes
+### Bejahung des Nachsatzes
 - **Definition**: Ein Fehlschluss, bei dem aus dem Nachsatz einer Wenn-Dann-Aussage (nach dem „dann“) fälschlicherweise auf den Vordersatz (vor dem „wenn“) geschlossen wird.
     - **Beispiel**:
         - Prämisse 1: Wenn es regnet, dann ist die Straße nass.
         - Prämisse 2: Die Straße ist nass.
         - **Fehlerhafte Konklusion**: Es regnet.
-### 3. Doppeldeutigkeit & Ambiguität
+### Doppeldeutigkeit & Ambiguität
 - **Definition**: Ein Fehlschluss, der auf unpräzisen oder doppeldeutigen Begriffen basiert. Wenn Begriffe unterschiedlich interpretiert werden können, entsteht eine argumentative Schwäche.
     - **Beispiel**:
         - Prämisse 1: Wer unkonzentriert ist, ist abwesend.
         - Prämisse 2: Wer abwesend ist, ist physisch nicht sichtbar.
         - **Fehlerhafte Konklusion**: Peter ist unkonzentriert, also physisch nicht sichtbar.
-### 4. Zirkelschluss
+### Zirkelschluss
 - **Definition**: Ein Argument, bei dem die Konklusion bereits in einer der Prämissen vorausgesetzt wird.
     - **Beispiel**:
         - Prämisse 1: Die Katze hat ein schwarz-weißes Fell.
         - **Fehlerhafte Konklusion**: Das Fell der Katze ist schwarz-weiß (dies wird nur wiederholt, nicht bewiesen).
-### 5. Korrelation vs. Kausalität
+### Korrelation vs. Kausalität
 - **Definition**: Ein Fehlschluss, bei dem eine Korrelation fälschlicherweise als Kausalität interpretiert wird. Nur weil zwei Ereignisse zusammen auftreten, bedeutet das nicht, dass das eine das andere verursacht.
     - **Beispiel**: Es gibt eine Korrelation zwischen biologischem Geschlecht und Bildungsgrad, aber das Geschlecht ist nicht die Ursache für den Bildungsunterschied – gesellschaftliche Strukturen sind verantwortlich.
-### 6. Spieler-Fehlschluss
+### Spieler-Fehlschluss
 - **Definition**: Der Irrglaube, dass vergangene unabhängige Ereignisse die Wahrscheinlichkeit zukünftiger Ereignisse beeinflussen.
     - **Beispiel**: „Ich habe fünfmal keine Sechs gewürfelt, also muss die Wahrscheinlichkeit für eine Sechs im nächsten Wurf höher sein.“ In Wahrheit bleibt die Wahrscheinlichkeit für eine Sechs immer gleich.
-### 7. Schwarzweißmalerei
+### Schwarzweißmalerei
 - **Definition**: Ein Fehlschluss, bei dem nur zwei Extreme als Optionen dargestellt werden, obwohl es in Wirklichkeit weitere Alternativen gibt.
     - **Beispiel**: „Entweder bist du für uns, oder du bist gegen uns.“ Hier wird die Möglichkeit der Neutralität nicht erwähnt.
-### 8. Fangfrage
+### Fangfrage
 - **Definition**: Eine Frage, die eine umstrittene oder falsche Annahme enthält, die durch eine direkte Antwort stillschweigend akzeptiert wird.
     - **Beispiel**: „Wann haben Sie zuletzt in einer Prüfung geschummelt?“ – Dies setzt voraus, dass die Person überhaupt geschummelt hat.
-### 2. Sein-Sollen-Fehlschluss
+### Sein-Sollen-Fehlschluss
 - **Definition**: Dieser Fehlschluss besteht darin, von deskriptiven Sätzen (Sein) auf normative Sätze (Sollen) zu schließen.
     - **Beispiel**:
         - Prämisse 1: Wir haben schon immer X getan.
         - **Fehlerhafte Konklusion**: Wir sollten X weiterhin tun.
     - Lösung: Eine normative Prämisse (z.B. „X zu tun ist gut“) ist notwendig, um die Konklusion zu stützen.
-### 3. Naturalistischer Fehlschluss & Verweise auf Natürlichkeit
+### Naturalistischer Fehlschluss & Verweise auf Natürlichkeit
 - **Definition**: Normative oder moralische Urteile werden aus der „Natürlichkeit“ einer Sache abgeleitet. Das ist ein Spezialfall des Sein-Sollen-Fehlschlusses.
     - **Beispiel**:
         - Prämisse 1: Maserninfektionen sind natürlich.
         - **Fehlerhafte Konklusion**: Sich mit Masern zu infizieren, ist gut, weil es natürlich ist.
     - Lösung: Es müssen normative Prämissen eingefügt werden, die Natur nicht als automatisch gut oder schlecht bewerten.
-### 4. Genese vs. Geltung
+### Genese vs. Geltung
 - **Definition**: Verwechslung der Entstehung (Genese) einer Norm mit ihrer Gültigkeit (Geltung). Nur weil etwas auf eine bestimmte Weise entstanden ist, bedeutet das nicht, dass es auch normativ gut oder gültig ist.
     - **Beispiel**: Der „Kohlekompromiss“ wurde über Jahre verhandelt, daher sei er gut. In Wahrheit muss die normative Gültigkeit gesondert begründet werden.
-### 5. Verwechslung von Recht und Moral
+### Verwechslung von Recht und Moral
 - **Definition**: Dieser Fehlschluss besteht darin, aus der Legalität einer Handlung auf ihre moralische Legitimität zu schließen.
     - **Beispiel**: „Alles war legal, also war es auch moralisch in Ordnung.“
     - Lösung: Recht und Moral sind getrennt zu bewerten; was legal ist, muss nicht moralisch legitim sein.
-### 6. Fehlerhafte Analogie
+### Fehlerhafte Analogie
 - **Definition**: Eine Analogie wird gezogen, obwohl die beiden verglichenen Fälle nicht in allen relevanten Aspekten übereinstimmen.
     - **Beispiel**:
         - Prämisse 1: Roboter sind wie Menschen.
         - Prämisse 2: Menschen haben Grundrechte.
         - **Fehlerhafte Konklusion**: Roboter sollten Grundrechte haben.
     - Lösung: Die relevanten Unterschiede zwischen den verglichenen Fällen müssen beachtet werden.
-### 7. Dammbruchargument
+### Dammbruchargument
 - **Definition**: Ein Argument, das behauptet, eine kleine Handlung werde notwendigerweise zu einer katastrophalen Folge führen.
     - **Beispiel**:
         - Prämisse 1: Wenn wir A tun, führt das zwangsläufig zu B, C, D und E.
