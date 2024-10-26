@@ -52,3 +52,110 @@
    - After applying Bayes’ Rule, we find that the probability that the door is open, given the sensor reading $z$, is $0.67$ or $67\%$.
    - The evidence $z$ **raises the probability** that the door is open from the prior $0.5$ (50%) to $0.67$ (67%).
 
+## Combining Evidence
+1. **New Observation**:
+   - Suppose our robot has obtained another observation, $z_2$, at a later time, in addition to the first observation $z_1$.
+   - The question is how to integrate this new information to update our belief about whether the door is open or not.
+2. [[Bayes Rule#Bayes Rule with Background Knowledge|Bayes' Rule with Background Knowledge]]:
+   - To estimate $p(\text{open} | z_1, z_2)$, we apply Bayes' Rule:
+     $$
+     p(\text{open} | z_1, z_2) = \frac{p(z_2 | \text{open}, z_1) p(\text{open} | z_1)}{p(z_2 | z_1)}
+     $$
+   - Here, the tricky term is $p(z_2 | \text{open}, z_1)$, which requires knowing how the new observation $z_2$ depends on both the state of the door being open and the first observation $z_1$.
+### Markov Assumption
+   - The **Markov Assumption** simplifies the problem. It states that **if we know the state of the door (whether it's open or not), the new observation $z_2$ is conditionally independent of the previous observation $z_1$**.
+   - This means that $z_2$ depends only on the state of the door and not on the previous observation $z_1$.
+   - Formally, this is written as:
+     $$
+     p(z_2 | \text{open}, z_1) = p(z_2 | \text{open})
+     $$
+   - This assumption allows us to focus on the current observation without needing to account for all past observations when updating our belief about the state.
+### Example with Numbers
+1. **Second Sensor**:
+   - Let’s assume we have a second sensor, and we are given the following probabilities:
+     - $p(z_2 | \text{open}) = 0.5$: The probability of observing $z_2$ if the door is open.
+     - $p(z_2 | \neg \text{open}) = 0.6$: The probability of observing $z_2$ if the door is not open.
+     - $p(\text{open} | z_1) = \frac{2}{3}$: From previous calculations, this is our belief about the door being open given the first observation.
+2. **Updating the Belief**:
+   - Using Bayes' Rule, we update our belief about the door being open given both observations $z_1$ and $z_2$:
+     $$
+     p(\text{open} | z_1, z_2) = \frac{p(z_2 | \text{open}) p(\text{open} | z_1)}{p(z_2 | \text{open}) p(\text{open} | z_1) + p(z_2 | \neg \text{open}) p(\neg \text{open} | z_1)}
+     $$
+   - Substituting the values:
+     $$
+     p(\text{open} | z_1, z_2) = \frac{0.5 \cdot \frac{2}{3}}{0.5 \cdot \frac{2}{3} + 0.6 \cdot \frac{1}{3}} = \frac{\frac{1}{3}}{\frac{1}{3} + \frac{1}{5}} = \frac{5}{8} = 0.625
+     $$
+   - Thus, after the second observation, the probability that the door is open has decreased to 0.625 (62.5%).
+3. **Interpretation**:
+   - In this case, the second observation $z_2$ **lowers** the probability that the door is open, compared to our belief after only the first observation. This shows how new evidence can change our prior belief.
+### **Slide 4: General Form**
+1. **Recursive Bayesian Updating**:
+   - When there are multiple observations $z_1, z_2, \dots, z_n$, we can generalize this process using recursion.
+   - Based on the **Markov Assumption**, each new observation $z_n$ only depends on the current state $x$ (whether the door is open or not) and not on past observations:
+     $$
+     p(x | z_1, \dots, z_n) = \eta_n p(z_n | x) p(x | z_1, \dots, z_{n-1})
+     $$
+   - This recursive relationship allows us to iteratively update our belief as new observations come in.
+2. **Final General Form**:
+   - The general recursive form for updating probabilities based on a sequence of observations is:
+     $$
+     p(x | z_1, \dots, z_n) = \prod_{i=1}^{n} \eta_i p(z_i | x) p(x)
+     $$
+   - This shows that we multiply the likelihoods $p(z_i | x)$ of each observation given the current state and scale by a normalizing factor $\eta_i$.
+## State Transitions
+![[Pasted image 20241025141951.png#invert|400]]
+- The outcome of an action is modeled as a random variable $U$, where $U=u$ represents the **state after performing an action**.
+- -> If the door is open, the action “close door” succeeds in 90% of all cases
+### Discrete and Continuous State Spaces
+   - To compute the probability of a certain state $x$ after performing an action $u$, we need to account for all possible **previous states** $x'$.
+   - If the state space is discrete (like "open" and "closed"), the probability is computed by summing over all previous states $x'$:
+     $$
+     p(x | u) = \sum_{x'} p(x | u, x') p(x')
+     $$
+   - This accounts for the probability of transitioning to $x$ given the action $u$, weighted by the prior probability of each possible previous state $x'$.
+   - If the state space is continuous (like a range of possible positions), we integrate over the previous states $x'$:
+     $$
+     p(x | u) = \int p(x | u, x') p(x') dx'
+     $$
+   - This is the continuous equivalent, where the integration accounts for all possible prior states.
+### Example with Door State
+   - Let’s calculate the probability that the door is still open after performing the "close door" action, using the previous formula:
+     $$
+     p(\text{open} | u) = \sum_{x'} p(\text{open} | u, x') p(x')
+     $$
+   - We consider the two possible prior states: the door could have been either open or closed before performing the action:
+     $$
+     p(\text{open} | u) = p(\text{open} | u, \text{open'}) p(\text{open'}) + p(\text{open} | u, \neg \text{open'}) p(\neg \text{open'})
+     $$
+   - Substituting the given probabilities:
+     - $p(\text{open} | u, \text{open'}) = 0.1$: If the door was open, it stays open 10% of the time.
+     - $p(\text{open'}) = \frac{5}{8}$: The prior probability that the door was open.
+     - $p(\text{open} | u, \neg \text{open'}) = 0$: If the door was already closed, it can’t reopen after performing the action.
+     - $p(\neg \text{open'}) = \frac{3}{8}$: The prior probability that the door was closed.
+
+   - The total probability that the door is open after the action:
+     $$
+     p(\text{open} | u) = 0.1 \cdot \frac{5}{8} + 0 \cdot \frac{3}{8} = \frac{1}{16} = 0.0625
+     $$
+
+2. **Complementary Probability**:
+   - The probability that the door is closed after the action is:
+     $$
+     p(\neg \text{open} | u) = 1 - p(\text{open} | u) = \frac{15}{16} = 0.9375
+     $$
+
+## Sensor Update and Action Update
+1. **Combining Sensor and Action Updates**:
+   - So far, we’ve learned two different ways to update the system’s state:
+     - **Sensor Update**: $p(x | z)$, which updates the belief about the state based on sensor measurements.
+     - **Action Update**: $p(x | u)$, which updates the belief about the state based on the outcome of an action.
+2. **Belief Update**:
+   - Now, we combine both updates to define the **belief** about the current state after a sequence of actions and sensor measurements.
+   - The **belief** at time $t$ is defined as:
+     $$
+     \text{Bel}(x_t) = p(x_t | u_1, z_1, \dots, u_t, z_t)
+     $$
+   - This is the probability of being in state $x_t$ at time $t$, given all the actions $u_1, \dots, u_t$ and sensor measurements $z_1, \dots, z_t$ up to that point.
+## Graphical Representation
+- The overall process of **state estimation** and **sensor updates** over time can be represented using a **Dynamic Bayesian Network** (DBN).
+![[Dynamic Bayesian Network]]

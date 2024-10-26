@@ -3,3 +3,5 @@
 - [[Basics of Probability Theory]]
 - [[Bayes Rule]]
 - [[Bayesian Reasoning]]
+- [[Bayes Filter]]
+- [[Application of Bayesian principles to Linear Regression]]

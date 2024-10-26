@@ -1,4 +1,4 @@
- 
+  
 ## Begriffe
 ### Moral
 - Werte, Normen und Urteile mit universellem Geltungsanspruch
