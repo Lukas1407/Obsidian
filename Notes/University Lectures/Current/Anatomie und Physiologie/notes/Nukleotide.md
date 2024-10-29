@@ -5,6 +5,16 @@
 - Nukleotide bestehen aus [[Nukleoside|Nukleosiden]], die mit einer oder mehreren [[Phosphatgruppe|Phosphatgruppen]] verestert sind.
 - Ein Nukleotid beginnt als [[Nukleoside|Nukleosid]], das aus einer [[Nukleinbasen|Nukleobase]] (Adenin, Guanin, Cytosin, Thymin oder Uracil) und einem Pentosezucker (Ribose in RNA, Desoxyribose in DNA) besteht
 - Nukleotide enthalten zusätzlich eine oder mehrere [[Phosphatgruppe|Phosphatgruppen]], die an das [[Nukleoside|Nukleosid]] über eine Esterbindung am 5’-Kohlenstoffatom der Pentose gebunden sind
+### Phosphodiesterbindung
+- Diese Brücke verbindet die Nukleotide
+- Hier gelb
+![[Pasted image 20241029094034.png#invert|200]]
+- Hier trennt sich die DNA
+- Eine Phosphodiesterbindung entsteht, wenn die **3'-OH-Gruppe** eines Nukleotids mit dem **5'-Phosphat** des nächsten Nukleotids reagiert.
+- Diese Reaktion wird von Enzymen wie der **[[DNA-Polymerase]]** während der DNA-Replikation oder der **Ligase** während der DNA-Reparatur katalysiert.
+- Während der Reaktion wird **Wasser (H₂O)** freigesetzt, was eine Kondensationsreaktion darstellt.
+![[Pasted image 20241029094909.png#invert|500]]
+- Diese Reaktion ist extrem ineffizient
 ## Säureanhydridbindungen:
 - An die erste Phosphatgruppe können weitere Phosphatgruppen über Säureanhydridbindungen gekoppelt werden. Diese Bindungen sind energiereich und spielen eine wichtige Rolle bei der Energieübertragung in Zellen.
 ## Funktionen von Nukleotiden

@@ -22,3 +22,5 @@
 - But usually needs a hell lot of samples
 ### Scalability
 ### Quality of the final policy
+### Wall-clock time
+- The actual time it takes to learn not just the run-time complexity

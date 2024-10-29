@@ -20,12 +20,16 @@ Basic reinforcement learning is modeled as a [[Markov Decision Process]].
 
 ## Why is RL so hard?
 ### Sequential Interaction
-- **Temporal Credit Assignment**: Determining which actions are responsible for eventual outcomes is a significant challenge in RL. When rewards are delayed, it becomes difficult to link a particular reward back to the specific actions that caused it, especially when those actions were taken several steps before receiving the reward.
-- **Delayed Rewards**: Unlike in supervised learning where the feedback to an action is immediate and clearly correct or incorrect, in RL, rewards can be delayed over many time steps. This delay complicates learning because the agent must learn to associate actions with outcomes that are far removed in time.
-- **Less immediate reward may yield higher long-term reward**: This point highlights the strategic challenge in RL. Sometimes, the best strategy involves forgoing an immediate reward for a greater long-term benefit. Learning to recognize and optimize for such long-term outcomes requires sophisticated strategies and poses a substantial challenge.
+- **Temporal Credit Assignment**: 
+	- Determining which actions are responsible for eventual outcomes 
+	- When rewards are delayed, it becomes difficult to link a particular reward back to the specific actions that caused it, especially when those actions were taken several steps before receiving the reward.
+- **Delayed Rewards**:
+	- Unlike in supervised learning where the feedback to an action is immediate and clearly correct or incorrect, in RL, rewards can be delayed over many time steps.
+- **Less immediate reward may yield higher long-term reward**
+	- This point highlights the strategic challenge in RL. Sometimes, the best strategy involves forgoing an immediate reward for a greater long-term benefit. Learning to recognize and optimize for such long-term outcomes requires sophisticated strategies and poses a substantial challenge.
 ### We need to explore
 - **[[Exploration-Exploitation Trade-off|Exploration vs. Exploitation Dilemma]]**: In RL, an agent must decide between exploring new actions to discover potentially better rewards (exploration) and leveraging known actions that already give good rewards (exploitation). Balancing these two is crucial as too much exploration can lead to inefficiency, and too much exploitation can prevent finding the optimal policy.
-- **Sparse and Noisy Rewards**: Rewards in RL are often sparse (not provided at every time step) and noisy (may include random variations), which complicates the learning process. An agent must learn from limited feedback that may not always clearly indicate the best course of action.
+- **Sparse and Noisy Rewards**: Rewards in RL are often sparse (not provided at every time step, maybe only in the end) and noisy (may include random variations), which complicates the learning process. An agent must learn from limited feedback that may not always clearly indicate the best course of action.
 ### Partial Observability
 - In many real-world applications, an agent cannot observe the entire state of the environment but must operate in situations of partial observability. For instance, an autonomous vehicle might only have access to current sensor readings (like images or LIDAR data) without full knowledge of the environment. This uncertainty adds complexity to decision-making processes.
 ### Non-Stationarity

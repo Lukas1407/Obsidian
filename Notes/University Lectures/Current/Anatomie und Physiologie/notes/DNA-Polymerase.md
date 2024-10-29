@@ -1,0 +1,2 @@
+- Die **DNA-Polymerase** ist das Hauptenzym für die Synthese neuer DNA-Stränge. Sie fügt Nukleotide sehr effizient an das **3'-Ende** eines wachsenden Strangs an
+- Bei jedem Anfügen eines Nukleotids wird eine **Pyrophosphat-Gruppe (PPi)** abgespalten, und diese Abspaltung setzt Energie frei. Diese Energie wird direkt für die Bildung der **[[Nukleotide#Phosphodiesterbindung|Phosphodiesterbindung]]** genutzt.

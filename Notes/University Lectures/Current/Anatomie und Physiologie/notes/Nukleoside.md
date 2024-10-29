@@ -4,6 +4,9 @@
 - **N-[[Kohlenhydrate#Glycosidische Bindung|glycosidische Bindung]]**: Diese Bindung verknüpft die Nukleobase mit der Pentose. Bei Pyrimidinbasen (Cytosin, Thymin, Uracil) erfolgt die Bindung am N-Atom in Position 1, während bei Purinbasen (Adenin, Guanin) die Bindung am N-Atom in Position 9 stattfindet.
 - **Protoniertes N-Atom**: Das N-Atom der Nukleobase, das an der Bindung beteiligt ist, ist protoniert, was bedeutet, dass es ein zusätzliches Wasserstoffion (H⁺) aufgenommen hat.
 
+## Verknüpfen von Nukleosiden
+
+
 ## Einteilung
 - Aus den 5 Nukleinbasen und den 2 Pentosen lassen sich die 10 Grundtypen der Nukleoside bilden
 	- Adenosin

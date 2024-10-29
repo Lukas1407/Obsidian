@@ -103,6 +103,45 @@ Die Konformation oder räumliche Anordnung der Basenpaare zueinander hängt star
 - Ausschliesslich Bakterien können negative supercoil einführen (Gyrase)
 	- **Bakterien** führen negative Supercoils durch die DNA-Gyrase ein, um die DNA effizient zu verdichten und gleichzeitig zugänglich zu machen. Dies erleichtert wichtige Prozesse wie Replikation und Transkription in einem kompakten, kernlosen Zellumfeld. Eukaryoten benötigen diese Mechanismen nicht, da sie alternative Methoden zur DNA-Verpackung und -Regulation verwenden, wie die Histon-vermittelte Struktur der Chromosomen.
 
+## Chemische Eigenschaften
+### Polare und negativ geladene Struktur
+- Die **DNA-Moleküle** sind aufgrund der **Phosphatgruppen** im Rückgrat des DNA-Strangs negativ geladen. Jede Phosphatgruppe trägt eine negative Ladung, was der DNA insgesamt eine starke negative Ladung verleiht.
+- Diese Phosphatgruppen sind hydrophil (wasserlöslich), was bedeutet, dass die DNA insgesamt **polar** ist. Diese Polarität und negative Ladung führen dazu, dass die DNA in wässrigen Lösungen gut löslich ist.
+### Stabile Doppelhelix-Struktur
+- Die DNA besitzt eine stabile Doppelhelixstruktur, die durch **kovalente Phosphodiesterbindungen** im Zucker-Phosphat-Rückgrat und durch **Wasserstoffbrückenbindungen** zwischen den Basenpaaren stabilisiert wird.
+- **Basenpaarung**: Die spezifische Paarung der Basen (Adenin mit Thymin und Guanin mit Cytosin) über Wasserstoffbrückenbindungen trägt ebenfalls zur Stabilität bei. Es gibt zwei Wasserstoffbrücken zwischen Adenin und Thymin und drei zwischen Guanin und Cytosin, was die Stabilität weiter erhöht, besonders bei GC-reichen Regionen.
+- **Hydrophobe Wechselwirkungen**: Die Basen selbst sind hydrophob und neigen dazu, im Inneren der Doppelhelix „gestapelt“ zu werden. Diese **Basenstapelung** erzeugt **hydrophobe Wechselwirkungen**, die die Struktur zusätzlich stabilisieren.
+### Verschiedene intermolekulare Kräfte
+- Die DNA-Moleküle werden durch eine Kombination von Kräften zusammengehalten, darunter:
+    - **Wasserstoffbrückenbindungen** zwischen den komplementären Basen.
+    - **Van-der-Waals-Kräfte** und **hydrophobe Wechselwirkungen** zwischen gestapelten Basenpaaren innerhalb der Doppelhelix.
+    - **Elektrostatische Wechselwirkungen** zwischen den negativ geladenen Phosphatgruppen und positiv geladenen Ionen in der Umgebung (z. B. Mg²⁺-Ionen), die die negativen Ladungen teilweise abschirmen und die Struktur stabilisieren.
+### Reversible Denaturierung
+- **Denaturierung** bedeutet das Aufbrechen der Wasserstoffbrückenbindungen zwischen den Basen und die Aufspaltung der Doppelhelix in zwei Einzelstränge. Dies kann durch **Hitze** (z. B. über 90°C) oder **chemische Mittel** wie Harnstoff oder starke pH-Veränderungen erreicht werden.
+- Die Denaturierung ist oft **reversibel**: Wenn die Bedingungen (Temperatur, pH) wieder normalisiert werden, können sich die komplementären Basen wieder durch **Renaturierung** zu einer Doppelhelix zusammenlagern.
+- Diese reversible Natur der Denaturierung ist essenziell für viele biologische Prozesse, wie die DNA-Replikation und die Polymerase-Kettenreaktion (PCR).
+![[Pasted image 20241029095845.png#invert|500]]
+- Das Aufschmelzen beginnt in AT reichen Regionen und setzt sich dann lokal durch Erweiterung der aufgeschmolzenen Blasen fort
+#### Messing durch UV-Absoprtion
+- Die **Nukleinsäurebasen** der DNA (Adenin, Thymin, Guanin, Cytosin) absorbieren **UV-Licht bei einer Wellenlänge von etwa 260 nm**. Die Menge der Absorption hängt von der Struktur der DNA ab.
+- **Doppelsträngige DNA** (native Form) absorbiert weniger UV-Licht als **einzelsträngige, denaturierte DNA**. 
+- Diese Eigenschaft kann genutzt werden um den Gehalt von denaturierter bzw. nativer DNA zu bestimmen
+![[Pasted image 20241029100439.png#invert|300]]
+- Die Kurve zeigt die **relative Absorption bei 260 nm in Abhängigkeit von der Temperatur**. Die sigmoide Form der Kurve entsteht, weil die Denaturierung ein **kooperativer Prozess** ist:
+- Bei niedrigen Temperaturen ist die DNA stabil in der doppelsträngigen Form, und die UV-Absorption ist niedrig.
+- Mit steigender Temperatur erreicht man den **Schmelzpunkt (Tₘ)**, bei dem die Hälfte der DNA denaturiert ist. Ab hier nehmen die Einzelstränge überhand, und die Absorption steigt stark an.
+- Oberhalb des Schmelzpunktes sind fast alle DNA-Moleküle vollständig denaturiert, und die Kurve flacht wieder ab, weil die maximale Absorption erreicht ist.
+### Einflussfaktoren auf die Schmelztemeratur
+#### Ionenstärke / Salzkonzentration
+- **Elektrostatische Abstoßung**: DNA-Moleküle sind aufgrund der Phosphatgruppen im Rückgrat negativ geladen. Ohne zusätzliche Ionen würde die negative Ladung entlang des DNA-Strangs starke elektrostatische Abstoßungskräfte erzeugen, die die Doppelhelix destabilisieren und die Schmelztemperatur senken.
+- **Neutralisierung durch Ionen**: In Lösungen mit einer gewissen Salzkonzentration (z. B. Na⁺- oder Mg²⁺-Ionen) werden die negativen Ladungen der Phosphatgruppen teilweise neutralisiert, was die Abstoßungskräfte reduziert und die DNA stabilisiert. Diese Ionen fungieren als **Doppelhelix-Stabilisatoren**.
+- **Niedrige Ionenstärke**: Bei niedriger Salzkonzentration (rote Kurve) ist die elektrostatische Abschirmung geringer, sodass die DNA weniger stabil ist und eine niedrigere Schmelztemperatur hat.
+- **Hohe Ionenstärke**: Bei höherer Salzkonzentration (grüne Kurve) sind mehr Ionen verfügbar, um die Phosphatgruppen abzuschirmen, was die Doppelhelix stabilisiert und den TmT_mTm​ erhöht.
+- **Entionisiertes Wasser**: In entionisiertem Wasser, das keine gelösten Ionen enthält, ist die Stabilität der DNA sehr gering, und sie kann sogar bei Raumtemperatur denaturieren.
+#### GC-Gehalt
+- Je höher der GC-Gehalt einer DNA-Probe, desto stabiler ist die Doppelhelix und desto höher ist die Schmelztemperatur. GC-reiche DNA-Sequenzen erfordern mehr Energie (also eine höhere Temperatur), um die Wasserstoffbrücken zu brechen und die Helix zu denaturieren.
+#### Länge des DNA-Strangs
+- **Längere DNA-Stränge** besitzen mehr Basenpaare und haben daher mehr Wasserstoffbrückenbindungen und hydrophobe Wechselwirkungen, die zur Stabilität der Doppelhelix beitragen.
 
 ## Foto 51
 Röntgenbeugung (Raymond Gosling, Rosalind Franklin, 1952) 
