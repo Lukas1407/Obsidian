@@ -8,3 +8,4 @@
 - [[Frame Buffer]]
 - [[Darstellung von Bildern]]
 - [[Farbsehen]]
+- [[Alpha-Kanal]]

@@ -1,6 +1,5 @@
 > [!abstract] Definition
-> Rasterbilder sind Bilder, die aus einem Raster von kleinen, farbigen Punkten bestehen, die man als **Pixel** (Picture Elements) bezeichnet. Diese Pixel sind in einem 2D-Array organisiert, das man sich wie ein Gitter vorstellen kann. Jeder Pixel trägt eine bestimmte Farbe. 
-Stell dir vor, du hast ein Bild, das aus 10x10 Pixeln besteht. Das bedeutet, es gibt 100 kleine Quadrate, die zusammen das Bild formen. Jede dieser Quadrate hat eine bestimmte Farbe.
+> Rasterbilder sind Bilder, die aus einem 2D Pixel Array bestehen.
 
 ## Konsequenzen von Rasterbildern:
 ### 1. **Auflösung:**

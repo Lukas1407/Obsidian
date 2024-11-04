@@ -1,9 +1,20 @@
+## Typen von Anzeigegeräten
+### Transmission: 
+- Bei diesen Geräten wird Licht durch eine farbige Schicht hindurchgeleitet. Ein Beispiel ist der Flüssigkristallbildschirm (LCD), bei dem Licht von einer Hintergrundbeleuchtung durch Schichten von Kristallen und Farbfiltern geleitet wird, um das Bild anzuzeigen.
+### Emission:
+- Diese Geräte erzeugen selbst Licht, anstatt auf eine Hintergrundbeleuchtung angewiesen zu sein. Dazu zählen LEDs (Light Emitting Diodes), OLEDs (Organic LEDs) und Plasmabildschirme. Sie haben oft eine bessere Farbdarstellung und Kontraste, da sie Licht direkt aussenden.
+### Reflexion:
+- Diese Art von Displays, wie E-Paper, reflektieren das Umgebungslicht, anstatt selbst Licht zu erzeugen. Sie werden in E-Book-Readern verwendet und sind besonders energieeffizient, da sie nur Strom benötigen, wenn sich das Bild ändert.
+### Beispiel: Beamer
+- Verwenden eine Kombination aus Transmission und Emission und projizieren das Bild über eine Reflexion auf eine Leinwand.
+
 ## Monitor:
-Ein Monitor ist ein Gerät, das Bilder zur visuellen Darstellung nutzt. Diese Bilder bestehen aus **Bildpunkten**, die auch als Pixel bezeichnet werden.
-- **Pixelstruktur:**
-  Jeder Pixel eines Monitors setzt sich aus drei **Sub-Pixeln** zusammen: einem roten, einem grünen und einem blauen Sub-Pixel. Diese werden in unterschiedlichen Intensitäten kombiniert, um eine breite Palette von Farben darzustellen. Dies nennt man die **RGB-Farbmischung** (Rot, Grün, Blau).
-- **Farbmischung:**
-  Durch die Variation der Intensität dieser Sub-Pixel können verschiedene Farben erzeugt werden:
+- Jeder Pixel eines Monitors setzt sich aus drei **Sub-Pixeln** zusammen: 
+	- Rot 
+	- Grün 
+	- Blau
+	- Diese werden in unterschiedlichen Intensitäten kombiniert, um eine breite Palette von Farben darzustellen. Dies nennt man die **RGB-Farbmischung** (Rot, Grün, Blau).
+- **Farbmischung:** Durch die Variation der Intensität dieser Sub-Pixel können verschiedene Farben erzeugt werden:
   - **Weiß:** Alle drei Sub-Pixel (Rot, Grün, Blau) leuchten mit maximaler Intensität.
   - **Schwarz:** Alle drei Sub-Pixel sind ausgeschaltet oder leuchten mit minimaler Intensität.
   - **Andere Farben:** Die Kombination der Intensitäten der roten, grünen und blauen Sub-Pixel in unterschiedlichen Verhältnissen erzeugt andere Farben. Zum Beispiel ergibt eine hohe Intensität von Rot und Grün mit wenig Blau die Farbe Gelb.

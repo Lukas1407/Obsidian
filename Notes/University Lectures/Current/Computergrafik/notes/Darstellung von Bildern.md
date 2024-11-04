@@ -112,9 +112,9 @@ Die Gamma-Korrektur ist ein wichtiger Aspekt bei der Darstellung von Bildern auf
    - **Überkompensation:** Eine zu starke Korrektur überkompensiert die Helligkeit, was zu einer unnatürlichen Darstellung führt, bei der die Helligkeit zu stark angehoben wird.
 ![[Pasted image 20240622084331.png|500]]
 ### Was passiert im Display?
-Ein Monitor stellt einen Pixelwert $n$ (z. B. $n = 0 \ldots 255$ bei 8 Bit) auf die Intensität $I(n)$ dar. Diese Intensität folgt oft einer Potenzfunktion:
-$$I(n) \propto \left(\frac{n}{N}\right)^\gamma$$
-- **Gamma-Wert \(\gamma\):** Dieser Wert beschreibt das nichtlineare Verhalten des Displays.
+Ein Monitor stellt einen Pixelwert $p$, für $p\in[0,1]$ auf die Intensität $I(p)$ dar. Diese Intensität folgt oft einer Potenzfunktion:
+$$I(n) \propto p^\gamma$$
+- **Gamma-Wert $\gamma$:** Dieser Wert beschreibt das nichtlineare Verhalten des Displays.
 - **Lineare Darstellung:** In der Computergrafik werden Pixelwerte oft in einem linearen Raum berechnet, um eine proportionale Helligkeitswiedergabe zu erzielen („doppelte berechnete Beleuchtung, doppelte Emission auf Display“).
 ### Warum ist das wichtig?
 Um eine korrekte und natürliche Darstellung von Bildern auf verschiedenen Displays zu gewährleisten, muss das nichtlineare Verhalten des Displays kompensiert werden. Dies wird durch die Gamma-Korrektur erreicht, die sicherstellt, dass die Helligkeit proportional zur ursprünglichen Bildinformation bleibt.
@@ -129,7 +129,37 @@ Um eine korrekte und natürliche Darstellung von Bildern auf verschiedenen Displ
 - **Transferfunktion:** Die Helligkeit $I(n)$ wird durch eine Transferfunktion $f$ von einem Wert $n$ im Bereich $[0, N]$ auf eine Helligkeit im Bereich $[I_{\text{min}}, I_{\text{max}}]$ abgebildet.
 - **Beispiel:** Eine Helligkeit $a = 0.5$ wird durch die Gamma-Korrektur $\gamma \approx 1.4$ in einen Pixelwert umgewandelt, der $\approx 155$ entspricht. Dies bedeutet, dass $\left(0.5\right)^{1/1.4} \cdot 255 \approx 155$ ergibt.
 ![[Pasted image 20240622084657.png#invert|400]]
-#### 3. Implementierung der Gamma-Korrektur in Code
+#### Ideale Transferfunktion
+- aufeinander folgende Pixelwerte sollen keine sichtbaren Helligkeitsstufen verursachen – sonst würde man in glatten Bildbereichen Bänder erkennen (so wie im Bild)
+![[Pasted image 20241028082806.png|200]]
+- Experimente haben gezeigt, dass das menschliche Auge Helligkeitsunterschiede von etwa 1%-2% erkennen kann.
+- In dunkleren Bildbereichen sind kleinere Helligkeitsschritte erforderlich, da das menschliche Auge dort empfindlicher auf Unterschiede reagiert. Absolut gesehen, muss der Unterschied (z. B. der Helligkeitswert zwischen zwei Pixeln) kleiner sein, um keine sichtbaren "Treppenstufen" oder Bänder zu erzeugen.
+##### **Just Noticeable Difference (JND)**:
+- beschreibt den kleinsten Unterschied in der Helligkeit, den das menschliche Auge wahrnehmen kann.
+$$\Delta \frac{L_{JND}}{L}=\text{const}\approx 1\%\text{ bis }2\%$$
+- $L$ ist die Hintergrundhelligkeit.
+- Das Verhältnis zeigt, dass der Unterschied bei 1%-2% der Ausgangshelligkeit liegt. Je dunkler der Hintergrund, desto feiner müssen die Helligkeitsstufen sein.
+![[Pasted image 20241028083133.png|400]]
+##### Bestimmen der idealen Transferfunktion
+   - **Helligkeitsunterschied**: Ein Unterschied von etwa 2% in der Helligkeit führt zu einer exponentiellen Transferfunktion, um Farbverläufe ohne sichtbare Stufen zu erzeugen.
+   - **Exponentielle Skalierung**: Bei jedem Schritt wird die Helligkeit um 2% erhöht ($1.02 \times I_{\text{min}}$, $1.02^2 \times I_{\text{min}}$, usw.), wodurch ein sanfter Übergang gewährleistet wird.
+   - **Logarithmische Berechnung**: Ein kleiner Anstieg von ca. $\log(1.02) \approx \frac{1}{120}$ erfordert ca. 120 Schritte für eine Verdopplung des Dynamikbereichs. Je größer der Dynamikumfang des Displays, desto mehr Schritte sind nötig (z.B. 240 für LCDs mit 100:1, 480 für HDR mit 10000:1).
+   - **8-Bit-Bilder**: Diese Zahl ist oft ausreichend für LCDs, um eine adäquate Bildrepräsentation zu erreichen.
+##### Exponentielle vs. Lineare Quantisierung
+   - **Lineare Quantisierung**: Hier werden gleiche Helligkeitsschritte für das gesamte Spektrum verwendet, was bei Helligkeitsunterschieden unter 2% problematisch sein kann.
+   - **Anzahl der Schritte**: Um den Bereich zwischen minimaler und maximaler Helligkeit abzudecken, sind bei linearer Quantisierung etwa 50 mal der Dynamikumfang in Schritte erforderlich.
+   - **Formel für Dynamikumfang**: Der Dynamikumfang $R_d$ gibt das Verhältnis zwischen $I_{\text{max}}$ und $I_{\text{min}}$ an. LCDs und HDR-Displays haben hohe Dynamikbereiche (z.B. 100:1 für LCDs und 500000:1 für HDR).
+##### Abbildung Wert → Helligkeit und Gamma-Korrektur
+   - **Transferfunktion $f$**: Diese Funktion ordnet Werte zwischen [0, 1] den Helligkeiten $[I_{\text{min}}, I_{\text{max}}]$ zu. Diese Abbildung ist nicht linear.
+   - **Wahrnehmung**: Unsere Wahrnehmung erfordert eine exponentielle Transferfunktion, um Farben gleichmäßig darzustellen. Im Gegensatz dazu verwendet der Frame Buffer oft eine Potenzfunktion ($I \propto p^\gamma$), was zu nicht-linearen Helligkeitsverläufen führt.
+   - **Gamma-Korrektur**: Diese Korrektur wird verwendet, um lineare Helligkeitsverläufe darzustellen. Sie gleicht die exponentielle Wahrnehmung des Auges aus.
+##### Praxis: Lineare Quantisierung und Speicherung von Bildern
+   - **Lineare Quantisierung für Berechnungen**: Einfach und praktisch für Rechenoperationen, jedoch muss eine Gamma-Korrektur durchgeführt werden, bevor das Bild im Frame Buffer gespeichert wird.
+   - **Speicherung in potenzbasierten Werten**: Die Werte werden als Potenzfunktion $a^{1/\gamma}$ gespeichert, um die Wahrnehmung gleichmäßig zu verteilen. Typische Systeme speichern in 8-Bit (für SDR) oder 12-Bit (für HDR).
+   - **sRGB-Beispiel**: sRGB wurde entwickelt, um eine standardisierte Gamma-Korrektur zu ermöglichen und ist auf 8-Bit kodiert, damit es auf älteren Bildschirmen gut funktioniert.
+   - **Linearisierung vor Berechnungen**: Vor der Bildverarbeitung müssen die Werte in lineare Intensitäten umgewandelt werden.
+   ![[Pasted image 20241028083445.png|400]]
+#### Implementierung der Gamma-Korrektur in Code
   ```c
   // Array: 8-Bit RGB-Frame Buffer
   unsigned char buffer[ WIDTH * HEIGHT * 3 ];

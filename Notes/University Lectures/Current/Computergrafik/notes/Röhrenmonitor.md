@@ -1,6 +1,7 @@
 
 ### Prinzip der Darstellung:
 - Ein **Röhrenmonitor** (auch als CRT, Cathode Ray Tube, bekannt) baut das Bild zeilenweise auf, indem ein Elektronenstrahl über die Bildschirmfläche geführt wird.
+![[Pasted image 20241028081327.png#invert|200]]
 - Der Elektronenstrahl bewegt sich von links nach rechts und von oben nach unten, um jeden Pixel der Bildschirmfläche zu treffen. Dabei wird die Helligkeit und Farbe jedes Pixels durch die Intensität und die Farbe des Elektronenstrahls bestimmt.
 ### Zeilenweises Aufbauen:
 - Der Strahl beginnt oben links und bewegt sich schnell von links nach rechts über die erste Zeile, dann zurück zur linken Seite der nächsten Zeile, und so weiter, bis das gesamte Bild aufgebaut ist.

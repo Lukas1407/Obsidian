@@ -61,4 +61,3 @@
 ## Discriminative Function
    - This approach involves learning a direct function $f(x)$ that maps input features $x$ to output labels $y$.
    - Instead of dealing with probabilities (as in the previous two models), discriminative functions try to find a direct relationship between input and output. In this case, the goal is to classify the data points by learning a function $f(x)$ that best separates or maps inputs to the correct class labels. Neural networks are an example of discriminative function-based models.
-   
