@@ -1,5 +1,5 @@
-
 ## Anatomie
+![[Pasted image 20241104080006.png#invert|400]]
 ### Augapfel
 - **Form**: Annähernd kugelförmig, etwa 24 mm lang.
 - **Unterteilung**: Besteht aus einem Vorder- und Hinterabschnitt.
@@ -30,6 +30,20 @@ Die **Adaption** des Auges beschreibt seine Fähigkeit, sich an verschiedene L
 - **Irisreflex**: Schnelle Anpassung an Helligkeitswechsel durch Veränderung des Pupillendurchmessers.
 - **Dunkeladaption**: Bei abnehmender Lichtintensität erhöht sich die Konzentration der Chromophore in den Stäbchen und Zäpfchen, was zu einer gesteigerten Empfindlichkeit führt. Die Reaktionsgeschwindigkeit beträgt bei Zäpfchen etwa 7 Minuten und bei Stäbchen etwa 30 Minuten.
 - **Neuronale Adaption**: Umfasst die räumliche Summation durch Zusammenschaltung benachbarter Photorezeptoren und die zeitliche Summation durch Verlangsamung der Augenbewegungen.
+## Das Auge als Sensor
+![[Pasted image 20241104080427.png|300]]
+### Zapfen (Cones)
+- **Funktion**: Zapfen sind für das Sehen bei Tageslicht (photopisches Sehen) und das Farbsehen verantwortlich.
+- **Arten**: Es gibt drei Zapfentypen, die auf unterschiedliche Lichtwellenlängen reagieren:
+  - **S-Zapfen** (ca. 7%): Empfindlich für blaues Licht.
+  - **M-Zapfen** (ca. 37%): Empfindlich für grünes Licht.
+  - **L-Zapfen** (ca. 56%): Empfindlich für rotes Licht.
+- **Anzahl und Lage**: Ca. 6-7 Millionen Zapfen sind in und um die Fovea (den zentralen Bereich der Retina) konzentriert.
+### Stäbchen (Rods)
+- **Funktion**: Stäbchen sind für das Sehen bei schwachem Licht (skotopisches Sehen) und das monochromatische (schwarz-weiß) Sehen verantwortlich.
+- **Empfindlichkeit**: Stäbchen sind überall auf der Retina verteilt und etwa 1000-mal lichtempfindlicher als Zapfen.
+- **Anzahl**: Es gibt etwa 120 Millionen Stäbchen im Auge.
+- **Dämmerungssehen**: Im mesopischen Bereich (Dämmerung) arbeiten Stäbchen und Zapfen zusammen, was den Übergang vom Farbsehen zum monochromatischen Sehen ermöglicht.
 ## Gullstrand-Auge
 - Das Gullstrand-Auge ist ein vereinfachtes Modell des menschlichen Auges, das zur Beschreibung seiner Abbildungseigenschaften dient. 
 - Es wurde von Allvar Gullstrand entwickelt und berücksichtigt sechs refraktive Flächen, die das Licht brechen, sowie die optischen Brechungsindizes dieser Flächen:

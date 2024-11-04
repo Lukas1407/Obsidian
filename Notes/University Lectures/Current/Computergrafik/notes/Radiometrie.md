@@ -14,7 +14,5 @@ Diese Eigenschaften helfen dabei, die Energie und den Einfluss des Lichts auf di
 Die Radiometrie unterscheidet sich von der Photometrie dadurch, dass sie physikalische Messungen des Lichts unabhängig vom menschlichen Auge berücksichtigt. Die Photometrie hingegen berücksichtigt die Empfindlichkeit des menschlichen Auges gegenüber verschiedenen Wellenlängen. Beispielsweise erscheinen bestimmte Farben heller oder dunkler, selbst wenn sie dieselbe Strahlungsenergie besitzen, da das menschliche Auge unterschiedliche Wellenlängen unterschiedlich stark wahrnimmt.
 ![[Pasted image 20241031110834.png|500]]
 In der Grafik zeigt das sichtbare Spektrum, dass Licht nur einen kleinen Teil des elektromagnetischen Spektrums ausmacht und jede Wellenlänge einer spezifischen Farbe entspricht. Dies ist wichtig, um die verschiedenen Farbtöne und Intensitäten in Computergrafiken präzise darzustellen.
-
 #### Energie und Leistung
-
 Die Strahlungsleistung (gemessen in Watt, W) beschreibt, wie viel Energie eine Lichtquelle pro Zeit abgibt. Ein Beispiel wäre eine 100-Watt-Glühbirne, die Photonen mit einer bestimmten Frequenz und Energie emittiert. Die Leistung kann auf spezifische Wellenlängenbereiche beschränkt werden, wie z.B. zwischen 500 nm und 600 nm, um den Energiefluss innerhalb eines bestimmten Spektralbereichs zu analysieren.

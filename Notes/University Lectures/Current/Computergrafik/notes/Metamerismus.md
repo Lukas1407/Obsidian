@@ -1,0 +1,6 @@
+Metamerismus ist ein Phänomen in der Farbwahrnehmung, bei dem **unterschiedliche Spektren** (also unterschiedliche Kombinationen von Wellenlängen) denselben Farbeindruck erzeugen können. Das bedeutet, dass zwei Lichtquellen, die unterschiedliche spektrale Zusammensetzungen haben, für das menschliche Auge gleich aussehen können, wenn sie dieselbe Antwort in den S-, M- und L-Zapfen auslösen.
+- Wenn zwei Lichtquellen unterschiedliche Spektren haben, aber die Integrationen (also die Summen) der Reaktionen dieser Zapfen dieselben Werte für $s$, $m$ und $l$ ergeben, dann werden diese Spektren als die gleiche Farbe wahrgenommen.
+## Metamerismus bei Bildschrimen
+- Durch Metamerismus kann der Monitor Farben darstellen, die den gleichen Eindruck vermitteln wie komplexe Spektren, obwohl sie nur aus diesen drei Grundfarben bestehen. Das menschliche Auge nimmt diese Farben als identisch wahr, obwohl ihre spektrale Zusammensetzung ganz anders ist.
+![[Pasted image 20241104081652.png|400]]
+- Die Abbildungen zeigen unterschiedliche Spektren, die dennoch denselben Farbeindruck hervorrufen.

@@ -4,123 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "c8e6c06417f83787",
+        "id": "86c8fe9242a53da0",
         "type": "tabs",
         "children": [
           {
-            "id": "281be2d3553b649a",
+            "id": "41799ba7801fbb2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation"
+              "title": "Computergrafik"
             }
           },
           {
-            "id": "38c51060dc527ee6",
+            "id": "a49bc012816f6d69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Ethik.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Farbraum.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ethik"
-            }
-          },
-          {
-            "id": "139247603fb2e204",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Deskriptiv vs. Normativ.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Deskriptiv vs. Normativ"
-            }
-          },
-          {
-            "id": "c68c5ae3857ef70b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Normatives Argumentieren und empirisches Wissen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Normatives Argumentieren und empirisches Wissen"
-            }
-          },
-          {
-            "id": "8b0fa9e0bbdb108f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortung.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Verantwortung"
-            }
-          },
-          {
-            "id": "e763ac6828754571",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Kritisches Argumentieren.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Kritisches Argumentieren"
-            }
-          },
-          {
-            "id": "9533e257da5be53c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Zentrale moralische Beurteilungsgrundsätze.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Zentrale moralische Beurteilungsgrundsätze"
-            }
-          },
-          {
-            "id": "a8a18b11ab9ef7da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Gemeinsam Verantwortung übernehmen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Gemeinsam Verantwortung übernehmen"
+              "title": "Farbraum"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -258,10 +174,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Gemeinsam Verantwortung übernehmen.md"
+                "file": "University Lectures/Current/Computergrafik/notes/Farbraum.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Gemeinsam Verantwortung übernehmen"
+              "title": "Outline of Farbraum"
             }
           },
           {
@@ -314,8 +230,32 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a8a18b11ab9ef7da",
+  "active": "a49bc012816f6d69",
   "lastOpenFiles": [
+    "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
+    "University Lectures/Current/Computergrafik/notes/Farbsehen.md",
+    "University Lectures/Current/Computergrafik/notes/Thermische Strahlungsquelle.md",
+    "University Lectures/Current/Computergrafik/notes/Farbtemperatur.md",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084738.png",
+    "University Lectures/Current/Computergrafik/notes/Farbraum.md",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084652.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084536.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084526.png",
+    "University Lectures/Current/Computergrafik/notes/CIE Color Matching Functions.md",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084052.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084042.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084035.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084028.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084019.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104083806.png",
+    "University Lectures/Current/Computergrafik/notes/Darstellung von Farben.md",
+    "University Lectures/Current/Computergrafik/notes/Grassmannsche Gesetze (1853).md",
+    "University Lectures/Current/Biomedizinische Messtechnik/notes/Photometrie.md",
+    "University Lectures/Current/Computergrafik/notes/Metamerismus.md",
+    "University Lectures/Finished/BioBots/notes/Senses/Human Eye.md",
+    "University Lectures/Current/Computergrafik/notes/human eye.md",
+    "University Lectures/Current/Computergrafik/notes/Radiometrie.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Gemeinsam Verantwortung übernehmen.md",
     "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Zentrale moralische Beurteilungsgrundsätze.md",
     "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Kritisches Argumentieren.md",
     "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortung.md",
@@ -323,35 +263,12 @@
     "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Deskriptiv vs. Normativ.md",
     "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Ethik.md",
     "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation.md",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Gemeinsam Verantwortung übernehmen.md",
     "University Lectures/Current/Computergrafik/notes/Rasterbilder.md",
     "University Lectures/Current/Computergrafik/notes/Röhrenmonitor.md",
     "University Lectures/Current/Computergrafik/notes/Vektormonitor.md",
     "University Lectures/Current/Computergrafik/notes/Geräte zur Darstellung von Bildern.md",
     "University Lectures/Current/Computergrafik/notes/Frame Buffer.md",
-    "University Lectures/Current/Computergrafik/notes/Darstellung von Bildern.md",
-    "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
-    "University Lectures/Current/Computergrafik/notes/Alpha-Kanal.md",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241028083645.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241028083445.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241028083133.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241028082806.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241028081327.png",
-    "University Lectures/Current/Computergrafik/notes/Machsche Bandeffekte.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Models for Classification Problems.md",
-    "Organization/Daily Notes/2024/10-October/2024-10-26-Saturday.md",
     "Organization/Daily Notes/2024/10-October",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241026093454.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241026093430.png",
-    "University Lectures/Finished/DL for CV2/Generative Models.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Autonomous Learning for Intelligent Robot Perception.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Application of Bayesian principles to Linear Regression.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241026093047.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241026093032.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241026093014.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Bayesian Linear Regression with Sequential Data.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Maximum A Posteriori (MAP) Regression.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Bayes Filter.md",
     "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images",
     "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception",
     "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation",
