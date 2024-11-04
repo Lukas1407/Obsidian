@@ -1,0 +1,2 @@
+- Schließen Posphodiester-Bindung zwischen 5'P und 3'OH
+- 

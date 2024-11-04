@@ -7,3 +7,4 @@
 - [[Kontrast- und Frequenzmaskierung]]
 - [[Frame Buffer]]
 - [[Darstellung von Bildern]]
+- [[Farbsehen]]

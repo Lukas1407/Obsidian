@@ -1,0 +1,3 @@
+- Synthetisieren die [[RNA-Primer]]
+- Bei E. coli sitzt die Primase (DanG) an der [[Helikase]]
+- Dadurch ist sie schon dort wo sie gebraucht wird -> erhöht Effizienz
