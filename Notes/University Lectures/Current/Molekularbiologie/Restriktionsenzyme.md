@@ -1,5 +1,6 @@
 - Restriktionsenzyme sind spezielle Proteine, die als Schere fungieren und [[Desoxyribonukleinsäure|DNA]] an spezifischen Erkennungssequenzen scheiden. 
 - Diese Enzyme werden von Bakterien, meist aus der menschlichen Darmflora, produziert und schützt diese vor fremder DNA (meist von Viren) in dem sie diese zerschneidet.
+	- -> Deswegen haben die meisten auch ihrer optimale Aktivität bei Körpertemperatur (37 Grad)
 - Werden auch Restriktionsendonucleasen genannt
  
 ## Funktion
@@ -15,6 +16,11 @@
 ![[Pasted image 20241105095617.png#invert|300]]
 ## Spezifische Erkennungssequenzen
 - 4-8 bp Sequenz
+	- Je kleiner die Erkennungssequenz, desto häufiger schneidet das Enzym
+	- zB mit 4 cuttern: 1 Schnittstelle alle $4^{4}=256$ Basen
+	- mit 8 cuttern: 1 Schnittstelle alle $4^{8}=65.500$ Basen
+	- Enzyme die selten schieden heißen rare cutters
+- Enzyme können auch mehrere Erkennungssequenzen enthalten
 - Bsp:
 ![[Pasted image 20241105094505.png#invert|300]]
 - Verschiedene Restriktionsenzyme sorgen für verschieden lange Fragmentmuster eines Basenabschnitts
@@ -27,6 +33,10 @@
 - In der [[Gelelektrophorese]]:
 ![[Pasted image 20241105100825.png#invert|200]]
 ![[Pasted image 20241105100900.png#invert|300]]
+- Diese Spezifität kann verloren gehen bei z.B.:
+	- Falsch eingestellten Puffern
+	- zu hoher Konzentration an Enzymen
+	- Verlängerter Inkubationszeit
 ### Schnitt bei zirkulärem DNA Molekül
 - Behandeln wir meistens
 - 3 Schnitte = 3 Fragmente
@@ -48,4 +58,10 @@
 #### Durch Cutting (Exonuclease)
 - Kann in beide Richtungen schneiden!
 - Wenn keine Nukleotide vorhanden sind sondern nur Magnesium
-![[Pasted image 20241105102049.png]]
+- Scheidet immer von außen!
+#### Zusammenfassung
+![[Pasted image 20241105104004.png#invert|300]]
+- Filling oder Cutting möglich
+- Cutting von 5' nach 3'
+![[Pasted image 20241105102049.png#invert|300]]
+- Kein Filling möglich weil wir nicht von 3' nach 5' synthetisieren können
