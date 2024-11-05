@@ -3,3 +3,4 @@ Molekularbiologie beschäftigt sich mit der Struktur und Funktion von [[Makromol
 - -> Komplexe biologische Prozesse werden mit Hilfe von Methoden untersucht
 
 - [[Gelelektrophorese]]
+- [[Restriktionsenzyme]]

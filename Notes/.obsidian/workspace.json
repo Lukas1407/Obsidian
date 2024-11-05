@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "86c8fe9242a53da0",
+        "id": "7a2fc3eb2cc39d55",
         "type": "tabs",
         "children": [
           {
-            "id": "41799ba7801fbb2b",
+            "id": "1d51b71913dc051e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
+                "file": "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Computergrafik"
+              "title": "Molekularbiologie"
             }
           },
           {
-            "id": "a49bc012816f6d69",
+            "id": "1f83d84547f4c337",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Computergrafik/notes/Farbraum.md",
+                "file": "University Lectures/Current/Molekularbiologie/Restriktionsenzyme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Farbraum"
+              "title": "Restriktionsenzyme"
             }
           }
         ],
@@ -90,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "e5d81ef363e6aad6",
@@ -111,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "59a9d4a25d24dd44",
@@ -174,10 +175,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Computergrafik/notes/Farbraum.md"
+                "file": "University Lectures/Current/Molekularbiologie/Restriktionsenzyme.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Farbraum"
+              "title": "Outline of Restriktionsenzyme"
             }
           },
           {
@@ -212,7 +213,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,24 +232,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a49bc012816f6d69",
+  "active": "1f83d84547f4c337",
   "lastOpenFiles": [
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105102049.png",
+    "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
+    "University Lectures/Current/Molekularbiologie/Restriktionsenzyme.md",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105101649.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105101501.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105101150.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100952.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100900.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100825.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100537.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100349.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100333.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105095617.png",
+    "University Lectures/Current/Computergrafik/notes/Farbraum.md",
     "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
     "University Lectures/Current/Computergrafik/notes/Farbsehen.md",
     "University Lectures/Current/Computergrafik/notes/Thermische Strahlungsquelle.md",
     "University Lectures/Current/Computergrafik/notes/Farbtemperatur.md",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084738.png",
-    "University Lectures/Current/Computergrafik/notes/Farbraum.md",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084652.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084536.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084526.png",
     "University Lectures/Current/Computergrafik/notes/CIE Color Matching Functions.md",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084052.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084042.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084035.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084028.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084019.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104083806.png",
     "University Lectures/Current/Computergrafik/notes/Darstellung von Farben.md",
     "University Lectures/Current/Computergrafik/notes/Grassmannsche Gesetze (1853).md",
     "University Lectures/Current/Biomedizinische Messtechnik/notes/Photometrie.md",
@@ -265,9 +270,6 @@
     "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation.md",
     "University Lectures/Current/Computergrafik/notes/Rasterbilder.md",
     "University Lectures/Current/Computergrafik/notes/Röhrenmonitor.md",
-    "University Lectures/Current/Computergrafik/notes/Vektormonitor.md",
-    "University Lectures/Current/Computergrafik/notes/Geräte zur Darstellung von Bildern.md",
-    "University Lectures/Current/Computergrafik/notes/Frame Buffer.md",
     "Organization/Daily Notes/2024/10-October",
     "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images",
     "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception",
