@@ -18,6 +18,14 @@ The Law of Demeter (LoD) suggests that a given object should only have direct kn
 - The `Auto` class provides a method `fahrbereitmachen()`, which internally calls `motor.anlassen()`.
 - The `Fahrer` class's `fahren()` method now only interacts with the `Auto` class by calling `meinAuto.fahrbereitmachen()`.
 This refactoring adheres to the Law of Demeter as the `Fahrer` class no longer knows about the `Motor` inside the `Auto`. It only calls methods on the `Auto` object it directly creates. This change reduces the dependency of the `Fahrer` class on the internal structure of the `Auto` class, making the code more maintainable and flexible to changes in the `Auto` or `Motor` classes.
+### Example 2
+```java
+public void putInFood(Food f) {
+	f.fridge=this;
+	foods.add(f);
+}
+```
+- This function directly accesses the fridge field instead of using a setter 
 ## Benefits of Following the Law of Demeter
 1. **Reduced Coupling**: By limiting interactions to closely-associated objects, the code becomes less dependent on the internal structure of other objects, which in turn reduces the impact of changes within those objects.
 2. **Increased Modularity**: Each class is more isolated and focused on its own responsibilities, leading to clearer, more modular code.

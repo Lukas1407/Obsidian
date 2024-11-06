@@ -2,6 +2,14 @@
 ### Single Responsibility Principle (SRP)
 - An object or class should have only one reason to change, meaning it should have only a single job or responsibility. 
 - This principle reduces complexity by limiting the impact of changes and making the system easier to understand
+#### Example
+```java
+public void putInFood(Food f) {
+	f.fridge=this;
+	foods.add(f);
+}
+```
+- Assigning the fridge filed should be done by a separate method
 #### Core and Cross-Cutting Concerns
 1. **Core Concerns**:
    - Each responsibility or duty of a class should pertain to only one aspect of the software's functionality. For instance, a class handling user data should only manage aspects directly related to user data, such as storing and retrieving user details, and not take on additional responsibilities like managing user permissions or logging data access, which might be handled by other classes.

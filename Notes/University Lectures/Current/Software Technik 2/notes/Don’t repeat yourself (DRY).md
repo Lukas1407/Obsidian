@@ -17,3 +17,11 @@
     - **Extract Methods**: Commonly used code blocks should be extracted into their own methods.
     - **Parameterization**: Use parameters to generalize methods, allowing them to handle various data or behaviors that are similar but not identical.
     - **Use Abstraction**: Abstract classes or interfaces can be used to generalize and encapsulate common behavior, which can then be shared across multiple implementations.
+## Example
+- Using more specific return types which are dependent on the implementation will lead to repeats in the code later
+```java
+public ArrayList<Food> getExpiredFoods() {
+	...
+}
+```
+- Using `ArrayList` instead of a simple `List`
