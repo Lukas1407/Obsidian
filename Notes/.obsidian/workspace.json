@@ -27,11 +27,13 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "University Lectures/Current/Software Technik 2/notes/Clean Code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "Clean Code"
             }
           },
@@ -132,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "e5d81ef363e6aad6",
@@ -153,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "59a9d4a25d24dd44",
@@ -216,6 +219,7 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "University Lectures/Current/Software Technik 2/notes/Object-Oriented Design (OOD).md"
               },
               "icon": "lucide-list",
@@ -254,7 +258,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -272,6 +277,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
+<<<<<<< HEAD
   "active": "3bf9dd18a73337b3",
   "lastOpenFiles": [
     "FZI/Paper/instancesegmentation_case_2024/Plant Parameters.md",
@@ -298,12 +304,6 @@
     "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084536.png",
     "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084526.png",
     "University Lectures/Current/Computergrafik/notes/CIE Color Matching Functions.md",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084052.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084042.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084035.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084028.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104084019.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241104083806.png",
     "University Lectures/Current/Computergrafik/notes/Darstellung von Farben.md",
     "University Lectures/Current/Computergrafik/notes/Grassmannsche Gesetze (1853).md",
     "University Lectures/Current/Biomedizinische Messtechnik/notes/Photometrie.md",
