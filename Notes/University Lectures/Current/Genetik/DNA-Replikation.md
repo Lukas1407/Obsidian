@@ -61,3 +61,54 @@
     - In einigen Fällen wird eine zusätzliche Endonuklease benötigt, um den Überhang vollständig zu entfernen, falls er länger ist und Fen1 ihn nicht alleine abtrennen kann.
     - Schließlich wird die **DNA-Ligase** aktiv und schließt den Nick, indem sie eine **Phosphodiesterbindung** zwischen den benachbarten DNA-Fragmenten herstellt. So entsteht ein durchgehender DNA-Strang.
 ![[Pasted image 20241031104011.png#invert|200]]
+## Regulation der Replikation bei Prokaryoten
+- In Prokaryoten gibt es spezielle DNA-Sequenzen, die als **Replikator** bezeichnet werden und als Startpunkt der Replikation dienen.
+- Ein **Initiator-Protein** bindet an diese Replikator-DNA, wodurch die Replikation eingeleitet wird und die DNA sich zu verdoppeln beginnt.
+![[Pasted image 20241107100557.png#invert|200]]
+### Struktur von Replikatoren
+![[Pasted image 20241107100650.png#invert|300]]
+- Das Bild zeigt verschiedene Replikator-Regionen für Prokaryoten wie _E. coli_, wo der Replikator aus spezifischen Sequenzen wie AT-reichen Bereichen (die leicht entwunden werden können) und Bindestellen für Initiator-Proteine besteht.
+- Diese Bindestellen sind entscheidend, da sie den Startpunkt der DNA-Synthese markieren.
+### Funktion der Initiatorproteine
+![[Pasted image 20241107100749.png#invert|300]]
+- Sie binden an die DNA, um die Replikation zu starten.
+- Sie trennen die DNA-Stränge durch eine leichte Schmelzung der AT-reichen Region, wodurch die Replikationsmaschinerie Zugang erhält.
+- Sie rekrutieren weitere Proteine, die für die Replikation notwendig sind.
+### Initiation der DNA-Replikation in E. coli
+![[Pasted image 20241107100856.png#invert|200]]
+![[Pasted image 20241107100915.png#invert|200]]
+
+- **DnaA-ATP** bindet an spezifische 9-mer Motive in der OriC-Region (dem Replikationsursprung).
+- Diese Bindung ermöglicht die Entwindung der DNA in der benachbarten AT-reichen Region, was die Stränge trennt und den Replikationsstart erleichtert.
+- **DnaA-ATP** rekrutiert die **DnaB-Helicase** und den **Helicase-Loader (DnaC)**, die für die Entwindung der DNA weiter sorgen.
+- Die Konversion von DnaA-ATP zu DnaA-ADP reguliert die Initiation, da dieser Schritt durch den Austausch von ATP langsam ist und verhindert, dass die Replikation unkontrolliert gestartet wird.
+- Nachdem die Helicase die DNA-Stränge entwindet, wird die **Primase** rekrutiert, die kurze RNA-Primer für den Start der DNA-Synthese synthetisiert.
+- Die verbleibenden DnaA-Proteine werden entfernt, und der Priming-Komplex zieht die DNA-Polymerase III an, die die bidirektionale Synthese des Leit- und Folgestrangs beginnt.
+### Methylierung
+- Die DNA-Replikation muss eng mit der Zellteilung koordiniert werden, um sicherzustellen, dass die Chromosomenanzahl in jeder Zelle konstant bleibt.
+- In _E. coli_ wird dies durch das Zusammenspiel der **Dam-Methylase** und des **SeqA-Proteins** in Verbindung mit dem Initiatorprotein **DnaA-ATP** kontrolliert.
+- Die **Dam-Methylase** erkennt bestimmte DNA-Sequenzen (GATC) und methyliert die Adenin-Basen in diesen Bereichen.
+- Die Methylierung dient als Markierung dafür, dass ein DNA-Strang bereits „alt“ ist, d.h., dass er bereits einmal repliziert wurde.
+- Da der neue Strang un- oder nur halb-methyliert ist, kann das Reparatursystem der Zelle (Mismatch-Reparatursystem) diesen neuen Strang von dem alten unterscheiden.
+- Bei Fehlern während der Replikation überprüft das System beide Stränge. Da der alte Strang methyliert ist, wird der nicht-methylierte (neue) Strang als fehlerhaft erkannt und repariert, um Mutationen zu vermeiden.
+## DNA-Replikation bei Eukaryoten
+Die DNA-Replikation in Eukaryoten ist ein komplexer Prozess, der sicherstellt, dass die gesamte DNA während der S-Phase des Zellzyklus einmal und nur einmal verdoppelt wird. Hier sind die wichtigsten Schritte und Mechanismen, die zur Regulation und Durchführung der Replikation beitragen:
+
+1. **Einmalige Replikation pro Zellzyklus**:
+    
+    - Während der S-Phase muss jede Region der DNA genau einmal repliziert werden, um sicherzustellen, dass die Chromosomenzahl konstant bleibt. Unreplizierte Bereiche könnten während der Zellteilung zu Chromosomenbrüchen führen, und doppelte Replikation verursacht Kopieanzahlanomalien.
+2. **Replikationsursprünge (Origins of Replication)**:
+    
+    - Die eukaryotische DNA hat viele Replikationsursprünge, an denen die Replikation beginnen kann. Die Replikation startet jedoch nicht an allen Ursprüngen gleichzeitig. Nur ausgewählte Ursprünge werden aktiviert, während andere passiv repliziert werden können, wenn die Replikationsgabel sie erreicht.
+3. **Inaktivierung der Replikationsursprünge nach Initiation**:
+    
+    - Sobald ein Replikationsursprung aktiviert wird, wird er inaktiviert und kann während des laufenden Zellzyklus nicht erneut aktiviert werden. Dies verhindert die mehrfache Replikation derselben DNA-Region.
+    - Wie im Bild gezeigt, beginnen einige Ursprünge mit der Replikation, während andere Ursprünge „passiv“ repliziert werden, indem die Replikationsgabel diese Bereiche erreicht und ohne eine eigenständige Initiation repliziert.
+4. **Koordination der Replikation**:
+    
+    - Aufgrund der großen Anzahl an Replikationsursprüngen ist eine strenge Kontrolle erforderlich, um sicherzustellen, dass jede DNA-Region genau einmal repliziert wird. Dies wird durch die zeitlich abgestimmte Aktivierung der Ursprünge und die Inaktivierung nach Beginn der Replikation gewährleistet.
+    - So werden z. B. in der Abbildung die Ursprünge 3 und 5 zuerst aktiviert, dann Ursprung 1, wodurch die übrigen Ursprünge passiv repliziert werden.
+5. **Prä-Replikationskomplexe (Pre-RC) und Lizenzierung**:
+    
+    - Vor der S-Phase wird an jedem Replikationsursprung ein Prä-Replikationskomplex (Pre-RC) gebildet, was als „Lizenzierung“ bezeichnet wird. Dieser Komplex markiert die Ursprünge für die spätere Aktivierung während der S-Phase.
+    - Nach der Aktivierung werden die Pre-RCs abgebaut oder inaktiviert, was eine erneute Replikation verhindert.

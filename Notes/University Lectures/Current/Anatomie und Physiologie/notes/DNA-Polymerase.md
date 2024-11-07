@@ -31,3 +31,14 @@
     - In Abbildung (a)–(c) bindet der Clamp-Loader ATP und öffnet die Ringklemme.
     - In Abbildung (d) wird die Ringklemme um die DNA platziert.
     - Durch **Hydrolyse von ATP** in (e) wird die Klemme geschlossen und der Clamp-Loader löst sich, sodass die Sliding Clamp nun die DNA-Polymerase stabilisieren kann.
+## Wechsel der Polymerasen während der Replikation
+- Während der Replikation kann es zum Wechsel der Polymerase kommen
+- z.B. weil Pol $\alpha$ nur eine begrenzte Prozessivität hat, also nur kurze DNA-Abschnitte synthetisieren kann:
+![[Pasted image 20241107095229.png#invert|300]]
+- Ein Wechsel zu einer leistungsfähigeren Polymerase, wie der Polymerase δ oder ε, welche an den Sliding Clamp gebunden ist.
+### Wechsel wegen DNA-Schäden
+- Bei DNA-Schäden oder Abweichungen im DNA-Strang, wie sie durch Mutationen oder Umwelteinflüsse verursacht werden, kann die normale Polymerase (z.B. DNA-Polymerase III) den beschädigten Bereich nicht weiterreplizieren. Die Replikation würde hier normalerweise stoppen.
+- In solchen Fällen kann eine sogenannte Translesionspolymerase (z.B. Pol IV oder Pol V in Prokaryoten) den Platz der normalen Polymerase einnehmen. Diese speziellen Polymerasen sind in der Lage, über den beschädigten Bereich hinwegzusynthesieren, auch wenn sie weniger genau arbeiten.
+- Nachdem die beschädigte Stelle passiert wurde, kehrt die Replikation zur ursprünglichen DNA-Polymerase (z.B. DNA-Polymerase III) zurück, die dann die Synthese fortsetzt.
+![[Pasted image 20241107095423.png#invert|300]]
+- Die Translesionspolymerase baut hier irgendetwas ein
