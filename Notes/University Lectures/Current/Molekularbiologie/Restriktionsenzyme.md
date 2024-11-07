@@ -65,3 +65,5 @@
 - Cutting von 5' nach 3'
 ![[Pasted image 20241105102049.png#invert|300]]
 - Kein Filling möglich weil wir nicht von 3' nach 5' synthetisieren können
+## Aufgaben:
+### Aufgabe 1
