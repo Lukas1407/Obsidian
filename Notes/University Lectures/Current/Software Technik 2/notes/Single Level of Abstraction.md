@@ -32,3 +32,18 @@ private void finalizeOrder(Order order) {
 ```
 - **[[You ain’t gonna need it (YAGNI)|YAGNI]]**: Each method does exactly what is necessary—nothing more. There are no speculative features.
 - **SLA**: `processOrder` provides a high-level overview by calling other methods that encapsulate specific details, maintaining a consistent level of abstraction.
+### Breaking the Principle
+```java
+public ArrayList < Food > getExpiredFoods () { 
+	ArrayList < Food > expiredFoods = new ArrayList < >(); 
+	Date now = Date.from(Instant.now());
+	for ( Food food : foods ){
+		if(food.expirationDate.before(now)){
+			expiredFoods.add(food);
+		}
+	}
+	foods.removeAll(expiredFoods);
+	return expiredFoods;
+}
+```
+- This function combines abstraction levels by also modifying the `foods` list

@@ -4,7 +4,7 @@
 Ian Sommerville, a prominent author in software engineering, describes an object-oriented system as one "made up of interacting objects that maintain their own local state and provide operations on that state information." This encapsulation of state and behavior within objects allows for modular, maintainable, and reusable code.
 ## No Clear Separation Between Design and Coding Principles
 In object-oriented development, the principles of design and coding often intertwine. Good design principles directly influence how code is written, structured, and maintained. The seamless integration of design and coding principles ensures that the system is built with maintainability, scalability, and robustness in mind.
-## Principles of Good OO Design
+## Principles of Good OO Design (Clean-Code Principles)
 ### [[SOLID Principle]]
 - These 5 principles, often referred to as the SOLID principles, were popularized by Robert C. Martin and are intended to promote better software design and maintainability
 ### [[Law of Demeter]] 

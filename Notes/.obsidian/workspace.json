@@ -1,38 +1,38 @@
 {
   "main": {
-    "id": "70640a355c7ea185",
+    "id": "1a5074bc4d8e63dc",
     "type": "split",
     "children": [
       {
-        "id": "7a2fc3eb2cc39d55",
+        "id": "7c4b2940c0501d9a",
         "type": "tabs",
         "children": [
           {
-            "id": "1d51b71913dc051e",
+            "id": "afa370073a24999e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Molekularbiologie"
+              "title": "Computergrafik"
             }
           },
           {
-            "id": "1f83d84547f4c337",
+            "id": "e4941f9687431e51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/Restriktionsenzyme.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Raytracing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Restriktionsenzyme"
+              "title": "Raytracing"
             }
           }
         ],
@@ -42,16 +42,27 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "73fad221df09b14c",
+    "id": "44b6f1f883a3bee6",
     "type": "split",
     "children": [
       {
-        "id": "3bcf1f711f479d5e",
+        "id": "7c7e3136be8f36ed",
         "type": "tabs",
-        "dimension": 71.20954003407155,
         "children": [
           {
-            "id": "fe6fda8b5d3c97d9",
+            "id": "f08c9499ebb141d8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "dbbca012abe5a5f8",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -68,7 +79,7 @@
             }
           },
           {
-            "id": "42c3e66d6a18aeed",
+            "id": "8bb20ee82e8c4344",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -76,60 +87,28 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "e2d5877c59d1a271",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "byCreatedTime"
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "e5d81ef363e6aad6",
-        "type": "tabs",
-        "dimension": 28.79045996592845,
-        "children": [
-          {
-            "id": "785b9852cdae2079",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "59a9d4a25d24dd44",
+    "id": "267df62b6ee2986d",
     "type": "split",
     "children": [
       {
-        "id": "2a18b6abba14ce71",
+        "id": "047f9950ab30c5f2",
         "type": "tabs",
-        "dimension": 69.93185689948893,
         "children": [
           {
-            "id": "525a2ceb22f5a15a",
+            "id": "80495f2f5065ab69",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Normatives Argumentieren und empirisches Wissen.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Raytracing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,25 +118,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Normatives Argumentieren und empirisches Wissen"
+              "title": "Backlinks for Raytracing"
             }
           },
           {
-            "id": "164fe6bf0ca0d133",
+            "id": "cfecb285ad01105f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Normatives Argumentieren und empirisches Wissen.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Raytracing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Normatives Argumentieren und empirisches Wissen"
+              "title": "Outgoing links from Raytracing"
             }
           },
           {
-            "id": "d7b52cc6005274b6",
+            "id": "792195bbb8b85c70",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -170,19 +149,29 @@
             }
           },
           {
-            "id": "6ef1b157567c7634",
+            "id": "81a02e3aac76feea",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/Restriktionsenzyme.md"
+                "file": "University Lectures/Current/Computergrafik/notes/Raytracing.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Restriktionsenzyme"
+              "title": "Outline of Raytracing"
             }
           },
           {
-            "id": "49383311ca62a9aa",
+            "id": "2ea397b25bab8c0d",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "244665e2960bafcf",
             "type": "leaf",
             "state": {
               "type": "timeline",
@@ -191,95 +180,33 @@
               "title": "Timeline"
             }
           }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "2e0dc377770023f1",
-        "type": "tabs",
-        "dimension": 30.06814310051107,
-        "children": [
-          {
-            "id": "441b1c9aa34d05bc",
-            "type": "leaf",
-            "state": {
-              "type": "side-panel-control-view",
-              "state": {},
-              "icon": "viewIcon",
-              "title": "Markdown-Autocomplete"
-            }
-          }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": true,
-      "graph:Open graph view": true,
-      "canvas:Create new canvas": true,
-      "daily-notes:Open today's daily note": true,
-      "templates:Insert template": true,
-      "command-palette:Open command palette": true,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": true,
-      "table-editor-obsidian:Advanced Tables Toolbar": true,
-      "obsidian-day-planner:Timeline": true,
-      "templater-obsidian:Templater": true,
-      "omnisearch:Omnisearch": true,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "1f83d84547f4c337",
+  "active": "e4941f9687431e51",
   "lastOpenFiles": [
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105104004.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105102049.png",
-    "University Lectures/Current/Molekularbiologie/Restriktionsenzyme.md",
-    "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105101649.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105101501.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105101150.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100952.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100900.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100825.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100537.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100349.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241105100333.png",
-    "University Lectures/Current/Computergrafik/notes/Farbraum.md",
     "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
-    "University Lectures/Current/Computergrafik/notes/Farbsehen.md",
-    "University Lectures/Current/Computergrafik/notes/Thermische Strahlungsquelle.md",
-    "University Lectures/Current/Computergrafik/notes/Farbtemperatur.md",
-    "University Lectures/Current/Computergrafik/notes/CIE Color Matching Functions.md",
-    "University Lectures/Current/Computergrafik/notes/Darstellung von Farben.md",
-    "University Lectures/Current/Computergrafik/notes/Grassmannsche Gesetze (1853).md",
-    "University Lectures/Current/Biomedizinische Messtechnik/notes/Photometrie.md",
-    "University Lectures/Current/Computergrafik/notes/Metamerismus.md",
-    "University Lectures/Finished/BioBots/notes/Senses/Human Eye.md",
-    "University Lectures/Current/Computergrafik/notes/human eye.md",
-    "University Lectures/Current/Computergrafik/notes/Radiometrie.md",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Gemeinsam Verantwortung übernehmen.md",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Zentrale moralische Beurteilungsgrundsätze.md",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Kritisches Argumentieren.md",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortung.md",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Normatives Argumentieren und empirisches Wissen.md",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Deskriptiv vs. Normativ.md",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Ethik.md",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation.md",
-    "University Lectures/Current/Computergrafik/notes/Rasterbilder.md",
-    "University Lectures/Current/Computergrafik/notes/Röhrenmonitor.md",
-    "Organization/Daily Notes/2024/10-October",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception",
-    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation",
-    "FZI/Paper/Few-Shot Semantic Segmentation",
-    "FZI/Paper/instancesegmentation_case_2024",
-    "FZI/Paper",
-    "University Lectures/Future/Wearable Robotic Technologies/papers/Markovic_2015_J._Neural_Eng._12_066022.pdf",
-    "University Lectures/Future/Wearable Robotic Technologies/papers/Markovic_2014_J._Neural_Eng._11_046001.pdf",
-    "University Lectures/Future/Wearable Robotic Technologies/papers/s40137-013-0044-8.pdf",
-    "Obsidian/Untitled.canvas"
+    "University Lectures/Current/Computergrafik/notes/Raytracing.md",
+    "University Lectures/Current/Molekularbiologie/Restriktionsenzyme.md"
   ]
 }
