@@ -15,4 +15,5 @@
 - [[CIE Color Matching Functions]]
 - [[Farbtemperatur]]
 - [[Thermische Strahlungsquelle]]
+- [[Rasterisierung]]
 - [[Raytracing]]

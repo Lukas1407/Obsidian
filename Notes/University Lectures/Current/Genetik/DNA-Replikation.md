@@ -1,4 +1,4 @@
-- Stellt eine vollständige Kopie der [[Desoxyribonukleinsäure|DNA]] her
+****- Stellt eine vollständige Kopie der [[Desoxyribonukleinsäure|DNA]] her
 - Bei der Zellteilung aktiv
 - Extrem hohe Genauigkeit durch Reparaturmechanismen (1 Fehler pro 1 Mrd. [[Nukleotide]])
 - Semi-konservative Verdopplung:
