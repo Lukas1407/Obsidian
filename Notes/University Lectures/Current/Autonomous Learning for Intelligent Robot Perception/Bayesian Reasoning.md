@@ -159,3 +159,46 @@
 ## Graphical Representation
 - The overall process of **state estimation** and **sensor updates** over time can be represented using a **Dynamic Bayesian Network** (DBN).
 ![[Dynamic Bayesian Network]]
+## Applications of Bayesian Reasoning
+### Localization
+   - The goal is to determine the probability of the current position $x_t$ of a robot given a sequence of previous actions $u_1, u_2, \dots, u_t$, observations $z_1, z_2, \dots, z_t$, and a map $m$.
+   - The equation is:
+     $$
+     p(x_t \mid u_1, z_1, \dots, u_t, z_t, m) \propto p(z_t \mid x_t, m) \int p(x_t \mid u_t, x_{t-1}, m) p(x_{t-1} \mid u_1, z_1, \dots, u_{t-1}, z_{t-1}, m) \, dx_{t-1}
+     $$
+   - **Explanation**: 
+     - $p(x_t \mid u_1, z_1, \dots, u_t, z_t, m)$ is the probability of the robot's current position given its actions, observations, and the map.
+     - $p(z_t \mid x_t, m)$ is the likelihood of observing $z_t$ if the robot is at position $x_t$.
+     - The integral term represents summing over all possible previous states $x_{t-1}$, where:
+       - $p(x_t \mid u_t, x_{t-1}, m)$ is the probability of transitioning to $x_t$ given the previous state $x_{t-1}$ and the action $u_t$.
+       - $p(x_{t-1} \mid u_1, z_1, \dots, u_{t-1}, z_{t-1}, m)$ is the prior probability of being at $x_{t-1}$ given all previous actions and observations.
+### Predictive Distribution for Regression (e.g., Mapping)
+   - This equation is about predicting an output $y^*$ for a new input $x^*$ based on observed data $X$ and a parameter $w$.
+   - The equation is:
+     $$
+     p(y^* \mid X, y, x^*) = \int p(y^* \mid x^*, w) p(w \mid X, y) \, dw
+     $$
+   - **Explanation**:
+     - $p(y^* \mid X, y, x^*)$ is the predictive distribution of $y^*$, given the training data $X, y$ and the new input $x^*$.
+     - $p(y^* \mid x^*, w)$ is the likelihood of $y^*$ given $x^*$ and model parameters $w$.
+     - $p(w \mid X, y)$ is the posterior distribution of $w$ given the training data. This accounts for all possible values of $w$ in the prediction, integrating over their probabilities.
+### Object Classification
+   - This formula deals with classifying objects, for example, predicting whether $y_* = +1$ (belongs to a class) given observations.
+   - The equation is:
+     $$
+     p(y_* = +1 \mid X, y, x_*) = \int p(y_* \mid f_*) p(f_* \mid X, y, x_*) \, df_*
+     $$
+   - **Explanation**:
+     - $p(y_* = +1 \mid X, y, x_*)$ is the probability that the new data point $x_*$ belongs to the class $+1$.
+     - $p(y_* \mid f_*)$ is the likelihood that $y_* = +1$ given the function output $f_*$.
+     - $p(f_* \mid X, y, x_*)$ is the distribution of $f_*$ given the observed data $X, y$ and the new input $x_*$.
+     - This integral sums over all possible values of $f_*$, taking into account the uncertainty in the model’s output.
+### What is Common in These Problems?
+#### Representation of Distributions and Expected Values
+   - In probabilistic reasoning, we often need to compute expectations of certain functions, represented as $E_p[u]$, where $u$ is a random variable.
+   - To compute the expected value of $u$ under distribution $p$, we use:
+     $$
+     E_p[u] = \int u(w) p(w) \, dw
+     $$
+   - Here, $u(w)$ might be a function (such as likelihood) evaluated at $w$, and $p(w)$ is the probability distribution over $w$.
+- Often, these expectations can only be computed approximately -> to do this, we can use [[Probability Sampling Techniques]] like [[Monte-Carlo Estimation]]

@@ -5,3 +5,4 @@
 - [[Bayesian Reasoning]]
 - [[Bayes Filter]]
 - [[Application of Bayesian principles to Linear Regression]]
+- [[Probability Distribution Representation]]
