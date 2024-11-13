@@ -4,3 +4,5 @@ Molekularbiologie beschäftigt sich mit der Struktur und Funktion von [[Makromol
 
 - [[Gelelektrophorese]]
 - [[Restriktionsenzyme]]
+- [[Polymerase-Kettenreaktion (PCR)]]
+- [[DNA-Klonierung]]

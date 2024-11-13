@@ -60,3 +60,5 @@ Das Phong-Beleuchtungsmodell ist ein **phänomenologisches Modell**, das die Ref
   - **Hinweis**: Der Ausdruck $(\mathbf{r}_1 \cdot \mathbf{v})$ kann als Maß dafür betrachtet werden, wie gut die Reflexion mit der Blickrichtung übereinstimmt. Ein hoher Wert bedeutet ein starkes Glanzlicht in Blickrichtung.
 
 
+## Phong-Shading
+- Beleuchtungsberechnung mit interpolierten Normalen nennt man Phong Shading

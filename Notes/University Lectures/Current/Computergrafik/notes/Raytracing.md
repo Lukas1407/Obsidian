@@ -159,6 +159,8 @@ Die **Schattierung von Dreiecksnetzen** bezieht sich darauf, wie Licht auf einem
 - Für transparente Objekte wird ein "Brechungsstrahl" erzeugt, der das Licht durch das Objekt hindurch weiterverfolgt und die Lichtbrechung simuliert.
 - Diese Sekundärstrahlen setzen die Strahlverfolgung (Raytracing) fort und werden rekursiv weiterverfolgt, bis sie eine bestimmte maximale Tiefe erreichen oder keinen weiteren Effekt haben.
 ![[University Lectures/Current/Computergrafik/notes/images/Untitled.png|400]]
+- Rekursives Raytracing:
+  ![[Pasted image 20241113092607.png|400]]
 ### Kombination der Ergebnisse:
 - Die Ergebnisse der Schattierung, Schattenstrahlen und Sekundärstrahlen (für Reflexion und Brechung) werden kombiniert, um die endgültige Farbe und Helligkeit des Pixels festzulegen.
 - Dieser Prozess wird für jedes Pixel des Bildes wiederholt, um ein vollständiges, realistisches Bild zu erstellen.
