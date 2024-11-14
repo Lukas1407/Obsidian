@@ -112,3 +112,34 @@ Die DNA-Replikation in Eukaryoten ist ein komplexer Prozess, der sicherstellt, d
     
     - Vor der S-Phase wird an jedem Replikationsursprung ein Prä-Replikationskomplex (Pre-RC) gebildet, was als „Lizenzierung“ bezeichnet wird. Dieser Komplex markiert die Ursprünge für die spätere Aktivierung während der S-Phase.
     - Nach der Aktivierung werden die Pre-RCs abgebaut oder inaktiviert, was eine erneute Replikation verhindert.
+## Inaktivierung der Replikationsursprünge durch Replikation
+![[Pasted image 20241114094919.png#invert|300]]
+- In dieser Abbildung wird gezeigt, dass die Replikationsursprünge (in Grün markiert) nur einmal pro Zellzyklus aktiviert werden dürfen.
+- Die Replikation startet an bestimmten Ursprüngen, wie an den Ursprüngen 3 und 5, wodurch die DNA in diesen Bereichen repliziert wird.
+- Einmal aktiviert, werden diese Replikationsursprünge "inaktiviert", sodass sie während desselben Zellzyklus nicht erneut aktiviert werden können. Dies ist wichtig, um eine erneute Replikation und mögliche Kopienanzahlfehler zu vermeiden.
+- Die anderen Ursprünge werden passiv repliziert, wenn die Replikationsgabel diese Bereiche erreicht. Dies stellt sicher, dass alle Regionen der DNA einmal, aber nicht mehrfach, repliziert werden.
+## Terminierung der DNA-Replikation in _E. coli_
+![[Pasted image 20241114095338.png#invert |100]]
+In _E. coli_ trifft die Replikation auf eine spezielle Terminierungsregion, die **ter-Sequenzen** enthält. Diese Sequenzen dienen als "Stoppsignal" für die Replikationsgabeln, wenn sie sich aufeinander zubewegen.
+1. **ter-Sequenzen und Tus-Protein**:
+    - Die **ter-Sequenzen** binden das **Tus-Protein**, das die Weiterführung der Replikation blockiert, indem es die Helicase (das Enzym, das die DNA-Stränge trennt) hemmt.
+    - Dadurch laufen die Replikationsgabeln zusammen und beenden die Replikation an den Terminationsstellen, ohne dass sie aneinander vorbeilaufen.
+2. **Catenane und Topoisomerase II**:
+    - Nach der Replikation entstehen zwei ringförmige DNA-Moleküle, die ineinander verschlungen sind, sogenannte **Catenane**.
+    - Die **Topoisomerase II** entwirrt diese ineinander verschlungenen Moleküle durch einen Prozess namens **Decatenation** und ermöglicht so, dass die beiden DNA-Ringe voneinander getrennt werden können, um korrekt an die Tochterzellen weitergegeben zu werden.
+## Problem bei der Replikation der Telomere in Eukaryoten
+Eukaryotische Chromosomen sind linear, und bei der Replikation entsteht ein Problem an den Enden (Telomeren) der DNA, speziell auf dem 3'-5'-Strang (Leitstrang).
+1. **Problem des fehlenden Primers am 3'-Ende**:
+![[Pasted image 20241114095458.png#invert|300]]
+    - Die DNA-Polymerase benötigt einen Primer, um die DNA-Synthese zu starten. Am Ende des 3'-5'-Strangs fehlt jedoch ein Platz für die Bindung eines Primers, was zur Verkürzung des Chromosoms bei jeder Zellteilung führt, da das letzte Stück des Folgestrangs (Problemstrang) nicht repliziert werden kann.
+    - -> Der Strang würde immer kürzer werden je öfter er repliziert wird
+1. **Lösung durch die Telomerase**:
+    - **Telomerase** ist ein spezielles Enzym, das die Telomere (Enden der Chromosomen) verlängert. Es trägt eine RNA-Matrize, die komplementär zu den Telomer-Sequenzen ist und als Vorlage dient, um neue Telomer-DNA-Sektionen zu synthetisieren.
+    - **Verlängerung durch Telomerase**:
+        - Die Telomerase bindet an das 3'-Ende und synthetisiert zusätzliche DNA-Sequenzen, wodurch das Chromosomenende verlängert wird.
+        - Danach wird der neu synthetisierte Abschnitt als Vorlage verwendet, um die fehlende DNA des Problemstrangs zu ergänzen.
+3. **t-Loop-Bildung und Stabilisierung**:
+![[Pasted image 20241114095616.png#invert|300]]
+    - Die verlängerten Telomere bilden eine **t-Loop-Struktur**, bei der das 3'-Ende sich selbst überlappt und in die Telomerregion faltet, was zur Stabilität und zum Schutz des Chromosomenendes beiträgt.
+    - Diese t-Loop-Struktur verhindert, dass die Chromosomenenden als DNA-Schäden erkannt und abgebaut werden.
+![[Telomere_Replication.mov]]
