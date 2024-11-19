@@ -1,8 +1,0 @@
-- findet global optimales $p$ für eine quadratische Zielfunktion mit einer speziellen Struktur 
-- Vorteile: 
-	- findet (fast) immer globales Optimum 
-	- manchmal auch für Lösung von Teilproblemen einsetzbar 
-	- geringerer Rechenaufwand 
-- Nachteil: 
-	- funktioniert nur für spezielle Systemstrukturen 
-	- keine Integration von Restriktionen

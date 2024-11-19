@@ -1,2 +1,0 @@
-- Dient als **Reservoir** für die Galle und entleert sich bedarfsgesteuert in das Duodenum.
-- Im **enterohepatischen Kreislauf** werden etwa **90% der Gallensäuren** im Dünndarm resorbiert und zur Leber zurückgeführt, wo sie wiederverwendet werden

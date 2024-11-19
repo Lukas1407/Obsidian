@@ -1,0 +1,3 @@
+- The wave function $\Psi(\mathbf{r}, t)$ describes the probability amplitude of finding a particle at a position $\mathbf{r}$ at time $t$.
+- It exhibits wave-like properties such as interference and diffraction.
+- The probability density of finding a particle at position $\mathbf{r}$ and time $t$ is given by $$|\Psi(\mathbf{r}, t)|^2$$ which is the magnitude squared of the wave function.

@@ -1,1 +1,0 @@
-- Ribosomen bestehen zu 2/3 aus RNA und zu 1/3 aus Protein.

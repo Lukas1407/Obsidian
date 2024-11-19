@@ -21,12 +21,6 @@ $$V^{\pi}(\textbf{s})=\sum_{a}\pi(a|s)\left(r(s,a)+\gamma\sum_{s'}p(s'|s,a)V^{\p
 - The Bellman Optimality Equation for the V-function (value function) can be derived from the general goal of maximizing the expected return (the total sum of discounted rewards) from any given state under the optimal policy. The equation is expressed as:
 
 $$ V^*(s) = \max_a \left[ r(s, a) + \gamma \sum_{s'} p(s'|s, a) V^*(s') \right] $$
-**Explanation:**
-- **$V^*(s)$**: The optimal value function at state $s$, representing the maximum expected return starting from $s$ and following the best policy thereafter.
-- **$r(s, a)$**: The immediate reward received after taking action $a$ in state $s$.
-- **$\gamma$**: The discount factor, which accounts for the diminishing value of future rewards.
-- **$p(s'|s, a)$**: The probability of transitioning to state $s'$ from state $s$ after action $a$ is taken.
-- **$\max_a$**: The maximization over all possible actions from state $s$, reflecting the choice of the optimal action.
 ## Action-Value Function/Q-Function
 - $$Q^{\pi}(\textbf{s},\textbf{a})=\mathop{\mathbb{E}}[\sum_{t=0}^{\infty}\gamma^{t}r(s_{t},a_{t})|s_{0}=\textbf{s}, a_{0}=\textbf{a}]$$
 - Estimates the expected return after taking an action $\textbf{a}$ in state $\textbf{s}$ and then following a policy
@@ -55,15 +49,15 @@ $$ Q^*(s, a) = r(s, a) + \gamma \sum_{s'} p(s'|s, a) \max_{a'} Q^*(s', a') $$
 		 - After the policy is evaluated, a new policy is chosen (slow like a value iteration pass) 
 		 - The new policy will be better (or we’re done)
  - Both algorithms compute a sequence of functions $Q_{k}(k=0,1,2,...)$ that converge to $Q^{*}$ or a sequence of functions $V_{k}(k=0,1,2,...)$ that converge to $V^*$
- - Both are dynamic programs for solving MDPs
+ - <mark style="background: #FFB86CA6;">Both are dynamic programs for solving MDPs</mark>
 ### Does this work?
 Yes but only in these 2 cases:
-1. Discrete Systems: Policy and value iteration work well when the system is discrete, meaning there are a finite number of states and actions. This allows for exact calculations of the value functions and policies.
-2. Linear Systems with Quadratic Rewards and Gaussian Noise (LQR): The reward function is quadratic and the noise is Gaussian. This is because the optimal control laws for LQR are well-understood and can be computed analytically.
+1. **Discrete Systems**: Policy and value iteration work well when the system is discrete, meaning there are a <mark style="background: #FFB86CA6;">finite number of states and actions</mark>. This allows for exact calculations of the value functions and policies.
+2. **Linear Systems with Quadratic Rewards and Gaussian Noise (LQR):** The reward function is quadratic and the noise is Gaussian. This is because the optimal control laws for LQR are well-understood and can be computed analytically.
 In other cases, where the system is not discrete or does not fit the LQR framework, approximations are necessary because:
-- Continuous State Spaces: Representing the value function ( V ) becomes challenging in continuous spaces, as it requires infinite granularity.
+- Continuous State Spaces: Representing the value function becomes challenging in continuous spaces, as it requires infinite granularity.
 - Continuous Action Spaces: Solving the Bellman equations for continuous actions is difficult without discretization.
-- Arbitrary Functions and Models: When the value function ( V ) and the model of the environment are complex, finding exact solutions is often infeasible.
+- Arbitrary Functions and Models: When the value function and the model of the environment are complex, finding exact solutions is often infeasible.
 Therefore, policy and value iteration are limited to scenarios where the environment’s dynamics are sufficiently simple to allow for exact computation. In more complex scenarios, approximation methods must be employed.
 #### Solutions
 - Sampling based approximations. which learn the value function from sample transitions $\tau=(s_{0},a_{0},r_{0},s_{1},a_{1},r_{1},...)$ without requiring a model of the environment $P(s'|s,a)$

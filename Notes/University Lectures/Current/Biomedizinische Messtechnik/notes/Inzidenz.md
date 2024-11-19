@@ -1,2 +1,0 @@
-> [!abstract] Definition
->  Dieser Begriff bezieht sich auf die Anzahl neuer Fälle einer Krankheit, die innerhalb eines bestimmten Zeitraums in einer Bevölkerung auftreten. Die Inzidenz gibt also an, wie viele Personen in einem bestimmten Zeitraum (zum Beispiel ein Jahr) neu an einer Krankheit erkranken. Sie ist ein Maß für das Risiko, dass eine Person in der Bevölkerung die Krankheit entwickelt.

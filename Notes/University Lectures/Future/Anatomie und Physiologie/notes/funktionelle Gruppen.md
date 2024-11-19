@@ -1,0 +1,2 @@
+> [!summary] Definition
+> „In der Chemie versteht man unter funktionellen Gruppen (auch charakteristische Gruppen) Atomgruppen in organischen Verbindungen, die die Stoffeigenschaften und das Reaktionsverhalten der sie tragenden Verbindungen maßgeblich bestimmen 

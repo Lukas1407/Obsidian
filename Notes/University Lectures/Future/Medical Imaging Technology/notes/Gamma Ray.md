@@ -1,0 +1,1 @@
+Unlike [[Alpha Particles|alpha]] and [[Beta Particles|beta particles]], gamma rays are not particles but a form of electromagnetic radiation, similar to X-rays but with higher energy. Gamma rays are photons, which are massless packets of energy.

@@ -5,9 +5,6 @@
 
 - It states that the expected value of a function $f(x)$ under a probability distribution $p(x)$  can be approximated by averaging the values of $f(x)$ over a number of samples.
 - This method involves using sample trajectories to estimate the value function, which represents the expected future reward if an agent is in a state and follows a policy.
-
-The image you provided explains the concept of **First Visit Monte Carlo** estimates in reinforcement learning (RL), particularly for estimating the value functions of states based on complete episodes of interaction with the environment. This approach is part of a broader set of Monte Carlo (MC) methods used in RL. Let's break down the explanation and methodology:
-
 ## First Visit Monte Carlo
 This method estimates the value of a state by averaging the returns following the first visits to that state over multiple episodes. 
 ![[Pasted image 20240708104420.png#invert|600]]
@@ -27,9 +24,9 @@ $$ V^\pi(s_t) \leftarrow (1 - \alpha) V^\pi(s_t) + \alpha R_t $$
 ## Limitations of Monte Carlo Methods
 The description also highlights some limitations of Monte Carlo methods:
 1. **Very Noisy Returns:**
-   - **Stochasticity:** Returns are influenced by the stochastic nature of the policy and the environment's dynamics, where each decision and outcome can introduce variability.
-   - **Accumulated Noise:** Since the return is the sum of many steps' rewards, the noise from each step accumulates, increasing the overall variance of the return estimates.
+   - **Stochasticity:** <mark style="background: #FFB86CA6;">Returns are influenced by the stochastic nature of the policy and the environment's dynamics</mark>, where each decision and outcome can introduce variability.
+   - **Accumulated Noise:** Since the return is the sum of many steps rewards, <mark style="background: #FFB86CA6;">the noise from each step accumulates</mark>, increasing the overall variance of the return estimates.
 2. **Sample Inefficiency:**
-   - Monte Carlo methods can be sample inefficient because they require a large number of episodes to converge to accurate estimates, particularly in environments with high variability in returns.
+   - Monte Carlo methods can be sample inefficient because they <mark style="background: #FFB86CA6;">require a large number of episodes to converge</mark> to accurate estimates, particularly in environments with high variability in returns.
 3. **Episode Completion Requirement:**
-   - These methods require the completion of entire episodes to make updates. This can be a drawback in very long or continuous tasks where the ends of episodes are not naturally defined or are very far apart.
+   - These methods <mark style="background: #FFB86CA6;">require the completion of entire episodes to make updates</mark>. This can be a drawback in very long or continuous tasks where the ends of episodes are not naturally defined or are very far apart.

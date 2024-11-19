@@ -1,2 +1,0 @@
-> [!abstract] Definition
-> Organe sind komplexe Strukturen, die aus verschiedenen [[Gewebe#Gewebearten|Gewebetypen]] bestehen und spezifische Funktionen im Körper erfüllen. Jedes Organ hat eine einzigartige Architektur und Zusammensetzung, die es ihm ermöglicht, seine Aufgaben auszuführen 

@@ -1,3 +1,0 @@
-- Dient der **Reinigung der Atemwege** und dem Rücktransport von Verunreinigungen.
-- Besteht aus **zylindrischen Flimmerepithelzellen**, die den Schleimtransport unterstützen.
-- Enthält **Becherzellen**, die Schleim (Mukus) für die Schleimsekretion produzieren.

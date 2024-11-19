@@ -1,0 +1,1 @@
+Die Wärmeleitung, oder Konduktion, ist der Prozess, bei dem Wärme durch direkten molekularen Kontakt innerhalb eines Materials übertragen wird. Dies geschieht vor allem in festen Stoffen, wo die Atome oder Moleküle eng beieinander liegen. Ein Beispiel hierfür ist, wenn ein Ende eines Metallstabes erhitzt wird und die Wärme sich zum anderen Ende ausbreitet

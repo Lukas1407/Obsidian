@@ -1,4 +1,0 @@
-- Combining PET and CT into a single imaging system has several advantages:
-    - **Dramatic Reduction in Scan Time**: Patients undergo both PET and CT scans simultaneously, saving time.
-    - **Elimination of Noise Contamination**: The CT component provides anatomical information, which helps correct for attenuation (AC) in PET imaging.
-    - **Fusion of Functional and Anatomical Data**: PET images (functional) can be overlaid with CT images (anatomical) to precisely locate areas of abnormal activity.

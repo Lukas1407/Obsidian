@@ -1,3 +1,0 @@
-Annihilation is the process of the emitted positron, which travels a short distance in the surrounding tissue (0.1-3 mm), before colliding with an electron. The distance traveled by the positron is depending on the energy of the positron, a maximum energy is 634 keV. Annihilation produces 2 γ – photons, each has an energy of 511 keV.
-$$e^{-}+\beta^{+}\rightarrow \gamma+\gamma$$
-![[Pasted image 20240528104434.png#invert|500]]

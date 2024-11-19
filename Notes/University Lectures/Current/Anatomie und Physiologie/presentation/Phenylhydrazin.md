@@ -1,1 +1,0 @@
-Phenylhydrazin wird als Zwischenprodukt zur Herstellung von Indolen verwendet (Fischersche Indolsynthese), die wiederum Zwischenprodukte für die Synthese verschiedener Farbstoffe, Agrochemikalien und Pharmazeutika sind.

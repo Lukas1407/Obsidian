@@ -1,0 +1,5 @@
+- A **pixel** is the fundamental unit of a **2D image**.
+- It represents a single point in an image grid.
+- Each pixel stores information about color, intensity, or other attributes.
+- In digital images, pixels are arranged in rows and columns to form the entire image.
+- For example, in a grayscale image, each pixel might represent a different shade of gray, while in a color image, each pixel contains information about red, green, and blue components.

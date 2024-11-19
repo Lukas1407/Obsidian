@@ -1,0 +1,2 @@
+> [!abstract] Definition
+>  Der medizinische Begriff für das manuelle “Erfühlen” von Druck oder Spannung ist **Palpation**. Ärzte verwenden die Palpation, um verschiedene Gewebe und Organe zu untersuchen, indem sie sie mit den Händen abtasten.

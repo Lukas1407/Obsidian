@@ -1,0 +1,6 @@
+- Der Transport von Sauerstoff im Blut erfolgt über: 
+	- physikalisch im Plasma gelösten Sauerstoff (1-2%) 
+	- chemisch an Hämoglobin gebundenen Sauerstoff (98 -99%)
+- Die funktionelle Sättigung (SaO2) gibt an, welcher Prozentsatz des Hämoglobins tatsächlich mit Sauerstoff beladen ist. Sie wird definiert als das Verhältnis von oxygeniertem Hämoglobin (HbO2) zu dem gesamten oxygenierbaren Hämoglobin:$$S_{f}O_{2}=\frac{C_{HbO2}}{C_{HBO2}+C_{HB}}$$
+- Gesamtmenge an Sauerstoff im arteriellen Blut: $CaO2 = (1,34 \times Hb \times SaO2) + (paO2 \times 0,003) = 20 ml/dl$
+- 

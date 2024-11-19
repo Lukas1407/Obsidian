@@ -1,3 +1,0 @@
-- Hydrophobe Wechselwirkungen treten zwischen nicht-polaren Aminosäureresten auf.
-- Diese Reste sind wasserabweisend und neigen dazu, sich im Inneren des Proteins zu verstecken.
-- Die hydrophoben Wechselwirkungen tragen zur Faltung und Stabilisierung der Tertiärstruktur bei.

@@ -1,1 +1,0 @@
-These are high-energy, high-speed electrons ($β-$) or positrons ($β+$) emitted by certain types of radioactive nuclei.

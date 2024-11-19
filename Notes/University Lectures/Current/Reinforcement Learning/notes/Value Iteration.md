@@ -9,7 +9,7 @@ $$
 ## Why It Works
 The algorithm works because of the **Markov Property**, which states that the future is independent of the past given the present. This allows the algorithm to break down the decision process into simple, manageable steps without losing the essence of the overall problem.
 
-Value iteration is an example of **Dynamic Programming** and is guaranteed to converge to the optimal values as it effectively navigates the trade-off between exploration (trying out new actions) and exploitation (choosing the best-known action).
+Value iteration is an example of **Dynamic Programming** and is <mark style="background: #FFB86CA6;">guaranteed to converge to the optimal values</mark> as it effectively navigates the trade-off between exploration (trying out new actions) and exploitation (choosing the best-known action).
 The content you provided discusses some limitations and complexities of applying traditional reinforcement learning (RL) techniques like value iteration in real-world scenarios. Here’s a breakdown of the main points and their implications:
 ### Limited Applicability of Traditional Methods
 - **Discrete Systems**: Traditional RL methods are effective in environments where states and actions can be distinctly enumerated (i.e., discrete systems). However, many real-world environments have continuous states or actions, where the possible values can vary along a continuum, making them more complex to handle.
@@ -24,11 +24,7 @@ Given these limitations, the application of RL in more complex or realistic sett
 - **Algorithm Choice**: The choice of algorithm might shift towards more complex solutions like Deep Q-Networks (DQN) for discrete actions in high-dimensional spaces, or Actor-Critic methods where both policy (actor) and value function (critic) are approximated and learned simultaneously.
 - **Computational Complexity**: Handling continuous, non-linear environments significantly increases the computational complexity and resources required, influencing how algorithms are implemented and scaled.
 ### Conclusion
-The traditional, straightforward RL methods have proven to be powerful tools for a range of problems but are often too limited for direct application in complex, real-world systems without modifications or approximations. Modern RL research and applications focus on developing and utilizing advanced methods that can handle the complexity and variability of real-world environments effectively.
-
-
-
-
+The traditional, straightforward RL methods have proven to be powerful tools for a range of problems but are often too limited for direct application in complex, real-world systems without modifications or approximations. Modern RL research and applications focus on developing and utilizing advanced methods that can handle the complexity and variability of real-world environments effectively
 ## Comparison to [[Policy Iteration]]
 - **Operational Differences**: In Policy Iteration, each cycle involves fully evaluating a policy before attempting to improve it, which can make it slower per iteration compared to Value Iteration. In contrast, Value Iteration continuously updates the state values and implicitly the policy in a single step, which can lead to faster convergence in terms of the number of iterations.
 - **Policy Tracking**: Value Iteration does not explicitly track or update a policy until convergence. Instead, it focuses on the values, and the optimal policy is derived by choosing the best actions given the final values. Policy Iteration explicitly updates and improves the policy at each step.

@@ -1,5 +1,0 @@
-- The standard language for recording and communicating medical images (CT, MRI, PET, etc.) is the <mark style="background: #FFB86CA6;">DICOM* format</mark>
-- It specifies communication standards between equipment dedicated to the processing of bio-images
-- Each <mark style="background: #FFB86CA6;">.dcm file</mark> consists of: 
-	- a header containing "fields" <mark style="background: #FFB86CA6;">containing personal details, examination data and any other administrative information</mark> 
-	- a matrix that is the numerical representation of the <mark style="background: #FFB86CA6;">image</mark>

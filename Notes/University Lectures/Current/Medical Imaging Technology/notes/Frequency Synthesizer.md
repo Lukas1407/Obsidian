@@ -1,2 +1,0 @@
-- **Purpose:** The frequency synthesizer generates a continuous sinusoidal carrier wave at or near the Larmor frequency. The Larmor frequency is specific to the type of nucleus being imaged (typically hydrogen in clinical MRI) and the strength of the magnetic field.
-- **Use in NMR and MRI:** Although termed as "old technology" in the context of NMR spectroscopy (NMRS), it remains foundational in MRI. The precise generation of the carrier wave at the Larmor frequency is essential for ensuring the RF pulses effectively resonate with the nuclear spins.

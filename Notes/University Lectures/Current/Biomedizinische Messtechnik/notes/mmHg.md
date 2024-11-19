@@ -1,2 +1,0 @@
-> [!abstract] Definition
-> **Millimeter Quecksilbers (mmHg)** ist eine **manometrische Druckeinheit**, die ursprünglich als der zusätzliche Druck definiert war, den eine Quecksilbersäule von einem Millimeter Höhe erzeugt. 

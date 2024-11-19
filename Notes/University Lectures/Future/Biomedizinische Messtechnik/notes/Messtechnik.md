@@ -1,0 +1,2 @@
+> [!abstract] Definition
+>  Die Messtechnik befasst sich mit Geräten und Methoden zur Bestimmung (Messung) physikalischer Größen wie beispielsweise Länge, Masse, Kraft, Druck, elektrische Stromstärke, Temperatur oder Zeit. Wichtige Teilgebiete der Messtechnik sind die Entwicklung von Messsystemen und Messmethoden sowie die Erfassung, Modellierung und Reduktion (Korrektur) von Messabweichungen und unerwünschten Einflüssen. Dazu gehört auch die Justierung und Kalibrierung von Messgeräten sowie die korrekte Reduktion der Messungen auf einheitliche Bedingungen

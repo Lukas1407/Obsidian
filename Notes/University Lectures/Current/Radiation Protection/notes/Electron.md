@@ -1,1 +1,0 @@
-- Negatively charged particles that orbit the nucleus in various energy levels or shells.

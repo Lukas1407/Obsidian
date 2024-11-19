@@ -1,0 +1,2 @@
+- Temporal resolution refers to the ability to precisely time events. 
+- High temporal resolution allows for better synchronization of detected signals, resulting in more accurate image reconstruction

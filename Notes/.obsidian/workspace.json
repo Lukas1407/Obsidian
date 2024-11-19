@@ -13,15 +13,114 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/KI in robotergestützer Chirurgie/Gliederung.md",
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gliederung"
+              "title": "Reinforcement Learning"
+            }
+          },
+          {
+            "id": "150406328b5bc498",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Taxonomy of RL Algorithms"
+            }
+          },
+          {
+            "id": "ecf4d4e6d2f14449",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Model-based RL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Model-based RL"
+            }
+          },
+          {
+            "id": "580c5cf08b778844",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Model-Free RL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Model-Free RL"
+            }
+          },
+          {
+            "id": "2b0094336fcdfcc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Anatomy of RL Algorithms"
+            }
+          },
+          {
+            "id": "756f7bf82e17ed22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Policy Iteration"
+            }
+          },
+          {
+            "id": "c57781f991c65a0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Monte-Carlo Estimation"
+            }
+          },
+          {
+            "id": "197f7ba50d160ef3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Temporal Difference Learning"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,10 +275,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/KI in robotergestützer Chirurgie/Gliederung.md"
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Gliederung"
+              "title": "Outline of Taxonomy of RL Algorithms"
             }
           }
         ]
@@ -204,8 +303,24 @@
       "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "6d8a550192536ab1",
+  "active": "150406328b5bc498",
   "lastOpenFiles": [
+    "University Lectures/Current/Reinforcement Learning/notes/Model-based RL.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Model-Free RL.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Value-Function.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Value Iteration.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Components of a RL Agent.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Markov Decision Process.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Exploration-Exploitation Trade-off.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Incremental Update Rule.md",
+    "University Lectures/Current/Reinforcement Learning/notes/RL Model.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy.md",
     "University Lectures/Current/KI in robotergestützer Chirurgie/Gliederung.md",
     "University Lectures/Current/KI in robotergestützer Chirurgie",
     "University Lectures/Current/Genetik/Genetik.md",
@@ -229,22 +344,6 @@
     "University Lectures/Current/Computergrafik/notes/Raytracing und Aliasing.md",
     "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241113100711.png",
     "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241113100530.png",
-    "University Lectures/Current/Computergrafik/notes/Raytracing.md",
-    "University Lectures/Current/Computergrafik/notes/Lokales Beleuchtungsmodell.md",
-    "University Lectures/Current/Computergrafik/notes/Snell'schen Brechungsgesetz.md",
-    "University Lectures/Current/Computergrafik/notes/Arten von Lichtquellen.md",
-    "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md",
-    "University Lectures/Current/Genetik/Ligase.md",
-    "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
-    "University Lectures/Current/Molekularbiologie/Polymerase-Kettenreaktion (PCR).md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Autonomous Learning for Intelligent Robot Perception.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Bayes Filter.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Probability Distribution Representation.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Probability Sampling Techniques.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Bayesian Reasoning.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Gibbs Sampling.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Metropolis-Hastings.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
     "University Lectures/Current/Genetik/images/DNA_Replication_I.mov"
   ]
 }

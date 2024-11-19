@@ -6,7 +6,7 @@
 - In every RL scenario, there is some form of optimality criterion, often called a reward function. 
 	- This function evaluates the actions taken by the agent and assigns a score or reward based on the desirability of the outcomes.
 - RL differs from many other machine learning approaches in that the agent typically starts with little to no knowledge about the environment in which it operates. 
-	- It does not have a pre-programmed strategy or understanding of how its actions affect the environment. 
+	- It <mark style="background: #FFB86CA6;">does not have a pre-programmed strategy</mark> or understanding of how its actions affect the environment. 
 	- Instead, the agent must discover this through its own interactions, figuring out the dynamics and mechanics of the environment as it learns. 
 	- -> This makes RL applicable to problems where the model of the environment is complex, unknown, or difficult to formulate explicitly.
 

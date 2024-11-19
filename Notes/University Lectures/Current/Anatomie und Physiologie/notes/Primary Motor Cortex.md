@@ -1,5 +1,0 @@
-- **Location:** In humans, the primary motor cortex is found in the posterior portion of the frontal lobe.
-- **Function:** This region of the brain is responsible for generating neural impulses that control the execution of movement.
-- **Representation:** The way the body is represented in the primary motor cortex is quite specific. Body parts are arranged along this cortex from the toes to the mouth. This arrangement is known as the motor homunculus.
-- **Proportional Representation:** Notably, the amount of cortex devoted to each body part is not proportional to the body part's size. Instead, it's proportional to the complexity and precision of the movements that part needs to perform. This is determined by the density of cutaneous motor receptors—[[Sensory Receptors]] in the skin that respond to touch and pressure.
-![[Pasted image 20240709090111.png#invert|400]]

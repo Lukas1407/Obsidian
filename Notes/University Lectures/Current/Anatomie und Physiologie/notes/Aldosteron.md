@@ -1,1 +1,0 @@
-- Ein Mineralokortikoid, das die Regulation des Wasser- und Elektrolythaushalts steuert, insbesondere die Rückresorption von Natrium und die Ausscheidung von Kalium in den Nieren.

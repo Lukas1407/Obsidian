@@ -1,0 +1,1 @@
+Wärmestrahlung ist die Übertragung von Wärme durch elektromagnetische Wellen. Diese Form der Wärmeübertragung benötigt kein Medium und kann daher auch im Vakuum stattfinden. Ein alltägliches Beispiel für Wärmestrahlung ist die Wärme, die wir von der Sonne oder einem Lagerfeuer spüren

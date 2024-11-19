@@ -1,0 +1,5 @@
+- Ein Aminhormon aus der Gruppe der Katecholamine, das als Neurotransmitter im zentralen Nervensystem (ZNZ) wirkt.
+- Es war das erste Hormon, dessen Struktur bestimmt und das synthetisch hergestellt wurde.
+- Adrenalin und Noradrenalin sind Hormone der Nebennierenrinde und wirken über G-Protein-gekoppelte Rezeptoren.
+- Adrenalin erhöht den Blutdruck, die Herzfrequenz und fördert die Bronchodilatation (Erweiterung der Atemwege).
+- Es wird in der Notfallmedizin eingesetzt, z.B. bei Herz-Lungen-Wiederbelebung.

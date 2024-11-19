@@ -1,2 +1,0 @@
-![[Makroanatomie]]
-![[Mikroanatomie]]

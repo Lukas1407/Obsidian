@@ -1,1 +1,0 @@
-- Histone sind basische, glomeruläre Proteine.
