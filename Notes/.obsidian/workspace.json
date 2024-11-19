@@ -4,119 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "882a2d8e3d059ec6",
+        "id": "c3a67f0b9a3b32f0",
         "type": "tabs",
         "children": [
           {
-            "id": "6d8a550192536ab1",
+            "id": "8094cc28f04159c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
+                "file": "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reinforcement Learning"
+              "title": "Molekularbiologie"
             }
           },
           {
-            "id": "150406328b5bc498",
+            "id": "7c79ad8bbfa28ab8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
+                "file": "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Taxonomy of RL Algorithms"
-            }
-          },
-          {
-            "id": "ecf4d4e6d2f14449",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Model-based RL.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Model-based RL"
-            }
-          },
-          {
-            "id": "580c5cf08b778844",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Model-Free RL.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Model-Free RL"
-            }
-          },
-          {
-            "id": "2b0094336fcdfcc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Anatomy of RL Algorithms"
-            }
-          },
-          {
-            "id": "756f7bf82e17ed22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Policy Iteration"
-            }
-          },
-          {
-            "id": "c57781f991c65a0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Monte-Carlo Estimation"
-            }
-          },
-          {
-            "id": "197f7ba50d160ef3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Temporal Difference Learning"
+              "title": "DNA-Klonierung"
             }
           }
         ],
@@ -275,10 +191,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md"
+                "file": "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Taxonomy of RL Algorithms"
+              "title": "Outline of DNA-Klonierung"
             }
           }
         ]
@@ -303,17 +219,23 @@
       "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "150406328b5bc498",
+  "active": "7c79ad8bbfa28ab8",
   "lastOpenFiles": [
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119123850.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119123021.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119121303.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119121246.png",
+    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119121135.png",
+    "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
     "University Lectures/Current/Reinforcement Learning/notes/Model-based RL.md",
     "University Lectures/Current/Reinforcement Learning/notes/Model-Free RL.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
     "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
     "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
     "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
     "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
     "University Lectures/Current/Reinforcement Learning/notes/Value-Function.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
     "University Lectures/Current/Reinforcement Learning/notes/Value Iteration.md",
     "University Lectures/Current/Reinforcement Learning/notes/Components of a RL Agent.md",
     "University Lectures/Current/Reinforcement Learning/notes/Markov Decision Process.md",
@@ -337,13 +259,7 @@
     "University Lectures/Current/Genetik/images/Pasted image 20241114095458.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241114095453.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241114095338.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241114094919.png",
     "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
-    "University Lectures/Current/Computergrafik/notes/Distributed Raytracing.md",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241113121820.png",
-    "University Lectures/Current/Computergrafik/notes/Raytracing und Aliasing.md",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241113100711.png",
-    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241113100530.png",
     "University Lectures/Current/Genetik/images/DNA_Replication_I.mov"
   ]
 }
