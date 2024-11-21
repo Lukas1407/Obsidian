@@ -13,7 +13,7 @@
 - Since the full model of the environment may not be available or the state space may be too large, the expectations in the policy evaluation can be approximated using sampled transition trajectory $\tau=(s_{0},a_{0},r_{0},s_{1},a_{1},r_{1}...)$ rather than summing over all possible transitions.
 1. **Sampling an Action**: An action $a_t$ is sampled according to the policy's distribution $\pi(\cdot|s_t)$.
 2. **Sampling the Next State**: The next state $s_{t+1}$ is sampled from the probability distribution $P(\cdot|s_t, a_t)$, which might typically be derived from interacting with the environment.
-3. **Computing a New Target**: For the current timestep $t$, compute the target $y_t$ which is an estimate of the expected return from state $s_t$ given the sampled action and the next state:
+3. **Computing a New Target**: For the current time-step $t$, compute the target $y_t$ which is an estimate of the expected return from state $s_t$ given the sampled action and the next state:
    $$ y_t = r(s_t, a_t) + \gamma V^\pi(s_{t+1}) $$
 
 - To incorporate the sampled estimate into the current value function estimate, a moving average approach is used:

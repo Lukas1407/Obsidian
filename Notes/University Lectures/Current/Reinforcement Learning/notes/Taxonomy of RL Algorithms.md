@@ -11,7 +11,7 @@
 - <mark style="background: #FF5582A6;">×</mark> Often quite hard to tune... 
 - <mark style="background: #FF5582A6;">×</mark> Hard to use for continuous action spaces 
 - <mark style="background: #FF5582A6;">×</mark> Approximation errors in the Q-function might bias the quality of the resulting policy
-- **Requires Dynamics Model**: Both value iteration and policy iteration require complete knowledge of the environment’s dynamics through the state transition probabilities P(s′∣s,a)P(s' | s, a)P(s′∣s,a) and rewards R(s,a)R(s, a)R(s,a). This is often impractical or impossible in complex environments.
+- **Requires Dynamics Model**: Both value iteration and policy iteration require complete knowledge of the environment’s dynamics through the state transition probabilities $P(s' | s, a)$ and rewards $R(s, a)$. This is often impractical or impossible in complex environments.
 - **Computationally Intensive**: Iterating over all states and actions can be computationally prohibitive except in small, discrete problems due to the exponential growth of the state-action space with the number of variables in the environment.
 ### Solutions to Overcome Limitations
 Given the limitations of exact methods in handling large or complex state spaces, several approximative techniques have been developed:
@@ -19,7 +19,7 @@ Given the limitations of exact methods in handling large or complex state spaces
 - **Description**: These methods use sampling techniques to estimate the value functions and policies without needing to know the entire state transition model. Methods like Monte Carlo simulations randomly sample transitions from the policy and use these samples to estimate the value functions.
 - **Advantages**: Reduces the need for a complete model and can handle larger state spaces.
 #### 2. **Function Approximation**
-- **Description**: Function approximation methods use parametric or non-parametric models to estimate the value functions or policies. Techniques such as neural networks, linear regression, or decision trees can generalize across the state space without needing to compute or store values for every state-action pair.
+- **Description**: <mark style="background: #FFB86CA6;">Function approximation methods use parametric or non-parametric models to estimate the value functions or policies</mark>. Techniques such as neural networks, linear regression, or decision trees can generalize across the state space without needing to compute or store values for every state-action pair.
 - **Advantages**: They can efficiently handle high-dimensional and continuous spaces by generalizing from observed samples to unseen states.
 ## [[Policy Optimization]]
 ### Details

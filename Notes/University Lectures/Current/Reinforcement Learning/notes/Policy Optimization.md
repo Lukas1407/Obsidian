@@ -8,10 +8,10 @@
 ## Policy Gradient Methods
 - These methods use a policy that is parameterized by a set of weights, which can be adjusted to change the behavior of the policy.
 - $$\pi_{\theta}(a|s)$$
-	- For example: Gaussian Neural Network Policy:$$\pi_{theta}(a|s)=\mathcal{N}(a|\mu_{\theta}(s), \Sigma_{\theta}(s))$$
+	- For example: Gaussian Neural Network Policy:$$\pi_{\theta}(a|s)=\mathcal{N}(a|\mu_{\theta}(s), \Sigma_{\theta}(s))$$
 	- Works well for continuous actions compared to discrete actions like [[Exploration and Entropy#Using Neural Networks|softmax-policy]]
 - The policy is typically stochastic, meaning it assigns probabilities to actions rather than deterministically choosing a single action. This inherent randomness helps in exploring the environment
-- The parameters of the policy are updated using gradient ascent on the expected return. This means that the algorithm calculates the gradient of the expected return with respect to the policy parameters and then moves the parameters in the direction that increases the expected return
+- The parameters of the policy are <mark style="background: #FFB86CA6;">updated using gradient ascent on the expected return</mark>. This means that the algorithm calculates the gradient of the expected return with respect to the policy parameters and then moves the parameters in the direction that increases the expected return
 	- Gradient ascent because we want to maximize the return and not minimize it like in [[Gradient Descent]]
 		- $$\theta \leftarrow\theta+\alpha \frac{\partial J\theta}{\partial\theta}$$, with the objective function $J$  that is being optimized is typically the expected return:$$J(\theta)=\mathbb{E}_{\tau\sim p_{\theta}(\tau)}\left[\sum_{t}\gamma^{t}r(s_{t},a_{t}) \right]$$, $\tau$ being a trajectory, and $p_{\theta}(\tau)$ is the trajectory distribution induced by policy parameter $\theta$:$$p_{\theta}(\tau)=p(s_{0})\prod_{t=0}^{T-1}\pi_{\theta}(a_{t}|s_{t})p(s_{t+1}|s_{t},a_{t})$$
 ![[Pasted image 20240314083649.png#invert|400]]
@@ -25,11 +25,11 @@
 		- Called likelihood-Ratio Policy Gradients
 		- Valid even when the reward is discontinuous and/or unknown or when sample space of paths ($\tau$) is a discrete set
 	- The gradient tries to: 
-		- Increase probability of paths with high returns
-		- Decrease probability of paths with low returns
+		- <mark style="background: #FFB86CA6;">Increase probability of paths with high returns</mark>
+		- <mark style="background: #FFB86CA6;">Decrease probability of paths with low returns</mark>
 	- Does not try to change the paths (<-> path derivative): 
-		- The method doesn’t directly modify the paths themselves; it only changes the policy that generates these paths. In other words, it doesn’t compute the derivative of the paths (which would require knowing how the paths would change with respect to the policy parameters), but rather the derivative of the probability of taking a particular action given a state.
-		- We would need the transition model for the path derivatives: To compute the path derivatives, you would need a model of the environment’s dynamics, known as the transition model, which describes the probability of moving to the next state given the current state and action. This is typically not required in policy gradient methods, which are often model-free.
+		- The method <mark style="background: #FFB86CA6;">doesn’t directly modify the paths themselves</mark>; it only changes the policy that generates these paths. In other words, it doesn’t compute the derivative of the paths (which would require knowing how the paths would change with respect to the policy parameters), but rather the derivative of the probability of taking a particular action given a state.
+		- We would need the transition model for the path derivatives: <mark style="background: #FFB86CA6;">To compute the path derivatives, you would need a model of the environment’s dynamics</mark>, known as the transition model, which describes the probability of moving to the next state given the current state and action. This is typically not required in policy gradient methods, which are often model-free.
 - How to compute $\nabla_{\theta}\log p_{\theta}(\tau)$:$$\begin{align}p_{\theta}(\tau)&=p(s_{0})\prod_{t=0}^{T-1}\pi_{\theta}(a_{t}|s_{t})p(s_{t+1}|s_{t},a_{t}) \\ \log p_{\theta}(\tau)&=\log p(s_{0})+\sum_{t=0}^{T-1}\log \pi_{\theta}(a_{t}|s_{t})+\sum_{t=0}^{T-1}\log p(s_{t+1}|s_{t},a_{t}) \\ \nabla_{\theta}\log p_{\theta}(\tau)&= \nabla_{\theta}\log p(s_{0})+\sum_{t=0}^{T-1}\nabla_{\theta}\log \pi_{\theta}(a_{t}|s_{t})+\sum_{t=0}^{T-1}\nabla_{\theta}\log p(s_{t+1}|s_{t},a_{t}) \\ &=\sum_{t=0}^{T-1}\nabla_{\theta}\log \pi_{\theta}(a_{t}|s_{t}) \end{align}$$
 	- -> No model is required!
 ## REINFORCE Algorithm
@@ -38,7 +38,6 @@
 - But: 
 	- Learning rates very hard to tune 
 	- Needs tons of samples
-
 ## Extensions
 As formulated thus far: 
 1. Unbiased but very noisy (high variance) 
@@ -64,13 +63,13 @@ As formulated thus far:
 ### Baselines
 - Subtracting a baseline $b$ from the returns $R_{i}$ reduces the variance in the returns
 - $$\nabla_{\theta}J(\theta) = \frac{1}{N}\sum_{i=1}^{N}\nabla_{\theta}\log p_{\theta}(\tau_{i})(R_{i}-\textcolor{orange}{b})$$
-	- By introducing a baseline, you’re effectively normalizing the returns
-	- Since the baseline is subtracted from both positive and negative returns, it reduces the range of the values, thereby reducing the variance. 
-	- The key point is that the baseline itself is independent of the actions, so subtracting it does not introduce any bias in the gradient estimate—it only affects the variance:$$\mathbb{E}_{p_{\theta}(\tau)}\left[\nabla_{\theta}\log p_{\theta}(\tau)\textcolor{orange}{b}\right]=\textcolor{orange}{b}\nabla_{\theta}\int p_{\theta}(\tau) d\tau=0$$
+	- By introducing a baseline, you’re effectively <mark style="background: #FFB86CA6;">normalizing the returns</mark>
+	- Since the baseline is subtracted from both positive and negative returns, it <mark style="background: #FFB86CA6;">reduces the range of the values, thereby reducing the variance. </mark>
+	- The key point is that the baseline itself is <mark style="background: #FFB86CA6;">independent of the actions</mark>, so subtracting it does not introduce any bias in the gradient estimate—it only affects the variance:$$\mathbb{E}_{p_{\theta}(\tau)}\left[\nabla_{\theta}\log p_{\theta}(\tau)\textcolor{orange}{b}\right]=\textcolor{orange}{b}\nabla_{\theta}\int p_{\theta}(\tau) d\tau=0$$
 ![[Pasted image 20240315090645.png#invert|200]]
 #### Good choices of Baselines
-1. Constant baselines: average Return $$b=\mathbb{E}_{p_{\theta}(\tau)}[R(\tau)]\approx \frac{1}{N}\sum_{i=1}^{T}R(\tau_{i})$$
-2. Time-dependent baseline: expected reward to come from time $t$$$b_{t}=\mathbb{E}_{p_{\theta}(\tau)}\left[\sum_{k=t}^{T}\gamma^{k-t}r(s_k,a_k)\right]\approx \frac{1}{N}\sum_{i=1}^T\sum_{k=t}^{T}\gamma^{k-t}r(s_{i,k},a_{i,k})$$
+1. <mark style="background: #FFB86CA6;">Constant baselines</mark>: average Return $$b=\mathbb{E}_{p_{\theta}(\tau)}[R(\tau)]\approx \frac{1}{N}\sum_{i=1}^{T}R(\tau_{i})$$
+2. <mark style="background: #FFB86CA6;">Time-dependent baseline</mark>: expected reward to come from time $t$$$b_{t}=\mathbb{E}_{p_{\theta}(\tau)}\left[\sum_{k=t}^{T}\gamma^{k-t}r(s_k,a_k)\right]\approx \frac{1}{N}\sum_{i=1}^T\sum_{k=t}^{T}\gamma^{k-t}r(s_{i,k},a_{i,k})$$
 	- This baseline adjusts for the fact that later actions do not affect earlier rewards, and it helps in reducing the variance more effectively than a constant baseline.
 3. Sate-dependent baseline: expected reward to come $s$$$b(s)=\mathbb{E}_{p_{\theta}(\tau)}\left[\sum_{t=0}^{T}\gamma^{t}r(s_{t},a_{t})|s_{0}=s \right]=V^{\pi_{old}}(s)$$
 	- This baseline is particularly effective because it accounts for the varying potential of different states to generate rewards.

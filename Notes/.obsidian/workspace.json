@@ -13,26 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
+                "file": "University Lectures/Current/Genetik/Genetik.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Molekularbiologie"
+              "title": "Genetik"
             }
           },
           {
-            "id": "7c79ad8bbfa28ab8",
+            "id": "0b0ce1e3fdb57f1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md",
+                "file": "University Lectures/Current/Genetik/DNA-Schäden.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DNA-Klonierung"
+              "title": "DNA-Schäden"
+            }
+          },
+          {
+            "id": "3d4a323e80cd024e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "University Lectures/Current/Genetik/DNA-Mutationen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DNA-Mutationen"
             }
           }
         ],
@@ -191,10 +205,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md"
+                "file": "University Lectures/Current/Genetik/DNA-Schäden.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of DNA-Klonierung"
+              "title": "Outline of DNA-Schäden"
             }
           }
         ]
@@ -219,47 +233,47 @@
       "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "7c79ad8bbfa28ab8",
+  "active": "0b0ce1e3fdb57f1d",
   "lastOpenFiles": [
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119123850.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119123021.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119121303.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119121246.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241119121135.png",
-    "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121133729.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121132047.png",
+    "University Lectures/Current/Genetik/Genetik.md",
+    "University Lectures/Current/Genetik/DNA-Schäden.md",
+    "University Lectures/Current/Genetik/DNA-Mutationen.md",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121131523.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121131351.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121131349.png",
+    "University Lectures/Current/Genetik/Luria-Delbrück Experiment (1943).md",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121131156.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121131133.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121130919.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121130837.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121130635.png",
+    "University Lectures/Current/Genetik/images/Untitled 1.png",
+    "University Lectures/Current/Genetik/DNA-Replikation.md",
+    "University Lectures/Current/Genetik/DNA-Rekombination.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
     "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Value-Function Approximation.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Log-Ratio Trick.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
     "University Lectures/Current/Reinforcement Learning/notes/Model-based RL.md",
     "University Lectures/Current/Reinforcement Learning/notes/Model-Free RL.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
     "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
     "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
     "University Lectures/Current/Reinforcement Learning/notes/Value-Function.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Value Iteration.md",
     "University Lectures/Current/Reinforcement Learning/notes/Components of a RL Agent.md",
+    "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Value Iteration.md",
     "University Lectures/Current/Reinforcement Learning/notes/Markov Decision Process.md",
     "University Lectures/Current/Reinforcement Learning/notes/Exploration-Exploitation Trade-off.md",
     "University Lectures/Current/Reinforcement Learning/notes/Incremental Update Rule.md",
     "University Lectures/Current/Reinforcement Learning/notes/RL Model.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Policy.md",
-    "University Lectures/Current/KI in robotergestützer Chirurgie/Gliederung.md",
     "University Lectures/Current/KI in robotergestützer Chirurgie",
-    "University Lectures/Current/Genetik/Genetik.md",
-    "University Lectures/Current/Genetik/DNA-Rekombination.md",
-    "University Lectures/Current/Genetik/Untitled 1.md",
-    "University Lectures/Current/Genetik/images/Pasted image 20241114100459.png",
     "University Lectures/Current/Genetik/images/Holliday_junction.mov",
-    "University Lectures/Current/Molekularbiologie/DNA Rekombinationstechnik.md",
-    "University Lectures/Current/Genetik/Replisome.md",
-    "University Lectures/Current/Genetik/DNA-Replikation.md",
     "University Lectures/Current/Genetik/images/Telomere_Replication.mov",
-    "University Lectures/Current/Genetik/images/Pasted image 20241114095616.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241114095609.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241114095458.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241114095453.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241114095338.png",
-    "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
     "University Lectures/Current/Genetik/images/DNA_Replication_I.mov"
   ]
 }
