@@ -114,7 +114,7 @@ Die Selektion wird verwendet, um sicherzustellen, dass die Zellen ein korrekt re
 #### **Ergebnis:**
 - Rekombinante Plasmide wachsen nur auf LB+Amp, nicht auf LB+Amp+Km.
 - Nicht-rekombinante Plasmide wachsen auf beiden Medien.
-## 2. Restriktionsanalyse von Plasmiden
+## Restriktionsanalyse von Plasmiden
 Die Restriktionsanalyse wird verwendet, um zu bestätigen, dass Fremd-DNA in ein Plasmid integriert wurde und die korrekte Größe hat.
 ### **Ablauf:**
 1. **Restriktionsenzyme** schneiden DNA an spezifischen Stellen.
@@ -124,7 +124,8 @@ Die Restriktionsanalyse wird verwendet, um zu bestätigen, dass Fremd-DNA in ein
    - Das Gel zeigt die Größen der DNA-Fragmente.
    - Die Position der Banden wird mit einem **Molekulargewichtsmarker** verglichen.
 ### **Ergebnis:**
-![[Pasted image 20241119123021.png#invert|400]]
+![[annotated_Pasted image 20241119123021|400]]
+[[Notes/University Lectures/Current/Molekularbiologie/images/Pasted image 20241119123021.png#invert|400]]
   - Plasmid A enthält ein Insert → zeigt zusätzlich eine Band, die der Größe des Inserts entspricht.
   - Plasmide B und C enthalten kein Insert → zeigen nur die Banden des Vektors.
 ## Genbanken in Plasmiden

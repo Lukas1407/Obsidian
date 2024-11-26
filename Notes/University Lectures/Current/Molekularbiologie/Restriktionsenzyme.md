@@ -63,7 +63,8 @@
 ![[Pasted image 20241105104004.png#invert|300]]
 - Filling oder Cutting möglich
 - Cutting von 5' nach 3'
-![[Pasted image 20241105102049.png#invert|300]]
+![[annotated_Pasted image 20241105102049|300]]
+[[Notes/University Lectures/Current/Molekularbiologie/images/Pasted image 20241105102049.png#invert|300]]
 - Kein Filling möglich weil wir nicht von 3' nach 5' synthetisieren können
 ## Aufgaben:
 ### Aufgabe 1
