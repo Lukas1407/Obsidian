@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Rendering-Gleichung.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DNA-Klonierung"
+              "title": "Rendering-Gleichung"
             }
           },
           {
@@ -48,9 +48,37 @@
               "icon": "lucide-file",
               "title": "DNA-Mutationen"
             }
+          },
+          {
+            "id": "12a71d7f556b5e2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Path Tracing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Path Tracing"
+            }
+          },
+          {
+            "id": "ea20fe025b2f5a70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spektrales Rendering.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spektrales Rendering"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -70,7 +98,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTime"
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -124,7 +152,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 370.5
+    "width": 370.5,
+    "collapsed": true
   },
   "right": {
     "id": "267df62b6ee2986d",
@@ -205,17 +234,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md"
+                "file": "Spektrales Rendering.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of DNA-Klonierung"
+              "title": "Outline of Spektrales Rendering"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 351.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,8 +263,19 @@
       "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "0b0ce1e3fdb57f1d",
+  "active": "ea20fe025b2f5a70",
   "lastOpenFiles": [
+    "Path Tracing.md",
+    "Spektrales Rendering.md",
+    "images/Pasted image 20241126095525.png",
+    "images",
+    "University Lectures/Current/Computergrafik/notes/Rendering-Gleichung.md",
+    "University Lectures/Current/Computergrafik/notes/Distributed Raytracing.md",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241126094046.png",
+    "University Lectures/Current/Computergrafik/notes/Raytracing und Aliasing.md",
+    "University Lectures/Current/Computergrafik/notes/Snell'schen Brechungsgesetz.md",
+    "University Lectures/Current/Computergrafik/notes/Raytracing.md",
+    "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md",
     "University Lectures/Current/Genetik/DNA-Schäden.md",
     "University Lectures/Current/Genetik/images/Pasted image 20241121133729.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241121132047.png",
@@ -247,8 +288,6 @@
     "University Lectures/Current/Genetik/images/Pasted image 20241121131156.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241121131133.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241121130919.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121130837.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121130635.png",
     "University Lectures/Current/Genetik/DNA-Replikation.md",
     "University Lectures/Current/Genetik/DNA-Rekombination.md",
     "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
@@ -263,13 +302,6 @@
     "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
     "University Lectures/Current/Reinforcement Learning/notes/Value-Function.md",
     "University Lectures/Current/Reinforcement Learning/notes/Components of a RL Agent.md",
-    "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Value Iteration.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Markov Decision Process.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Exploration-Exploitation Trade-off.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Incremental Update Rule.md",
-    "University Lectures/Current/Reinforcement Learning/notes/RL Model.md",
     "University Lectures/Current/KI in robotergestützer Chirurgie",
     "University Lectures/Current/Genetik/images/Holliday_junction.mov",
     "University Lectures/Current/Genetik/images/Telomere_Replication.mov",
