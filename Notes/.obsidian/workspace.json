@@ -4,49 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "c3a67f0b9a3b32f0",
+        "id": "8383776c842c5586",
         "type": "tabs",
         "children": [
           {
-            "id": "8094cc28f04159c6",
+            "id": "4f1ba18e9d04e250",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Genetik/Genetik.md",
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Genetik"
+              "title": "Taxonomy of RL Algorithms"
             }
           },
           {
-            "id": "0b0ce1e3fdb57f1d",
+            "id": "28d934b5cc1e44a4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Genetik/DNA-Schäden.md",
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DNA-Schäden"
-            }
-          },
-          {
-            "id": "3d4a323e80cd024e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Genetik/DNA-Mutationen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DNA-Mutationen"
+              "title": "Policy Optimization"
             }
           }
         ],
@@ -70,7 +56,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTimeReverse"
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -205,10 +191,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Genetik/DNA-Schäden.md"
+                "file": "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of DNA-Schäden"
+              "title": "Outline of Policy Optimization"
             }
           }
         ]
@@ -233,44 +219,43 @@
       "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "0b0ce1e3fdb57f1d",
+  "active": "28d934b5cc1e44a4",
   "lastOpenFiles": [
-    "University Lectures/Current/Genetik/images/Pasted image 20241121133729.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121132047.png",
-    "University Lectures/Current/Genetik/Genetik.md",
-    "University Lectures/Current/Genetik/DNA-Schäden.md",
-    "University Lectures/Current/Genetik/DNA-Mutationen.md",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121131523.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121131351.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121131349.png",
-    "University Lectures/Current/Genetik/Luria-Delbrück Experiment (1943).md",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121131156.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121131133.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121130919.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121130837.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121130635.png",
-    "University Lectures/Current/Genetik/images/Untitled 1.png",
-    "University Lectures/Current/Genetik/DNA-Replikation.md",
-    "University Lectures/Current/Genetik/DNA-Rekombination.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
     "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Kernel Methods.md",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Density Estimation.md",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241125122813.png",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241125122410.png",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Untitled 4.png",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Autonomous Learning for Intelligent Robot Perception.md",
     "University Lectures/Current/Reinforcement Learning/notes/Value-Function Approximation.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Log-Ratio Trick.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
+    "University Lectures/Current/Reinforcement Learning/notes/K-Armed Bandit Problem.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Incremental Update Rule.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Epsilon-Greedy Action Selection.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Off-Policy.md",
+    "University Lectures/Current/Reinforcement Learning/notes/On-Policy.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Variational Inference.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Sample Efficiency in RL Algorithms.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Multi-step Return.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Bias-Variance Trade-off.md",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Regularization Methods.md",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241122123035.png",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Application of Bayesian principles to Linear Regression.md",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Bayesian Reasoning.md",
     "University Lectures/Current/Reinforcement Learning/notes/Model-based RL.md",
     "University Lectures/Current/Reinforcement Learning/notes/Model-Free RL.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
     "University Lectures/Current/Reinforcement Learning/notes/Value-Function.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Components of a RL Agent.md",
-    "University Lectures/Current/Molekularbiologie/Molekularbiologie.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Anatomy of RL Algorithms.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Value Iteration.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Markov Decision Process.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Exploration-Exploitation Trade-off.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Incremental Update Rule.md",
-    "University Lectures/Current/Reinforcement Learning/notes/RL Model.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241121143002.png",
+    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241121142426.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121133729.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121132047.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121131523.png",
+    "University Lectures/Current/Genetik/images/Pasted image 20241121131351.png",
     "University Lectures/Current/KI in robotergestützer Chirurgie",
     "University Lectures/Current/Genetik/images/Holliday_junction.mov",
     "University Lectures/Current/Genetik/images/Telomere_Replication.mov",

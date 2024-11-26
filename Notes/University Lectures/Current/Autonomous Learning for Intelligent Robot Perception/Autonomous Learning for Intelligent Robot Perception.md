@@ -6,3 +6,6 @@
 - [[Bayes Filter]]
 - [[Application of Bayesian principles to Linear Regression]]
 - [[Probability Distribution Representation]]
+- [[Kernel Methods]]
+- [[Regularization Methods]]
+- [[Density Estimation]]

@@ -50,14 +50,14 @@ As formulated thus far:
 - Unrolls the temporal structure of the gradient: $$\begin{align}\nabla_{\theta}J(\theta)&\approx\frac{1}{N}\sum_{i}\left(\sum_{t}\nabla_{\theta}\log \pi_{\theta}(a_{i,t}|s_{i,t})\right)\left(\sum_{t}\gamma^{t}r(s_{i,t}a,_{i,t})\right)\\ &= \frac{1}{N}\sum_{i}\left(\sum_{t}\nabla_{\theta}\log \pi_{\theta}(a_{i,t}|s_{i,t})\right)\left(\sum_{k=0}^{t-1}\gamma^{k}r(s_{i,k},a_{i,k}) + \sum_{k=t}^{T}\gamma^{k}r(s_{i,k},a_{i,k})\right)\end{align}$$
 - Past rewards $k < t$ do not depend on $a_{i,t}$: 
 	- $\sum_{k=0}^{t-1}\gamma^{t}r(s_{i,k},a_{i,k})$
-	- Rewards received before time $t$ cannot be influenced by the action taken at time $t$, because those rewards have already been determined by previous actions. In other words, the outcome of past actions cannot be changed by current or future actions.
+	- Rewards received before time $t$ cannot be influenced by the action taken at time $t$, because those rewards have already been determined by previous actions. In other words, the <mark style="background: #FFB86CA6;">outcome of past actions cannot be changed by current or future actions</mark>.
 - Future rewards $k \ge t$ do depend on $a_{i,t}$: 
 	- $\sum_{k=t}^{T}\gamma^{t}r(s_{i,k},a_{i,k})$
-	- The action $a_{i,t}$ can influence the state transitions and the rewards received from time $t$ onwards. Therefore, future rewards are dependent on the current action, as it can alter the trajectory of states and subsequent rewards.
+	- The action $a_{i,t}$ can influence the state transitions and the rewards received from time $t$ onwards. Therefore, <mark style="background: #FFB86CA6;">future rewards are dependent on the current action</mark>, as it can alter the trajectory of states and subsequent rewards.
 - -> Terms that do not depend on $a_{i,t}$ can be removed!
 	- This is important because it ensures that the policy is updated based on the potential for future rewards rather than being biased by the rewards already obtained.
 	- Correlation between action selection strategy and past reward is zero $$\mathbb{E}[r_h \nabla_\theta \log \pi(a_t|s_t)] = 0 \text{ for } h < t$$
-	- This ensures that the updates to the policy parameters are not influenced by rewards from the past, allowing the policy to focus on maximizing future rewards
+	- This <mark style="background: #FFB86CA6;">ensures that the updates to the policy parameters are not influenced by rewards from the past, allowing the policy to focus on maximizing future rewards</mark>
 - <mark style="background: #FFB86CA6;">The resulting equation is called Policy Gradient Theorem</mark>:
 ![[Pasted image 20240315085901.png#invert|800]]
 ### Baselines
@@ -82,43 +82,47 @@ $$\begin{align}\nabla_{\theta}J(\theta)&\approx\frac{1}{N}\sum_{i}\left(\sum_{t}
 	- Only uses a single sample / trajectory to estimate expectation
 - How can we improve the estimate of $\hat Q^{\pi_{old}}(s_{i,t},a_{i,t})$?:
 #### N-Step returns
-N-step returns are a way to estimate the Q-function by looking ahead $n$ steps into the future rather than just one step (as in the standard Q-learning algorithm). This method balances the bias-variance trade-off: one-step returns have low variance but may be biased if the value function is not accurate, while returns that consider the entire episode ([[Monte-Carlo Estimation]]) are unbiased but can have high variance. $n$-step returns strike a middle ground by considering $n$ steps, which can lead to more stable and accurate value estimates.
+N-step returns are a way to estimate the Q-function by looking ahead $n$ steps into the future rather than just one step (as in the standard Q-learning algorithm). 
+- Balances the bias-variance trade-off: 
+	- <mark style="background: #FFB86CA6;">one-step returns have low variance but may be biased</mark> if the value function is not accurate
+	- returns that consider the entire episode ([[Monte-Carlo Estimation]]) are <mark style="background: #FFB86CA6;">unbiased but can have high variance</mark>. 
+	- $n$-step returns strike a middle ground by considering $n$ steps, which can lead to <mark style="background: #FFB86CA6;">more stable and accurate value estimates</mark>.
 $$\hat{Q}_{n}^{\pi_{old}}(s_t, a_t) = \sum_{k=t}^{t+n}\gamma^{k-t}r(s_{i,t},a_{i,t})+\gamma^nV^{\pi_{old}}(s_{i,t+n})
 $$
 - We “cut” the trajectories after $n$ steps and use the value function for predicting the future reward
 - Small $n$: Reduced variance + Potential high bias (value function might be wrong) 
 - Large $n$: Higher variance (each step adds variance) + Reduced bias
 #### Generalized Advantage Estimation (GAE)
-- Leverages the idea of n-step returns but instead of choosing a fixed n, it takes a weighted average of all n-step returns$$\hat{Q}_{GAE}^{\pi_{old}}(s_{i,t}, a_{i,t}) = \textcolor{orange}{(1-\lambda)}\sum_{n=1}^{\infty}\lambda^{n}\hat{Q}_{n}^{\pi_{old}}(s_{i,t}, a_{i,t})$$, with the normalization factor such that $(1-\lambda)\sum_{n=1}^{\infty}\lambda^{n}=1$
-- The weights decrease exponentially for returns that are further in the future, which is controlled by a parameter $\lambda$
+- Leverages the idea of n-step returns but <mark style="background: #FFB86CA6;">instead of choosing a fixed n, it takes a weighted average of all n-step returns</mark>$$\hat{Q}_{GAE}^{\pi_{old}}(s_{i,t}, a_{i,t}) = \textcolor{orange}{(1-\lambda)}\sum_{n=1}^{\infty}\lambda^{n}\hat{Q}_{n}^{\pi_{old}}(s_{i,t}, a_{i,t})$$, with the normalization factor such that $(1-\lambda)\sum_{n=1}^{\infty}\lambda^{n}=1$
+- <mark style="background: #FFB86CA6;">The weights decrease exponentially for returns that are further in the future</mark>, which is controlled by a parameter $\lambda$
 	-  This is known as the exponential weighting factor
 - GAE uses the <mark style="background: #FFB86CA6;">advantage function</mark> $$A^{\pi}(s, a) = Q^{\pi}(s, a) - V^{\pi}(s)$$, which measures how much better taking a particular action $a$ is compared to the average action in state $s$ as per the current policy. ^bc0da1
 	- -> is essentially the expected [[Temporal Difference Learning|TD error]] when action $a$ is taken in state $s$
-	- In the context of GAE, the advantage at time %t is estimated as the sum of exponentially-discounted [[Temporal Difference Learning|TD errors]] 
+	- In the context of GAE, the advantage at time t is estimated as the sum of exponentially-discounted [[Temporal Difference Learning|TD errors]] 
 - If we average over all possible actions $a$ weighted by their probability under the current policy, the advantage function averages out to zero:$$\mathbb{E}_{\pi(a|s)}[A^{\pi}(s,a)]=\mathbb{E}_{\pi(a|s)}[Q^{\pi}(s,a)]-V^{\pi}(s)=V^\pi(s)-V^{\pi}(s)=0$$
-	- -> the advantage function has always zero mean
+	- -> the advantage function has always <mark style="background: #FFB86CA6;">zero mean</mark>
 ### Data Reuse
 - The policy gradient is only valid if samples have been generated by $\pi$
 	- -> we have to generate new trajectories after every gradient step
 - Solution Importance Sampling
 #### Importance Sampling
-Importance Sampling allows us to estimate properties of a particular distribution, while only having samples generated from a different distribution
+Importance Sampling allows us to <mark style="background: #FFB86CA6;">estimate properties of a particular distribution, while only having samples generated from a different distribution</mark>
 - The equation for importance sampling is typically written as:$$\hat{\mu}_{q}=\frac{1}{N}\sum_{x_{i}\sim q(x)}\frac{p(x_{i})}{q(x_{i})}f(x_{i})\approx\mathbb{E}_{p(x)}[f(x)]$$
 - Here, $\hat{\mu}_{q}$ is the estimated expected value of a function $f(x)$ under the probability distribution $p(x)$, using samples ${x_i}$ from a different distribution $q(x)$.
-- The term $\frac{p(x_i)}{q(x_i)}$ is known as the importance weight, and it corrects for the fact that the samples are drawn from $q(x)$ instead of $p(x)$.
+- The term $\frac{p(x_i)}{q(x_i)}$ is known as the <mark style="background: #FFB86CA6;">importance weight</mark>, and it corrects for the fact that the samples are drawn from $q(x)$ instead of $p(x)$.
 - Disadvantages:
-	- High variance if p and q are very different (the proposal distribution $q(x)$ is not a good approximation of the target distribution $p(x)$)
+	- <mark style="background: #FFB86CA6;">High variance if p and q are very different</mark> (the proposal distribution $q(x)$ is not a good approximation of the target distribution $p(x)$)
 	- Basically only one sample gets all the weight
 ![[Pasted image 20240403091135.png#invert|300]]
 - The expectation of a constant is incorrectly estimated due to the weights
 #### Self-normalized Importance sampling
-- This failure case can be fixed by normalizing the importance weights
-- This is done by dividing each weight by the sum of all weights, which ensures that the weights sum up to one$$\mathbb{E}_{p(x)}[f(x)] \approx\frac{1}{Z}\sum_{x_{i}\sim q(x)}\frac{p(x_{i})}{q(x_{i})}f(x_{i})$$, with $$Z=\sum_{i} \frac{p(x_{i})}{q(x_{i})}$$
+- This failure case <mark style="background: #FFB86CA6;">can be fixed by normalizing the importance weights</mark>
+- This is done by dividing each weight by the sum of all weights, which <mark style="background: #FFB86CA6;">ensures that the weights sum up to one</mark>$$\mathbb{E}_{p(x)}[f(x)] \approx\frac{1}{Z}\sum_{x_{i}\sim q(x)}\frac{p(x_{i})}{q(x_{i})}f(x_{i})$$, with $$Z=\sum_{i} \frac{p(x_{i})}{q(x_{i})}$$
 - Advantages:
-	- With an infinite number of samples, the self-normalized estimator will converge to the true expectation under the target distribution $p(x)$
-	- Normalizing the weights typically results in less variance compared to standard importance sampling because it mitigates the effect of any single sample having an outsized impact on the estimate
+	- With an <mark style="background: #FFB86CA6;">infinite number of samples</mark>, the self-normalized estimator <mark style="background: #FFB86CA6;">will converge to the true expectation</mark> under the target distribution $p(x)$
+	- Normalizing the weights <mark style="background: #FFB86CA6;">typically results in less variance compared</mark> to standard importance sampling because it <mark style="background: #FFB86CA6;">mitigates the effect of any single sample having an outsized impact on the estimate</mark>
 - Disadvantages:
-	- Introduces bias, particularly with a finite number of samples. This is because the normalization process itself alters the distribution of the weights, which can lead to an estimate that is systematically off from the true value
+	- <mark style="background: #FF5582A6;">Introduces bias</mark>, particularly with a finite number of samples. This is because the <mark style="background: #FF5582A6;">normalization process itself alters the distribution of the weights</mark>, which can lead to an estimate that is systematically off from the true value
 
 ## Policy Gradient Algorithm
 ![[Pasted image 20240403091906.png#invert|]]
@@ -130,7 +134,7 @@ $$ \nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i=1}^{N} \sum_{t=1}^{T} \fr
 - **$\pi_\theta(a|s)$**: The policy parameterized by $\theta$, which determines the probability of taking action $a$ in state $s$.
 - **$\pi_{\text{old}}(a|s)$**: The old policy, under which the data was collected.
 - **$\hat{A}^{\pi_{\text{old}}}$**: The advantage function under the old policy, estimating how much better or worse taking action $a$ in state $s$ is compared to the average.
-- **Probability Ratio**: $\frac{\pi_\theta(a|s)}{\pi_{\text{old}}(a|s)}$ adjusts for the change in policy, focusing updates on improving decisions that are better than what the old policy suggested.
+- **Probability Ratio**: $\frac{\pi_\theta(a|s)}{\pi_{\text{old}}(a|s)}$ <mark style="background: #FFB86CA6;">adjusts for the change in policy</mark>, focusing updates on improving decisions that are better than what the old policy suggested.
 #### Comparison to Supervised Learning
 In supervised learning, specifically in the context of maximum likelihood estimation (often used in imitation learning), the goal is to maximize the likelihood of observed actions given the states:
 

@@ -1,17 +1,13 @@
 > [!summary] 
 > Instead of keeping a table of all values, we use a parameterized [[Value-Function]].
 > 
-- **Generalization**: Instead of trying to learn and store Q-values for every possible state-action pair, VFA aims to learn about a smaller number of states from experience and generalize this knowledge to new, similar states.
-- **Function Approximators**: This is done using function approximators like neural networks, decision trees, or linear functions, which can estimate Q-values for states that haven’t been explicitly visited during training.
-- **Machine Learning Principle**: This approach is a fundamental idea in machine learning, where we use a limited set of training data to learn a model that can generalize and make predictions on new, unseen data.
+- **Generalization**: Instead of trying to learn and store Q-values for every possible state-action pair, VFA aims to learn about a smaller number of states from experience and <mark style="background: #FFB86CA6;">generalize this knowledge to new, similar states</mark>.
 
 - **Representation**: VFA represents the [[Value-Function#State-Value Function/V-Function|V-Function]] or [[Value-Function#Action-Value Function/Q-Function|Q-Function]] with a parameterized function $Q_{\theta}(s, a)$, where $\theta$ represents the parameters of the function.
 - **Learning**: The parameters $\theta$ are adjusted during the learning process to minimize the difference between the predicted Q-values and the target Q-values (which are based on the observed rewards and the estimated values of subsequent states).
-
 ## Advantages 
-- Allows handling environments with large or continuous state spaces by providing a compact representation that can generalize across states and actions.
+- Allows handling environments with <mark style="background: #FFB86CA6;">large or continuous state spaces</mark> by providing a compact representation that can generalize across states and actions.
 - Estimate the value of states and actions, rather than relying on a potentially unmanageable table of Q-values
-
 ## Fitting a Value Function
 “Fitting” in the context of value functions refers to the process of adjusting the parameters of a model (value function) so that it best represents the relationship between states, actions, and rewards based on the data (experiences) collected from the environment.
 ### 1. Fit Monte-Carlo Returns
@@ -19,7 +15,7 @@ Monte Carlo (MC) methods involve using complete episodes of interaction with the
 **Steps:**
 - **Collect Data:** Play out full episodes while following a certain policy, recording the states visited and rewards obtained.
 - **Calculate Returns:** For each state encountered in an episode, calculate the total return from that state to the end of the episode.
-- **Regression on Returns:** Fit the value function $V(s)$ by regressing these observed returns against the states. This can be done using linear regression, neural networks, or any other regression model.
+- **Regression on Returns:** Fit the value function $V(s)$ by regressing these observed returns against the states. This can be done using linear regression, neural networks, or any other regression model.$$L=\sum_{t} (V_{\theta}(s_{t})-R_{t})^{2}$$
 **Pros and Cons from Image:**
 - **Pros:**
   - Can use any supervised learning method.
@@ -51,7 +47,6 @@ Fitted Q-Iteration is a batch-based reinforcement learning algorithm where a reg
 - The convergence depends heavily on the quality of the regression model and the representativeness of the data used.
 ## Approximate Q-Learning
 - Updating the Q-function with gradient descent
-- -> This is crucial in environments where the state or action spaces are too large or complex to use traditional Q-learning with a look-up table.
 - To minimize the loss $L_t = \left(Q_\theta(s_t, a_t) - y_t\right)^2$, we use gradient descent. The parameters $\theta$ are updated by moving in the direction that most reduces the loss. This is done by computing the gradient of $L_t$ with respect to $\theta$ and updating $\theta$ in the opposite direction of this gradient:
 $$ \theta_{\text{new}} = \theta - \alpha \frac{d}{d\theta} L_t $$where $\alpha$ is the learning rate, a hyperparameter that controls how much the parameters change in response to the calculated error.
 - Expanding the gradient computation gives:
@@ -72,17 +67,14 @@ $$\begin{align*}\theta_{\text{new}} &= \theta + \alpha(r(s'_t,a'_t) + \gamma \ma
 - In approximate Q-learning, the gradient of the Q-function is multiplied with the TD error to update the parameter vector, which allows the model to learn from the experiences and improve the policy iteratively
 ![[Pasted image 20240313093558.png#invert|600]]
 ### Problem
-- **No Clearly Defined Objective**: In many machine learning tasks, there is a clear objective function that you’re trying to optimize. For example, in supervised learning, you might minimize the difference between your predictions and the true labels. However, here the objective isn’t fixed because the targets (the optimal future values) are not known in advance and change as the agent learns.
-- **Changing Targets**: The target values $y_{t}=r(s_{t},a_{t})+\gamma \max_{a'}Q^{\pi}(s_{t+1},a')$  in Q-learning are based on the current estimate of the future rewards. As the agent learns and updates its policy, these estimates change. This means that the ‘ground truth’ the agent is trying to learn from is a moving target, which complicates the learning process.
+- **No Clearly Defined Objective**: The <mark style="background: #FFB86CA6;">objective isn’t fixed</mark> because the targets (the optimal future values) are not known in advance and change as the agent learns.
+- **Changing Targets**: The target values $y_{t}=r(s_{t},a_{t})+\gamma \max_{a'}Q^{\pi}(s_{t+1},a')$  in Q-learning are <mark style="background: #FFB86CA6;">based on the current estimate of the future rewards</mark>. As the agent learns and updates its policy, these estimates change. This means that the ‘ground truth’ the agent is trying to learn from is a moving target, which complicates the learning process.
 - **Similarity of Successive States**: In many environments, successive states $s$ and $s'$ are very similar to each other. This similarity means that when the agent updates its estimate for one state, it likely affects its estimates for similar states. This can lead to instability in the learning process because changing the estimate for one state changes the targets for many others.
 - **No Gradient Computed**: Because the targets are constantly changing, you can’t compute a stable gradient to optimize as you would in other types of machine learning. The gradient is the direction in which you should adjust your parameters to improve your predictions, but if the ‘correct answers’ keep changing, it’s hard to know which way to go.
-
-- **Intuition**: Imagine you’re trying to shoot an arrow at a target, but every time you shoot, the target moves based on where your last arrow landed. You’re trying to hit the bullseye, but since the target keeps moving, it’s hard to learn how to adjust your aim. In Q-learning, the moving target is the constantly updating estimate of future rewards, and the arrows are your actions. You’re trying to learn the best actions to take, but it’s challenging because the criteria for success are always changing.
 ### Solutions 1: Use the real gradient
--  Instead of using approximate gradients, this method uses the true gradient of the Q-function with respect to its parameters. This leads to a more accurate update rule, which is expected to result in better learning performance. $$\theta_{\text{new}} = \theta - \alpha \frac{d}{d\theta} L_t = \theta - \alpha \frac{d}{d\theta} (Q(\theta(s_t, a_t)) - y_t)^2
+-  Instead of using approximate gradients, this method uses the true gradient of the Q-function with respect to its parameters. This <mark style="background: #FFB86CA6;">leads to a more accurate update rule</mark>, which is expected to result in better learning performance. $$\theta_{\text{new}} = \theta - \alpha \frac{d}{d\theta} L_t = \theta - \alpha \frac{d}{d\theta} (Q(\theta(s_t, a_t)) - y_t)^2
 $$
-- The **update rule** is about adjusting the parameters ( \theta ) of the Q-function to better predict the expected rewards for each state-action pair. The learning rate ( \alpha ) controls how much we adjust the parameters based on the error between our prediction and the actual outcome.
-- This minimizes the Mean Squared TD Error (MSTD), which is a biased objective because it doesn’t lead to Bellman optimality. It’s calculated as the expectation of the squared difference between the sum of rewards and discounted future state-action values, and current state-action values.
+- This minimizes the Mean Squared TD Error (MSTD), which <mark style="background: #FFB86CA6;">is a biased objective because it doesn’t lead to Bellman optimality</mark>. It’s calculated as the expectation of the squared difference between the sum of rewards and discounted future state-action values, and current state-action values.
 $$\begin{align*}\\\\
 \text{MSTD} &= \mathbb{E}_{\pi}[(r_{t} + \gamma \max_{a'}Q_\theta(s', a') - Q_\theta(s, a))^{2}\\
 &= \int\mu^{\pi}(s)\int\pi(a|s)\int p(s'|s,a)(r_{t}+ \gamma \max_{a'}Q_\theta(s', a') - Q_\theta(s, a))^{2}ds'dads
@@ -105,10 +97,10 @@ $$
 ## Problem with Q-Learning with Neural Networks
 - Can diverge easily, even if the optimal [[Value-Function]] could be represented by $Q_{\theta}(s,a)$
 - A simple [[Markov Decision Process|MDP]] can be constructed where it diverges:
-	- **State Space**: ( S = {s_1, s_2} )
-	- **Action Space**: ( A = {a_1, a_2} )
-	- **Transitions**: Taking action ( a_1 ) in state ( s_1 ) always leads to ( s_2 ), and taking action ( a_2 ) in state ( s_2 ) always leads back to ( s_1 ).
-	- **Rewards**: A reward of +1 is given for taking action ( a_1 ) in ( s_1 ), and a reward of -1 for taking action ( a_2 ) in ( s_2 ).
+	- **State Space**: ( $S = {s_1, s_2}$ )
+	- **Action Space**: ( $A = {a_1, a_2}$ )
+	- **Transitions**: Taking action ( $a_1$ ) in state ( $s_1$ ) always leads to ( $s_2$), and taking action ( $a_2$ ) in state ( $s_2$ ) always leads back to ( $s_1$ ).
+	- **Rewards**: A reward of +1 is given for taking action ( $a_1$ ) in ( $s_1$ ), and a reward of -1 for taking action ( $a_2$ ) in ( $s_2$ ).
 	- Here’s the transition diagram for the MDP:
 	```plaintext
 	s_1 --a_1--> s_2 (+1 reward)
