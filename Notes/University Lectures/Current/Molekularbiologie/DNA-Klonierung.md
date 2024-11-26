@@ -114,7 +114,7 @@ Die Selektion wird verwendet, um sicherzustellen, dass die Zellen ein korrekt re
 #### **Ergebnis:**
 - Rekombinante Plasmide wachsen nur auf LB+Amp, nicht auf LB+Amp+Km.
 - Nicht-rekombinante Plasmide wachsen auf beiden Medien.
-## 2. Restriktionsanalyse von Plasmiden
+## Restriktionsanalyse von Plasmiden
 Die Restriktionsanalyse wird verwendet, um zu bestätigen, dass Fremd-DNA in ein Plasmid integriert wurde und die korrekte Größe hat.
 ### **Ablauf:**
 1. **Restriktionsenzyme** schneiden DNA an spezifischen Stellen.

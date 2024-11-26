@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Genetik/DNA-Schäden.md",
+                "file": "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DNA-Schäden"
+              "title": "DNA-Klonierung"
             }
           },
           {
@@ -205,10 +205,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Genetik/DNA-Schäden.md"
+                "file": "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of DNA-Schäden"
+              "title": "Outline of DNA-Klonierung"
             }
           }
         ]
@@ -235,10 +235,10 @@
   },
   "active": "0b0ce1e3fdb57f1d",
   "lastOpenFiles": [
+    "University Lectures/Current/Genetik/DNA-Schäden.md",
     "University Lectures/Current/Genetik/images/Pasted image 20241121133729.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241121132047.png",
     "University Lectures/Current/Genetik/Genetik.md",
-    "University Lectures/Current/Genetik/DNA-Schäden.md",
     "University Lectures/Current/Genetik/DNA-Mutationen.md",
     "University Lectures/Current/Genetik/images/Pasted image 20241121131523.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241121131351.png",
@@ -249,7 +249,6 @@
     "University Lectures/Current/Genetik/images/Pasted image 20241121130919.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241121130837.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241121130635.png",
-    "University Lectures/Current/Genetik/images/Untitled 1.png",
     "University Lectures/Current/Genetik/DNA-Replikation.md",
     "University Lectures/Current/Genetik/DNA-Rekombination.md",
     "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
