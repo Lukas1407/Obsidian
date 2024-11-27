@@ -21,10 +21,10 @@ $$ with:
 ### Example
 $$c\sqrt{\frac{\log 10000}{5000}} = 0.042c$$
 $$c\sqrt{\frac{\log 10000}{100}} = 0.303c$$
--> The less number of times action a has been chosen, the higher the bonus!
+-> <mark style="background: #FFB86CA6;">The less number of times action a has been chosen, the higher the bonus!</mark>
 - The bonus is inversely proportional to $N_t(a)$
 
 - This relates to [[Optimistic Value Initialization|optimistic initialization]] of the Q-values in the following way:
 	- Optimistic Initialization: By setting the initial Q-values to be high (optimistic), all actions are considered to be potentially rewarding at the start. This encourages the agent to explore different actions.
 	- UCB Exploration Bonus: Similarly, the UCB bonus acts as a dynamic form of optimistic initialization. Actions with less certainty (chosen less often) are given a higher bonus, which is like temporarily increasing their Q-values, thus encouraging the agent to explore them.
-	- Both methods serve to promote exploration, but while optimistic initialization is a static method applied at the beginning of learning, the UCB bonus is a dynamic method that adjusts the level of exploration throughout the learning process based on the frequency of each action being chosen.
+	- Both methods serve to promote exploration, but while <mark style="background: #FFB86CA6;">optimistic initialization is a static</mark> method applied at the beginning of learning, the <mark style="background: #FFB86CA6;">UCB bonus is a dynamic method that adjusts the level of exploration throughout the learning process</mark> based on the frequency of each action being chosen.

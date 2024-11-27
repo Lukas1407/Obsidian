@@ -1,7 +1,7 @@
 > [!summary] Definition
 > TD Learning is a blend of [[Monte-Carlo Estimation]] methods and Dynamic Programming (DP). It aims to estimate the value function—how good it is to be in a given state—by using sample transitions rather than full knowledge of the environment’s dynamics. 
 
-- **Intuition**: The intuition behind TD Learning is that it updates estimates based on the difference (error) between successive predictions. This allows for learning to occur after each step rather than waiting until the end of an episode, as in MC methods.
+- **Intuition**: The intuition behind TD Learning is that it <mark style="background: #FFB86CA6;">updates estimates based on the difference (error) between successive predictions</mark>. This allows for learning to occur after each step rather than waiting until the end of an episode, as in MC methods.
 - **TD Error**: The core of TD Learning is the TD error, which is the difference between the estimated value of the current state and the estimated value of the next state, adjusted by the reward received and the discount factor.
 
 ## Equation

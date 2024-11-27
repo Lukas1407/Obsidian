@@ -4,63 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "8383776c842c5586",
+        "id": "8a638effe4c6787d",
         "type": "tabs",
         "children": [
           {
-            "id": "4f1ba18e9d04e250",
+            "id": "f07dea767a80cc0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Taxonomy of RL Algorithms"
+              "title": "Computergrafik"
             }
           },
           {
-            "id": "28d934b5cc1e44a4",
+            "id": "83eac25e7aad55e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Computergrafik/notes/Spektrales Rendering.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Texturen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spektrales Rendering"
-            }
-          },
-          {
-            "id": "12a71d7f556b5e2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Path Tracing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Path Tracing"
-            }
-          },
-          {
-            "id": "ea20fe025b2f5a70",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spektrales Rendering.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Spektrales Rendering"
+              "title": "Texturen"
             }
           }
         ],
@@ -117,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "c8e94031416b4006",
@@ -138,7 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 370.5
+    "width": 324.5
   },
   "right": {
     "id": "267df62b6ee2986d",
@@ -219,10 +192,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Computergrafik/notes/Spektrales Rendering.md"
+                "file": "University Lectures/Current/Computergrafik/notes/Texturen.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Spektrales Rendering"
+              "title": "Outline of Texturen"
             }
           }
         ]
@@ -248,44 +221,44 @@
       "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "f08c9499ebb141d8",
+  "active": "83eac25e7aad55e9",
   "lastOpenFiles": [
-    "University Lectures/Current/Computergrafik/notes/Path Tracing.md",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127152647.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127152634.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127152548.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127142126.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127142052.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127141658.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127141611.png",
+    "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
+    "University Lectures/Current/Computergrafik/notes/Texturen.md",
+    "University Lectures/Current/Computergrafik/notes/Transformation.md",
+    "University Lectures/Current/Computergrafik/notes/Koordinatensysteme in der Computergrafik.md",
+    "University Lectures/Current/Computergrafik/notes/Hierarchisches Modellieren.md",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127130908.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127130825.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127130753.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241127130519.png",
+    "University Lectures/Current/Computergrafik/notes/Affine Abbildungen mit homogenen Koordinaten.md",
+    "University Lectures/Current/Computergrafik/notes/Homogene Koordinaten.md",
+    "University Lectures/Current/Computergrafik/notes/Affine Abbildungen.md",
+    "University Lectures/Current/Computergrafik/notes/Euler Winkel.md",
+    "University Lectures/Current/Computergrafik/notes/Spektrales Rendering.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Value-Function Approximation.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Optimistic Value Initialization.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Upper-Confidence-Bounds (UCB) Action Selection.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Exploration and Entropy.md",
     "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
     "University Lectures/Current/Reinforcement Learning/notes/Taxonomy of RL Algorithms.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Kernel Methods.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Density Estimation.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241125122813.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241125122410.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Untitled 4.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Autonomous Learning for Intelligent Robot Perception.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Value-Function Approximation.md",
-    "University Lectures/Current/Reinforcement Learning/notes/K-Armed Bandit Problem.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Incremental Update Rule.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Confidence Bounds.md",
     "University Lectures/Current/Reinforcement Learning/notes/Epsilon-Greedy Action Selection.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Exploration-Exploitation Trade-off.md",
+    "University Lectures/Current/Reinforcement Learning/notes/K-Armed Bandit Problem.md",
     "University Lectures/Current/Reinforcement Learning/notes/Off-Policy.md",
     "University Lectures/Current/Reinforcement Learning/notes/On-Policy.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Variational Inference.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Sample Efficiency in RL Algorithms.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Multi-step Return.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Bias-Variance Trade-off.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Regularization Methods.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241122123035.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Application of Bayesian principles to Linear Regression.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/Bayesian Reasoning.md",
     "University Lectures/Current/Reinforcement Learning/notes/Model-based RL.md",
     "University Lectures/Current/Reinforcement Learning/notes/Model-Free RL.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Value-Function.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Monte-Carlo Estimation.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Temporal Difference Learning.md",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241121143002.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241121142426.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121133729.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121132047.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121131523.png",
-    "University Lectures/Current/Genetik/images/Pasted image 20241121131351.png",
+    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
     "University Lectures/Current/KI in robotergestützer Chirurgie",
     "University Lectures/Current/Genetik/images/Holliday_junction.mov",
     "University Lectures/Current/Genetik/images/Telomere_Replication.mov",
