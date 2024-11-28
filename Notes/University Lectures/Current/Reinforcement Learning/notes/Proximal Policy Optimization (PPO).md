@@ -15,8 +15,8 @@
 	- Does not work well for harder exploration problems
 ## PPO v1: Dual Descent PPO
 ![[Pasted image 20240407072944.png#invert|700]]
-- **Relaxed Constrained Optimization**: PPO v1 formulates the policy update problem as a constrained optimization problem where the objective is to maximize the policy's expected return while keeping the KL divergence between the new and old policies below a threshold ϵ\epsilonϵ.
-- **Lagrangian and Dual Descent**: The problem uses a Lagrangian formulation involving a dual variable η\etaη to balance the objective and the constraint. The optimization alternates between maximizing the Lagrangian w.r.t. policy parameters θ\thetaθ and minimizing it w.r.t. η\etaη, effectively performing dual descent.
+- **Relaxed Constrained Optimization**: PPO v1 formulates the policy update problem as a constrained optimization problem where the objective is to maximize the policy's expected return while keeping the KL divergence between the new and old policies below a threshold $\epsilon$.
+- **Lagrangian and Dual Descent**: The problem uses a Lagrangian formulation involving a dual variable $\eta$ to balance the objective and the constraint. The optimization alternates between maximizing the Lagrangian w.r.t. policy parameters $\theta$ and minimizing it w.r.t. $\eta$, effectively performing dual descent.
 ## PPO v2: Clipped Policy Gradient Objective
 ![[Pasted image 20240407073526.png#invert|700]]
 - **Clipped Objective**: Rather than using a KL divergence constraint, PPO v2 introduces a clipping mechanism in the objective function that limits the ratio of new policy probabilities to old policy probabilities, denoted by $w_i(\theta) = \frac{\pi_\theta(a_i|s_i)}{\pi_{\text{old}}(a_i|s_i)}$. The clipping is defined by parameters $\epsilon$, typically set around 0.1 to 0.2.

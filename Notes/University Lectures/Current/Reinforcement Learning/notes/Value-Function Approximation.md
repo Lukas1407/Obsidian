@@ -177,8 +177,8 @@ Q_{\theta_{1}}(s_t,a_t)\leftarrow r(s_t,a_{t})+\gamma Q_{\theta_{2}}(s_{t+1}, ar
 $$y_{t}^{[n]}=\sum_{k=t}^{t+n}\gamma^{k-t}r(s_{k},a_{k})+\gamma^{n}\max_{a'}Q_{\theta'}(s_{t+n},a')$$
 - <mark style="background: #FFB86CA6;">Using N-step returns can accelerate learning, especially in the early stages, because it provides less biased target values.</mark>
 - Only works when learning [[On-Policy]]
-	- Multi-step returns estimate the expected return for following the current policy for N steps. If you’re learning [[Off-Policy]], the actions taken may not be from the current policy, leading to incorrect estimates
+	- Multi-step returns <mark style="background: #FFB86CA6;">estimate the expected return for following the current policy for N steps</mark>. If you’re learning [[Off-Policy]], the actions taken may not be from the current policy, leading to incorrect estimates
 	- Solutions:
-		- Ignoring the Problem: Sometimes, even if the data includes off-policy actions, the algorithm can still learn effectively. This is because the bias introduced might not significantly affect the learning process.
-		- Cutting the Trace: If an action is [[Off-Policy]], you can cut the trace there. This means you only consider rewards up to that point for updating the Q-value.
-		- Dynamically Choosing N: By dynamically adjusting N, you can ensure that the data used for the N-step return is [[On-Policy]]. This works well when most of the data is [[On-Policy]] and the action space is small.
+		- **Ignoring the Problem**: Sometimes, even if the data includes off-policy actions, the algorithm can still learn effectively. This is because the bias introduced might not significantly affect the learning process.
+		- **Cutting the Trace**: If an action is [[Off-Policy]], you can cut the trace there. This means you only consider rewards up to that point for updating the Q-value.
+		- **Dynamically Choosing N**: By dynamically adjusting N, you can ensure that the data used for the N-step return is [[On-Policy]]. This works well when most of the data is [[On-Policy]] and the action space is small.

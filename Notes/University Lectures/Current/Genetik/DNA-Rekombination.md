@@ -12,7 +12,31 @@ Die Rekombination ist ein genetischer Prozess, bei dem DNA-Abschnitte zwischen z
 ### Auflösung der Holliday-Struktur
 - Am Ende des Rekombinationsprozesses muss die Holliday-Struktur aufgelöst werden. Dies geschieht durch einen enzymatischen Schnitt der DNA an den Kreuzungspunkten.
 - Je nach Ort des Schnitts kann der Austausch entweder nur eine Region betreffen (Nicht-Crossover) oder ein vollständiges Crossing-Over erzeugen, bei dem größere DNA-Abschnitte ausgetauscht werden.
+### Erkennungsstellen der Rekombinase
+- **Symmetrische Erkennungssequenzen**: Die Bindung der Rekombinase erfolgt an spezifische Sequenzen.
+- **Asymmetrische Crossover-Regionen**: Hier erfolgt der eigentliche Schnitt und die Rekombination.
+- Die Rekombinase erkennt diese spezifischen Stellen und ermöglicht den Austausch von DNA-Abschnitten.
+### Rekombinase-Reaktion
+- Der Prozess basiert auf kovalenten **Protein-DNA-Intermediaten**:
+    - Die Rekombinase bindet kovalent an die DNA, wodurch die Energie der gespaltenen Phospho-Diester-Bindungen konserviert wird.
+    - Der Prozess ist **ATP-unabhängig** und ähnelt Mechanismen anderer Enzyme wie Topoisomerasen.
+    - Es gibt einen kontrollierten Schnitt und eine Wiederverknüpfung der DNA.
+![[Pasted image 20241128123644.png#invert|400]]
+### Serin- und Tyrosin-Rekombinasen
+- **[[Serin-Rekombinase|Serin-Familie]]**:
+    - Beispiele: _Hin-Invertase_ und _Tn3-Resolvase_.
+    - Funktionen: Inversion von DNA-Elementen oder Auflösung von Cointegraten bei Transposition.
+- **[[Tyrosin-Rekombinase|Tyrosin-Familie]]**:
+    - Beispiele: _Phage λ Integrase_, _Phage P1 Cre_.
+    - Funktionen: Integration von Phagen-DNA, Zirkularisierung des Genoms oder Inversion von Plasmidregionen.
+#### **Vergleich Serin- und Tyrosin-Rekombinasen**
 
+|**Merkmal**|**Serin-Rekombinasen**|**Tyrosin-Rekombinasen**|
+|---|---|---|
+|**Schnittart**|Simultan (alle 4 Stränge gleichzeitig)|Sequentiell (zwei Stränge nacheinander)|
+|**Zwischenstruktur**|Keine|Holliday-Struktur|
+|**Bewegungsmechanismus**|Rotation (Tetramer ermöglicht Drehung)|Schrittweiser Strangaustausch|
+|**Energiebedarf**|ATP-unabhängig|ATP-unabhängig|
 ## Chiasma und Crossing-Over
 - Während der Meiose, speziell in der Pachytän-Phase der Prophase I, kommt es zum **Crossing-Over** zwischen homologen Chromosomen, also Chromosomenpaaren, die ähnliche genetische Information enthalten.
 - An diesen Punkten der Kreuzung entstehen sogenannte **Chiasmata** (Singular: Chiasma), an denen die homologen Chromosomen fest verbunden sind, bis sie sich in der Anaphase I der Meiose trennen.
@@ -44,3 +68,51 @@ Das **Holliday-Modell** beschreibt die molekularen Mechanismen der **homologen R
     - Je nachdem, wo die Schnitte gemacht werden, können zwei verschiedene Ergebnisse auftreten:
         - Ein **Cross-Over**-Produkt, bei dem große Abschnitte der DNA zwischen den Chromosomen ausgetauscht wurden.
         - Ein **Nicht-Cross-Over**-Produkt, bei dem die Chromosomen nur kleine Bereiche getauscht haben oder unverändert bleiben.
+## Formen der sequenzspezifischen Rekombination
+- Es gibt verschiedene Ergebnisse von Rekombination, abhängig von der Orientierung der Wiederholungssequenzen:
+    - **Insertion**: Einführung eines DNA-Fragments in eine andere DNA.
+    - **Deletion**: Entfernen eines Fragments aus einer DNA.
+    - **Inversion**: Umdrehen eines DNA-Fragments innerhalb derselben DNA.
+    - _Direkte Sequenzwiederholungen_ (für Insertion und Deletion) und _indirekte Sequenzwiederholungen_ (für Inversion) bestimmen, was passiert.
+![[Pasted image 20241128123455.png#invert|400]]
+### Phasenvariation durch DNA-Inversion bei S. typhimurium (Hin/hix-System)
+![[Pasted image 20241128125358.png#invert|500]]
+- **Hintergrund**: Phasenvariation ermöglicht es Bakterien wie _Salmonella typhimurium_, zwischen zwei verschiedenen Flagellin-Typen (H1 und H2) zu wechseln. Dies hilft ihnen, das Immunsystem ihres Wirts zu umgehen.
+- **Mechanismus**:
+    1. **Invertierbares Segment**:
+        - Ein DNA-Abschnitt zwischen zwei **hix-Stellen** (hixL und hixR) kann durch die **Hin-Rekombinase** invertiert werden.
+    2. **EIN-Zustand (H2)**:
+        - Das Promotersegment ist so orientiert, dass die Gene für H2-Flagellin (fljB) und einen Repressor für H1-Flagellin (fljA) exprimiert werden.
+    3. **AUS-Zustand (H1)**:
+        - Nach Inversion wird fljB und fljA nicht mehr exprimiert, was die Produktion von H1-Flagellin erlaubt.
+#### Rolle von Hin und FIS
+![[Untitled 5.png#invert|400]]
+- **Hin-Rekombinase**:
+    - Katalysiert die Inversion des DNA-Segments.
+- **FIS (Factor for Inversion Stimulation)**:
+    - Unterstützt die Bildung des **Invertasoms**.
+- **Mechanismus**:
+    - Die DNA wird durch negative Supercoils gefaltet.
+    - Das **Invertasom** entsteht durch die Interaktion von Hin, FIS, und den hix-Stellen.
+    - Nach Inversion wird der DNA-Abschnitt neu orientiert, wodurch die Genexpression geändert wird.
+## **Dimerbildung durch Rekombination während der Replikation**
+![[Pasted image 20241128125539.png#invert|400]]
+- **Hintergrund**:
+    - Während der Replikation kann es passieren, dass zwei identische Kopien eines zirkulären Chromosoms zu einem **Dimer** fusionieren.
+    - Dimere müssen in zwei separate, monomere Chromosomen aufgeteilt werden, um die Zellteilung zu ermöglichen.
+- **Mechanismus**:
+    - **CSSR (Conservative Site-Specific Recombination)**:
+        - An spezifischen Rekombinationsstellen katalysiert die XerCD-Rekombinase den Austausch von DNA-Segmenten.
+        - Dies führt zur Trennung der beiden Chromosomen.
+### **Rolle von XerC und XerD bei der Dimerauflösung**
+- **XerC und XerD**:
+    - Zwei Rekombinasen, die zusammenarbeiten, um Dimere zu monomeren Chromosomen aufzulösen.
+- **FtsK**:
+    - Ein Membranprotein, das die Chromosomenverteilung während der Zellteilung koordiniert.
+    - FtsK stimuliert die Aktivität von XerD, um sicherzustellen, dass die Rekombination zur Auflösung von Dimeren führt.
+![[Pasted image 20241128125612.png#invert|400]]
+### **Sicherheit des Prozesses**
+- Es wird sichergestellt, dass die Reaktion **nur zur Auflösung von Dimeren** und nicht zur Bildung neuer Dimere führt.
+- **Kontrollmechanismen**:
+    - Die Aktivität von XerD wird durch FtsK gesteuert.
+    - Ohne FtsK wird XerC aktiv, was eine Rückreaktion begünstigt und neue Dimere verhindert.

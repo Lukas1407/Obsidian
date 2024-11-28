@@ -152,21 +152,21 @@ Impact on Step Size:
 - <mark style="background: #FFB86CA6;">Inverse Scaling</mark>: The gradient magnitude scales inversely with the variance of the policy. As the variance decreases, the gradient magnitude increases.
 	- Variance of the Policy: This represents how much randomness there is in the policy’s action selection. A high variance means the policy is more exploratory, taking a wide range of actions. A low variance indicates a more deterministic policy, favoring certain actions.
 	- When the variance is high, the policy explores more, and the gradient estimates are less reliable due to the high variability in the outcomes. Therefore, the algorithm takes smaller steps to avoid overfitting to noisy data.
-	- As learning progresses and the variance decreases, the policy becomes more confident about which actions are better. This increased confidence is reflected in larger gradient magnitudes, allowing for more significant updates to the policy parameters.
+	- <mark style="background: #FFB86CA6;">As learning progresses and the variance decreases</mark>, the policy becomes more confident about which actions are better. This increased confidence is reflected in <mark style="background: #FFB86CA6;">larger gradient magnitudes</mark>, allowing for more significant updates to the policy parameters.
 	- Mathematically: $$\begin{split} \pi_{\theta}(a|s)=\mathcal{N}(a|f_{\theta}(s),\sigma^{2}) \\ \nabla_{\theta}\log\pi_{\theta}(a|s)=\frac{a-f_{\theta}(s)}{\sigma^{2}}\nabla_{\theta}f(s) \end{split}$$
 		- As the variance $\sigma^{2}$ decreases, the value of the gradient $\nabla_{\theta}\log\pi_{\theta}(a|s)$ increases. This is because the term $\frac{1}{\sigma^{2}}$ becomes larger as $\sigma^{2}$ gets smaller.
-- Large Step Size: A too large step size can cause the policy to jump to unexplored regions of the action space, where there is little data, potentially resulting in poor performance.
-- Small Step Size: Conversely, a too small step size can lead to inefficient use of experience, requiring many samples to learn effectively.
+- Large Step Size: <mark style="background: #FFB86CA6;">A too large step size can cause the policy to jump to unexplored regions</mark> of the action space, where there is little data, potentially resulting in poor performance.
+- Small Step Size: Conversely, a too small step size can lead to <mark style="background: #FFB86CA6;">inefficient</mark> use of experience, requiring many samples to learn effectively.
 Solution: Trust Regions
 ### Trust Regions
-- Idea: keep the new policy within a certain “distance” (the trust region) from the old policy. This is done to ensure that the updates to the policy are not too drastic, which could lead to unstable learning or poor performance.
+- Idea: keep the new policy within a certain “distance” (the trust region) from the old policy. This is done to <mark style="background: #FFB86CA6;">ensure that the updates to the policy are not too drastic</mark>, which could lead to unstable learning or poor performance.
 - $$\begin{split} \theta_{new}=\arg\max_{\theta}\mathbb{E}_{(s,a)\sim\pi_{old}(a|s)}\left[\frac{\pi_{\theta}(a|s)}{\pi_{old}(a|s)}\hat A^{\pi}(s,a)\right]\\ s.t. \ \mathcal{D}(\pi_{\theta}(a|s),\pi_{old}(a|s))\le\epsilon \end{split}$$ ^d61aef
-- D represents a dissimilarity measure between the probability distributions of the old and new policies. The goal is to maximize the objective function while ensuring that the new policy does not deviate from the old one by more than a specified threshold $\epsilon$
+- D represents a <mark style="background: #FFB86CA6;">dissimilarity measure</mark> between the probability distributions of the old and new policies. The goal is to maximize the objective function <mark style="background: #FFB86CA6;">while ensuring that the new policy does not deviate from the old one</mark> by more than a specified threshold $\epsilon$
 	- Often uses the [[Kullback-Leiber Divergence]]
 - Advantages: 
-	- This approach stabilizes the learning process by preventing extreme changes in the policy.
-	- It helps to maintain a sufficient level of exploration by avoiding a too rapid decrease in variance.
-	- Monotonic improvement guarantees can be established, meaning that the performance of the policy is guaranteed to improve or remain the same with each update.
+	- This approach <mark style="background: #FFB86CA6;">stabilizes the learning process</mark> by preventing extreme changes in the policy.
+	- It <mark style="background: #FFB86CA6;">helps to maintain a sufficient level of exploration by avoiding a too rapid decrease in variance</mark>.
+	- <mark style="background: #FFB86CA6;">Monotonic improvement guarantees</mark> can be established, meaning that the performance of the policy is guaranteed to improve or remain the same with each update.
 - How to solve a contained optimization problem? -> [[Lagrangian Multipliers]]:
 #### Solution
 The main goal is to maximize a policy's expected reward while keeping its deviation from a baseline policy within a defined limit, measured by the Kullback-Leibler (KL) divergence. This constraint ensures that the new policy does not stray too far from what has previously been established as reasonably effective, thus stabilizing the learning process.
