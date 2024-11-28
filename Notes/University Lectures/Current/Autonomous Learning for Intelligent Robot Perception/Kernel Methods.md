@@ -541,3 +541,457 @@ Where $M$ determines how the input space is scaled:
 1. $M = \ell^{-2} I$: Isotropic kernel with a single length scale $\ell$.
 2. $M = \text{diag}(\ell_1, \ldots, \ell_D)^{-2}$: Anisotropic kernel, each dimension has its own length scale.
 3. $M = \Lambda^T \Lambda + \text{diag}(\ell_1, \ldots, \ell_D)^{-2}$: Adds correlations between dimensions.
+## **Bayesian Linear Regression vs. Gaussian Processes**
+1. **Question:**
+   - How does the predictive distribution in Bayesian Linear Regression relate to Gaussian Process Regression?
+2. **Answer:**
+   - Bayesian Linear Regression is a **special case** of Gaussian Process Regression (GPR).
+   - In GPR, the kernel function $k(x_i, x_j)$ represents the covariance between the outputs for inputs $x_i$ and $x_j$. For Bayesian Linear Regression, the kernel function is:
+     $$
+     k(x_i, x_j) = \sigma_1^2 \phi(x_i)^T \phi(x_j) + \sigma_2^2 \delta_{ij}
+     $$
+     - $\phi(x)$: Feature mapping function (basis function).
+     - $\delta_{ij}$: Kronecker delta (handles noise by adding variance $\sigma_2^2$ to the diagonal).
+     - The covariance depends on the dot product of features and additive noise.
+### **GP Implementation**
+![[Pasted image 20241128130936.png#invert|500]]
+1. **Formulas:**
+   - GPR predicts a mean $\mu_*$ and variance $\Sigma_*$ at a test point $x_*$:
+     $$
+     \mu_* = k_*^T K^{-1} y
+     $$
+     $$
+     \Sigma_* = k(x_*, x_*) - k_*^T K^{-1} k_*
+     $$
+     - $k_*$: Covariance vector between $x_*$ and training points.
+     - $K$: Covariance matrix of the training data.
+     - $y$: Observed outputs.
+2. **Algorithm Steps:**
+   - Precompute during training:
+     - Covariance matrix $K_{ij} = k(x_i, x_j)$.
+     - Add noise $\sigma_n^2 I$.
+     - Use **Cholesky decomposition** for efficient inversion of $K$.
+   - Test phase:
+     - Compute predictive mean and variance using $\mu_*$ and $\Sigma_*$.
+3. **Notes:**
+   - Cholesky decomposition is preferred for numerical stability.
+   - It is efficient for computing the inverse of covariance matrices.
+### **Estimating Hyperparameters**
+1. **Marginal Likelihood:**
+   - To find optimal hyperparameters (e.g., kernel length scales $l$, variance $\sigma_f^2$, noise $\sigma_n^2$), maximize the marginal likelihood:
+     $$
+     p(y \mid X) = \int p(y \mid f, X) p(f \mid X) df
+     $$
+     - This integrates out the latent function $f$ (GP assumption).
+2. **Optimization:**
+   - Take the logarithm of the marginal likelihood.
+   - Compute its derivative and set it to zero (closed-form solution due to Gaussian assumptions).
+   - This process forms the **training step**.
+### Hyperparameter Challenges
+1. **Log Marginal Likelihood:**
+   - The log marginal likelihood is **not necessarily concave**, meaning it can have **local maxima**.
+   - This complicates optimization and can lead to suboptimal hyperparameter values.
+2. **Illustrations:**
+   - Contour plots show the interplay of noise variance and length scale in the kernel.
+   - Predicted outputs can vary significantly depending on hyperparameters.
+### **Automatic Relevance Determination (ARD)**
+1. **ARD Concept:**
+   - The covariance function can include weights for each input dimension:
+     $$
+     k(x, x') = \sigma_f^2 \exp\left(-\frac{1}{2} \sum_{i=1}^D \eta_i (x_i - x'_i)^2\right)
+     $$
+     - $\eta_i$: Determines the importance of each dimension.
+![[Pasted image 20241128131021.png#invert|300]]
+2. **Relevance of Dimensions:**
+   - If $\eta_i$ (or equivalently the length scale $l_i = 1/\eta_i$) is large, that dimension is **less relevant**.
+   - ARD automatically identifies which input features matter during training.
+### **Application of GPs in Terrain Mapping**
+1. **Problem Statement:**
+   - Robotics terrain mapping faces challenges:
+     - Lack of unique landmarks.
+     - Difficulty in "closing the loop" when returning to the same location.
+     - Need for uncertainty quantification.
+2. **Observations:**
+   - The environment can often be treated as **2D** (e.g., along gravity) instead of fully 3D.
+3. **Proposed Solution:**
+   - Use **Gaussian Process Regression** with an **efficient, sparse kernel** to model the map and capture uncertainties effectively.
+### **Sparse Kernel Interpolation**
+1. **Core Idea:**
+   - **Inducing Points $\mathbf{u}_i$:**
+     - Instead of using all data points (which is computationally expensive), select a small number of **inducing points** $\mathbf{u}_i$ on a grid structure.
+   - **Interpolation:**
+     - Interpolate between these grid points using **weights**. This reduces the computational burden while maintaining a good approximation of the original kernel function.
+![[Pasted image 20241128131159.png#invert|300]]
+1. **Mathematical Explanation:**
+   - **Interpolated Kernel:**
+     - The interpolated kernel is defined as:
+       $$
+       \tilde{k}(x_i, u_j) = w_i k(u_a, u_j) + (1 - w_i) k(u_b, u_j)
+       $$
+       - $k(u_a, u_j)$ and $k(u_b, u_j)$: Kernel values between grid points.
+       - $w_i$: Interpolation weights based on the location of the point $x_i$ relative to the grid.
+
+   - **Matrix Approximation:**
+     - The kernel matrix $K_{X,X}$ (between all input points) is approximated using the grid-induced kernel:
+       $$
+       K_{X,X} \approx WK_{U,U}W^T
+       $$
+       - $W$: Weight matrix for interpolation.
+       - $K_{U,U}$: Kernel matrix between inducing points.
+       - This formulation reduces complexity by working with a smaller matrix $K_{U,U}$.
+3. **Visualization:**
+   - The grid structure (black dots) and the original data points (green crosses) illustrate the interpolation. Inducing points serve as a simplified representation of the data.
+### **Gaussian Process Gradient Maps (GPGMaps)**
+1. **Overview:**
+   - **GPGMaps** are a specific application of Gaussian Processes to generate visual representations (maps) of terrain, point clouds, or environments. They include:
+     - A **gradient map**: Highlights changes in terrain.
+     - An **elevation image**: Shows height variations.
+     - A **variance image**: Quantifies uncertainty in the predictions.
+2. **Key Features:**
+   - **Sparse Kernels:**
+     - Sparse kernels are used for faster inference, which is crucial for real-time applications like robotics or planetary mapping.
+   - **Visual Cues:**
+     - These maps enhance registration (alignment) of point clouds that might otherwise lack sufficient structure.
+3. **Benefits:**
+   - **Detecting Loop Closures:**
+     - In Simultaneous Localization and Mapping (SLAM), loop closures help correct drift by identifying when the robot revisits a location.
+   - **Robust Registration:**
+     - The maps provide strong features for aligning datasets, even in environments lacking geometric features (e.g., rocks in sloped terrain).
+   - **Higher Loop Closure Count:**
+     - Gradient and variance maps enable better performance in challenging terrains like slopes
+## Logistic Regression
+Logistic Regression is a method for **binary classification** where we predict the probability of a data point belonging to one of two classes. Let's break down the concepts from the slides step by step:
+### Converting Regression into Classification
+1. **Regression to Classification:**
+   - Logistic Regression converts a regression problem into a classification problem using the **sigmoid function** $\sigma(a)$:
+     $$
+     \sigma(a) = \frac{1}{1 + e^{-a}}
+     $$
+     - The sigmoid function maps any input value $a$ to a range between 0 and 1, which can be interpreted as a **classification probability**.
+2. **Linear Model and Probability:**
+   - We use a linear model $f(x, w) = w^T \phi(x)$, where:
+     - $\phi(x)$: Feature vector for input $x$.
+     - $w$: Weight vector.
+   - The predicted probability of belonging to the positive (foreground) class is:
+     $$
+     y_i = \sigma(w^T \phi(x_i))
+     $$
+   - This gives a two-class (binary) classification model.
+### **Why Use the Logistic Sigmoid?**
+1. **Generative Model Connection:**
+   - Logistic regression can be derived from Bayes' rule:
+     $$
+     p(y = k \mid x) = \frac{p(x \mid y = k) p(y = k)}{p(x)}
+     $$
+   - For two classes ($k_1$ and $k_2$):
+     $$
+     p(y = k_1 \mid x) = \frac{p(x \mid y = k_1)p(y = k_1)}{p(x \mid y = k_1)p(y = k_1) + p(x \mid y = k_2)p(y = k_2)}
+     $$
+2. **Simplifying to Sigmoid:**
+   - Let $a$ represent the **log-odds**:
+     $$
+     a = \log \frac{p(x \mid y = k_1)p(y = k_1)}{p(x \mid y = k_2)p(y = k_2)}
+     $$
+   - The probability $p(y = k_1 \mid x)$ becomes:
+     $$
+     p(y = k_1 \mid x) = \frac{1}{1 + e^{-a}} = \sigma(a)
+     $$
+3. **Key Idea:**
+   - Logistic regression predicts $a = w^T \phi(x)$ and applies the **sigmoid function** to obtain probabilities.
+### **Properties of the Sigmoid Function**
+1. **Point Symmetry:**
+   - $\sigma(-a) = 1 - \sigma(a)$, reflecting symmetry around 0.5.
+
+2. **Inverse Function:**
+   - The inverse of $\sigma(a)$ is:
+     $$
+     \sigma^{-1}(b) = \log \frac{b}{1 - b}, \, b \in (0, 1)
+     $$
+   - This computes the log-odds from the probability.
+3. **Derivative:**
+   - The derivative of $\sigma(a)$ is:
+     $$
+     \sigma'(a) = \sigma(a)(1 - \sigma(a))
+     $$
+   - This is useful for optimization during training.
+### **Likelihood for Logistic Regression**
+1. **Likelihood of the Data:**
+   - For binary classification, the class label $t_i \in \{0, 1\}$:
+     $$
+     p(t \mid x, w) = \prod_{i=1}^N p(t_i \mid x_i, w)
+     $$
+   - Each $p(t_i \mid x_i, w)$ is modeled using the **Bernoulli distribution**:
+     $$
+     p(t_i \mid x_i, w) = y_i^{t_i} (1 - y_i)^{1 - t_i}, \, y_i = \sigma(w^T \phi(x_i))
+     $$
+
+2. **Log-Likelihood:**
+   - To train the model, we maximize the (log)-likelihood:
+     $$
+     \arg \max_w \, \log p(t \mid x, w)
+     $$
+### Training Logistic Regression
+1. **Objective Function:**
+   - Minimize the **negative log-likelihood** (equivalent to maximizing the likelihood):
+     $$
+     E(w) = -\sum_{i=1}^N \left( t_i \log y_i + (1 - t_i) \log (1 - y_i) \right)
+     $$
+     - This is also called the **cross-entropy loss**.
+
+2. **Gradient for Optimization:**
+   - Compute the gradient of $E(w)$ with respect to $w$:
+     $$
+     \nabla E(w) = \sum_{i=1}^N \left( \sigma(w^T \phi(x_i)) - t_i \right) \phi(x_i)
+     $$
+   - This gradient is used in optimization algorithms (e.g., Gradient Descent) to find the best $w$.
+### Explanation of Minimization and IRLS (Iterative Reweighted Least Squares)
+
+### Newton-Raphson Algorithm
+1. **Purpose:**
+   - The Newton-Raphson method is a popular optimization technique for finding the minimum of a function. Here, it's used to minimize the **negative log-likelihood** $E(w)$ in logistic regression.
+2. **Steps:**
+   - Start with an initial guess for the weights $w_0$.
+   - At each iteration:
+     1. Compute the **gradient** of $E(w)$ at the current weights $w_i$.
+     2. Compute the **Hessian** (second derivative) of $E(w)$ at $w_i$.
+     3. Update $w$ by moving in the opposite direction of the gradient, scaled by the inverse of the Hessian:
+        $$
+        w_{i+1} = w_i - H^{-1} \nabla E(w_i)
+        $$
+   - Repeat until convergence.
+3. **Visualization:**
+   - The plot shows how Newton-Raphson refines the estimate by considering both the gradient ($\nabla E(w)$) and the curvature (Hessian) to make larger, more accurate steps towards the minimum.
+### **Gradient and Hessian in Logistic Regression**
+1. **Gradient of $E(w)$:**
+   - The gradient $\nabla E(w)$ is:
+     $$
+     \nabla E(w) = \sum_{i=1}^N \left( \sigma(w^T \phi_i) - t_i \right) \phi_i
+     $$
+     - $\sigma(w^T \phi_i)$: Predicted probability (using the sigmoid function).
+     - $t_i$: True label.
+     - This represents the direction of steepest ascent in $E(w)$.
+2. **Hessian (Second Derivative):**
+   - The Hessian $H$ is the matrix of second derivatives:
+     $$
+     H = \nabla^2 E(w) = \sum_{i=1}^N \phi_i \sigma(w^T \phi_i)(1 - \sigma(w^T \phi_i)) \phi_i^T
+     $$
+     - The term $\sigma(w^T \phi_i)(1 - \sigma(w^T \phi_i))$ is the variance of the prediction for $x_i$, often denoted $r_i$.
+   - The Hessian can be written compactly as:
+     $$
+     H = \Phi^T R \Phi
+     $$
+     - $\Phi$: Matrix of all feature vectors $\phi_i$.
+     - $R$: Diagonal matrix of variances $r_i = \sigma(w^T \phi_i)(1 - \sigma(w^T \phi_i))$.
+### **Iterative Reweighted Least Squares (IRLS)**
+
+1. **Update Rule:**
+   - Using the gradient and Hessian, the weights are updated as:
+     $$
+     w_{\text{new}} = w_{\text{old}} - ( \Phi^T R \Phi )^{-1} \Phi^T (y - t)
+     $$
+     - $\Phi^T (y - t)$: Residuals (difference between predicted probabilities and true labels).
+     - $\Phi^T R \Phi$: Weighted least squares adjustment.
+
+2. **Why "Iterative" and "Reweighted"?**
+   - **Iterative:**
+     - The update depends on $R$, which is recomputed at each step based on the current weights $w$.
+   - **Reweighted:**
+     - $R$ represents weights applied to each data point, reflecting the confidence in the prediction for each point.
+
+3. **Algorithm Name:**
+   - This iterative approach is known as **Iterative Reweighted Least Squares (IRLS)** because it applies weights (via $R$) to the least squares solution at every step.
+
+4. **Key Property:**
+   - IRLS converges faster than simple gradient descent because it uses the second-order information (Hessian).
+## **Bayesian Logistic Regression**
+1. **Bayesian Approach:**
+   - Unlike standard logistic regression, Bayesian logistic regression places a **prior distribution** on the weights $w$:
+     $$
+     p(w) = \mathcal{N}(w; 0, \sigma_w^2 I)
+     $$
+     - This is a Gaussian prior with mean 0 and variance $\sigma_w^2$, reflecting initial beliefs about $w$.
+2. **Likelihood:**
+   - The likelihood of the observed data is the product of Bernoulli probabilities (as in standard logistic regression):
+     $$
+     p(t \mid x, w) = \prod_{i=1}^N y_i^{t_i} (1 - y_i)^{1 - t_i}, \quad y_i = \sigma(w^T \phi(x_i))
+     $$
+     - $t_i \in \{0, 1\}$: True labels.
+3. **Posterior:**
+   - The posterior distribution combines the prior and likelihood using Bayes’ rule:
+     $$
+     p(w \mid x, t) \propto p(t \mid x, w) p(w)
+     $$
+   - **Problem:**
+     - The likelihood $p(t \mid x, w)$ is non-Gaussian, so the posterior does not have a closed form. This necessitates approximation methods like the **Laplace Approximation**.
+## **Laplace Approximation (Overview)**
+1. **Objective:**
+   - Approximate a complex posterior $p(z)$ (or $p(w \mid x, t)$ in this case) with a simpler Gaussian distribution.
+
+2. **Key Idea:**
+   - Find a Gaussian $q(z) = \mathcal{N}(z; \mu, \sigma^2)$ that closely approximates $p(z)$:
+     $$
+     p(z) \approx q(z) = \mathcal{N}(z; \mu, \sigma^2)
+     $$
+     - The mean $\mu$ is chosen to be the **mode** of $p(z)$ (the value where $p(z)$ is maximized).
+
+3. **Steps:**
+   - Compute the **mode** of $p(z)$ using optimization methods.
+   - Use the curvature of $\log p(z)$ at the mode to estimate the variance $\sigma^2$.
+### Mathematical Derivation
+1. **Finding the Mode:**
+   - By definition, the mode of $p(z)$ is where the first derivative of the log-posterior is zero:
+     $$
+     \frac{d}{dz} \log f(z) \bigg|_{z=\mu} = 0
+     $$
+     - This is the maximum point of $f(z)$.
+
+2. **Taylor Expansion:**
+   - Around the mode $\mu$, approximate $\log f(z)$ using a second-order Taylor expansion:
+     $$
+     \log f(z) \approx \log f(\mu) + \frac{1}{2} \frac{d^2}{dz^2} \log f(z) \bigg|_{z=\mu} \cdot (z - \mu)^2
+     $$
+
+3. **Second Derivative:**
+   - Denote the second derivative at $\mu$ as $A$:
+     $$
+     A = \frac{d^2}{dz^2} \log f(z) \bigg|_{z=\mu}
+     $$
+### Gaussian Approximation
+1. **Approximation:**
+   - Using the Taylor expansion:
+     $$
+     \log f(z) \approx \log f(\mu) + \frac{1}{2} A (z - \mu)^2
+     $$
+     - Exponentiating this gives:
+       $$
+       f(z) \propto \exp\left(\frac{1}{2} A (z - \mu)^2\right)
+       $$
+       - This is proportional to a Gaussian distribution.
+
+2. **Posterior as Gaussian:**
+   - The posterior $p(z)$ can now be approximated as:
+     $$
+     p(z) \approx \mathcal{N}(z; \mu, \sigma^2), \quad \sigma^2 = -A^{-1}
+     $$
+     - Variance $\sigma^2$ is the negative inverse of the second derivative (curvature).
+
+3. **Multi-Dimensional Case:**
+   - For higher dimensions, $A$ becomes the **Hessian matrix**:
+     $$
+     A = \nabla^2 \log f(z)
+     $$
+     - The covariance matrix is $\Sigma = -A^{-1}$.
+
+### **Summary and Visualization**
+![[Pasted image 20241128132435.png#invert|400]]
+1. **Summary of Steps:**
+   - **Step 1:** Compute the mode $\mu$ of the posterior $p(w \mid x, t)$ using optimization methods like Newton-Raphson or IRLS.
+   - **Step 2:** Compute the Hessian $A$ (second derivative of the log-posterior).
+   - **Step 3:** Approximate the posterior as a Gaussian:
+     $$
+     p(w \mid x, t) \approx \mathcal{N}(w; \mu, \Sigma), \quad \Sigma = -A^{-1}
+     $$
+
+2. **Visualization:**
+   - The yellow area represents the original (non-Gaussian) posterior.
+   - The red curve shows the Gaussian approximation centered at the mode, with variance derived from the second derivative.
+
+## Gaussian Processes for Classification
+1. **Using Sigmoid Functions for Classification:**
+   - A GP provides a distribution over functions, not just a single function.
+   - The first plot shows a function sampled from a GP.
+   - To turn this into a classification problem, apply a **sigmoid function** (e.g., logistic or cumulative Gaussian) to map the function values to probabilities between 0 and 1 (as shown in the second plot).
+
+2. **Cumulative Gaussian Sigmoid:**
+   - Another commonly used sigmoid function is the **cumulative Gaussian**:
+     $$
+     \Phi(z) = \int_{-\infty}^z \mathcal{N}(x; 0, 1) dx
+     $$
+     - This maps function values into probabilities while maintaining symmetry.
+### Class Prediction with a GP
+1. **Goal:**
+   - Predict the probability of a test point $x_*$ belonging to a class $y_* = +1$:
+     $$
+     p(y_* = +1 \mid X, y, x_*)
+     $$
+
+2. **Marginalization over Latent Variables:**
+   - The prediction involves marginalizing (integrating out) the latent function values $f$:
+     $$
+     p(y_* = +1 \mid X, y, x_*) = \int p(y_* \mid f_*) p(f_* \mid X, y) df_*
+     $$
+   - The posterior over latent functions $p(f \mid X, y)$ is required to make this computation.
+
+3. **Posterior Distribution:**
+   - The posterior over $f$ is computed using Bayes’ rule:
+     $$
+     p(f \mid X, y) = \frac{p(y \mid f) p(f \mid X)}{p(y \mid X)}
+     $$
+     - $p(y \mid f)$: Likelihood (often a sigmoid function).
+     - $p(f \mid X)$: GP prior.
+     - $p(y \mid X)$: Normalizer.
+### **A Simple Example**
+1. **Red Points:**
+   - Represent the two-class training data.
+2. **Green Line:**
+   - Shows the mean function of the posterior $p(f \mid X, y)$, capturing the decision boundary's uncertainty.
+3. **Light Blue Line:**
+   - Represents the sigmoid of the mean function, mapping the mean function into probabilities for classification.
+### **The Problem with Non-Gaussian Likelihoods**
+
+1. **Challenge:**
+   - The likelihood $p(y \mid f)$ (e.g., from the sigmoid function) is **not Gaussian**.
+   - This makes the posterior $p(f \mid X, y)$ analytically intractable.
+
+2. **Solutions:**
+   - Approximate the posterior using methods like:
+     - **Laplace Approximation:** Approximates the posterior with a Gaussian near the mode.
+     - **Expectation Propagation (EP):** Matches moments iteratively.
+     - **Variational Methods:** Optimizes a bound on the marginal likelihood.
+### **Predictions with GPs**
+1. **Predictive Distribution:**
+   - Once the posterior $p(f \mid X, y)$ is approximated, the predictive distribution $p(f_* \mid X, y, x_*)$ is computed as:
+     $$
+     p(f_* \mid X, y, x_*) = \mathcal{N}(f_*; \mu_*, \Sigma_*)
+     $$
+     - Mean $\mu_*$:
+       $$
+       \mu_* = k_*^T K^{-1} f
+       $$
+     - Variance $\Sigma_*$:
+       $$
+       \Sigma_* = k(x_*, x_*) - k_*^T K^{-1} k_*
+       $$
+
+2. **Class Probabilities:**
+   - Finally, compute $p(y_* = +1 \mid X, y, x_*)$ by integrating over the latent variables:
+     $$
+     p(y_* = +1 \mid X, y, x_*) = \int p(y_* \mid f_*) p(f_* \mid X, y) df_*
+     $$
+     - This requires either analytical approximations or sampling.
+### **Predictive Distribution**
+1. **Expected Value and Variance:**
+   - The predictive mean and variance of the function $f_*$ are:
+     $$
+     \mathbb{E}[f_* \mid X, y, x_*] = k(x_*)^T K^{-1} \hat{f}
+     $$
+     $$
+     \text{Var}[f_* \mid X, y, x_*] = k(x_*, x_*) - k_*^T (K + W^{-1})^{-1} k_*
+     $$
+     - $W$: Diagonal matrix of weights from the likelihood.
+
+2. **Final Prediction:**
+   - Compute $p(y_* = +1 \mid X, y, x_*)$ using:
+     - Closed-form integration for the cumulative Gaussian sigmoid.
+     - Sampling or approximation for logistic sigmoid.
+### **Example of Classification**
+1. **Two-Class Problem:**
+   - Training data (red and blue points) belong to two classes.
+2. **Decision Boundaries:**
+   - The **green line** is the optimal decision boundary.
+   - The **black line** is the GP classifier's decision boundary, incorporating uncertainty.
+3. **Posterior Probability:**
+   - The right plot shows the probability map of class membership based on the GP.
+
+## The Learning Cube
+![[University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Untitled 5.png#invert|500]]
