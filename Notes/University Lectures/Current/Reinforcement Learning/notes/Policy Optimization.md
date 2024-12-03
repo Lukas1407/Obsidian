@@ -4,7 +4,8 @@
 
 - Policy optimization algorithms directly adjust the policy parameters to maximize the expected return
 	- This can be simpler than learning the [[Value-Function#State-Value Function/V-Function|V-Function]] or [[Value-Function#Action-Value Function/Q-Function|Q-Function]]
-
+	- For the V-Function we would need the model + 1 Bellman backup
+	- For the Q-Function we need to solve $\arg\max_{a}Q(s,a)$ which is hard for high-dimensional or continuous action spaces
 ## Policy Gradient Methods
 - These methods use a policy that is parameterized by a set of weights, which can be adjusted to change the behavior of the policy.
 - $$\pi_{\theta}(a|s)$$
@@ -34,7 +35,7 @@
 	- -> No model is required!
 ## REINFORCE Algorithm
 ![[Pasted image 20240315084047.png#invert|600]]
-- Converges to local optimum of $J$
+- Converges to local optimum of $J$ by sampling ([[Monte-Carlo Estimation]])
 - But: 
 	- Learning rates very hard to tune 
 	- Needs tons of samples

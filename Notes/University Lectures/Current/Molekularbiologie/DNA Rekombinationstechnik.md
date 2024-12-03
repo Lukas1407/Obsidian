@@ -8,8 +8,8 @@
 ### Was passieren kann
 #### Andere Protein Struktur
 - Die Struktur eines Proteins bestimmt seine Funktion, weil die räumliche Anordnung der Aminosäuren die Interaktionen mit anderen Molekülen beeinflusst.
-- Wenn sich die Struktur ändert, beispielsweise durch Mutationen, kann das die Bindungsfähigkeit, Stabilität und Wechselwirkungen des Proteins beeinflussen. 
-- ->Führt zu unterschiedlichen Funktionen, wie Enzymaktivität, Transport von Molekülen oder Strukturunterstützung. 
+- Wenn sich die Struktur ändert, beispielsweise durch Mutationen, kann das die <mark style="background: #FFB86CA6;">Bindungsfähigkeit, Stabilität und Wechselwirkungen</mark> des Proteins beeinflussen. 
+- ->Führt zu unterschiedlichen Funktionen, wie <mark style="background: #FFB86CA6;">Enzymaktivität, Transport von Molekülen oder Strukturunterstützung</mark>. 
 ##### Beispiel Enzyme
 Ihre aktive Stelle muss genau geformt sein, um das Substrat zu binden und die Reaktion zu katalysieren. Eine Veränderung in der Struktur kann die Effizienz oder die Spezifität des Enzyms erheblich beeinträchtigen.
 ## Methoden

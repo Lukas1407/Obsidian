@@ -1,4 +1,5 @@
-- **Zirkuläre DNA** ist DNA, die keinen freien Anfang oder Ende hat und daher in einer **kreisförmigen Struktur** vorliegt. Beispiele hierfür sind die DNA in Bakterien und die Plasmide.
+- **Zirkuläre DNA** ist DNA, die keinen freien Anfang oder Ende hat und daher in einer **kreisförmigen Struktur** vorliegt. 
+- Beispiele hierfür sind die DNA in Bakterien und die Plasmide.
 - Da beide Stränge geschlossen sind, kann die zirkuläre DNA in verschiedenen Konformationen vorliegen:
     - **Supercoiled (superhelikal)**: Dies ist eine kompakte und stark gewundene Form der DNA. Supercoiling tritt auf, wenn die DNA zusätzlich verdreht wird, wodurch sie sich dichter zusammenzieht.
     - **Relaxed Circle (entspannt)**: Eine nicht verdrehte oder gelockerte Form, bei der die DNA in einer kreisförmigen, aber entspannten Struktur vorliegt.

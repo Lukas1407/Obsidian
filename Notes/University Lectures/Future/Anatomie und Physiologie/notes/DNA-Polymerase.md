@@ -2,8 +2,8 @@
 - Bei jedem Anfügen eines Nukleotids wird eine **Pyrophosphat-Gruppe (PPi)** abgespalten, und diese Abspaltung setzt Energie frei. Diese Energie wird direkt für die Bildung der **[[Nukleotide#Phosphodiesterbindung|Phosphodiesterbindung]]** genutzt.
 
 ## Bei Prokaryoten DNA-Polymerase III
-- **Struktur der Polymerase**: Die DNA-Polymerase III besteht aus verschiedenen Domänen wie dem „Finger“ und „Daumen“-Bereich, die die DNA bei der Synthese stabilisieren und den Weg des DNA-Templates leiten.
-- **Knick in der Matrize**: Ein Knick von **90°** in der Matrize sorgt dafür, dass nur das aktuell einzufügende Nukleotid und nicht die nachfolgenden Basenpaare erkannt werden können. Dies stellt sicher, dass die Polymerase nur das nächste Nukleotid korrekt anfügt und die Genauigkeit bei der Synthese erhöht.
+- **Struktur der Polymerase**: Die DNA-Polymerase III besteht aus verschiedenen Domänen wie dem „Finger“ und „Daumen“-Bereich, die die <mark style="background: #FFB86CA6;">DNA bei der Synthese stabilisieren und den Weg des DNA-Templates leiten</mark>.
+- **Knick in der Matrize**: Ein Knick von **90°** in der Matrize sorgt dafür, dass <mark style="background: #FFB86CA6;">nur das aktuell einzufügende Nukleotid und nicht die nachfolgenden Basenpaare erkannt werden können</mark>. Dies stellt sicher, dass die Polymerase <mark style="background: #FFB86CA6;">nur das nächste Nukleotid korrekt anfügt</mark> und die Genauigkeit bei der Synthese erhöht.
 - **Bindungsstelle für das neue Nukleotid**: Die Polymerase hat eine spezielle Bindungsstelle für das eintretende Nukleotid, das an das 3'-OH-Ende des neu synthetisierten Strangs angebunden wird.
 ![[Pasted image 20241031104811.png#invert|300]]
 ### Schritte des Proofreading-Mechanismus:
@@ -16,11 +16,11 @@
 3. **Fortsetzung der DNA-Synthese**:
     - Nach der Entfernung des fehlerhaften Nukleotids kann die DNA-Polymerase III wieder zur normalen Synthese zurückkehren.
     - Die Polymerase setzt die DNA-Synthese mit einem neuen Nukleotid fort, das diesmal korrekt zur Matrize passt.
-![[DNA_Polymerase (1).mov]]
+![[DNA_Polymerase.mov]]
 
 ## Prozessivität wird durch Ringklemme (sliding clamp) erhöht
-![[Pasted image 20241031105551.png#invert|300]]
-- Die **Sliding Clamp** (Ringklemme) ist eine Struktur, die die DNA-Polymerase auf dem DNA-Strang hält und verhindert, dass sie sich löst. Dadurch wird die **Prozessivität** (die Fähigkeit der Polymerase, viele Nukleotide in einem Zug zu synthetisieren) erhöht.
+![[Pasted image 20241031105551.png#invert|400]]
+- Die **Sliding Clamp** (Ringklemme) ist eine Struktur, die die <mark style="background: #FFB86CA6;">DNA-Polymerase auf dem DNA-Strang hält</mark> und verhindert, dass sie sich löst. Dadurch wird die **Prozessivität** (die Fähigkeit der Polymerase, viele Nukleotide in einem Zug zu synthetisieren) erhöht.
 - Die Clamp umgibt die DNA und „gleitet“ entlang des Strangs, während die Polymerase die DNA synthetisiert.
 - Beim **Folgestrang** (Lagging Strand) muss die Sliding Clamp immer wieder neu positioniert werden, da die DNA in kurzen Okazaki-Fragmenten synthetisiert wird. Die Frage „wie wird die Ringklemme auf den Folgestrang gebracht?“ bezieht sich auf die Notwendigkeit, die Sliding Clamp jedes Mal neu zu beladen, wenn ein neuer Primer anfängt.
 ### Clamp-Loader (Laden der Ringklemme)
@@ -34,11 +34,11 @@
 ## Wechsel der Polymerasen während der Replikation
 - Während der Replikation kann es zum Wechsel der Polymerase kommen
 - z.B. weil Pol $\alpha$ nur eine begrenzte Prozessivität hat, also nur kurze DNA-Abschnitte synthetisieren kann:
-![[Pasted image 20241107095229.png#invert|300]]
+![[Pasted image 20241107095229.png#invert|400]]
 - Ein Wechsel zu einer leistungsfähigeren Polymerase, wie der Polymerase δ oder ε, welche an den Sliding Clamp gebunden ist.
 ### Wechsel wegen DNA-Schäden
-- Bei DNA-Schäden oder Abweichungen im DNA-Strang, wie sie durch Mutationen oder Umwelteinflüsse verursacht werden, kann die normale Polymerase (z.B. DNA-Polymerase III) den beschädigten Bereich nicht weiterreplizieren. Die Replikation würde hier normalerweise stoppen.
-- In solchen Fällen kann eine sogenannte Translesionspolymerase (z.B. Pol IV oder Pol V in Prokaryoten) den Platz der normalen Polymerase einnehmen. Diese speziellen Polymerasen sind in der Lage, über den beschädigten Bereich hinwegzusynthesieren, auch wenn sie weniger genau arbeiten.
+- Bei DNA-Schäden oder Abweichungen im DNA-Strang, wie sie durch Mutationen oder Umwelteinflüsse verursacht werden, kann die normale Polymerase (z.B. DNA-Polymerase III) den beschädigten Bereich nicht weiter replizieren. Die <mark style="background: #FFB86CA6;">Replikation würde hier normalerweise stoppen</mark>.
+- In solchen Fällen kann eine sogenannte Translesions-Polymerase (z.B. Pol IV oder Pol V in Prokaryoten) den Platz der normalen Polymerase einnehmen. Diese <mark style="background: #FFB86CA6;">speziellen Polymerasen sind in der Lage, über den beschädigten Bereich hinwegzusynthesieren</mark>, auch wenn sie weniger genau arbeiten.
 - Nachdem die beschädigte Stelle passiert wurde, kehrt die Replikation zur ursprünglichen DNA-Polymerase (z.B. DNA-Polymerase III) zurück, die dann die Synthese fortsetzt.
 ![[Pasted image 20241107095423.png#invert|300]]
-- Die Translesionspolymerase baut hier irgendetwas ein
+- Die Translesions-Polymerase baut hier irgendetwas ein
