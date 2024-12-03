@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/DNA-Bibliothek.md",
+                "file": "University Lectures/Future/Medical Imaging Technology/notes/X-Ray Tube.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DNA-Bibliothek"
+              "title": "X-Ray Tube"
             }
           },
           {
@@ -219,10 +219,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Molekularbiologie/DNA-Bibliothek.md"
+                "file": "University Lectures/Future/Medical Imaging Technology/notes/X-Ray Tube.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of DNA-Bibliothek"
+              "title": "Outline of X-Ray Tube"
             }
           }
         ]
@@ -245,13 +245,22 @@
       "omnisearch:Omnisearch": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false,
-      "obsidian-day-planner:Timeline": false
+      "obsidian-day-planner:Timeline": false,
+      "markdown-importer:Open format converter": false
     }
   },
   "active": "6f6ea12f908df456",
   "lastOpenFiles": [
-    "University Lectures/Current/Molekularbiologie/Klausuraufgabe DNA-Bibliothek.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Lösungen Quiz.md",
+    "University Lectures/Future/Medical Imaging Technology/notes/X-Ray Tube.md",
+    "University Lectures/Current/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation/Verantwortlich denken und handeln in Technik, Wissenschaft und Innovation.md",
+    "University Lectures/Current/Computergrafik/übung/Übung - Rasterisierung.md",
+    "University Lectures/Current/Computergrafik/übung/images/Pasted image 20241203152754.png",
+    "University Lectures/Current/Computergrafik/übung/images/Pasted image 20241203152744.png",
+    "University Lectures/Current/Computergrafik/übung/images",
     "University Lectures/Current/Molekularbiologie/DNA-Bibliothek.md",
+    "University Lectures/Current/Computergrafik/übung",
+    "University Lectures/Current/Molekularbiologie/Klausuraufgabe DNA-Bibliothek.md",
     "University Lectures/Current/Molekularbiologie/images/Pasted image 20241203140840.png",
     "University Lectures/Current/Molekularbiologie/images/Pasted image 20241203140520.png",
     "University Lectures/Current/Molekularbiologie/images/Pasted image 20241203140515.png",
@@ -278,16 +287,10 @@
     "University Lectures/Current/Reinforcement Learning/notes/QT-Opt.md",
     "University Lectures/Current/Reinforcement Learning/notes/images/Pasted image 20241202124130.png",
     "University Lectures/Current/Reinforcement Learning/notes/Proximal Policy Optimization (PPO).md",
-    "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
-    "University Lectures/Current/Molekularbiologie/Regulation für die Molekularbiologie.md",
-    "University Lectures/Current/Molekularbiologie/Substraten.md",
-    "University Lectures/Current/Reinforcement Learning/notes/Natural Gradients.md",
     "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Untitled 5.png",
     "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241128132435.png",
     "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241128131159.png",
     "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241128131158.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241128131021.png",
-    "University Lectures/Current/Autonomous Learning for Intelligent Robot Perception/images/Pasted image 20241128130936.png",
     "University Lectures/Current/KI in robotergestützer Chirurgie",
     "University Lectures/Current/Genetik/images/Holliday_junction.mov",
     "University Lectures/Current/Genetik/images/Telomere_Replication.mov",
