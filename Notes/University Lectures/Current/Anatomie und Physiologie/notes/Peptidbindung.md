@@ -9,8 +9,7 @@
 - Diese Reaktion erfordert **Enzymkatalyse** und tritt normalerweise unter **physiologischen Bedingungen** auf, wie z.B. während der ribosomalen Peptidsynthese.
 - Die Peptidbindung ist besonders stabil, da sie durch **Mesomeriestabilisierung** unterstützt wird. Diese Stabilität ermöglicht die Bildung beliebig langer Ketten, die als **Biopolymere** bezeichnet werden.
 ### Beispiel
-
-
+![[Drawing 2024-12-04 12.08.19.excalidraw|700]]
 ## Peptidbrücken
 - Der Begriff “Peptidbrücke” wird oft verwendet, um die Verbindung zwischen zwei Aminosäuren in einem Protein oder Peptid zu beschreiben. 
 - Diese Brücken sind das Ergebnis der Peptidbindung
