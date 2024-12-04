@@ -105,17 +105,16 @@ Die Konformation oder räumliche Anordnung der Basenpaare zueinander hängt star
 
 ## Chemische Eigenschaften
 ### Polare und negativ geladene Struktur
-- Die **DNA-Moleküle** sind aufgrund der **Phosphatgruppen** im Rückgrat des DNA-Strangs negativ geladen. Jede Phosphatgruppe trägt eine negative Ladung, was der DNA insgesamt eine starke negative Ladung verleiht.
-- Diese Phosphatgruppen sind hydrophil (wasserlöslich), was bedeutet, dass die DNA insgesamt **polar** ist. Diese Polarität und negative Ladung führen dazu, dass die DNA in wässrigen Lösungen gut löslich ist.
+- Die **DNA-Moleküle** sind aufgrund der <mark style="background: #FFB86CA6;">Phosphatgruppen im Rückgrat des DNA-Strangs negativ geladen</mark>. Jede Phosphatgruppe trägt eine negative Ladung, was der DNA insgesamt eine starke negative Ladung verleiht.
+- Diese <mark style="background: #FFB86CA6;">Phosphatgruppen sind hydrophil (wasserlöslich), was bedeutet, dass die DNA insgesamt polar ist</mark>. Diese Polarität und negative Ladung führen dazu, dass die <mark style="background: #FFB86CA6;">DNA in wässrigen Lösungen gut löslich</mark> ist.
 ### Stabile Doppelhelix-Struktur
-- Die DNA besitzt eine stabile Doppelhelixstruktur, die durch **kovalente Phosphodiesterbindungen** im Zucker-Phosphat-Rückgrat und durch **Wasserstoffbrückenbindungen** zwischen den Basenpaaren stabilisiert wird.
-- **Basenpaarung**: Die spezifische Paarung der Basen (Adenin mit Thymin und Guanin mit Cytosin) über Wasserstoffbrückenbindungen trägt ebenfalls zur Stabilität bei. Es gibt zwei Wasserstoffbrücken zwischen Adenin und Thymin und drei zwischen Guanin und Cytosin, was die Stabilität weiter erhöht, besonders bei GC-reichen Regionen.
-- **Hydrophobe Wechselwirkungen**: Die Basen selbst sind hydrophob und neigen dazu, im Inneren der Doppelhelix „gestapelt“ zu werden. Diese **Basenstapelung** erzeugt **hydrophobe Wechselwirkungen**, die die Struktur zusätzlich stabilisieren.
+- Die DNA besitzt eine stabile Doppelhelixstruktur, die durch <mark style="background: #FFB86CA6;">kovalente Phosphodiesterbindungen im Zucker-Phosphat-Rückgrat</mark> und durch <mark style="background: #FFB86CA6;">Wasserstoffbrückenbindungen zwischen den Basenpaaren</mark> stabilisiert wird.
+- **Hydrophobe Wechselwirkungen**: Die Basen selbst sind hydrophob und neigen dazu, im Inneren der Doppelhelix „gestapelt“ zu werden. Diese <mark style="background: #FFB86CA6;">Basenstapelung erzeugt hydrophobe Wechselwirkungen, die die Struktur zusätzlich stabilisieren</mark>.
 ### Verschiedene intermolekulare Kräfte
 - Die DNA-Moleküle werden durch eine Kombination von Kräften zusammengehalten, darunter:
-    - **Wasserstoffbrückenbindungen** zwischen den komplementären Basen.
-    - **Van-der-Waals-Kräfte** und **hydrophobe Wechselwirkungen** zwischen gestapelten Basenpaaren innerhalb der Doppelhelix.
-    - **Elektrostatische Wechselwirkungen** zwischen den negativ geladenen Phosphatgruppen und positiv geladenen Ionen in der Umgebung (z. B. Mg²⁺-Ionen), die die negativen Ladungen teilweise abschirmen und die Struktur stabilisieren.
+    - <mark style="background: #FFB86CA6;">Wasserstoffbrückenbindungen</mark> zwischen den komplementären Basen.
+    - <mark style="background: #FFB86CA6;">Van-der-Waals-Kräfte und hydrophobe Wechselwirkungen zwischen gestapelten Basenpaaren</mark> innerhalb der Doppelhelix.
+    - <mark style="background: #FFB86CA6;">Elektrostatische Wechselwirkungen</mark> zwischen den negativ geladenen Phosphatgruppen und positiv geladenen Ionen in der Umgebung (z. B. Mg²⁺-Ionen), die die negativen Ladungen teilweise abschirmen und die Struktur stabilisieren.
 ### Reversible Denaturierung
 - **Denaturierung** bedeutet das Aufbrechen der Wasserstoffbrückenbindungen zwischen den Basen und die Aufspaltung der Doppelhelix in zwei Einzelstränge. Dies kann durch **Hitze** (z. B. über 90°C) oder **chemische Mittel** wie Harnstoff oder starke pH-Veränderungen erreicht werden.
 - Die Denaturierung ist oft **reversibel**: Wenn die Bedingungen (Temperatur, pH) wieder normalisiert werden, können sich die komplementären Basen wieder durch **Renaturierung** zu einer Doppelhelix zusammenlagern.
@@ -123,8 +122,8 @@ Die Konformation oder räumliche Anordnung der Basenpaare zueinander hängt star
 ![[Pasted image 20241029095845.png#invert|500]]
 - Das Aufschmelzen beginnt in AT reichen Regionen und setzt sich dann lokal durch Erweiterung der aufgeschmolzenen Blasen fort
 #### Messing durch UV-Absoprtion
-- Die **Nukleinsäurebasen** der DNA (Adenin, Thymin, Guanin, Cytosin) absorbieren **UV-Licht bei einer Wellenlänge von etwa 260 nm**. Die Menge der Absorption hängt von der Struktur der DNA ab.
-- **Doppelsträngige DNA** (native Form) absorbiert weniger UV-Licht als **einzelsträngige, denaturierte DNA**. 
+- Die **Nukleinsäurebasen** der DNA (Adenin, Thymin, Guanin, Cytosin) absorbieren<mark style="background: #FFB86CA6;"> UV-Licht bei einer Wellenlänge von etwa 260 nm</mark>. Die Menge der Absorption hängt von der Struktur der DNA ab.
+- <mark style="background: #FFB86CA6;">Doppelsträngige DNA (native Form) absorbiert weniger UV-Licht als einzelsträngige, denaturierte DNA</mark>. 
 - Diese Eigenschaft kann genutzt werden um den Gehalt von denaturierter bzw. nativer DNA zu bestimmen
 ![[Pasted image 20241029100439.png#invert|300]]
 - Die Kurve zeigt die **relative Absorption bei 260 nm in Abhängigkeit von der Temperatur**. Die sigmoide Form der Kurve entsteht, weil die Denaturierung ein **kooperativer Prozess** ist:

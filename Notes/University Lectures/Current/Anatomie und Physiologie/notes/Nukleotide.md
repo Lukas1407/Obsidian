@@ -10,9 +10,9 @@
 - Hier gelb
 ![[Pasted image 20241029094034.png#invert|200]]
 - Hier trennt sich die DNA
-- Eine Phosphodiesterbindung entsteht, wenn die **3'-OH-Gruppe** eines Nukleotids mit dem **5'-Phosphat** des nächsten Nukleotids reagiert.
+- Eine <mark style="background: #FFB86CA6;">Phosphodiesterbindung entsteht, wenn die 3'-OH-Gruppe eines Nukleotids mit dem 5'-Phosphat des nächsten Nukleotids reagiert</mark>.
 - Diese Reaktion wird von Enzymen wie der **[[DNA-Polymerase]]** während der DNA-Replikation oder der **Ligase** während der DNA-Reparatur katalysiert.
-- Während der Reaktion wird **Wasser (H₂O)** freigesetzt, was eine Kondensationsreaktion darstellt.
+- Während der Reaktion wird **Wasser (H₂O)** freigesetzt, was eine <mark style="background: #FFB86CA6;">Kondensationsreaktion</mark> darstellt.
 ![[Pasted image 20241029094909.png#invert|500]]
 - Diese Reaktion ist extrem ineffizient
 ## Säureanhydridbindungen:

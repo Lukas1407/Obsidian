@@ -19,6 +19,7 @@
 - Eine Gruppe von Zellen, die zusammenarbeiten, um eine spezifische Funktion auszuführen, wie z.B. Muskelgewebe oder Nervengewebe.
 ## Organe
 - Strukturen, die aus verschiedenen Gewebetypen bestehen und komplexe Aufgaben im Körper erfüllen, wie das Herz oder die Lunge.
+- Der menschliche Körper hat 79 Organe, diese Zahl variiert allerdings in Fachkreisen 
 
 | Organe/Komponenten                                    | Hauptfunktion                                                                                                                                                                   |
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

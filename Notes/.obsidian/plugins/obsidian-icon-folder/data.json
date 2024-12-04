@@ -88,11 +88,6 @@
   "University Lectures/Current/Reinforcement Learning/notes": "BoBxEditAlt",
   "University Lectures/Current/Reinforcement Learning/notes/Questions.md": "BoBxCheckboxChecked",
   "University Lectures/Current/Reinforcement Learning/notes/images": "BoBxImage",
-  "University Lectures/Future/Anatomie und Physiologie": "BoHuman",
-  "University Lectures/Future/Anatomie und Physiologie/notes": "BoBxEditAlt",
-  "University Lectures/Future/Anatomie und Physiologie/presentation": "BoBxBookReader",
-  "University Lectures/Future/Anatomie und Physiologie/slides": "BoBxFolder",
-  "University Lectures/Future/Anatomie und Physiologie/notes/images": "BoBxImage",
   "University Lectures/Future/Biomedizinische Messtechnik": "BoStethoscope",
   "University Lectures/Future/Biomedizinische Messtechnik/notes": "BoBxEditAlt",
   "University Lectures/Future/Biomedizinische Messtechnik/slides": "BoBxFolder",
@@ -109,5 +104,10 @@
   "University Lectures/Future/Medical Imaging Technology/other": "BoBxFolder",
   "University Lectures/Future/Medical Imaging Technology/slides": "BoBxFolder",
   "University Lectures/Future/Medical Imaging Technology/notes/images": "BoBxImage",
-  "University Lectures/Future/Radiation Protection": "BoRadiationSvgrepoCom(1)"
+  "University Lectures/Future/Radiation Protection": "BoRadiationSvgrepoCom(1)",
+  "University Lectures/Current/Anatomie und Physiologie": "BoHuman",
+  "University Lectures/Current/Anatomie und Physiologie/notes": "BoBxEditAlt",
+  "University Lectures/Current/Anatomie und Physiologie/presentation": "BoBxBookReader",
+  "University Lectures/Current/Anatomie und Physiologie/slides": "BoBxFolder",
+  "University Lectures/Current/Anatomie und Physiologie/notes/images": "BoBxImage"
 }

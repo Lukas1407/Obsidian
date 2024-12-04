@@ -41,13 +41,13 @@
 - Fasern: Dazu gehören Kollagenfasern für Zugfestigkeit und elastische Fasern für Elastizität
 ### Muskelgewebe
 - Muskelgewebe ist ein essenzieller Bestandteil des menschlichen Körpers und verantwortlich für die Erzeugung mechanischer Kraft, die für verschiedene Funktionen wie Bewegung, Transport und Herzschlag benötigt wird
-### [[Skelettmuskulatur]]
+#### [[Skelettmuskulatur]]
 - **Struktur**: Besteht aus quergestreiften, mehrkernigen Muskelfasern, die aus Sarkomeren aufgebaut sind.
 - **Funktion**: Ermöglicht willkürliche Bewegungen des Skeletts, wie das Heben eines Arms oder das Laufen.
-### [[Herzmuskulatur]]
+#### [[Herzmuskulatur]]
 - **Struktur**: Ein mechanischer Zusammenschluss einzelner Zellen, die ein funktionelles Syncytium bilden, ebenfalls mit Sarkomeren.
 - **Funktion**: Unwillkürliche Kontraktionen, die den Herzschlag und somit die Blutzirkulation ermöglichen.
-### [[Glatte Muskulatur]]
+#### [[Glatte Muskulatur]]
 - **Struktur**: Besteht aus ungeordneten Untereinheiten ohne die typische Querstreifung.
 - **Funktion**: Unwillkürliche Bewegungen wie den Transport von Nahrung durch den Darm oder die Regulation des Blutflusses durch Gefäßkontraktion.
 ### Nervengewebe

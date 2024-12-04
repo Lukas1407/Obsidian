@@ -1,7 +1,7 @@
 > [!abstract] Definition
 >  Nukleinbasen, auch bekannt als **Nucleinbasen**, **Nukleobasen** oder **Nucleobasen**, sind essentielle Bestandteile von [[Nukleoside|Nukleosiden]] und [[Nukleotide|Nukleotiden]]. Sie sind stickstoffhaltig spielen eine entscheidende Rolle in der Struktur und Funktion von Nukleinsäuren wie DNA ([[Desoxyribonukleinsäure]]) und RNA ([[Ribonukleinsäure]]).
 ## Chemische Eigenschaften
-- protonierbare, stickstoffhaltige Moleküle, die in wässriger Lösung leicht basisch reagieren.
+- protonierbare, <mark style="background: #FFB86CA6;">stickstoffhaltige Moleküle</mark>, die in wässriger Lösung leicht basisch reagieren.
 	- Dies bedeutet, dass sie Protonen aufnehmen können und dadurch in Wasser eine basische Umgebung schaffen.
 - Nukleinbasen sind essentiell für die genetische Information und die Übertragung von Erbinformation in lebenden Organismen.
 - spielen eine Rolle in anderen wichtigen Biomolekülen wie ADP, [[Adenosintriphosphat (ATP)|ATP]] und FAD.

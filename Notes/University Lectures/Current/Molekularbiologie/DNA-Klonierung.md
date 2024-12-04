@@ -1,37 +1,37 @@
 ## Erstellung einer DNA-Bibliothek:
-   - **Amplifizierte DNA-Fragmente**: Die zu klonierende DNA wird oft zuvor durch PCR vervielfältigt, um sicherzustellen, dass genügend DNA-Material vorhanden ist. Diese Fragmente können dann in eine DNA-Bibliothek integriert werden.
-   - **Ligieren der DNA in einen Vektor**: Die amplifizierten DNA-Fragmente werden durch einen Prozess namens Ligation in einen Vektor integriert. Ein Vektor ist ein DNA-Molekül, das als Transportmittel dient (z. B. ein Plasmid), um das DNA-Fragment in eine Wirtszelle einzuführen.
-   - **Klonierung durch Replikation**: Die Vektoren, die das DNA-Fragment enthalten, werden in eine Wirtszelle (häufig eine Bakterienzelle) eingebracht. Diese Zellen vermehren sich dann, und das eingebettete DNA-Fragment wird bei jeder Zellteilung kopiert, wodurch eine große Anzahl identischer DNA-Kopien entsteht.
-   - **Library Screening**: Die einzelnen DNA-Fragmente werden katalogisiert, um später gezielt nach bestimmten Genen oder Sequenzen, wie z. B. dem Phosphattransporter, suchen zu können.
+   - **Amplifizierte DNA-Fragmente**: Die <mark style="background: #FFB86CA6;">zu klonierende DNA wird oft zuvor durch PCR vervielfältigt</mark>, um sicherzustellen, dass genügend DNA-Material vorhanden ist. Diese Fragmente können dann in eine DNA-Bibliothek integriert werden.
+   - **Ligieren der DNA in einen Vektor**: Die amplifizierten <mark style="background: #FFB86CA6;">DNA-Fragmente werden durch einen Prozess namens Ligation in einen Vektor integriert</mark>. Ein <mark style="background: #FFB86CA6;">Vektor ist ein DNA-Molekül, das als Transportmittel</mark> dient (z. B. ein Plasmid), um das DNA-Fragment in eine Wirtszelle einzuführen.
+   - **Klonierung durch Replikation**: Die <mark style="background: #FFB86CA6;">Vektoren</mark>, die das DNA-Fragment enthalten, <mark style="background: #FFB86CA6;">werden in eine Wirtszelle (häufig eine Bakterienzelle) eingebracht</mark>. <mark style="background: #FFB86CA6;">Diese Zellen vermehren sich dann, und das eingebettete DNA-Fragment wird bei jeder Zellteilung kopiert</mark>, wodurch eine große Anzahl identischer DNA-Kopien entsteht.
+   - **Library Screening**: Die <mark style="background: #FFB86CA6;">einzelnen DNA-Fragmente werden katalogisiert</mark>, um später gezielt nach bestimmten Genen oder Sequenzen, wie z. B. dem Phosphattransporter, suchen zu können.
 ## DNA-Ligation und Klonierung in Vektoren:
-![[Pasted image 20241112100109.png#invert|300]]
-   - **Restriktionsverdau**: Die DNA-Fragmente und der Vektor werden mit einem Restriktionsenzym geschnitten, das spezifische Schnittstellen erkennt und schneidet (z. B. BamHI). So entstehen "klebrige Enden", die komplementär zueinander sind und leichter verbunden werden können.
-   - **Ligation**: Die geschnittenen Enden des DNA-Fragments und des Vektors werden durch ein Enzym namens [[Ligase]] miteinander verbunden. Dadurch entsteht ein rekombinantes Plasmid, das sowohl das Vektor-DNA als auch das Ziel-DNA-Fragment enthält.
+![[Pasted image 20241112100109.png#invert|500]]
+   - **Restriktionsverdau**: Die <mark style="background: #FFB86CA6;">DNA-Fragmente und der Vektor werden mit einem Restriktionsenzym geschnitten</mark>, das spezifische Schnittstellen erkennt und schneidet (z. B. BamHI). So entstehen "klebrige Enden", die komplementär zueinander sind und leichter verbunden werden können.
+   - **Ligation**: Die <mark style="background: #FFB86CA6;">geschnittenen Enden des DNA-Fragments und des Vektors</mark> werden durch ein Enzym namens [[Ligase]] miteinander <mark style="background: #FFB86CA6;">verbunden</mark>. <mark style="background: #FFB86CA6;">Dadurch entsteht ein rekombinantes Plasmid</mark>, das sowohl das Vektor-DNA als auch das Ziel-DNA-Fragment enthält.
    - **Transformation und Zellvermehrung**: Das rekombinante Plasmid wird in Bakterienzellen eingeführt, die sich anschließend teilen und das Plasmid bei jeder Teilung vervielfältigen. Dies führt zur Bildung vieler Klone, die alle das eingefügte DNA-Fragment enthalten.
 ## DNA-Klonierungsmethoden und Genbanken:
    - **DNA-Ligation** und **DNA-Klonierung mit Plasmidvektoren** sind grundlegende Schritte, bei denen die Ziel-DNA in einen Vektor integriert und in eine Wirtszelle eingebracht wird.
    - **Transformationsmethoden**: Verschiedene Methoden (z. B. Hitze- oder Elektroschock) werden verwendet, um die DNA in die Zelle zu transportieren.
    - **Selektion der Klone**: Nur die Zellen, die erfolgreich das Plasmid aufgenommen haben, werden ausgewählt. Dies kann durch Marker im Plasmid (z. B. Antibiotikaresistenzgene) erreicht werden.
-   - **Genbanken**: Die klonierten Fragmente werden in Vektoren wie Plasmiden, λ-Phagen, Cosmiden oder künstlichen Chromosomen (BACs, YACs) gespeichert, um später darauf zugreifen zu können.
+   - **Genbanken**: Die <mark style="background: #FFB86CA6;">klonierten Fragmente werden in Vektoren wie Plasmiden, λ-Phagen, Cosmiden oder künstlichen Chromosomen (BACs, YACs) gespeichert, um später darauf zugreifen zu können</mark>.
 ![[Pasted image 20241112100619.png#invert|400]]
 ### Vektor
-- Vektoren sind Werkzeuge in der Molekularbiologie, die als Träger fungieren, um DNA-Fragmente in eine Wirtszelle zu bringen. Sie können die eingefügte DNA nicht nur transportieren, sondern auch replizieren, sodass sie in nachfolgenden Zellgenerationen erhalten bleibt.
+- Vektoren sind Werkzeuge in der Molekularbiologie, die als Träger fungieren, um DNA-Fragmente in eine Wirtszelle zu bringen. Sie können die <mark style="background: #FFB86CA6;">eingefügte DNA nicht nur transportieren, sondern auch replizieren</mark>, sodass sie in nachfolgenden Zellgenerationen erhalten bleibt.
 - Z.B. Plasmide
 #### Plasmide
 Plasmide sind eine der am häufigsten verwendeten Vektoren in der Molekularbiologie, weil sie einfach zu manipulieren und zu replizieren sind.
 ![[Pasted image 20241119121135.png|200]]
-- **Struktur**: Plasmide bestehen aus einem zirkulären DNA-Molekül, das von chromosomaler DNA getrennt ist. Sie enthalten spezifische Regionen, die essenziell für ihre Funktion sind:
+- **Struktur**: Plasmide bestehen aus einem <mark style="background: #FFB86CA6;">zirkulären DNA-Molekül, das von chromosomaler DNA getrennt ist</mark>. Sie enthalten spezifische Regionen, die essenziell für ihre Funktion sind:
     - **Origin of Replication (ORI)**: Startpunkt für die Replikation. Dadurch kann das Plasmid eigenständig in der Zelle kopiert werden.
-    - **Region für DNA-Insertion**: Bereich, in den fremde DNA (z. B. Gene) eingefügt werden kann. Diese Region enthält oft eine sogenannte Multiple Cloning Site (MCS), die verschiedene Schnittstellen für Restriktionsenzyme bereitstellt.
-    - **Selektionsmarker**: Gene, die es ermöglichen, Zellen mit Plasmid von denen ohne Plasmid zu unterscheiden, wie etwa Antibiotikaresistenzgene.
+    - **Region für DNA-Insertion**: Bereich, in den fremde DNA (z. B. Gene) eingefügt werden kann. Diese Region <mark style="background: #FFB86CA6;">enthält oft eine sogenannte Multiple Cloning Site (MCS), die verschiedene Schnittstellen für Restriktionsenzyme</mark> bereitstellt.
+    - **Selektionsmarker**: Gene, die es ermöglichen, Zellen mit Plasmid von denen ohne Plasmid zu unterscheiden, wie etwa <mark style="background: #FFB86CA6;">Antibiotikaresistenzgene</mark>.
 **Eigenschaften**:
 - **Replikation**: Plasmide werden vor jeder Zellteilung verdoppelt. Dadurch wird sichergestellt, dass Tochterzellen mindestens eine Kopie erhalten.
-- **Größe**: Plasmide können DNA-Fragmentgrößen von etwa 1 kb bis 200 kb aufnehmen.
+- **Größe**: Plasmide <mark style="background: #FFB86CA6;">können DNA-Fragmentgrößen von etwa 1 kb bis 200 kb aufnehmen</mark>.
 - **Kopienzahl**: Plasmide existieren in Zellen in unterschiedlichen Kopienzahlen. High-copy-Plasmide (z. B. pUC19) können in einer Zelle Hunderte Kopien haben, während low-copy-Plasmide (z. B. pBR322) nur wenige Kopien besitzen.
 #### Anforderungen an Vektoren
 Ein effektiver Vektor muss bestimmte Eigenschaften aufweisen, um für die DNA-Klonierung geeignet zu sein:
-1. **Origin of Replication (ORI)**: Notwendig, damit das Plasmid eigenständig repliziert werden kann.
-![[Pasted image 20241119121246.png#invert|300]]
+1. **Origin of Replication (ORI)**: Notwendig, <mark style="background: #FFB86CA6;">damit das Plasmid eigenständig repliziert werden kann</mark>.
+![[Pasted image 20241119121246.png#invert|500]]
 1. **Region für DNA-Insertion**: Eine MCS (Multiple Cloning Site) mit spezifischen Schnittstellen für Restriktionsenzyme ermöglicht das gezielte Einfügen fremder DNA.
 ![[Pasted image 20241119121303.png#invert|300]]
 1. **Selektionsmarker**: Ermöglicht die Identifikation von Zellen, die das Plasmid enthalten. Beispiel: Antibiotikaresistenzgene wie _amp_ (Ampicillin-Resistenz).
@@ -45,52 +45,51 @@ Ein effektiver Vektor muss bestimmte Eigenschaften aufweisen, um für die DNA-Kl
     - Zellen, die das Plasmid aufgenommen haben, werden auf einem Medium mit dem entsprechenden Antibiotikum kultiviert.
 4. **Vermehrung und Expression**:
     - Die Wirtszellen vermehren sich, replizieren das Plasmid und exprimieren bei Bedarf die eingefügte DNA.
-
 ## Transformation in der DNA-Klonierung
 - Transformation ist der Prozess, bei dem freie DNA (wie Plasmid-DNA) in Zellen (z. B. Bakterien, Pflanzen oder tierischen Zellen) eingeführt wird. Es gibt verschiedene Methoden, um dies zu erreichen:
 ### Hitzeschock
-1. Zellen werden in einer Calciumchlorid (CaCl₂)-Lösung inkubiert, wodurch sie kompetent werden, also DNA aufnehmen können.
-2. Die Zugabe von Ca²⁺-Ionen neutralisiert die negative Ladung der Zellmembran und der DNA, wodurch die DNA näher an die Membran gebracht wird.
-3. Ein Temperaturwechsel (Hitzeschock) wird durchgeführt, indem die Zellen kurz auf 42°C erhitzt werden. Dies führt zu:
+1. <mark style="background: #FFB86CA6;">Zellen werden in einer Calciumchlorid (CaCl₂)-Lösung inkubiert, wodurch sie kompetent werden</mark>, also DNA aufnehmen können.
+2. Die <mark style="background: #FFB86CA6;">Zugabe von Ca²⁺-Ionen neutralisiert die negative Ladung</mark> der Zellmembran und der DNA, wodurch die DNA näher an die Membran gebracht wird.
+3. Ein Temperaturwechsel (<mark style="background: #FFB86CA6;">Hitzeschock</mark>) wird durchgeführt, indem die Zellen <mark style="background: #FFB86CA6;">kurz auf 42°C erhitzt</mark> werden. Dies führt zu:
         1. **Schwellung** der Zellen.
         2. Bildung kleiner Poren in der Membran.
         3. Unterdruck, der die DNA ins Zellinnere zieht.
-4. Nach dem Schock werden die Zellen auf Eis gelegt, um die Membran zu stabilisieren.
-- **Effizienz**: Nur etwa 1 von 10.000 Zellen nimmt die DNA auf, daher ist diese Methode relativ ineffizient.
+4. Nach dem Schock werden die Zellen <mark style="background: #FFB86CA6;">auf Eis gelegt, um die Membran zu stabilisieren</mark>.
+- **Effizienz**: <mark style="background: #FFB86CA6;">Nur etwa 1 von 10.000 Zellen nimmt die DNA auf</mark>, daher ist diese Methode relativ ineffizient.
 - **Schema**: Nach der Transformation werden die Zellen auf einem Antibiotikum-haltigen Medium ausgestrichen, um transformierte Kolonien zu selektieren.
 ### Elektroporation
-1. Kompetente Zellen werden in einer Suspension mit der DNA in eine Elektroporationsküvette gegeben.
-2. Ein elektrisches Feld (z. B. 2000 V für etwa 1 Millisekunde) wird angelegt.
-3. Der elektrische Impuls erzeugt eine kurzfristige **Permeabilisierung** der Zellmembran:
+1. <mark style="background: #FFB86CA6;">Kompetente Zellen</mark> werden in einer Suspension <mark style="background: #FFB86CA6;">mit der DNA in eine Elektroporationsküvette</mark> gegeben.
+2. Ein <mark style="background: #FFB86CA6;">elektrisches Feld</mark> (z. B. 2000 V für etwa 1 Millisekunde) wird <mark style="background: #FFB86CA6;">angelegt</mark>.
+3. Der elektrische Impuls <mark style="background: #FFB86CA6;">erzeugt eine kurzfristige Permeabilisierung der Zellmembran</mark>:
         - Es bilden sich temporäre Poren in der Membran.
-        - Die Fremd-DNA gelangt durch die Poren ins Zellinnere.
+        - Die <mark style="background: #FFB86CA6;">Fremd-DNA gelangt durch die Poren ins Zellinnere</mark>.
 4. Nach dem Impuls schließt sich die Membran wieder und bleibt intakt.
-- **Effizienz**: Höher als beim Hitzeschock, da die Zellen gezielt geöffnet werden.
-- **Vorteil**: Funktioniert auch für dickere Zellwände, z. B. bei Pflanzenzellen.
+- **Effizienz**: <mark style="background: #FFB86CA6;">Höher als beim Hitzeschock</mark>, da die Zellen gezielt geöffnet werden.
+- **Vorteil**: <mark style="background: #FFB86CA6;">Funktioniert auch für dickere Zellwände</mark>, z. B. bei Pflanzenzellen.
 ## Selektion von transformierten Zellen
-Die Selektion ist ein essenzieller Schritt nach der Transformation, um Zellen zu identifizieren, die das Plasmid aufgenommen haben.
+Die Selektion ist ein essenzieller Schritt nach der Transformation, um Zellen zu identifizieren, die das <mark style="background: #FFB86CA6;">Plasmid aufgenommen haben</mark>.
 1. **Prozess**:
     - Ein rekombinantes Plasmid wird in kompetente _E. coli_-Zellen eingebracht (z. B. durch Hitzeschock oder Elektroporation).
-    - Die Zellen werden auf einem Nährboden mit einem Selektionsmittel kultiviert, z. B. einem Antibiotikum wie Ampicillin.
+    - Die Zellen werden auf einem <mark style="background: #FFB86CA6;">Nährboden mit einem Selektionsmittel kultiviert, z. B. einem Antibiotikum</mark> wie Ampicillin.
 2. **Mechanismus**:
     - **Transformierte Zellen** (Zellen, die das Plasmid aufgenommen haben) überleben, da sie ein Antibiotikaresistenzgen (z. B. AmpR für Ampicillin) tragen.
     - **Nicht-transformierte Zellen** sterben auf dem Antibiotika-haltigen Medium ab, da ihnen die Resistenz fehlt.
 3. **Ergebnis**:
     - Kolonien auf dem Agar repräsentieren transformierte Zellen, die das Plasmid erfolgreich aufgenommen haben.
 ## Selektion rekombinanter Plasmide
-Um sicherzustellen, dass die eingefügte Fremd-DNA tatsächlich in das Plasmid integriert wurde (rekombinantes Plasmid), wird eine zweite Selektion durchgeführt.
+Um sicherzustellen, dass die eingefügte <mark style="background: #FFB86CA6;">Fremd-DNA tatsächlich in das Plasmid integriert wurde</mark> (rekombinantes Plasmid), wird eine zweite Selektion durchgeführt.
 ### **Blue-White-Screening (Blau-Weiß-Selektion)**:
-Dieses Verfahren basiert auf der Funktion des lacZ-Gens, das für das Enzym **β-Galactosidase** codiert. Dieses Enzym spaltet das Substrat X-Gal (eine synthetische Verbindung), wodurch ein blauer Farbstoff entsteht.
+Dieses Verfahren basiert auf der Funktion des lacZ-Gens, das für das Enzym **β-Galactosidase** codiert. Dieses Enzym spaltet das Substrat X-Gal (eine synthetische Verbindung), wodurch ein <mark style="background: #FFB86CA6;">blauer Farbstoff entsteht</mark>.
 1. **Funktionsweise**:
     - Das Plasmid enthält eine **Multiple Cloning Site (MCS)** innerhalb des lacZ-Gens.
-    - Wenn Fremd-DNA in die MCS eingefügt wird, wird das lacZ-Gen unterbrochen, und die Zelle produziert keine β-Galactosidase.
+    - <mark style="background: #FFB86CA6;">Wenn Fremd-DNA in die MCS eingefügt wird, wird das lacZ-Gen unterbrochen, und die Zelle produziert keine β-Galactosidase</mark>.
     - Ohne Unterbrechung des lacZ-Gens bleibt die β-Galactosidase funktional.
 2. **Screening**:
     - Die transformierten Zellen werden auf einem Agar mit Ampicillin, IPTG und X-Gal kultiviert.
         - **IPTG** ist ein Induktor, der die Expression des lacZ-Gens aktiviert.
         - **X-Gal** wird von β-Galactosidase gespalten und erzeugt eine blaue Farbe.
-    - **Blaue Kolonien**: Nicht-rekombinante Plasmide (lacZ aktiv, keine Fremd-DNA integriert).
-    - **Weiße Kolonien**: Rekombinante Plasmide (lacZ inaktiv, Fremd-DNA integriert).
+    - **Blaue Kolonien**: <mark style="background: #FFB86CA6;">Nicht-rekombinante Plasmide</mark> (lacZ aktiv, keine Fremd-DNA integriert).
+    - **Weiße Kolonien**: <mark style="background: #FFB86CA6;">Rekombinante Plasmide</mark> (lacZ inaktiv, Fremd-DNA integriert).
 3. **Vorteil**:
     - Dies erlaubt eine schnelle und visuelle Unterscheidung zwischen Zellen mit rekombinanten und nicht-rekombinanten Plasmiden.
 ### **Ergebnis der Selektion**
@@ -115,7 +114,7 @@ Die Selektion wird verwendet, um sicherzustellen, dass die Zellen ein korrekt re
 - Rekombinante Plasmide wachsen nur auf LB+Amp, nicht auf LB+Amp+Km.
 - Nicht-rekombinante Plasmide wachsen auf beiden Medien.
 ## Restriktionsanalyse von Plasmiden
-Die Restriktionsanalyse wird verwendet, um zu bestätigen, dass Fremd-DNA in ein Plasmid integriert wurde und die korrekte Größe hat.
+Die <mark style="background: #FFB86CA6;">Restriktionsanalyse wird verwendet, um zu bestätigen, dass Fremd-DNA in ein Plasmid integriert wurde und die korrekte Größe hat</mark>.
 ### **Ablauf:**
 1. **Restriktionsenzyme** schneiden DNA an spezifischen Stellen.
    - Die genaue Position der Schnittstellen hängt von der Sequenz ab.
@@ -129,7 +128,7 @@ Die Restriktionsanalyse wird verwendet, um zu bestätigen, dass Fremd-DNA in ein
   - Plasmid A enthält ein Insert → zeigt zusätzlich eine Band, die der Größe des Inserts entspricht.
   - Plasmide B und C enthalten kein Insert → zeigen nur die Banden des Vektors.
 ## Genbanken in Plasmiden
-Eine Genbank ist eine Sammlung von DNA-Fragmenten, die das gesamte Genom eines Organismus repräsentieren.
+<mark style="background: #FFB86CA6;">Eine Genbank ist eine Sammlung von DNA-Fragmenten, die das gesamte Genom eines Organismus repräsentieren</mark>.
 ### **Herausforderungen bei Plasmiden:**
 1. **Effizienz der Transformation:**
    - *E. coli* kann nur begrenzte Mengen an Plasmid-DNA aufnehmen.

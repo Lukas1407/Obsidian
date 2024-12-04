@@ -7,6 +7,8 @@
 - [[Metabolismus]]
 - [[Biomolekülen]]
 - [[Proteine]]
+- [[Aminosäuren]]
+- [[Peptidbindung]]
 - [[Kohlenhydrate]]
 - [[Lipide]]
 - [[Lipide]], [[Kohlenhydrate]] und [[Proteine]] bilden die 3 Makromoleküle der Nahrungsbestandteile
