@@ -124,15 +124,14 @@ Die <mark style="background: #FFB86CA6;">Restriktionsanalyse wird verwendet, um 
    - Die Position der Banden wird mit einem **Molekulargewichtsmarker** verglichen.
 ### **Ergebnis:**
 ![[annotated_Pasted image 20241119123021|400]]
-[[Notes/University Lectures/Current/Molekularbiologie/images/Pasted image 20241119123021.png#invert|400]]
   - Plasmid A enthält ein Insert → zeigt zusätzlich eine Band, die der Größe des Inserts entspricht.
   - Plasmide B und C enthalten kein Insert → zeigen nur die Banden des Vektors.
 ## Genbanken in Plasmiden
 <mark style="background: #FFB86CA6;">Eine Genbank ist eine Sammlung von DNA-Fragmenten, die das gesamte Genom eines Organismus repräsentieren</mark>.
 ### **Herausforderungen bei Plasmiden:**
 1. **Effizienz der Transformation:**
-   - *E. coli* kann nur begrenzte Mengen an Plasmid-DNA aufnehmen.
-   - Die Transformationseffizienz ist niedrig, was bedeutet, dass nur wenige Kolonien pro Platte erhalten werden.
+   - <mark style="background: #FFB86CA6;">E. coli kann nur begrenzte Mengen an Plasmid-DNA aufnehmen</mark>.
+   - Die <mark style="background: #FFB86CA6;">Transformationseffizienz ist niedrig</mark>, was bedeutet, dass nur wenige Kolonien pro Platte erhalten werden.
 2. **Größe des Genoms:**
    - Das menschliche Genom ist etwa 3 Milliarden Basenpaare groß.
    - Plasmide können nur kleine DNA-Stücke (z. B. 20 kb) aufnehmen.
@@ -147,25 +146,25 @@ Die <mark style="background: #FFB86CA6;">Restriktionsanalyse wird verwendet, um 
 #### **Beispiel aus der Tabelle:**
 - Für das menschliche Genom (\( b = 3.000.000 \) kb) sind bei 20 kb Fragmentgröße etwa **150.000 Klone** notwendig.
 ## DNA-Genbanken in λ-Phagen
-λ-Phagen sind nützlich, um große DNA-Fragmentbibliotheken zu erstellen, da sie bis zu 20 kb Fremd-DNA aufnehmen können.
+λ-Phagen sind nützlich, um <mark style="background: #FFB86CA6;">große DNA-Bibliotheken zu erstellen, da sie bis zu 20 kb Fremd-DNA</mark> aufnehmen können.
 ### Ersetzung der "Replaceable Region":
-- Der λ-Phage hat eine entbehrliche Region in seinem Genom, die entfernt werden kann.
-- Diese Region wird durch Fremd-DNA ersetzt, die in die Phagenpartikel verpackt wird.
+- Der λ-Phage hat eine <mark style="background: #FFB86CA6;">entbehrliche Region in seinem Genom, die entfernt werden kann</mark>.
+- Diese Region wird <mark style="background: #FFB86CA6;">durch Fremd-DNA ersetzt</mark>, die in die Phagenpartikel verpackt wird.
 - Das resultierende rekombinante Phagen-DNA-Molekül wird bei Infektion in Bakterienzellen exprimiert.
 
-λ-Phagen können in Bakterienzellen (z. B. _E. coli_) entweder den lytischen oder den lysogenen Zyklus durchlaufen:
+λ-Phagen <mark style="background: #FFB86CA6;">können in Bakterienzellen (z. B. E. coli) entweder den lytischen oder den lysogenen</mark> Zyklus durchlaufen:
 ### **Lytischer Zyklus**:
 - **Prozess**:
-    1. Der Phage bindet an die Wirtszelle und injiziert seine DNA.
-    2. Die Phagen-DNA übernimmt die Kontrolle über die Zellmaschinerie.
-    3. Neue Phagen-DNA und -Proteine werden synthetisiert und zu funktionsfähigen Virionen zusammengesetzt.
-    4. Die Wirtszelle lysiert, setzt mehr als 100 neue Phagen frei und stirbt.
-- **Ergebnis**: Schnelle Vermehrung und Freisetzung von Phagen.
+    1. Der Phage <mark style="background: #FFB86CA6;">bindet an die Wirtszelle und injiziert seine DNA</mark>.
+    2. Die Phagen-DNA <mark style="background: #FFB86CA6;">übernimmt die Kontrolle</mark> über die Zelle.
+    3. Neue Phagen-DNA und -Proteine werden <mark style="background: #FFB86CA6;">synthetisiert</mark> und zu funktionsfähigen Virionen zusammengesetzt.
+    4. Die Wirtszelle lysiert, setzt mehr <mark style="background: #FFB86CA6;">als 100 neue Phagen</mark> frei und stirbt.
+- **Ergebnis**: <mark style="background: #FFB86CA6;">Schnelle Vermehrung und Freisetzung</mark> von Phagen.
 ### Lysogener Zyklus:
 - **Prozess**:
-    1. Nach der Injektion integriert sich die Phagen-DNA in das bakterielle Chromosom und wird zu einem **Prophagen**.
-    2. Die Phagen-DNA wird bei jeder Zellteilung passiv repliziert.
-    3. Unter bestimmten Bedingungen (z. B. Stress) kann der Prophage den lysogenen Zyklus verlassen und in den lytischen Zyklus übergehen.
+    1. Nach der Injektion <mark style="background: #FFB86CA6;">integriert sich die Phagen-DNA in das bakterielle Chromosom und wird zu einem Prophagen</mark>.
+    2. Die <mark style="background: #FFB86CA6;">Phagen-DNA wird bei jeder Zellteilung passiv repliziert</mark>.
+    3. Unter bestimmten Bedingungen (z. B. Stress) kann der Prophage den <mark style="background: #FFB86CA6;">lysogenen Zyklus verlassen und in den lytischen Zyklus übergehen</mark>.
 - **Ergebnis**: Langfristige Erhaltung der Phagen-DNA ohne Zelltod.
 ### Erstellen von DNA-Genbanken mit λ-Phage
 DNA-Genbanken mit λ-Phagen eignen sich für die Klonierung großer DNA-Fragmente, z. B. für genomische Bibliotheken.
@@ -185,26 +184,26 @@ DNA-Genbanken mit λ-Phagen eignen sich für die Klonierung großer DNA-Fragment
     - λ-Phagen können größere DNA-Fragmente (ca. 20 kb) aufnehmen als Plasmide (max. ca. 10 kb).
     - Sie erzeugen eine höhere Anzahl an Klonen (Plaques) pro Mikrogramm DNA.
 - **Platzbedarf**:
-    - Für die Klonierung des menschlichen Genoms benötigt man nur 20-30 Petri-Schalen mit λ-Phagen, aber tausende Platten bei der Verwendung von Plasmiden.
+    - Für die Klonierung des menschlichen Genoms benötigt man nur <mark style="background: #FFB86CA6;">20-30 Petri-Schalen mit λ-Phagen, aber tausende Platten bei der Verwendung von Plasmiden</mark>.
 ### Überlappende Klone und Genomabdeckung
 Die Erstellung einer DNA-Genbank erfordert eine ausreichende Anzahl von Klonen, um das gesamte Genom abzudecken:
 - **Überlappende Klone**:
-    - DNA-Fragmente überlappen, um sicherzustellen, dass alle Regionen des Genoms repräsentiert sind.
-    - Überlappende Klone ermöglichen eine lückenlose Kartierung des Genoms durch "chromosome walking".
+    - <mark style="background: #FFB86CA6;">DNA-Fragmente überlappen, um sicherzustellen, dass alle Regionen des Genoms repräsentiert sind</mark>.
+    - Überlappende Klone <mark style="background: #FFB86CA6;">ermöglichen eine lückenlose Kartierung des Genoms</mark> durch "chromosome walking".
 - **Berechnung der Anzahl Klone**:
     - Beispiel: Um 95 % des menschlichen Genoms zu repräsentieren, sind ca. 150.000 verschiedene rekombinante λ-Phagen nötig.
 ## DNA-Genbanken in Cosmiden
-**Cosmide** sind Hybridvektoren, die Eigenschaften von Plasmiden und Phagen kombinieren. Sie können größere DNA-Inserts als Plasmide aufnehmen, bis zu **45 kb**.
-#### **Aufbau und Funktion von Cosmiden:**
+**Cosmide** sind Hybridvektoren, die <mark style="background: #FFB86CA6;">Eigenschaften von Plasmiden und Phagen kombinieren</mark>. Sie können größere DNA-Inserts als Plasmide aufnehmen, <mark style="background: #FFB86CA6;">bis zu 45 kb.</mark>
+### **Aufbau und Funktion von Cosmiden:**
 1. **COS-Sites**:
-    - Sie stammen von λ-Phagen und ermöglichen die Verpackung der DNA in Phagenhüllen.
-    - Erlauben die effiziente Infektion von Wirtszellen (_E. coli_).
+    - Sie <mark style="background: #FFB86CA6;">stammen von λ-Phagen und ermöglichen die Verpackung der DNA in Phagenhüllen</mark>.
+    - Erlauben die <mark style="background: #FFB86CA6;">effiziente Infektion von Wirtszellen</mark> (_E. coli_).
 2. **Plasmid-Eigenschaften**:
-    - Cosmide enthalten ein **ORI (Origin of Replication)**, das die Replikation in Bakterienzellen ermöglicht.
-    - Sie tragen ein Antibiotikaresistenzgen (z. B. Ampicillin), um transformierte Zellen zu selektieren.
+    - Cosmide <mark style="background: #FFB86CA6;">enthalten ein ORI</mark> (Origin of Replication), das die Replikation in Bakterienzellen ermöglicht.
+    - Sie <mark style="background: #FFB86CA6;">tragen ein Antibiotikaresistenzgen</mark> (z. B. Ampicillin), um transformierte Zellen zu selektieren.
 3. **Polylinker**:
-    - Enthält Schnittstellen für Restriktionsenzyme, an denen die Fremd-DNA eingefügt wird.
-#### **Prozess der Klonierung in Cosmiden:**
+    - Enthält <mark style="background: #FFB86CA6;">Schnittstellen für Restriktionsenzyme, an denen die Fremd-DNA eingefügt</mark> wird.
+### **Prozess der Klonierung in Cosmiden:**
 1. **Schritt 1: Schneiden und Ligieren**:
     - Die Cosmide und die DNA-Fragmente (35-45 kb) werden mit Restriktionsenzymen geschnitten.
     - Die Fragmente werden mit DNA-Ligase in das Cosmid-Vektor-DNA integriert.
@@ -213,7 +212,7 @@ Die Erstellung einer DNA-Genbank erfordert eine ausreichende Anzahl von Klonen, 
 3. **Schritt 3: Infektion und Selektion**:
     - Die Phagen infizieren _E. coli_-Zellen.
     - Transformierte Zellen werden auf Ampicillin-haltigem Medium selektiert.
-#### **Vorteile von Cosmiden:**
+### **Vorteile von Cosmiden:**
 - Größere Insertkapazität (bis zu 45 kb) im Vergleich zu Plasmiden.
 - Einfacher zu handhaben als Phagenvektoren.
 - Effiziente Klonierung von großen Genen oder Genomfragmenten.

@@ -9,9 +9,7 @@
 - Die Basen der beiden Polynukleotide sind über [[Wasserstoffbrücken]] verbunden 
 - Die beiden Polynukleotidstränge sind gegenläufig angeordnet, was bedeutet, dass ein Strang in 5’-3’-Richtung und der andere in 3’-5’-Richtung verläuft.
 ### Chemischer Aufbau
-
 ![[annotated_Pasted image 20240415134654|500]]
-[[Notes/University Lectures/Current/Anatomie und Physiologie/notes/images/Pasted image 20240415134654.png#invert|500]]
 ### Windungen
 - Eine Windung der Helix enthält ca. 10,5 BP
 - Die Doppelhelix hat 2 verschiedene Furchen

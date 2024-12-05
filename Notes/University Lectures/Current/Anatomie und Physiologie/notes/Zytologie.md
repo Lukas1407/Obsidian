@@ -33,7 +33,7 @@
 - **[[Mitochondrien]]**: Kraftwerke der Zelle, produzieren [[Adenosintriphosphat (ATP)|ATP]].
 - **[[Lysosomen]]**: Verdauen zellulären Abfall.
 - **Peroxisomen**: Abbau von Fettsäuren und Entgiftung.
-- **Zytoskelett**: Stabilität und Beweglichkeit der Zelle.
+- [[Zytoskelett]]: Stabilität und Beweglichkeit der Zelle.
 - **[[Ribosomen]]**: Proteinbiosynthese.
 ### Viren
 - Viren sind keine Zellen, sondern organische Strukturen, die aus Nukleinsäuren (DNA oder RNA) und Proteinen bestehen.

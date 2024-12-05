@@ -12,7 +12,6 @@ Inside the membrane are [[Transmembrane Proteins]].
 - **Sphingolipide**: Beteiligt an der Signalübertragung und Zellerkennung.
 - **Kohlenhydrate**: Beteiligt an der Zellerkennung und Immunantwort, Bestandteil der Glykokalix.
 - **Proteine**: Dienen dem Stofftransport, der Signalübertragung und der Zelladhäsion.
-
 ## Doppellipidschicht
 ![[Pasted image 20240130164041.jpg#invert|700]]
 - Die Zellmembran besteht aus einer Doppellipidschicht, die hauptsächlich aus [[Lipide#Phospholipide|Phospholipiden]] besteht.
