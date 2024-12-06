@@ -251,5 +251,265 @@ Dieses Verfahren nutzt die **Ableitung der Texturkoordinaten** im Bildschirmraum
 #### Anwendung:
 1. In Raytracing-Szenen ermöglicht das Verfahren, **schärfere und genauere Texturdetails** darzustellen, indem es die Texturdetails besser an die Pixelauflösung anpasst.
 2. Für dynamische Szenen wird häufig die zweite Methode verwendet, da sie präzisere Ergebnisse bei unterschiedlichen Blickwinkeln liefert.
+## Texturierungstechniken
+### **Diffuse Textur**
+![[Pasted image 20241206114657.png|400]]
+- **Definition**: Bezieht sich auf die Eigenfarbe eines Materials, also die Farbe, die unabhängig von Spiegelungseffekten bleibt.
+- **Beispiel**: Im Phong-Beleuchtungsmodell wird die diffuse Reflexion durch den Koeffizienten $k_d$ bestimmt, welcher hier aus einer Textur gelesen wird.
+- **Formel**:
+  $$
+  I = k_a \cdot I_L + k_d \cdot I_L \cdot (N \cdot L) + k_s \cdot I_L \cdot (R \cdot V)^n
+  $$
+  - $k_a$: Ambient-Beleuchtung (Umgebungslicht).
+  - $k_d$: Diffuse Reflexion.
+  - $k_s$: Spekularer Reflexionsanteil.
+  - $I_L$: Intensität der Lichtquelle.
+  - $N$: Normale.
+  - $L$: Richtung zur Lichtquelle.
+  - $R$: Reflektionsvektor.
+  - $V$: Richtung zum Betrachter.
+  - $n$: Glanzexponent (Kontrolle der Streuung der Reflexion).
+### **Bump Mapping / Normal Mapping**
+- **Ziel**: Erzeugung von Oberflächendetails durch Manipulation der Normalen ohne geometrische Änderung der Oberfläche.
+![[Pasted image 20241206114727.png#invert|300]]
+- **Unterschiede**:
+  - **Bump Mapping**: Verändert die Helligkeitswerte basierend auf einer Höhe (Graustufen-Textur).
+  - **Normal Mapping**: Verwendet eine Farbkodierung (RGB) zur Definition der Normalen.
+- **Vorgehen**:
+  - Die Normale $N$ wird durch Texturen modifiziert, was zu Änderungen im Beleuchtungsmodell führt.
+  - Die berechneten Werte für $(N \cdot L)$ und $(R \cdot V)^n$ ändern sich, was die Oberflächendetails beeinflusst.
+### **Displacement Mapping**
+![[Pasted image 20241206114809.png|300]]
+- **Unterschied zu Bump/Normal Mapping**:
+  - **Displacement Mapping** verändert die tatsächliche Geometrie der Oberfläche (z. B. durch GPU-Tessellation).
+  - Im Gegensatz zu Bump Mapping wird die Oberfläche physisch verschoben.
+- **Beispiel**:
+  - Eine flache Oberfläche wird durch eine Höhenkarte (Heightmap) zu einer welligen oder strukturierten Oberfläche transformiert.
+- **Vorteil**:
+  - Realistische Silhouetten, da die Geometrie tatsächlich angepasst wird.
+### **Inverse Displacement Mapping**
+- **Prinzip**: Eine Approximation von Displacement Mapping.
+- **Merkmale**:
+  - Verwendet Parallax Occlusion Mapping, um Details in einer Textur zu simulieren, ohne die Geometrie zu ändern.
+  - Schnelle Berechnung, aber problematisch bei Silhouetten.
+### **Gloss-Map / Gloss-Textur**
+- **Definition**: Steuert die Stärke und Streuung der spekularen Reflexion.
+- **Beispiel**: Im Phong-Modell wird $k_s$ aus der Textur gelesen.
+- **Effekt**:
+  - Oberflächen erscheinen glänzender oder matter abhängig vom Texturwert.
+  - Der Glanzexponent $n$ wird ebenfalls aus einer Textur ausgelesen.
+### **Ambient Occlusion**
+- **Definition**: Simuliert den Effekt, wie viel Umgebungslicht (diffuses Licht) einen Punkt auf einer Oberfläche erreicht.
+- **Eigenschaften**:
+  - Bestimmt durch Raycasting, wobei geprüft wird, welche Strahlen keine Geometrie in der Umgebung treffen.
+  - Vorberechnung ist oft notwendig und wird pro Vertex oder pro Pixel gespeichert.
+- **Vorteil**:
+  - Fügt Tiefe und Schatten hinzu, ohne teure Echtzeitberechnungen durchzuführen.
+## Textur-Atlas
+![[Pasted image 20241206115340.png#invert|400]]
+- **Definition**: Ein Textur-Atlas ist eine spezielle (bijektive) Parametrisierung, bei der jeder Oberflächenpunkt eines 3D-Modells genau einer Stelle in der Textur zugeordnet wird.
+- **Besonderheiten**:
+  - Jeder Punkt in der Textur wird nur einmal genutzt, außer bei symmetrischen Objekten.
+  - Die Erstellung erfordert das Zerschneiden und „Ausrollen“ des 3D-Modells (Netz), was zu Verzerrungen führen kann, abhängig von der Anzahl und Lage der Schnitte.
+- **Anwendungen**:
+  - Effizientes Texturieren von komplexen Modellen.
+  - Speichern von Oberflächendaten (z. B. Ambient Occlusion, Normal Maps).
+  - "Painting": Direktes Erstellen einer Textur auf dem 3D-Modell.
+## Transparenz und Alpha-Test
+- **Transparenz**:
+  - Rasterbilder und Texturen speichern häufig Transparenz in einem **Alpha-Kanal** (RGBA-Format).
+  - Der Alpha-Wert ($\alpha$) bestimmt die Opazität (0 = transparent, 1 = undurchsichtig).
+- **Alpha-Test**:
+  - Verwirft Fragmente basierend auf einem Schwellenwert ($\alpha < \text{threshold}$).
+  - Nützlich für semitransparente Objekte oder Maskierungen.
+- **Verwendung**:
+  - Raytracing: Alpha-Kanal (z. B. $k_t$) zur Bestimmung der Transparenz eines Oberflächenpunktes.
+  - Rasterisierung: Erzeugung von Aussparungen oder Maskeneffekten durch Alpha-Tests.
+## Impostors
+![[Pasted image 20241206115414.png|300]]
+- **Definition**: Impostors sind texturierte Polygone, die stets senkrecht zur Kamera ausgerichtet sind.
+- **Vorteile**:
+  - Sehr effizient für weit entfernte Objekte, die keine detaillierte Geometrie benötigen (z. B. Wolken, Rauch, Funken).
+  - Reduziert die Renderkosten erheblich, da nur ein einfaches, flaches Polygon verwendet wird.
+- **Beispiele**:
+  - Darstellung von Partikelsystemen in Spielen oder Animationen.
+  - Wolken, die sich nicht dynamisch verändern, aber realistisch aussehen sollen.
+## 3D-Texturen für Oberflächen
+- **2D-Texturen**:
+  - Probleme wie der „Tapeten-Effekt“ entstehen, wenn Texturen wiederholt werden.
+  - Schwierige Parametrisierung bei komplexen Objekten.
+- **3D-Texturen**:
+  - Volumendaten, bei denen jeder Punkt im Volumen eigene Texturkoordinaten hat.
+  - Vorteil: Keine Probleme mit Parametrisierung, da die Textur direkt im Volumen gespeichert wird.
+  - Nachteil: Hoher Speicherbedarf (z. B. $512^3$ RGB = 384 MB).
+- **Verwendung**:
+  - „Herausschneiden“ einer Skulptur durch Texturkoordinaten-Zuweisung.
+  - Volumen-Rendering von inneren Strukturen wie Organen oder Materialdichte.
+### 3D-Texturen und Volumenvisualisierung
+- **Definition**: Darstellung von Simulations- oder Messdaten in Form von 3D-Texturen.
+- **Beispiele**:
+  - **Medizin**: Röntgenbilder, CT- oder MRT-Scans.
+  - **Geowissenschaften**: Dichteverteilung im Erdinneren.
+  - **Wettermodelle**: Feuchtigkeitsverteilung in der Atmosphäre.
+- **Voxels**:
+  - Speicherung in Voxeln (3D-Pixeln), oft in regelmäßigen Gitterstrukturen.
+  - Geeignet für zeitabhängige Daten (4D-Daten mit Zeitkomponente).
+## Environment Mapping
+**Motivation**  
+- Environment Mapping ermöglicht die Darstellung reflektierender Objekte mit Spiegelungen einer Umgebung, ohne dass diese Umgebung geometrisch repräsentiert werden muss.  
+- Es ist eine schnelle Approximation für Reflexionen und ersetzt komplexe Raytracing-Berechnungen, indem das Bild der Umgebung in einer Textur gespeichert wird.
+
+**Grundprinzip**  
+1. **Reflexionsrichtung berechnen**:  
+   - Die Richtung $r$ eines Reflexionsstrahls wird basierend auf der Normale $n$ und der Sichtvektorrichtung $v$ am Objekt berechnet.  
+   $$
+   r = 2 (n \cdot v) n - v
+   $$
+2. **Zugriff auf Environment Map**:  
+   - Die Richtung $r$ wird in Texturkoordinaten umgewandelt, um die passende Farbe aus der Umgebungstextur (Environment Map) zu lesen.
+**Annahmen und Einschränkungen**  
+- Nur die Richtung $r$ wird verwendet, ohne Berücksichtigung der Entfernung.  
+  - Diese Vereinfachung ist akzeptabel, wenn die Umgebung weit entfernt ist (z. B. Himmel oder weite Landschaften).
+- Die Umgebung wird auf der inneren Oberfläche einer virtuellen Kugel abgebildet.
+**Parametrisierungen**  
+- **Latitude/Longitude-Maps**:  
+  - Die Kugel wird durch Polarkoordinaten parametriert:
+    - $\theta$: Polarwinkel (0 bis $\pi$).
+    - $\phi$: Azimuthwinkel (0 bis $2\pi$).  
+  - Nachteile:
+    - Ungleichmäßige Verteilung der Texturdaten, besonders an den Polen.
+    - Höherer Rechenaufwand bei der Umrechnung von $r$ in Texturkoordinaten.
+- **Sphere Mapping**:  
+  - Darstellung der Umgebung auf einer virtuellen Spiegelkugel.  
+  - Bild der Kugel wird als Texture verwendet (z. B. „chrome ball“ Methode).
+  - Vorteil: Sehr einfach umzusetzen.
+  - Nachteil: Verzerrungen bei ungleichmäßigen Oberflächen.
+**Hardwareeinsatz**  
+- Environment Mapping wird oft mit GPU-Hardware beschleunigt, besonders bei Echtzeit-Anwendungen wie Spielen.  
+- Beim Raytracing wird das Licht aus der Environment Map abgerufen, wenn ein Reflexionsstrahl kein weiteres Objekt trifft.
+### Sphere Mapping
+**Definition**  
+Sphere Mapping ist eine Technik des Environment Mapping, bei der eine Umgebung auf die Oberfläche einer virtuellen Spiegelkugel projiziert wird, um Reflexionen auf Objekten darzustellen.
+**Berechnung der Texturkoordinaten**  
+1. **Gegebene Daten**:  
+   - **Betrachtungsrichtung** $v$: Richtung zur Kamera.  
+   - **Oberflächennormale** $n_x$: Normale des Objekts an einem Punkt.  
+   - **Reflexionsrichtung** $r$: Richtung, in die das Licht reflektiert wird.  
+   - $v_0$: Richtung, aus der die Umgebung in die Sphere Map aufgenommen wurde.  
+2. **Ziel**:  
+   - Den Punkt auf der Kugeloberfläche finden, dessen Normale $n$ mittig zwischen $r$ und $v_0$ liegt.  
+   - Dieser Punkt gibt die Texturkoordinaten $s, t$ für die Sphere Map.  
+
+3. **Berechnungsdetails**:  
+   - Reflexionsrichtung:
+     $$
+     r = 2 (v \cdot n) n - v
+     $$
+   - „Half-Way Vector“:
+     $$
+     h = \frac{r + v_0}{|r + v_0|}
+     $$
+     $h$ liegt genau zwischen $r$ und $v_0$ und liefert die Normale $n$ auf der Kugeloberfläche.
+4. **Texturkoordinaten**:  
+   Die Kugeloberfläche wird auf ein Rechteck projiziert:
+   $$
+   s = \frac{h_x + 1}{2}, \quad t = \frac{h_y + 1}{2}
+   $$
+   Hierbei werden nur die $x$- und $y$-Komponenten verwendet.
+**Probleme und Einschränkungen**  
+- **Ungleichmäßige Abtastung**:  
+  - Starke Verzerrung am Rand der Kugelprojektion.  
+  - Besonders ausgeprägt bei Betrachtungsrichtungen, die stark von $v_0$ abweichen.  
+- **Singularität**:  
+  - Am Rand treten Singularitäten auf, die zu Artefakten in der Textur führen können.
+- **Einschränkungen**:  
+  - Sphere Mapping eignet sich nur gut für Betrachtungsrichtungen, die $v_0$ ähneln.
+### Cube Environment Maps
+**Definition**  
+Eine andere Parametrisierung des Environment Mapping, bei der die Umgebung auf die sechs Flächen eines Würfels projiziert wird.
+**Berechnung der Texturkoordinaten**  
+1. **Gegebene Daten**:  
+   - Reflexionsrichtung $r = (r_x, r_y, r_z)$.  
+   - Würfelflächen repräsentieren verschiedene Bereiche der Umgebung.  
+
+2. **Zuweisung der Flächen**:  
+   - Die betraglich größte Komponente von $r$ bestimmt die Würfelfläche:
+     - $|r_x| > |r_y|$ und $|r_x| > |r_z|$: „right“ oder „left“.  
+     - $|r_y| > |r_x|$ und $|r_y| > |r_z|$: „top“ oder „bottom“.  
+     - $|r_z| > |r_x|$ und $|r_z| > |r_y|$: „front“ oder „back“.  
+
+3. **Texturkoordinaten innerhalb der Fläche**:  
+   - Für die Fläche „right“:
+     $$
+     s = \frac{r_y}{2 r_x} + \frac{1}{2}, \quad t = \frac{r_z}{2 r_x} + \frac{1}{2}
+     $$
+**Vorteile von Cube Maps**  
+- Gleichmäßige Abtastung über die gesamte Umgebung.  
+- Bessere Ergebnisse für Betrachtungsrichtungen, die stark von $v_0$ abweichen.
+### Vorfilterung von Environment Maps
+**Ziel der Vorfilterung**  
+Die Vorfilterung von Environment Maps dient dazu, die Reflexion von Licht auf Oberflächen realistisch darzustellen, indem der Einfluss von Licht aus verschiedenen Richtungen zusammengefasst wird. Dies wird für unterschiedliche Zwecke wie spiegelnde Objekte, imperfekte Spiegelungen oder diffuse Reflexionen verwendet.
+
+**Konzepte der Vorfilterung**  
+1. **Reflexionsrichtung ($r$)**:  
+   - Für **spiegelnde Objekte** wird die genaue Reflexionsrichtung verwendet, um den Lichtwert aus der Umgebung zu bestimmen.  
+   - Beispiel: Ein glänzender Chromball spiegelt exakt das Umgebungsbild wider.
+2. **Imperfekte Spiegelung**:  
+   - Für Oberflächen mit leicht unscharfen Reflexionen wird Licht aus mehreren Richtungen gewichtet.  
+   - Dies orientiert sich am Phong-Modell mit:
+     $$
+     (r \cdot d)^n
+     $$
+     wobei $d$ die Richtung des einfallenden Lichts ist und $n$ den Glanzexponenten bestimmt.
+3. **Diffuse Reflexion**:  
+   - Für matte Oberflächen wird die Menge an Licht berechnet, die von allen möglichen Richtungen kommt und von der Normale $n$ beeinflusst wird.
+4. **Kombination von Texturen**:  
+   - Oft werden mehrere vorgefilterte Texturen kombiniert, um Reflexionen für unterschiedliche Oberflächenmaterialien darzustellen.
+
+**Techniken der Vorfilterung**  
+- **Summed Area Tables**:  
+  - Ermöglichen eine effiziente Approximation der Vorfilterung, indem die Texturwerte über einen Winkelbereich zusammengefasst werden.  
+  - Vorteil: Kann on-the-fly berechnet werden.
+### (Selbst-)Verschattung
+**Problemstellung**  
+- Eine korrekte Berechnung von Schatten ist nicht mit vorgefilterten Environment Maps kompatibel, da diese keine geometrischen Informationen enthalten.  
+- Effiziente Ansätze:  
+  - Schattenberechnung durch das Objekt selbst oder andere Objekte.  
+  - Beschränkung auf wenige Schattenstrahlen (z. B. um die Reflexionsrichtung $r$).  
+  - Verwendung von **Ambient Occlusion** als Annäherung.
+
+**Mathematische Annäherung**  
+- Vereinfachte Formel zur Berechnung der Verschattung:
+  $$
+  \frac{2\pi}{N} \sum \left( L_i(\omega_i) V_x(\omega_i) \right) \approx \frac{2\pi}{N} \sum L_i(\omega_i) \cdot \frac{2\pi}{N} \sum V_x(\omega_i)
+  $$
+  - $L_i$: Lichtintensität aus Richtung $\omega_i$.  
+  - $V_x(\omega_i)$: Sichtbarkeitsfunktion (1: Lichtstrahl trifft Geometrie, 0: sonst).
+### Vorfilterung für diffuse Beleuchtung
+**Ziel**  
+- Die Funktion $L(r)$, die das einfallende Licht in der Environment Map beschreibt, wird so vorgefiltert, dass sie für Flächen mit bestimmten Normalen $n$ direkt angewendet werden kann.
+
+**Vorgehen**  
+1. **Eingabe**:  
+   - Eine Environment Map mit Lichtwerten basierend auf der Reflexionsrichtung $r$.
+2. **Ausgabe**:  
+   - Eine Beleuchtungstextur, die für jede Normale $n$ das diffus reflektierte Licht enthält.
+3. **Berechnung**:  
+   - Abbildung von Texturkoordinaten $(s, t)$ auf die Richtung $r$.  
+   - Reflexionsrichtung $r$ wird gespiegelt an der Normale $n$:
+     $$
+     r = 2 (v_0 \cdot n) n - v_0
+     $$
+     wobei $v_0$ die Richtung zur Kamera ist.
+### Fazit: Texture Mapping
+- **Bedeutung**:  
+  - Texture Mapping ist eine grundlegende Technik in der Computergrafik, die es ermöglicht, Details und Oberflächenmerkmale effizient darzustellen.
+- **Einsatzgebiete**:  
+  - Farb-, Gloss- und Ambient Occlusion-Texturen.  
+  - Normal- und Displacement-Mapping.  
+  - Environment Mapping und Image-Based Lighting.  
+  - Shadow Mapping und Visualisierungen.  
+- **Effizienzsteigerung**:  
+  - Verwendung von Lookup-Tabellen und vorgefilterten Environment Maps.  
 
 

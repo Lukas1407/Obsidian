@@ -4,25 +4,24 @@
 - **Generalization**: Instead of trying to learn and store Q-values for every possible state-action pair, VFA aims to learn about a smaller number of states from experience and <mark style="background: #FFB86CA6;">generalize this knowledge to new, similar states</mark>.
 
 - **Representation**: VFA represents the [[Value-Function#State-Value Function/V-Function|V-Function]] or [[Value-Function#Action-Value Function/Q-Function|Q-Function]] with a parameterized function $Q_{\theta}(s, a)$, where $\theta$ represents the parameters of the function.
-- **Learning**: The parameters $\theta$ are adjusted during the learning process to minimize the difference between the predicted Q-values and the target Q-values (which are based on the observed rewards and the estimated values of subsequent states).
+- **Learning**: The parameters $\theta$ are adjusted during the learning process to <mark style="background: #FFB86CA6;">minimize the difference between the predicted Q-values and the target Q-values</mark> (which are based on the observed rewards and the estimated values of subsequent states).
 ## Advantages 
 - Allows handling environments with <mark style="background: #FFB86CA6;">large or continuous state spaces</mark> by providing a compact representation that can generalize across states and actions.
-- Estimate the value of states and actions, rather than relying on a potentially unmanageable table of Q-values
+- Estimate the value of states and actions, <mark style="background: #FFB86CA6;">rather than relying on a potentially unmanageable table of Q-values</mark>
 ## Fitting a Value Function
 “Fitting” in the context of value functions refers to the process of adjusting the parameters of a model (value function) so that it best represents the relationship between states, actions, and rewards based on the data (experiences) collected from the environment.
 ### 1. Fit Monte-Carlo Returns
-Monte Carlo (MC) methods involve using complete episodes of interaction with the environment to directly calculate the returns (total accumulated reward) for each state visited. The value of a state is estimated by averaging the returns from that state across multiple episodes, considering only the first visit to the state within each episode for a pure "first-visit MC" approach, or all visits in an "every-visit MC" approach.
+Monte Carlo (MC) methods involve using complete episodes of interaction with the environment to directly calculate the returns (total accumulated reward) for each state visited. The <mark style="background: #FFB86CA6;">value of a state is estimated by averaging the returns from that state across multiple episodes</mark>, considering only the first visit to the state within each episode for a pure "<mark style="background: #FFB86CA6;">first-visit MC</mark>" approach, or all visits in an "<mark style="background: #FFB86CA6;">every-visit MC</mark>" approach.
 **Steps:**
-- **Collect Data:** Play out full episodes while following a certain policy, recording the states visited and rewards obtained.
+- **Collect Data:** <mark style="background: #FFB86CA6;">Play out full episodes while following a certain policy</mark>, recording the states visited and rewards obtained.
 - **Calculate Returns:** For each state encountered in an episode, calculate the total return from that state to the end of the episode.
 - **Regression on Returns:** Fit the value function $V(s)$ by regressing these observed returns against the states. This can be done using linear regression, neural networks, or any other regression model.$$L=\sum_{t} (V_{\theta}(s_{t})-R_{t})^{2}$$
-**Pros and Cons from Image:**
 - **Pros:**
-  - Can use any supervised learning method.
-  - Yields an unbiased estimate of the value function.
+  - <mark style="background: #FFB86CA6;">Can use any supervised learning method</mark>.
+  - Yields an <mark style="background: #FFB86CA6;">unbiased estimate</mark> of the value function.
   - Always converges (as it's essentially a regression problem).
 - **Cons:**
-  - High variance in returns, necessitating lots of data to achieve reliable estimates.
+  - <mark style="background: #FFB86CA6;">High variance</mark> in returns, necessitating <mark style="background: #FFB86CA6;">lots of data</mark> to achieve reliable estimates.
   - Can't use the last few transitions of an episode as training data if episodes end due to time limits or other administrative censors.
 ### 2. Q-Learning with Neural Networks
 This approach uses Q-learning, an off-policy TD (temporal difference) learning algorithm, enhanced with the function approximation capabilities of neural networks, often referred to as Deep Q-Networks (DQN).
@@ -30,10 +29,10 @@ This approach uses Q-learning, an off-policy TD (temporal difference) learning a
 - **Action-Value Updates:** For each transition (s, a, r, s'), update the Q-values based on the formula $Q(s, a) \leftarrow Q(s, a) + \alpha (r + \gamma \max_{a'} Q(s', a') - Q(s, a))$.
 - **Neural Network as Function Approximator:** Instead of maintaining a table of Q-values for each state-action pair, a neural network is trained to approximate these Q-values. The inputs to the network are states, and the outputs are Q-values for each possible action.
 **Pros:**
-- Powerful in high-dimensional spaces due to the generalization capabilities of neural networks.
-- Does not require the model of the environment, as it learns from observed transitions.
+- <mark style="background: #FFB86CA6;">Powerful in high-dimensional spaces</mark> due to the generalization capabilities of neural networks.
+- <mark style="background: #FFB86CA6;">Does not require the model of the environment, as it learns from observed transitions</mark>.
 **Cons:**
-- Can be unstable or diverge if not carefully implemented due to the inherent approximations and the use of the max operator in noisy environments.
+- <mark style="background: #FFB86CA6;">Can be unstable or diverge</mark> if not carefully implemented due to the inherent approximations and the use of the max operator in noisy environments.
 ### 3. Fitted Q-Iteration
 Fitted Q-Iteration is a batch-based reinforcement learning algorithm where a regression model is used to fit the Q-function iteratively.
 **Steps:**
@@ -70,7 +69,7 @@ $$\begin{align*}\theta_{\text{new}} &= \theta + \alpha(r(s'_t,a'_t) + \gamma \ma
 - **No Clearly Defined Objective**: The <mark style="background: #FFB86CA6;">objective isn’t fixed</mark> because the targets (the optimal future values) are not known in advance and change as the agent learns.
 - **Changing Targets**: The target values $y_{t}=r(s_{t},a_{t})+\gamma \max_{a'}Q^{\pi}(s_{t+1},a')$  in Q-learning are <mark style="background: #FFB86CA6;">based on the current estimate of the future rewards</mark>. As the agent learns and updates its policy, these estimates change. This means that the ‘ground truth’ the agent is trying to learn from is a moving target, which complicates the learning process.
 - **Similarity of Successive States**: In many environments, successive states $s$ and $s'$ are very similar to each other. This similarity means that when the agent updates its estimate for one state, it likely affects its estimates for similar states. This can lead to instability in the learning process because changing the estimate for one state changes the targets for many others.
-- **No Gradient Computed**: Because the targets are constantly changing, <mark style="background: #FFB86CA6;">you can’t compute a stable gradient to optimize</mark> as you would in other types of machine learning. The gradient is the direction in which you should adjust your parameters to improve your predictions, but if the ‘correct answers’ keep changing, it’s hard to know which way to go.
+- **No Gradient Computed**: Because the targets are constantly changing, <mark style="background: #FFB86CA6;">you can’t compute a stable gradient to optimize</mark> as you would in other types of machine learning. The gradient is the direction in which you should adjust your parameters to improve your predictions, but if <mark style="background: #FFB86CA6;">the ‘correct answers’ keep changing</mark>, it’s hard to know which way to go.
 ### Solutions 1: Use the real gradient
 -  Instead of using approximate gradients, this method uses the true gradient of the Q-function with respect to its parameters. This <mark style="background: #FFB86CA6;">leads to a more accurate update rule</mark>, which is expected to result in better learning performance. $$\theta_{\text{new}} = \theta - \alpha \frac{d}{d\theta} L_t = \theta - \alpha \frac{d}{d\theta} (Q_\theta(s_t, a_t) - y_t)^2
 $$
@@ -90,9 +89,9 @@ $$\begin{align*}
 $$
 - But this has the following problems:
 	1. **Model Dependency**: The inner expectation of the MSBE involves an expectation over the next state $s'$, which requires knowledge of the transition dynamics $p(s'|s,a)$. This can only be accurately evaluated if we have a model of the environment, which is often not available or too complex to be practical.
-	2. **Multiple Samples Requirement**: To avoid the need for a model, one <mark style="background: #FFB86CA6;">could theoretically use multiple samples</mark> of $s'$ to estimate the expectation. However, this assumes that we can sample the next state $s'$ multiple times given the current state $s$ and action $a$, which is unrealistic in many real-world systems where each state transition is unique and cannot be repeated under identical conditions.
+	2. **Multiple Samples Requirement**: To <mark style="background: #FFB86CA6;">avoid the need for a model, one could theoretically use multiple samples</mark> of $s'$ to estimate the expectation. However, this assumes that we can sample the next state $s'$ multiple times given the current state $s$ and action $a$, which <mark style="background: #FFB86CA6;">is unrealistic in many real-world systems</mark> where each state transition is unique and cannot be repeated under identical conditions.
 	3. **Bias with Single Sample**: Using only a single sample of $s'$ to estimate the expectation introduces bias. This is because the expectation is inside the square in the MSBE formula, and <mark style="background: #FFB86CA6;">using a single sample would actually yield the Mean Squared Temporal Difference (MSTD) error, which does not account for the variance of the value function across different states.</mark>
-	4. **Double Sampling**: The text mentions that using two samples would work, referring to the double sampling problem. This means that if we could <mark style="background: #FFB86CA6;">independently sample two next states</mark> $s'$from the same $s$ and $a$, we could use one sample to estimate the maximum future value and the other to estimate the expectation, thus reducing bias. However, this is often not feasible in practice.
+	4. **Double Sampling**: The text mentions that using two samples would work, referring to the double sampling problem. This means that if we could <mark style="background: #FFB86CA6;">independently sample two next states</mark> $s'$from the same $s$ and $a$, we could use one sample to estimate the maximum future value and the other to estimate the expectation, thus reducing bias. However, this is <mark style="background: #FFB86CA6;">often not feasible in practice</mark>.
 
 ## Problem with Q-Learning with Neural Networks
 - Can diverge easily, even if the optimal [[Value-Function]] could be represented by $Q_{\theta}(s,a)$
@@ -120,7 +119,7 @@ $$
 - **Makes Data Distribution More Stationary**: Replay buffers randomize the data over which the neural network trains, breaking the correlation between consecutive samples
 	- But we still have a moving target! Still unstable
 - **Avoids Catastrophic Forgetting**: By storing past experiences and randomly sampling from them to train the network
-- **Improves Data Efficiency**: Replay buffers allow the reuse of past experiences multiple times for training
+- **Improves Data Efficiency**: Replay buffers <mark style="background: #FFB86CA6;">allow the reuse of past experiences multiple times for training</mark>
 ### Q-Learning with Regression
 ![[Pasted image 20240313134929.png#invert|600]]
 1. **Compute Targets**: For each tuple in the dataset, the target $y_i$ is computed using the formula: $y_i = r(s_i, a_i) + \gamma \max_{a'} Q_{\beta}(s'_i, a')$ where $\gamma$ is the discount factor and $Q_{\beta}$ is the Q-value function parameterized by $\beta$
@@ -151,8 +150,8 @@ This algorithm iteratively updates the Q-value function by fitting it to the com
 - Extensions/Improvements to DQN include:
 ### Double Q-Learning
 - This method addresses the issue of overestimation in Q-values by using two separate Q-networks. 
-- One network is used to select the best action, and the other is used to evaluate the value of that action. 
-- This helps to prevent the overestimation that can occur when a single network is used for both selection and evaluation.
+- <mark style="background: #FFB86CA6;">One network is used to select the best action, and the other is used to evaluate the value of that action</mark>. 
+- This helps to <mark style="background: #FFB86CA6;">prevent the overestimation</mark> that can occur when a single network is used for both selection and evaluation.
 $$Q_{\theta_{2}}(s_t,a_t)\leftarrow r(s_t,a_{t})+\gamma Q_{\theta_{1}}(s_{t+1}, arg\max_{a}Q_{\theta_{2}}(s_{t+1},a))$$$$
 Q_{\theta_{1}}(s_t,a_t)\leftarrow r(s_t,a_{t})+\gamma Q_{\theta_{2}}(s_{t+1}, arg\max_{a}Q_{\theta_{1}}(s_{t+1},a))$$
 - One Q-function, say $Q_{\theta_{1}}$, is used to select the best action based on the current state.

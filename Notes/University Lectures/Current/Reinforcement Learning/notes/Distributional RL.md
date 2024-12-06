@@ -1,4 +1,4 @@
-**Distributional Reinforcement Learning (RL)** is a variant of reinforcement learning that models the distribution of returns, rather than only their expectation. This approach provides a more comprehensive understanding of the dynamics of returns, which can improve learning and decision-making under uncertainty. 
+**Distributional Reinforcement Learning (RL)** is a variant of reinforcement learning that <mark style="background: #FFB86CA6;">models the distribution of returns, rather than only their expectation</mark>. This approach <mark style="background: #FFB86CA6;">provides a more comprehensive understanding of the dynamics of returns</mark>, which can improve learning and decision-making under uncertainty. 
 ### Concept of Distributional RL
 **Traditional RL** typically focuses on estimating the expected return $Q(s,a)$ from state $s$ and action $a$, which represents the mean outcome. In contrast, **Distributional RL** aims to model the entire distribution of possible returns $Z(s, a)$, capturing the full range of potential outcomes and their probabilities.
 ### Distributional Bellman Equation

@@ -192,7 +192,6 @@ Die Erstellung einer DNA-Genbank erfordert eine ausreichende Anzahl von Klonen, 
     - Überlappende Klone <mark style="background: #FFB86CA6;">ermöglichen eine lückenlose Kartierung des Genoms</mark> durch "chromosome walking".
 - **Berechnung der Anzahl Klone**:
     - Beispiel: Um 95 % des menschlichen Genoms zu repräsentieren, sind ca. 150.000 verschiedene rekombinante λ-Phagen nötig.
-## DNA-Genbanken in Cosmiden
 **Cosmide** sind Hybridvektoren, die <mark style="background: #FFB86CA6;">Eigenschaften von Plasmiden und Phagen kombinieren</mark>. Sie können größere DNA-Inserts als Plasmide aufnehmen, <mark style="background: #FFB86CA6;">bis zu 45 kb.</mark>
 ### **Aufbau und Funktion von Cosmiden:**
 1. **COS-Sites**:

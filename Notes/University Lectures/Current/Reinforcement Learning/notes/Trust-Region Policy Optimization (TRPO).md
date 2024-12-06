@@ -1,12 +1,12 @@
 > [!abstract] 
-> Trust Region Policy Optimization (TRPO) is a reinforcement learning method designed to optimize an agent’s policy in a stable and efficient manner. The core idea behind TRPO is to improve the policy by making small, incremental updates that are guaranteed not to decrease performance. This is achieved by defining a “[[Policy Optimization#Trust Regions|trust region]]” around the current policy and ensuring that updates do not deviate too far from it, which helps in maintaining stability and preventing drastic performance drops. 
+> Trust Region Policy Optimization (TRPO) is a reinforcement learning method designed to optimize an agent’s policy in a stable and efficient manner. The core idea behind TRPO is to <mark style="background: #FFB86CA6;">improve the policy by making small, incremental updates that are guaranteed not to decrease performance</mark>. This is achieved by defining a “[[Policy Optimization#Trust Regions|trust region]]” around the current policy and ensuring that updates do not deviate too far from it, which helps in maintaining stability and preventing drastic performance drops. 
 
 - Advantages:
-	- First Policy Gradient Method that worked reliable for DNNs
-	- Comes with monotonic improvement guarantees (almost)
+	- <mark style="background: #FFB86CA6;">First Policy Gradient Method that worked reliable for DNNs</mark>
+	- Comes with <mark style="background: #FFB86CA6;">monotonic improvement guarantees</mark> (almost)
 - Disadvantages:
-	- Quite complicated to implement
-	- Still rather slow (computationally - does not scale to large networks) due to FIM
+	- Quite <mark style="background: #FFB86CA6;">complicated to implement</mark>
+	- Still <mark style="background: #FFB86CA6;">rather slow</mark> (computationally - does not scale to large networks) due to FIM
 	- Rarely used nowadays
 ## Equation
 $$\begin{split} \arg\max_{\theta} \frac{1}{N}\sum_{i}\sum_{t}\frac{\pi_\theta(a_{i,t}|s_{i,t})}{\pi_{old}(a_{i,t}|s_{i,t})}\hat A^{\pi_{old}}(s_{i,t},a_{i,t}) \\ s.t. \ \mathbb{E}_{\mu^{\pi_{old}(s)}}{[KL(\pi_{\theta}(a|s)\parallel\pi_{old}(a|s))]}\le\epsilon \end{split}$$

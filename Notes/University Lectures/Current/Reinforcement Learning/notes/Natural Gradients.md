@@ -8,8 +8,8 @@
    - $g$ is the gradient of the objective function $J$ concerning the policy parameters $\theta$,
    - $KL(p_{\theta_{old} + g} \| p_{\theta_{old}})$ is the [[Kullback-Leiber Divergence]] between the new policy and the old policy, approximated as a quadratic form of the gradient.
 ### Taylor Approximations
-- First-order Taylor approximation for the objective function gives the direction of steepest ascent.: $$g_{NG}=\arg\max_{g}g^{T}\nabla_{\theta}J$$
-- Second-order Taylor approximation for the constraint (the KL divergence) using the FIM provides a quadratic form, establishing a trust region that limits how far the updated policy can deviate from the old policy.: $$KL(p_{\theta_{old}+g}\parallel p_{\theta_{old}})\approx g^{T}\mathcal{F}g\le\epsilon$$, with $\mathcal{F}$ being the Fisher Information Matrix (FIM): $$\mathcal{F}=\frac{\partial KL(p_\theta\parallel p_{\theta_{old}})}{\partial\theta\partial\theta}$$
+- <mark style="background: #FFB86CA6;">First-order Taylor approximation for the objective function</mark> gives the direction of steepest ascent.: $$g_{NG}=\arg\max_{g}g^{T}\nabla_{\theta}J$$
+- <mark style="background: #FFB86CA6;">Second-order Taylor approximation for the constraint (the KL divergence) using the FIM</mark> provides a quadratic form, establishing a trust region that limits how far the updated policy can deviate from the old policy.: $$KL(p_{\theta_{old}+g}\parallel p_{\theta_{old}})\approx g^{T}\mathcal{F}g\le\epsilon$$, with $\mathcal{F}$ being the Fisher Information Matrix (FIM): $$\mathcal{F}=\frac{\partial KL(p_\theta\parallel p_{\theta_{old}})}{\partial\theta\partial\theta}$$
 ### Applying the FIM in Natural Gradient
 The natural gradient, $g_{NG}$, modifies the 'vanilla' gradient $\nabla_\theta J$ by scaling it with the inverse of the FIM:
 $$ g_{NG} = \eta F^{-1} \nabla_\theta J, $$
@@ -20,7 +20,7 @@ where $\eta$ is a step size or learning rate.
    \nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i} \sum_{t} \frac{\pi_\theta(a_{i,t}|s_{i,t})}{\pi_{\text{old}}(a_{i,t}|s_{i,t})} \nabla_\theta \log \pi_\theta(a_{i,t}|s_{i,t}) \hat{A}^{\pi_{\text{old}}}(s_{i,t}, a_{i,t})
    $$
    - **Explanation**: This expression estimates the policy gradient by averaging over a sample of trajectories, where each term in the sum involves adjusting the log probability of the selected action by its advantage ($\hat{A}$), scaled by the likelihood ratio between the new and old policies.
-2. **KL Constraint**: <mark style="background: #FFB86CA6;">Ideally, you would want to constrain each state's policy update by limiting the KL divergence between the new and old policies for every state</mark>. However, this is often impractical because it requires constraints for potentially every state in the state space.
+2. **KL Constraint**: <mark style="background: #FFB86CA6;">Ideally, you would want to constrain each state's policy update by limiting the KL divergence between the new and old policies for every state</mark>. However, this is <mark style="background: #FFB86CA6;">often impractical</mark> because it requires constraints for potentially every state in the state space.
    $$
    KL(\pi_\theta(a|s) \| \pi_{\text{old}}(a|s)) \leq \epsilon, \quad \forall s \in S
    $$
@@ -30,9 +30,9 @@ Rather than applying the KL constraint at every state, a relaxed form is used wh
    $$
    \mathbb{E}_{\mu^{\pi_{\text{old}}}(s)} [KL(\pi_\theta(a|s) \| \pi_{\text{old}}(a|s))] \leq \epsilon
    $$
-   - **Explanation**: This constraint <mark style="background: #FFB86CA6;">averages the KL divergence across all states</mark> visited under the old policy, making it more computationally feasible and less stringent while still maintaining some control over the policy update's impact.
+   - **Explanation**: This constraint <mark style="background: #FFB86CA6;">averages the KL divergence across all states</mark> visited under the old policy, making it <mark style="background: #FFB86CA6;">more computationally feasible and less stringent while still maintaining some control over the policy update's impact</mark>.
 ### Approximation Using the Fisher Information Matrix
-The Fisher Information Matrix (FIM), denoted $F$, provides a way to approximate this relaxed constraint:
+The Fisher Information Matrix (FIM), denoted $F$, provides a way to <mark style="background: #FFB86CA6;">approximate this relaxed constraint</mark>:
    $$
    F = \mathbb{E}_{\mu^{\pi_{\text{old}}}(s)} \left[ \nabla_\theta \log \pi_\theta(a|s) \nabla_\theta \log \pi_\theta(a|s)^T \right]
    $$

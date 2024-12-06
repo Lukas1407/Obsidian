@@ -37,14 +37,14 @@
 ![[Pasted image 20240315084047.png#invert|600]]
 - Converges to local optimum of $J$ by sampling ([[Monte-Carlo Estimation]])
 - But: 
-	- Learning rates very hard to tune 
-	- Needs tons of samples
+	- <mark style="background: #FFB86CA6;">Learning rates very hard to tune</mark> 
+	- <mark style="background: #FFB86CA6;">Needs tons of samples</mark>
 ## Extensions
 As formulated thus far: 
 1. Unbiased but very noisy (high variance) 
 	1. Needs small learning rate 
 	2. Slow convergence 
- 2. Can only be used on-policy
+ 2. Can <mark style="background: #FFB86CA6;">only be used on-policy</mark>
 	 1. No data re-use 
 3. Very hard to tune learning rates
 ### Temporal Structure
@@ -150,8 +150,8 @@ Typically, we also learn the exploration noise of the policy
 	-  A larger gradient magnitude means larger steps, and vice versa.
 - <mark style="background: #FFB86CA6;">Quick Reduction in Exploration</mark>: If the exploration noise (covariance) decreases too quickly, it can lead to premature convergence to sub-optimal solutions.
 Impact on Step Size:
-- <mark style="background: #FFB86CA6;">Inverse Scaling</mark>: The gradient magnitude scales inversely with the variance of the policy. As the variance decreases, the gradient magnitude increases.
-	- Variance of the Policy: This represents how much randomness there is in the policy’s action selection. A high variance means the policy is more exploratory, taking a wide range of actions. A low variance indicates a more deterministic policy, favoring certain actions.
+- <mark style="background: #FFB86CA6;">Inverse Scaling</mark>: The <mark style="background: #FFB86CA6;">gradient magnitude scales inversely with the variance of the policy</mark>. As the variance decreases, the gradient magnitude increases.
+	- Variance of the Policy: This represents how much randomness there is in the policy’s action selection. A <mark style="background: #FFB86CA6;">high variance means the policy is more exploratory</mark>, taking a wide range of actions. A low variance indicates a more deterministic policy, favoring certain actions.
 	- When the variance is high, the policy explores more, and the gradient estimates are less reliable due to the high variability in the outcomes. Therefore, the algorithm takes smaller steps to avoid overfitting to noisy data.
 	- <mark style="background: #FFB86CA6;">As learning progresses and the variance decreases</mark>, the policy becomes more confident about which actions are better. This increased confidence is reflected in <mark style="background: #FFB86CA6;">larger gradient magnitudes</mark>, allowing for more significant updates to the policy parameters.
 	- Mathematically: $$\begin{split} \pi_{\theta}(a|s)=\mathcal{N}(a|f_{\theta}(s),\sigma^{2}) \\ \nabla_{\theta}\log\pi_{\theta}(a|s)=\frac{a-f_{\theta}(s)}{\sigma^{2}}\nabla_{\theta}f(s) \end{split}$$
@@ -194,7 +194,7 @@ The dual of this optimization problem involves finding the optimal $\eta$ that m
 $$ \max_{\eta > 0} \eta \epsilon + \eta \log \left( \sum_a q(a) \exp \left( \frac{r(a)}{\eta} \right) \right). $$
 This dual problem is typically solved using numerical optimization techniques as it might not have a closed-form solution.
 #### Problem
-- Only valid for discrete actions and no states
+- <mark style="background: #FFB86CA6;">Only valid for discrete actions and no states</mark>
 - How can we do this for parametric policies such as Neural Networks?
 	1. [[Natural Gradients]] and Trust-Region Policy Optimization ([[Trust-Region Policy Optimization (TRPO)|TRPO]])
 	2. [[Proximal Policy Optimization (PPO)]]

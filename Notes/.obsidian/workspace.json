@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9b09ef656debf4ef",
+        "id": "9ed7ffd34a442be5",
         "type": "tabs",
         "children": [
           {
-            "id": "470cf36254c021d3",
+            "id": "6b853266ed1200c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "University Lectures/Current/Genetik/Transposition.md",
+                "file": "University Lectures/Current/Computergrafik/notes/Texturen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Transposition"
-            }
-          },
-          {
-            "id": "dd87de81c304735d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "University Lectures/Current/Molekularbiologie/DNA-Bibliothek.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DNA-Bibliothek"
+              "title": "Texturen"
             }
           }
         ]
@@ -88,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "c8e94031416b4006",
@@ -190,10 +177,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "University Lectures/Current/Genetik/Transposition.md"
+                "file": "University Lectures/Current/Computergrafik/notes/Texturen.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Transposition"
+              "title": "Outline of Texturen"
             }
           }
         ]
@@ -219,47 +206,47 @@
       "obsidian-day-planner:Timeline": false
     }
   },
-  "active": "470cf36254c021d3",
+  "active": "6b853266ed1200c7",
   "lastOpenFiles": [
-    "University Lectures/Current/Genetik/DNA-Mutationen.md",
-    "University Lectures/Current/Genetik/Transposition.md",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241206115414.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241206115340.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241206114809.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241206114727.png",
+    "University Lectures/Current/Computergrafik/notes/images/Pasted image 20241206114657.png",
+    "University Lectures/Current/Reinforcement Learning/notes/Deep Deterministic Policy Gradient (DDPG).md",
+    "University Lectures/Current/Computergrafik/notes/Texturen.md",
+    "University Lectures/Current/Computergrafik/notes/Computergrafik.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Off-Policy Actor-Critic Algorithms.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Twin-Delayed DDPG (TD3).md",
+    "University Lectures/Current/Reinforcement Learning/notes/Value-Function Approximation.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Soft-Actor Critic (SAC).md",
+    "University Lectures/Current/Reinforcement Learning/notes/Distributional RL.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Maximum Entropy Reinforcement Learning.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Differential Trust Region Layers.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Trust-Region Policy Optimization (TRPO).md",
+    "University Lectures/Current/Reinforcement Learning/notes/Proximal Policy Optimization (PPO).md",
+    "University Lectures/Current/Reinforcement Learning/notes/Natural Gradients.md",
+    "University Lectures/Current/Reinforcement Learning/notes/QT-Opt.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy Optimization.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Policy Iteration.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Lagrangian Multipliers.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Reinforcement Learning.md",
+    "University Lectures/Current/Reinforcement Learning/notes/K-Armed Bandit Problem.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Epsilon-Greedy Action Selection.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Optimistic Value Initialization.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Confidence Bounds.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Exploration-Exploitation Trade-off.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Upper-Confidence-Bounds (UCB) Action Selection.md",
+    "University Lectures/Current/Reinforcement Learning/notes/Exploration and Entropy.md",
     "University Lectures/Current/Genetik/images/Pasted image 20241205082306.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241205082248.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241205082200.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241205075104.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241205075047.png",
     "University Lectures/Current/Genetik/images/Pasted image 20241205075032.png",
-    "University Lectures/Current/Molekularbiologie/DNA-Klonierung.md",
-    "University Lectures/Current/Molekularbiologie/DNA-Bibliothek.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Lysosomen.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Zytologie.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Mitochondrien.md",
-    "Courses/Computational Neurosience/Motorproteine.md",
-    "Courses/Computational Neurosience/Zytoskelett.md",
-    "Courses/Computational Neurosience/Zellmembran.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Anatomie und Physiologie.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Desoxyribonukleinsäure.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Chromatide.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Nukleoside.md",
-    "Excalidraw/annotated_Pasted image 20240415134654.md",
-    "Excalidraw/Drawing 2024-12-04 12.38.19.excalidraw.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Nukleinbasen.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Nukleotide.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Adenosintriphosphat (ATP).md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Kohlenhydrate.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Lipide.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Peptidbindung.md",
-    "University Lectures/Current/Anatomie und Physiologie/notes/Aminosäuren.md",
-    "Excalidraw/Drawing 2024-12-04 12.08.19.excalidraw.md",
-    "University Lectures/Future/Medical Imaging Technology/notes/images/Drawing 2024-05-12 09.48.31.excalidraw.md",
-    "Excalidraw/annotated_Pasted image 20241119123021.md",
     "Excalidraw",
-    "University Lectures/Current/Computergrafik/übung/images/Pasted image 20241203152754.png",
-    "University Lectures/Current/Computergrafik/übung/images/Pasted image 20241203152744.png",
     "University Lectures/Current/Computergrafik/übung/images",
     "University Lectures/Current/Computergrafik/übung",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241203140840.png",
-    "University Lectures/Current/Molekularbiologie/images/Pasted image 20241203140520.png",
     "University Lectures/Current/Anatomie und Physiologie/notes/images/DNA_Polymerase.mov",
     "University Lectures/Future/Anatomie und Physiologie/notes/images/DNA_Polymerase (1).mov",
     "University Lectures/Current/KI in robotergestützer Chirurgie",

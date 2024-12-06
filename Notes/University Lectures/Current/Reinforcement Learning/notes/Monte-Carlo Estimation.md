@@ -6,7 +6,7 @@
 - It states that the expected value of a function $f(x)$ under a probability distribution $p(x)$  can be approximated by averaging the values of $f(x)$ over a number of samples.
 - This method involves using sample trajectories to estimate the value function, which represents the expected future reward if an agent is in a state and follows a policy.
 ## First Visit Monte Carlo
-This method estimates the value of a state by averaging the returns following the first visits to that state over multiple episodes. 
+This method <mark style="background: #FFB86CA6;">estimates the value of a state by averaging the returns</mark> following the first visits to that state over multiple episodes. 
 ![[Pasted image 20240708104420.png#invert|600]]
 ### 1. **Tracking First Visits:**
    - In this method, only the first time a state is visited during an episode is considered for the value estimation. If a state is visited multiple times in a single episode, only the first visit is used.
