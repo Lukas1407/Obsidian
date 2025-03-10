@@ -1,0 +1,1 @@
+- Die **rolling circle-Replikation** ermöglicht die schnelle Synthese langer DNA-Stränge, die als **Konkatemere** vorliegen.

@@ -5,58 +5,58 @@ Barbara McClintock entdeckte die sogenannten "springenden Gene" oder transponier
 - **Transposition:** Sowohl Ds- als auch Ac-Elemente können spontan ihre Position im Genom verändern. Dieses Phänomen wird als Transposition bezeichnet.
 ### **Transponierbare Elemente in verschiedenen Organismen**
 - **Anteil transponierbarer DNA im Genom:**
-    - Mensch: ca. **50%**
+    - <mark style="background: #FFB86CA6;">Mensch: ca. 50%</mark>
     - Mais: ca. **85%**
     - Hefe: ca. **3,1%**
 ### **Arten von Transposons**
 Transponierbare Elemente werden in drei Haupttypen unterteilt:
-- **DNA-Transposons:**
-    - Enthalten **Transposase**, ein Enzym, das für das Herausschneiden und Wiedereinfügen des Elements verantwortlich ist.
-    - **Terminale Inverse Repeats (TIRs):** Kurze, wiederholte Sequenzen an beiden Enden des Transposons, die von der Transposase erkannt werden.
-    - **Zielsequenz-Duplikation:** Bei der Integration entsteht eine Duplikation der Zielsequenz im Wirts-DNA.
+- <mark style="background: #FFB86CA6;">DNA-Transposons</mark>:
+    - Enthalten <mark style="background: #FFB86CA6;">Transposase</mark>, ein Enzym, das für das <mark style="background: #FFB86CA6;">Herausschneiden und Wiedereinfügen des Elements verantwortlich</mark> ist.
+    - <mark style="background: #FFB86CA6;">Terminale Inverse Repeats (TIRs)</mark>: Kurze, <mark style="background: #FFB86CA6;">wiederholte Sequenzen an beiden Enden des Transposons</mark>, die von der <mark style="background: #FFB86CA6;">Transposase erkannt werden</mark>.
+    - <mark style="background: #FFB86CA6;">Zielsequenz-Duplikation</mark>: Bei der Integration <mark style="background: #FFB86CA6;">entsteht eine Duplikation der Zielsequenz im Wirts-DNA</mark>.
 ![[Pasted image 20241205075032.png#invert|500]]
-- **Retrotransposons (virusähnlich):**
-    - Arbeiten über RNA-Zwischenprodukte.
-    - Besitzen Enzyme wie **Reverse Transkriptase** und **Integrase**, um RNA zurück in DNA zu übersetzen und ins Genom einzufügen.
+- <mark style="background: #FFB86CA6;">Retrotransposons</mark> (virusähnlich):
+    - Arbeiten über <mark style="background: #FFB86CA6;">RNA-Zwischenprodukte</mark>.
+    - Besitzen Enzyme wie <mark style="background: #FFB86CA6;">Reverse Transkriptase und Integrase, um RNA zurück in DNA zu übersetzen und ins Genom einzufügen</mark>.
     - Beispiele sind **LTR-Retrotransposons** (mit langen Terminalrepeats).
 ![[Pasted image 20241205075047.png#invert|500]]
-- **Poly-A-Retrotransposons:**
+- <mark style="background: #FFB86CA6;">Poly-A-Retrotransposons</mark>:
     - Diese enthalten typische Abschnitte wie **5'-UTR**, offene Leserahmen (ORF1 und ORF2), und eine Poly-A-Sequenz am Ende.
 ![[Pasted image 20241205075104.png#invert|500]]
 ### **Replikative Transposition**
-- **Definition:** Bei der replikativen Transposition wird das Transposon **kopiert**, während es sich an eine neue Position im Genom bewegt. Das Original bleibt an seiner ursprünglichen Stelle, und eine Kopie wird in die Zielstelle eingefügt.
+- **Definition:** Bei der replikativen Transposition wird das <mark style="background: #FFB86CA6;">Transposon kopiert</mark>, während es sich <mark style="background: #FFB86CA6;">an eine neue Position im Genom bewegt</mark>. Das Original bleibt an seiner ursprünglichen Stelle, und eine Kopie wird in die Zielstelle eingefügt.
 - **Mechanismus:**
     1. Das Transposon bleibt an der ursprünglichen Stelle gebunden.
-    2. Die Transposase schneidet die DNA an der Zielstelle auf.
-    3. Ein **DNA-Intermediat** (wie eine "Schleife" oder ein **Cointegrat**) bildet sich, bei dem das Transposon sowohl an der alten als auch an der neuen Stelle gebunden ist.
-    4. DNA-Replikation erzeugt eine Kopie des Transposons, das an der neuen Position integriert wird.
+    2. Die <mark style="background: #FFB86CA6;">Transposase schneidet die DNA an der Zielstelle auf</mark>.
+    3. Ein <mark style="background: #FFB86CA6;">DNA-Intermediat bildet sich, bei dem das Transposon sowohl an der alten als auch an der neuen Stelle gebunden ist.</mark>
+    4. <mark style="background: #FFB86CA6;">DNA-Replikation erzeugt eine Kopie des Transposons</mark>, das an der <mark style="background: #FFB86CA6;">neuen Position integriert wird</mark>.
     5. Das Cointegrat wird durch ein Enzym (z. B. **Resolvase**) aufgelöst.
 - **Endergebnis:** Zwei Kopien des Transposons existieren: eine an der ursprünglichen und eine an der neuen Stelle.
-- **Eigenschaft:** Diese Methode erhöht die Anzahl der Transposons im Genom, was die genomische Instabilität fördern kann.
+- **Eigenschaft:** Diese Methode <mark style="background: #FFB86CA6;">erhöht die Anzahl der Transposons im Genom</mark>, was die <mark style="background: #FFB86CA6;">genomische Instabilität fördern</mark> kann.
 ### **Konservative Transposition**
-- **Definition:** Bei der konservativen Transposition wird das Transposon **ausgeschnitten** und an eine neue Position im Genom eingefügt. Es gibt keine Kopie; das Transposon wird nur an einen anderen Ort verschoben.
+- **Definition:** Bei der konservativen Transposition wird das <mark style="background: #FFB86CA6;">Transposon ausgeschnitten und an eine neue Position im Genom eingefügt</mark>. Es gibt keine Kopie; das Transposon wird nur an einen anderen Ort <mark style="background: #FFB86CA6;">verschoben</mark>.
 - **Mechanismus:**
-    1. Die Transposase erkennt die **Terminalen Inversen Repeats (TIRs)** und schneidet das Transposon aus der ursprünglichen Position aus.
-    2. Die Transposase fügt das Transposon an die Ziel-DNA ein.
-    3. Die ursprüngliche Stelle wird durch Reparaturmechanismen geschlossen.
+    1. Die <mark style="background: #FFB86CA6;">Transposase erkennt die Terminalen Inversen Repeats (TIRs)</mark> und <mark style="background: #FFB86CA6;">schneidet das Transposon aus</mark> der ursprünglichen Position aus.
+    2. Die <mark style="background: #FFB86CA6;">Transposase fügt das Transposon an die Ziel-DNA</mark> ein.
+    3. Die <mark style="background: #FFB86CA6;">ursprüngliche Stelle wird durch Reparaturmechanismen geschlossen</mark>.
 - **Endergebnis:** Das Transposon bewegt sich von einer Stelle zur anderen, ohne seine Kopienzahl zu erhöhen.
-- **Eigenschaft:** Diese Methode hat keine direkte Auswirkung auf die Anzahl der Transposons im Genom, kann aber Mutationen an der Ursprungs- oder Zielstelle hinterlassen.
+- **Eigenschaft:** Diese Methode hat keine direkte Auswirkung auf die Anzahl der Transposons im Genom, <mark style="background: #FFB86CA6;">kann aber Mutationen an der Ursprungs- oder Zielstelle hinterlassen</mark>.
 ### **IS-Elemente (Insertionssequenzen)**
 - **Bestandteile:**
-    - **Flankierende Wirts-DNA:** Bereich des Wirtsgenoms, in den sich das IS-Element integriert.
-    - **Transposase:** Das Enzym, das die Mobilität ermöglicht.
-    - **TIRs:** Wiederholte Sequenzen, die die Mobilisierung leiten.
-    - **Zielsequenz-Duplikation:** Diese bleibt im Genom erhalten, auch wenn das IS-Element später wieder entfernt wird, was zu Mutationen führen kann.
+    - <mark style="background: #FFB86CA6;">Flankierende Wirts-DNA</mark>: Bereich des Wirtsgenoms, in den sich das IS-Element integriert.
+    - <mark style="background: #FFB86CA6;">Transposase</mark>: Das Enzym, das die Mobilität ermöglicht.
+    - <mark style="background: #FFB86CA6;">TIRs</mark>: Wiederholte Sequenzen, die die Mobilisierung leiten.
+    - <mark style="background: #FFB86CA6;">Zielsequenz-Duplikation</mark>: Diese bleibt im Genom erhalten, auch wenn das IS-Element später wieder entfernt wird, was zu Mutationen führen kann.
 - **Voraussetzungen für die Transposition:**
     - Terminale Inverse Repeats.
     - Funktionale Transposase.
     - Möglicherweise Wirtsfaktoren.
 ### **Regulation der Transposition**
-Die Transposition muss reguliert werden, um genomische Instabilität und Schäden zu minimieren. Mechanismen der Regulation umfassen:
-- **Frameshifting (IS1):** Bei IS1 wird die Transposase durch ein Frameshift-Ereignis nur in sehr geringen Mengen exprimiert, was die Transposition begrenzt.
-- **Repressor (Tn3):** Das Transposon Tn3 kodiert einen Repressor, der die Aktivität seiner Transposase hemmt.
-- **Antisense-RNA (Tn10):** Bei Tn10 reguliert eine Antisense-RNA die Transposase-mRNA, indem sie deren Translation blockiert (siehe unten für Details).
-- **Kopplung an DNA-Replikation (Tn10):** Die Transposition erfolgt bevorzugt während der DNA-Replikation, um Doppelstrangbrüche zu minimieren.
+Die Transposition muss reguliert werden, <mark style="background: #FFB86CA6;">um genomische Instabilität und Schäden zu minimieren</mark>. Mechanismen der Regulation umfassen:
+- **Frameshifting (IS1):** Bei <mark style="background: #ADCCFFA6;">IS1</mark> wird die <mark style="background: #FFB86CA6;">Transposase nur in sehr geringen Mengen exprimiert</mark>, was die Transposition begrenzt.
+- **Repressor (Tn3):** Das Transposon <mark style="background: #ADCCFFA6;">Tn3</mark> <mark style="background: #FFB86CA6;">kodiert einen Repressor, der die Aktivität seiner Transposase hemmt</mark>.
+- **Antisense-RNA (Tn10):** Bei <mark style="background: #ADCCFFA6;">Tn10</mark> reguliert eine <mark style="background: #FFB86CA6;">Antisense-RNA</mark> die <mark style="background: #FFB86CA6;">Transposase-mRNA, indem sie deren Translation blockiert</mark>.
+- **Kopplung an DNA-Replikation (Tn10):** Die <mark style="background: #FFB86CA6;">Transposition erfolgt bevorzugt während der DNA-Replikation, um Doppelstrangbrüche zu minimieren</mark>.
 - **Ortsspezifische Transposition (Tn7):** Tn7 integriert sich an spezifischen Zielstellen, um Schäden zu begrenzen.
 - **Wahl der Ziel-DNA (Tn7 und Mu):** Einige Transposons besitzen Mechanismen, um die Zielstelle zu bestimmen, wodurch sie bestimmte Regionen meiden (sogenannte "Immunität").
 #### **Tn10 und die bevorzugte Transposition nach der Replikation**
@@ -64,25 +64,25 @@ Die Transposition muss reguliert werden, um genomische Instabilität und Schäde
     1. **Replikationsgabel:** Die Replikation teilt das DNA-Molekül in zwei Tochterstränge.
     2. **Cut-and-Paste-Transposition:** Das Transposon wird aus einem der beiden Stränge ausgeschnitten und an eine neue Zielstelle integriert.
     3. **Reparatur:** Der Doppelstrangbruch, der durch das Ausschneiden entsteht, wird mithilfe des Schwesterstrangs repariert.
-- **Warum springt nur eine Kopie?** Einer der beiden Stränge ist **halbmethyliert** (z. B. am Promoter der Transposase). Der halbmethylierte Strang zeigt eine **etwa 1000-fach höhere Promoteraktivität**, was die Transposase dort aktiver macht. Dadurch wird bevorzugt das Transposon von diesem Strang transponiert.
+- **Warum springt nur eine Kopie?** <mark style="background: #FFB86CA6;">Einer der beiden Stränge ist halbmethyliert</mark> (z. B. am Promoter der Transposase). Der halbmethylierte Strang zeigt eine <mark style="background: #FFB86CA6;">etwa 1000-fach höhere Promoteraktivität, was die Transposase dort aktiver macht</mark>. Dadurch wird bevorzugt das Transposon von diesem Strang transponiert.
 #### **Regulation durch Antisense-RNA bei Tn10**
 Antisense-RNA ist eine zentrale Methode zur Regulation der Transposase-Expression:
 - **Funktionsweise:**
-    - Die Antisense-RNA wird von einer entgegengesetzten Richtung transkribiert und paart sich mit der mRNA der Transposase.
+    - Die Antisense-RNA wird von einer entgegengesetzten Richtung transkribiert und <mark style="background: #FFB86CA6;">paart sich mit der mRNA der Transposase</mark>.
     - Bei **hohen Kopiezahlen** von Tn10 kommt es häufig zur RNA-RNA-Paarung, wodurch die Translation der Transposase-mRNA blockiert wird.
     - Bei **niedrigen Kopiezahlen** passiert die RNA-RNA-Paarung seltener, und die Translation der mRNA kann effizient stattfinden.
 - **Regulation durch Kopiezahl:** Dieser Mechanismus wirkt wie ein Rückkopplungssystem. Bei hohen Transposon-Kopien wird die Transposase blockiert, was die weitere Transposition einschränkt und Schäden minimiert.
 ## Eukaryotische Transposition
 Es gibt zwei Hauptkategorien von transponierbaren Elementen in Eukaryoten:
-- **DNA-Transposons:**
+- <mark style="background: #FFB86CA6;">DNA-Transposons</mark>:
     - Beispiele: Tc1/Mariner, P-Elemente, Ac/Ds-Elemente.
-    - Sie bewegen sich über einen **Cut-and-Paste-Mechanismus** und benötigen das Enzym **Transposase**.
+    - Sie bewegen sich über einen <mark style="background: #FFB86CA6;">Cut-and-Paste-Mechanismus und benötigen das Enzym Transposase</mark>.
     - Struktur:
         - **Terminale Inverse Repeats (TIRs)**: Erkennen durch Transposase.
         - **Zielsequenz-Duplikation**: Entsteht bei Integration.
-- **Retrotransposons:**
+- Retrotransposons:
     - **Retrovirale Transposons (LTR):**
-        - Besitzen Long Terminal Repeats (LTRs) und verwenden Enzyme wie **Reverse Transkriptase** und **Integrase**.
+        - Besitzen <mark style="background: #FFB86CA6;">Long Terminal Repeats (LTRs) und verwenden Enzyme wie Reverse Transkriptase und Integrase</mark>.
         - Bewegungsmechanismus: RNA-Zwischenprodukt → Umwandlung in DNA.
     - **Non-LTR Retrotransposons (Poly-A):**
         - Beispiele: LINEs, SINEs.
@@ -106,12 +106,12 @@ Es gibt zwei Hauptkategorien von transponierbaren Elementen in Eukaryoten:
     - Nur in **Keimbahnzellen** aktiv, da in somatischen Zellen das Transkript der Transposase nicht gespleißt wird.
     - In Spermien fehlt ausreichend Cytoplasma, um genügend Repressorproteine zu produzieren, was die Transposition erleichtert.
 ### **Klonierung von Insertionen durch Reverse PCR**
-- **Prinzip:** Reverse PCR wird verwendet, um unbekannte DNA-Sequenzen zu klonieren, die eine bekannte Core-Sequenz flankieren. Diese Methode ist nützlich, um Insertionsstellen von Transposons zu analysieren.
+- **Prinzip:** Reverse PCR wird verwendet, um unbekannte DNA-Sequenzen zu klonieren, die eine bekannte Core-Sequenz flankieren. Diese Methode ist <mark style="background: #FFB86CA6;">nützlich, um Insertionsstellen von Transposons zu analysieren</mark>.
 - **Schritte:**
-    1. **DNA-Verdauung:** Die DNA wird mit Restriktionsenzymen fragmentiert.
-    2. **Zirkularisierung:** Die Fragmente werden durch Ligation zirkularisiert.
-    3. **Reverse PCR:** Zwei Primer werden so gewählt, dass sie von der bekannten Core-DNA ausgehen und in entgegengesetzte Richtungen amplifizieren. Dadurch wird die flankierende Region amplifiziert.
-    4. **Ergebnis:** Das Produkt der Reverse PCR enthält die Core-DNA sowie die flankierenden Sequenzen, die analysiert werden können.
+    1. **DNA-Verdauung:** Die <mark style="background: #FFB86CA6;">DNA wird mit Restriktionsenzymen fragmentiert</mark>.
+    2. **Zirkularisierung:** Die <mark style="background: #FFB86CA6;">Fragmente werden durch Ligation zirkularisiert</mark>.
+    3. **Reverse PCR:** Zwei <mark style="background: #FFB86CA6;">Primer werden so gewählt</mark>, dass sie von der bekannten Core-DNA ausgehen <mark style="background: #FFB86CA6;">und in entgegengesetzte Richtungen amplifizieren. Dadurch wird die flankierende Region amplifiziert</mark>.
+    4. **Ergebnis:** Das Produkt der Reverse PCR enthält die Core-DNA sowie die <mark style="background: #FFB86CA6;">flankierenden Sequenzen, die analysiert werden können</mark>.
 ### **Retrotransposons: Struktur und Mechanismus**
 - **Virus-ähnliche Retrotransposons:**
     - Enthalten **Long Terminal Repeats (LTR)**.
@@ -184,7 +184,7 @@ Es gibt zwei Hauptkategorien von transponierbaren Elementen in Eukaryoten:
     2. Endonuklease schneidet die Ziel-DNA.
     3. Reverse Transkriptase synthetisiert die cDNA, die ins Genom integriert wird.
 #### **Unterschiede zwischen Retrotransposons und DNA-Transposons**
-- DNA-Transposons bewegen sich durch einen "cut-and-paste"-Mechanismus, während Retrotransposons über ein RNA-Intermediat replizieren.
+- <mark style="background: #FFB86CA6;">DNA-Transposons bewegen sich durch einen "cut-and-paste"-Mechanismus, während Retrotransposons über ein RNA-Intermediat replizieren.</mark>
 ### **Einfluss transponierbarer Elemente auf die Genom-Evolution**
 - **Typen von transponierbaren Elementen**: Nicht-LTR-Retrotransposons (LINE, SINE), DNA-Transposons und LTR-Retrotransposons.
 - **Mechanismen**:

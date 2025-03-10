@@ -1,33 +1,29 @@
 ### 1. **Probleme des klassischen Whitted-Style Raytracing-Verfahrens**
-   - Das Whitted-Style Raytracing erzeugt oft „perfekte“ Bilder, die zu künstlich wirken. Die Effekte umfassen perfekte Spiegelung, scharfe Schattenkanten und unendliche Schärfentiefe.
-   - **Lösung:** Um realistischere Effekte zu erzielen, werden Schattenstrahlen zu zufällig gewählten Punkten innerhalb der Lichtquelle geschossen. Dadurch entsteht ein weicher Schatten, der realistischer aussieht.
+   - Das Whitted-Style Raytracing <mark style="background: #FFB86CA6;">erzeugt oft „perfekte“ Bilder, die zu künstlich wirken</mark>. Die Effekte umfassen <mark style="background: #FFB86CA6;">perfekte Spiegelung</mark>, <mark style="background: #FFB86CA6;">scharfe Schattenkanten und unendliche Schärfentiefe</mark>.
+   - <mark style="background: #FFB86CA6;">Lösung</mark>: Um realistischere Effekte zu erzielen, werden <mark style="background: #FFB86CA6;">Schattenstrahlen zu zufällig gewählten Punkten innerhalb der Lichtquelle geschossen</mark>. Dadurch entsteht ein weicher Schatten, der realistischer aussieht.
+   - -> Beim Distributed Raytracing wird <mark style="background: #FFB86CA6;">nicht nur ein Schattenstrahl verschickt, sondern viele</mark>. Damit sollen zu perfekte Spiegelungen/Transmissionen vermieden werden
 ![[Pasted image 20241113121820.png|500]]
 ### 2. **Weiche Schatten**
    - Da reale Lichtquellen eine endliche Ausdehnung besitzen, werden durch Distributed Raytracing weiche Schatten erzeugt.
-   - Der Schatten wird mit zunehmendem Abstand weicher, nahe am Objekt bleibt der Schatten jedoch scharf.
-
+   - Der <mark style="background: #FFB86CA6;">Schatten wird mit zunehmendem Abstand weicher, nahe am Objekt bleibt der Schatten jedoch scharf</mark>.
 ### 3. **Bewegungsunschärfe (Motion Blur)**
-   - Bewegungsunschärfe wird durch Verteilung der Strahlen in der Zeit simuliert. Dies entspricht der Belichtungszeit bei realen Kameras.
-   - Objekte, die sich während eines bestimmten Zeitintervalls bewegen, werden unscharf abgebildet.
-   - Für jeden Pixel werden mehrere Strahlen in unterschiedlichen Zeitpunkten ausgesandt, um die Bewegung des Objekts zu erfassen und die Farbwerte entsprechend zu mitteln.
+   - <mark style="background: #FFB86CA6;">Bewegungsunschärfe wird durch Verteilung der Strahlen in der Zeit simuliert. Dies entspricht der Belichtungszeit bei realen Kameras.</mark>
+   - <mark style="background: #FFB86CA6;">Objekte, die sich während eines bestimmten Zeitintervalls bewegen, werden unscharf abgebildet</mark>.
+   - Für <mark style="background: #FFB86CA6;">jeden Pixel werden mehrere Strahlen in unterschiedlichen Zeitpunkten ausgesandt</mark>, um die Bewegung des Objekts zu erfassen und die Farbwerte entsprechend zu mitteln.
 ### 4. **Tiefenschärfe**
    - Durch das Modell der „dünnen Linse“ werden zusätzliche Strahlen durch die Linsenfläche projiziert. Für jeden Punkt auf der Bildebene wird ein Punkt auf der Linse gewählt, und Strahlen werden durch das Zentrum der Linse zum Fokuspunkt geführt.
-   - Der Effekt sorgt dafür, dass Objekte außerhalb des Fokusbereichs unscharf erscheinen, was eine realistische Tiefenschärfe erzeugt.
-### 5. **Code-Beispiel für Bewegungs- und Tiefenunschärfe**
-   - Der Pseudocode zeigt, wie Bewegungsunschärfe und Tiefenschärfe durch mehrere Proben für jeden Pixel erzielt werden.
-   - `nSuperSample` bestimmt die Anzahl der Strahlen pro Pixel (Supersampling), `nLensSample` ist die Anzahl der Linsenproben für Tiefenschärfe und `nTimeSamples` die Probenanzahl für die Bewegungsunschärfe.
-   - Zufallspunkte werden in jedem Durchlauf generiert, um unterschiedliche Strahlenrichtungen und Zeiten zu simulieren.
+   - Der Effekt sorgt dafür, dass <mark style="background: #FFB86CA6;">Objekte außerhalb des Fokusbereichs unscharf erscheinen</mark>, was eine realistische Tiefenschärfe erzeugt.
 ### **Zusammenfassung: Distributed Raytracing**
-   - Distributed Raytracing erweitert das klassische Raytracing um realistische Effekte durch die Verwendung mehrerer Strahlen pro Pixel.
-   - Bewegungsunschärfe und Tiefenschärfe werden durch eine Kombination von zeit- und raumbasiertem Supersampling erzeugt, was dem Bild eine realistischere Darstellung verleiht.
+   - Distributed Raytracing erweitert das klassische Raytracing um realistische Effekte durch die <mark style="background: #FFB86CA6;">Verwendung mehrerer Strahlen pro Pixel.</mark>
+   - <mark style="background: #FFB86CA6;">Bewegungsunschärfe und Tiefenschärfe</mark> werden durch eine Kombination von zeit- und raumbasiertem Supersampling erzeugt, was dem Bild eine realistischere Darstellung verleiht.
 ### Grundidee von Distributed Raytracing
-Um Licht realistischer zu modellieren, wird bei jedem Schnittpunkt eines Lichtstrahls mit einer Oberfläche nicht nur ein einziger, sondern mehrere sekundäre Lichtstrahlen (Sekundärstrahlen) in zufällige Richtungen weiterverfolgt. Dies berücksichtigt Effekte wie:
+Um Licht realistischer zu modellieren, wird bei <mark style="background: #FFB86CA6;">jedem Schnittpunkt eines Lichtstrahls mit einer Oberfläche nicht nur ein einziger, sondern mehrere sekundäre Lichtstrahlen (Sekundärstrahlen) in zufällige Richtungen weiterverfolgt</mark>. Dies berücksichtigt Effekte wie:
 ![[Pasted image 20241126094046.png#invert|200]]
 1. **Reflexion**: Licht, das von einer Oberfläche reflektiert wird.
 2. **Transmission**: Licht, das durch eine Oberfläche hindurchgeht (z. B. bei Glas oder Wasser).
-Die Richtung und Stärke dieser Strahlen werden durch die **BRDF** (Bidirectional Reflectance Distribution Function) und **BTDF** (Bidirectional Transmission Distribution Function) bestimmt. Diese Funktionen modellieren, wie Licht abhängig von der Oberfläche gestreut oder gebrochen wird.
+Die Richtung und Stärke dieser Strahlen werden <mark style="background: #FFB86CA6;">durch die BRDF  und BTDF bestimmt</mark>. Diese Funktionen modellieren, wie Licht abhängig von der Oberfläche gestreut oder gebrochen wird.
 ### Eigenschaften von Distributed Raytracing
-- **Sekundärstrahlen**: Es werden viele Strahlen benötigt, um alle Lichtpfade zu simulieren. Dies kann zu einem exponentiellen Anstieg der Berechnungen führen, da sich der "Strahlenbaum" durch die Rekursion verzweigt.
+- **Sekundärstrahlen**: Es werden viele Strahlen benötigt, um alle Lichtpfade zu simulieren. Dies kann zu einem <mark style="background: #FFB86CA6;">exponentiellen Anstieg der Berechnungen</mark> führen, da sich der "Strahlenbaum" durch die Rekursion verzweigt.
 - **Realismus**: Durch die zufälligen Richtungen der Strahlen werden Effekte wie unscharfe Reflexionen, Tiefenschärfe und Bewegungsunschärfe realistisch dargestellt.
 - **Physikalische Basis**: Das Verfahren basiert auf physikalischen Prinzipien des Lichttransports und der Radiometrie.
 ### Zusammenhang mit Radiometrie

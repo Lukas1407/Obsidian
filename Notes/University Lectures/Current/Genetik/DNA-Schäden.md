@@ -1,12 +1,12 @@
 DNA-Schäden können auf verschiedene Weise entstehen und haben unterschiedliche Konsequenzen:
 1. **Spontane Schäden**:
-    - Entstehen durch normale biochemische Prozesse innerhalb der Zelle.
-    - Beispiele: Desaminierung, Depurinierung, Oxidation.
+    - Entstehen <mark style="background: #FFB86CA6;">durch normale biochemische Prozesse innerhalb der Zelle</mark>.
+    - Beispiele: <mark style="background: #FFB86CA6;">Desaminierung, Depurinierung, Oxidation</mark>.
 2. **Induzierte Schäden**:
-    - Verursacht durch äußere Faktoren wie UV-Strahlung, ionisierende Strahlung oder Chemikalien.
-    - Beispiele: Pyrimidin-Dimere, Einzel- und Doppelstrangbrüche.
+    - Verursacht <mark style="background: #FFB86CA6;">durch äußere Faktoren wie UV-Strahlung, ionisierende Strahlung oder Chemikalien</mark>.
+    - Beispiele: Pyrimidin-Dimere, <mark style="background: #FFB86CA6;">Einzel- und Doppelstrangbrüche</mark>.
 3. **Chemikalien**:
-    - DNA-schädigende Substanzen, die direkt oder indirekt Mutationen auslösen.
+    - DNA-schädigende Substanzen, die <mark style="background: #FFB86CA6;">direkt oder indirekt Mutationen auslösen</mark>.
     - Beispiele: Alkylierende Substanzen, reaktive Sauerstoffspezies (ROS).
 ## Spontane DNA-Schäden
 ### **Desaminierung**:
@@ -15,7 +15,7 @@ DNA-Schäden können auf verschiedene Weise entstehen und haben unterschiedliche
 - 5-Methylcytosin → Thymin (führt zu Fehlpaarungen mit Guanin).
 ### **Depurinierung**:
 - Verlust einer Purinbase (Adenin oder Guanin) durch Hydrolyse der glycosidischen Bindung.
-- Es entsteht eine apurinische Stelle, die während der Replikation zur Einführung falscher Basen führen kann.
+- Es entsteht eine <mark style="background: #FFB86CA6;">apurinische Stelle</mark>, die <mark style="background: #FFB86CA6;">während der Replikation zur Einführung falscher Basen führen</mark> kann.
 ### **Oxidation**:
 - Durch reaktive Sauerstoffspezies (ROS, z. B. O2−O_2^-, H2O2H_2O_2, ⋅OH\cdot OH).
 - Beispiele:
@@ -24,10 +24,10 @@ DNA-Schäden können auf verschiedene Weise entstehen und haben unterschiedliche
 ## Induzierte DNA-Schäden: UV-Strahlung
 ### Absorptionsspektrum
 - UV-C (100–280 nm): Wird größtenteils von der Atmosphäre absorbiert.
-- UV-B (280–315 nm): Schädigt die Hautzellen.
+- UV-B (280–315 nm): <mark style="background: #FFB86CA6;">Schädigt die Hautzellen</mark>.
 - UV-A (315–400 nm): Dringt tiefer in die Haut ein, wird jedoch durch Glas abgeschirmt.
 ### **Pyrimidin-Dimere**:
-- UV-Strahlung führt zur Bildung von kovalenten Bindungen zwischen benachbarten Pyrimidinbasen (z. B. Thymin-Thymin).
+- <mark style="background: #FFB86CA6;">UV-Strahlung führt zur Bildung von kovalenten Bindungen zwischen benachbarten Pyrimidinbasen</mark> (z. B. Thymin-Thymin).
 - Beispiele:
     - **Thymin-Dimere**: Stören die DNA-Replikation.
     - **T(6-4)C-Photoprodukte**: Schwer reparierbare Schäden.
@@ -40,17 +40,17 @@ DNA-Schäden können auf verschiedene Weise entstehen und haben unterschiedliche
 - Hydroxyl-Radikal (⋅OH\cdot OH): Hochreaktiv, schädigt DNA-Basen.
 - Superoxid (O2−O_2^-) und Peroxid (H2O2H_2O_2): Indirekte DNA-Schädigung.
 ### **Konsequenzen**:
-- Einzel- und Doppelstrangbrüche in der DNA.
-- Basenmodifikationen.
+- <mark style="background: #FFB86CA6;">Einzel- und Doppelstrangbrüche in der DNA</mark>.
+- <mark style="background: #FFB86CA6;">Basenmodifikationen</mark>.
 ## **Chemikalienbedingte DNA-Schäden**
 ### **Alkylierung**:
-- Modifikation der DNA-Basen durch Hinzufügen von Alkylgruppen (z. B. Methyl, Ethyl).
-- Stört die Basenpaarung und die helikale Struktur.
+- <mark style="background: #FFB86CA6;">Modifikation der DNA-Basen durch Hinzufügen von Alkylgruppen</mark> (z. B. Methyl, Ethyl).
+- <mark style="background: #FFB86CA6;">Stört die Basenpaarung und die helikale Struktur</mark>.
 - Beispiele:
     - O⁶-Methylguanin: Fehlpaarung mit Thymin.
     - Alkylierte Cytosine und Adenine.
 ### **Adduktbildung**:
-- Bindung von Chemikalien an DNA-Basen, was deren Struktur und Funktion verändert.
+- <mark style="background: #FFB86CA6;">Bindung von Chemikalien an DNA-Basen, was deren Struktur und Funktion verändert</mark>.
 - Beispiele: Polyzyklische aromatische Kohlenwasserstoffe (PAKs).
 ### **Endogene und exogene Agentien**:
 - **Endogen**: SAM (S-Adenosyl-Methionin) als natürlicher Methylierungscofaktor.
@@ -60,13 +60,13 @@ DNA-Schäden können auf verschiedene Weise entstehen und haben unterschiedliche
 ## Abhilfe-Mechanismen
 ### Passive Schutzmechanismen
 - **Haut/Pigmente**:
-    - Melanin absorbiert UV-Strahlung und schützt so die darunterliegenden Zellen vor Schäden.
+    - <mark style="background: #FFB86CA6;">Melanin absorbiert UV-Strahlung und schützt so die darunterliegenden Zellen vor Schäden</mark>.
     - Besonders wichtig für Zellen in der Haut (z. B. Melanozyten).
 - **Struktur der DNA**:
-    - Die Basenpaarung (z. B. A-T, G-C) schützt vor spontanen chemischen Modifikationen.
+    - <mark style="background: #FFB86CA6;">Die Basenpaarung (z. B. A-T, G-C) schützt vor spontanen chemischen Modifikationen</mark>.
     - Dehydrierte DNA in der A-Form (z. B. in Bacillus-Sporen) ist besonders resistent gegen Umweltschäden.
 - **Radikalfänger**:
-    - Moleküle wie **Vitamin C** neutralisieren freie Radikale, die DNA schädigen können.
+    - <mark style="background: #FFB86CA6;">Moleküle wie Vitamin C neutralisieren freie Radikale</mark>, die DNA schädigen können.
 - **Redox-Puffer**:
     - **Glutathion** reduziert reaktive Sauerstoffspezies (ROS).
     - Beispiel:
@@ -75,32 +75,32 @@ DNA-Schäden können auf verschiedene Weise entstehen und haben unterschiedliche
     - **Superoxid-Dismutase** wandelt Superoxid ($O_2^-$​) in Wasserstoffperoxid ($H_2O_2$​) um.
     - **Katalase** zersetzt Wasserstoffperoxid ($H_2O_2$​) in Wasser und Sauerstoff.
 - **Räumliche Trennung**:
-    - DNA befindet sich im Zellkern und ist so vor reaktiven Sauerstoffspezies in Mitochondrien oder Peroxisomen geschützt.
+    - <mark style="background: #FFB86CA6;">DNA befindet sich im Zellkern und ist so vor reaktiven Sauerstoffspezies in Mitochondrien oder Peroxisomen geschützt</mark>.
 ### Aktive Reparaturmechanismen
 1. **Direkte Eliminierung**:
-    - Schäden werden direkt durch Enzyme behoben, ohne DNA-Bestandteile auszutauschen.
+    - <mark style="background: #FFB86CA6;">Schäden werden direkt durch Enzyme behoben</mark>, ohne DNA-Bestandteile auszutauschen.
     - Beispiel: Photoreaktivierung (siehe unten).
 2. **Exzision des Schadens**:
-    - Der beschädigte DNA-Abschnitt wird entfernt und durch eine korrekte Sequenz ersetzt.
+    - <mark style="background: #FFB86CA6;">Der beschädigte DNA-Abschnitt wird entfernt und durch eine korrekte Sequenz ersetzt</mark>.
     - Beispiele: Basen-Exzisionsreparatur (BER), Nukleotid-Exzisionsreparatur (NER).
 3. **Rekombination**:
-    - Ein beschädigter Bereich wird durch einen intakten Bereich ersetzt.
+    - <mark style="background: #FFB86CA6;">Ein beschädigter Bereich wird durch einen intakten Bereich ersetzt</mark>.
     - Besonders wichtig bei Doppelstrangbrüchen.
 #### Photoreaktivierung
 - Spezifisch für UV-Schäden wie **Thymin-Dimere**.
 - Enzym: **Photolyase** (fehlt bei Säugetieren).
 - Mechanismus:
-    1. Photolyase bindet an die beschädigte Stelle.
-    2. Durch Lichtabsorption (300−500 nm300-500 \, nm300−500nm) wird die kovalente Bindung zwischen den Thyminen aufgelöst.
-    3. Enzym löst sich, und die native DNA wird wiederhergestellt.
+    1. <mark style="background: #FFB86CA6;">Photolyase bindet an die beschädigte Stelle</mark>.
+    2. Durch <mark style="background: #FFB86CA6;">Lichtabsorption</mark> ($300-500 nm$) <mark style="background: #FFB86CA6;">wird die kovalente Bindung zwischen den Thyminen aufgelöst</mark>.
+    3. <mark style="background: #FFB86CA6;">Enzym löst sich</mark>, und die native DNA wird wiederhergestellt.
 #### Alkyltransferasen
-- Entfernen von Alkylgruppen (z. B. Methylgruppen) von DNA-Basen.
+- <mark style="background: #FFB86CA6;">Entfernen von Alkylgruppen</mark> (z. B. Methylgruppen) von DNA-Basen.
 - Enzym: **O⁶-Methylguanin-DNA-Methyltransferase (Ada)**.
 - Repariert:
     - O⁶-Methylguanin (verhindert Fehlpaarung mit Thymin).
     - O⁴-Methylthymin.
 #### Basen-Exzisionsreparatur (BER)
-- Repariert kleine Schäden wie Desaminierung oder Oxidation.
+- <mark style="background: #FFB86CA6;">Repariert kleine Schäden wie Desaminierung oder Oxidation</mark>.
 - Mechanismus:
     1. **Glycosylase** entfernt die beschädigte Base.
     2. Es entsteht eine **apurinische/apyrimidinische (AP) Stelle**.

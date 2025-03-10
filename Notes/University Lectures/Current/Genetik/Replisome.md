@@ -1,4 +1,4 @@
-- Replisome sind Enzymen und Proteinen besteht, die zusammenarbeiten, um die DNA zu kopieren
+- <mark style="background: #FFB86CA6;">Replisome sind Enzymen und Proteinen besteht, die zusammenarbeiten, um die DNA zu kopieren</mark>
 ![[Pasted image 20241107095828.png#|400]]
 ## Komponenten
 - **Pol III Core**:

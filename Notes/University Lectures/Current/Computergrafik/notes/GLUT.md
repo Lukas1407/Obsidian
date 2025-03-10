@@ -1,0 +1,2 @@
+OpenGL selbst hat keine Funktionen, um Fenster zu erstellen oder Eingaben abzufangen. Dafür nutzt man beispielsweise **GLUT (OpenGL Utility Toolkit)** oder die moderne Variante **freeGLUT**
+![[Pasted image 20250126175842.png#invert|600]]

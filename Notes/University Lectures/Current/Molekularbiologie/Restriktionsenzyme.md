@@ -3,7 +3,7 @@
 	- -> Deswegen haben die meisten auch ihrer optimale Aktivität bei Körpertemperatur (37 Grad)
 - Werden auch Restriktionsendonucleasen genannt
 ## Funktion
-- Schneiden durch Hydrolysereaktion -> verwenden Wasser und Energie um die Bindungen des Phosphodiesterrückgrat zu brechen
+- Schneiden durch <mark style="background: #FFB86CA6;">Hydrolysereaktion</mark> -> verwenden Wasser und Energie um die Bindungen des <mark style="background: #FFB86CA6;">Phosphodiesterrückgrat</mark> zu brechen
 ![[Pasted image 20241105095049.png#invert|300]]
 - Bindung zwischen dem Phosphat und dem benachbarten Zuckeratom gespalten.
 ### Warum schneidet sie nicht eigene DNA?
@@ -44,7 +44,7 @@
 #### Sticky/Cohesive Ends
 - Machen einen zick-zack Schnitt und erzeugen einen Überhang, je nach dem wie das Restriktionsenzym schneidet
 ![[Pasted image 20241105101150.png#invert|400]]
-- Vorteil: Können sehr einfach wieder zusammen gefügt werden (legiert werden) wegen der Phosphat- und Hydroxyl-Gruppe
+- Vorteil: Können sehr einfach wieder zusammen gefügt werden (legiert werden) <mark style="background: #FFB86CA6;">wegen der Phosphat- und Hydroxyl-Gruppe</mark>
 #### Blunt Ends
 - Schneiden glatt
 ![[Pasted image 20241105101501.png#invert|400]]

@@ -1,10 +1,10 @@
 ## Something we know after 50 years of software development
-- Putting more people on a late project makes it later
-- Errors are more frequent during design & requirement phase
+- Putting <mark style="background: #FFB86CA6;">more people on a late project makes it later</mark>
+- <mark style="background: #FFB86CA6;">Errors are more frequent during design & requirement phase</mark>
 	- -> And more difficult to fix
-- Testing can only show the presence of errors but not their absence
+- <mark style="background: #FFB86CA6;">Testing can only show the presence of errors but not their absence</mark>
 - A system that is used will be changed
-- Only what is hidden can be changed without risk
+- <mark style="background: #FFB86CA6;">Only what is hidden can be changed without risk</mark>
 ## Content
 - [[Clean Code]]
 - [[Command-Query Separation (CQS)]]
@@ -82,6 +82,7 @@
 - [[Principles for Building Secure Software]]
 - [[Cryptography]]
 - [[Ethos and Ethics in Software Engineering]]
+- [[Requirement Classification Glinz]]
 
 ## Learning Goals
 ### Software Architecture: Be able to 

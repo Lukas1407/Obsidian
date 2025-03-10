@@ -14,12 +14,11 @@
   "mobilePullAction": "obsidian-excalidraw-plugin:excalidraw-autocreate-popout",
   "attachmentFolderPath": "./images",
   "showUnsupportedFiles": true,
-  "showRibbon": false,
   "pdfExportSettings": {
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 100
+    "downscalePercent": 70
   },
   "readableLineLength": true,
   "showLineNumber": false

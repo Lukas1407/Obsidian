@@ -1,25 +1,25 @@
 ## Mechanismus
-Tyrosin-Rekombinasen schneiden die DNA **in einem sequentiellen Prozess** (im Gegensatz zu Serin-Rekombinasen). Der Mechanismus verläuft in vier Schritten:
+Tyrosin-Rekombinasen <mark style="background: #FFB86CA6;">schneiden die DNA in einem sequentiellen Prozess (im Gegensatz zu Serin-Rekombinasen)</mark>. Der Mechanismus verläuft in vier Schritten:
 ![[University Lectures/Current/Genetik/images/Untitled 2.png#invert|300]]
 - **Erkennen und Bindung**:
     - Tyrosin-Rekombinasen erkennen spezifische DNA-Sequenzen und bilden eine stabile Bindung mit der DNA.
-    - Die Erkennungsstellen sind asymmetrisch.
+    - Die <mark style="background: #FFB86CA6;">Erkennungsstellen sind asymmetrisch</mark>.
 - **Erster Schnitt und Austausch der oberen Stränge**:
-    - Ein Tyrosinrest des Enzyms führt einen Einzelstrangbruch ein, indem er eine **Phosphat-Tyrosin-Brücke** bildet.
-    - Die freien Enden der oberen Stränge werden vertauscht und bilden eine **Holliday-Struktur**.
+    - Ein Tyrosinrest des Enzyms <mark style="background: #FFB86CA6;">führt einen Einzelstrangbruch</mark> ein, indem er eine **Phosphat-Tyrosin-Brücke** bildet.
+    - <mark style="background: #FFB86CA6;">Die freien Enden der oberen Stränge werden vertauscht und bilden eine Holliday-Struktur</mark>.
 - **Spaltung und Austausch der unteren Stränge**:
-    - Nun werden die unteren DNA-Stränge geschnitten und ausgetauscht.
+    - Nun werden die <mark style="background: #FFB86CA6;">unteren DNA-Stränge geschnitten und ausgetauscht</mark>.
     - Dies geschieht, nachdem die Holliday-Struktur stabilisiert wurde.
 - **Abschluss der Rekombination**:
     - Die DNA-Enden werden wieder verknüpft, wodurch die Holliday-Struktur aufgelöst und das rekombinierte Produkt vollständig wird.
 ### Besonderheiten
-- Tyrosin-Rekombinasen arbeiten in einem **zwei-Schritt-Prozess** und erzeugen dabei eine **Holliday-Struktur** als Zwischenprodukt.
+- Tyrosin-Rekombinasen arbeiten in einem <mark style="background: #FFB86CA6;">zwei-Schritt-Prozess</mark> und erzeugen dabei eine **Holliday-Struktur** als Zwischenprodukt.
 
 ## Cre-Rekombinase
 Die Cre-Rekombinase ist ein Enzym aus der Tyrosin-Rekombinase-Familie. Sie katalysiert die Rekombination zwischen spezifischen **loxP-Stellen** auf der DNA. Der Prozess läuft in zwei Schritten ab:
 ### **Mechanismus
 ![[University Lectures/Current/Genetik/images/Untitled 3.png#invert|300]]
-#### **1. Erster Schritt – Spaltung und Austausch der ersten Stränge**
+#### 1. Erster Schritt – Spaltung und Austausch der ersten Stränge**
 - **Bindung an die loxP-Stellen**: Cre-Rekombinase erkennt die symmetrischen Sequenzen der loxP-Stellen und bindet daran.
 - **Einzelstrangschnitte**: Im ersten Schritt schneidet die Cre-Rekombinase die oberen Stränge beider loxP-Stellen.
     - Ein Tyrosinrest der Cre-Rekombinase bildet eine kovalente Bindung mit einem Phosphat an der DNA.

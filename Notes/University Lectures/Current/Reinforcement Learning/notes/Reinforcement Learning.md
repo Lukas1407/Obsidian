@@ -46,4 +46,6 @@ Basic reinforcement learning is modeled as a [[Markov Decision Process]].
 7. [[Multi-step Return]]
 8. [[Bias-Variance Trade-off]]
 9. [[QT-Opt|Q-Learning with continuous actions]]
-10. [[Off-Policy Actor-Critic Algorithms]]set
+10. [[Off-Policy Actor-Critic Algorithms]]
+11. [[Black-Box Methods]]
+12. [[Motion Promitives (MPs)]]

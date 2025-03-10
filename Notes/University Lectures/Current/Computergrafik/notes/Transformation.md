@@ -1,7 +1,7 @@
-- **Definition**: Eine Transformation ist eine mathematische Abbildung, die einen Punkt $x$ in einem Raum auf einen anderen Punkt $x'$ abbildet.
-- **Lineare Transformationen**:
-  - Werden durch Matrizen dargestellt: $x' = T(x) = A \cdot x$, wobei $A$ die Transformationsmatrix ist.
-  - Beispiele: Verschiebungen, Rotationen, Skalierungen.
+- **Definition**: Eine Transformation ist eine mathematische Abbildung, die <mark style="background: #FFB86CA6;">einen Punkt</mark> $x$ in <mark style="background: #FFB86CA6;">einem Raum auf einen anderen Punkt</mark> $x'$ abbildet.
+- <mark style="background: #FFB86CA6;">Lineare Transformationen</mark>:
+  - Werden durch Matrizen dargestellt: $x' = T(x) = A \cdot x$, wobei $A$ die <mark style="background: #FFB86CA6;">Transformationsmatrix</mark> ist.
+  - Beispiele: <mark style="background: #FFB86CA6;">Verschiebungen, Rotationen, Skalierungen</mark>.
 
 **Anwendungen in der Computergrafik**:
 - Platzierung von Objekten in einer Szene.
@@ -12,23 +12,23 @@
 ![[Pasted image 20241127125454.png#invert|300]]
 In der Computergrafik werden verschiedene Koordinatensysteme verwendet, um Objekte zu beschreiben und zu manipulieren:
 - **Objekt- oder Modell-Koordinatensystem**:
-  - Definiert die Geometrie eines Objekts unabhängig von der Szene.
+  - <mark style="background: #FFB86CA6;">Definiert die Geometrie eines Objekts unabhängig von der Szene</mark>.
   - Transformation: Modelltransformation (Verschieben, Skalieren, Rotieren).
 - **Weltkoordinatensystem**:
-  - Beschreibt die Position der Objekte relativ zur gesamten Szene.
+  - <mark style="background: #FFB86CA6;">Beschreibt die Position der Objekte relativ zur gesamten Szene</mark>.
   - Transformation: Kameratransformation (Blickwinkel und Perspektive der Kamera).
 - **Kamerakoordinatensystem**:
-  - Objekte werden relativ zur Kamera dargestellt.
+  - <mark style="background: #FFB86CA6;">Objekte werden relativ zur Kamera dargestellt</mark>.
   - Anwendungen: Raytracing, Projektionen in den Bildschirmraum.
 ### **Transformationsgruppen**
 ![[Pasted image 20241127125514.png#invert|400]]
-- **Euklidische (starre) Transformationen**:
-  - Erhalten Abstände und Winkel (z. B. Rotation, Translation).
-- **Lineare Abbildungen**:
-  - Skalierung, Spiegelung, Scherung.
+- <mark style="background: #FFB86CA6;">Euklidische Transformationen</mark>:
+  - <mark style="background: #FFB86CA6;">Erhalten Abstände und Winkel</mark> (z. B. <mark style="background: #ADCCFFA6;">Rotation, Translation</mark>).
+- <mark style="background: #FFB86CA6;">Lineare Abbildungen</mark>:
+  - <mark style="background: #ADCCFFA6;">Skalierung</mark>, Spiegelung, Scherung.
   - Eigenschaften: additive und homogene Operationen (lineare Algebra).
 - **Affin**:
-  - Parallelität bleibt erhalten.
+  - <mark style="background: #FFB86CA6;">Parallelität bleibt erhalten</mark>.
   - Enthält Translationen, Skalierungen, Scherungen.
 - **Projektiv**:
   - Linien bleiben Linien, aber Perspektive wird hinzugefügt.
@@ -115,9 +115,9 @@ In der Computergrafik werden verschiedene Koordinatensysteme verwendet, um Objek
 - Beispiele:
   - Euler-Winkel: Kombination von Rotationen um $x$-, $y$- und $z$-Achse.
 #### **Repräsentation von Rotationen**
-- **Matrixdarstellungen**.
-- **Quaternions**: Kompakte Darstellung für Rotationen in 3D.
-- **Euler-Winkel**: Sequentielle Rotationen.
+- <mark style="background: #FFB86CA6;">Matrixdarstellungen</mark>.
+- <mark style="background: #FFB86CA6;">Quaternions: Kompakte Darstellung für Rotationen in 3D</mark>.
+- <mark style="background: #FFB86CA6;">Euler-Winkel: Sequentielle Rotationen</mark>.
 **Anwendungen in der Computergrafik:**
 - Platzierung von Objekten in 3D-Szenen.
 - Kamerabewegungen.
@@ -183,7 +183,7 @@ In der Computergrafik werden verschiedene Koordinatensysteme verwendet, um Objek
        $$
        S^{-1}(x, y, z) = S\left(\frac{1}{x}, \frac{1}{y}, \frac{1}{z}\right)
        $$
-     - **Rotation**: Transponierte Matrix ist die Inverse, da Rotationsmatrizen orthogonal sind:
+     - **Rotation**: Transponierte Matrix ist die Inverse, <mark style="background: #FFB86CA6;">da Rotationsmatrizen orthogonal</mark> sind:
        $$
        R^{-1}(\phi) = R^\top(\phi)
        $$

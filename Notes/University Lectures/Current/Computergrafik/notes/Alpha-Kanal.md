@@ -1,6 +1,6 @@
-- Bilder sind oft mit 32 Bits pro Pixel kodiert, was eine detaillierte Farb- und Transparenzdarstellung ermöglicht.
-- **RGBA-Format**: Das RGBA-Format enthält 24 Bits für Farbe (8 Bits pro Kanal für Rot, Grün und Blau) und zusätzlich 8 Bits für den Alpha-Kanal. Der Alpha-Kanal repräsentiert die Transparenz (Opazität) des Pixels – also, wie durchscheinend das Bild an bestimmten Stellen ist.
-- **Anwendungen**: Der Alpha-Kanal wird im Frame Buffer der Grafikkarte, in PNG-Bildern und Texturen verwendet, um Transparenzeffekte darzustellen.
+- Bilder sind oft mit 32 Bits pro Pixel kodiert, was eine detaillierte Farb- und <mark style="background: #FFB86CA6;">Transparenzdarstellung</mark> ermöglicht.
+- **RGBA-Format**: Das RGBA-Format enthält 24 Bits für Farbe (8 Bits pro Kanal für Rot, Grün und Blau) und zusätzlich 8 Bits für den Alpha-Kanal. <mark style="background: #FFB86CA6;">Der Alpha-Kanal repräsentiert die Transparenz (Opazität) des Pixels</mark> – also, wie durchscheinend das Bild an bestimmten Stellen ist.
+- **Anwendungen**: Der Alpha-Kanal wird im Frame Buffer der Grafikkarte, in <mark style="background: #FFB86CA6;">PNG-Bildern</mark> und Texturen verwendet, um Transparenzeffekte darzustellen.
 - **Bedeutung**: Transparenz ist in der Bildbearbeitung, in der Computergrafik (z.B. für Texturen) und bei Blue-Screen-Effekten essenziell.
 ![[Pasted image 20241028083645.png|400]]
 ### Alpha-Kanal bei der Texturierung

@@ -12,5 +12,6 @@
     "header-indicator",
     "media-grid-snippet"
   ],
-  "showViewHeader": true
+  "showViewHeader": true,
+  "showRibbon": false
 }

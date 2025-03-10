@@ -135,7 +135,7 @@ Die <mark style="background: #FFB86CA6;">Restriktionsanalyse wird verwendet, um 
 2. **Größe des Genoms:**
    - Das menschliche Genom ist etwa 3 Milliarden Basenpaare groß.
    - Plasmide können nur kleine DNA-Stücke (z. B. 20 kb) aufnehmen.
-   - Um das gesamte menschliche Genom zu klonieren, wären ca. 150.000 Klone nötig.
+   - Um das gesamte menschliche Genom zu klonieren, wären <mark style="background: #FFB86CA6;">ca. 150.000 Klone</mark> nötig.
 #### **Berechnung der Anzahl benötigter Klone:**
 - **Formel:**  
   $$N = \frac{\ln(1-P)}{\ln(1-a/b)}$$
@@ -158,31 +158,34 @@ Die <mark style="background: #FFB86CA6;">Restriktionsanalyse wird verwendet, um 
     1. Der Phage <mark style="background: #FFB86CA6;">bindet an die Wirtszelle und injiziert seine DNA</mark>.
     2. Die Phagen-DNA <mark style="background: #FFB86CA6;">übernimmt die Kontrolle</mark> über die Zelle.
     3. Neue Phagen-DNA und -Proteine werden <mark style="background: #FFB86CA6;">synthetisiert</mark> und zu funktionsfähigen Virionen zusammengesetzt.
+        - Das Phagen-DNA zirkularisiert und repliziert entweder durch **θ-Replikation** oder [[Rolling Circle-Replikation]].
+        - Phagen-Proteine werden durch Transkription und Translation hergestellt.
     4. Die Wirtszelle lysiert, setzt mehr <mark style="background: #FFB86CA6;">als 100 neue Phagen</mark> frei und stirbt.
 - **Ergebnis**: <mark style="background: #FFB86CA6;">Schnelle Vermehrung und Freisetzung</mark> von Phagen.
 ### Lysogener Zyklus:
 - **Prozess**:
-    1. Nach der Injektion <mark style="background: #FFB86CA6;">integriert sich die Phagen-DNA in das bakterielle Chromosom und wird zu einem Prophagen</mark>.
+    1. Nach der Injektion <mark style="background: #FFB86CA6;">integriert sich die Phagen-DNA in das bakterielle Chromosom - an spezifischen att-Stellen. und wird zu einem Prophagen</mark>.
     2. Die <mark style="background: #FFB86CA6;">Phagen-DNA wird bei jeder Zellteilung passiv repliziert</mark>.
+        1. Ein **λ-Repressor** (CI-Protein) verhindert die Expression der lytischen Gene.
     3. Unter bestimmten Bedingungen (z. B. Stress) kann der Prophage den <mark style="background: #FFB86CA6;">lysogenen Zyklus verlassen und in den lytischen Zyklus übergehen</mark>.
 - **Ergebnis**: Langfristige Erhaltung der Phagen-DNA ohne Zelltod.
 ### Erstellen von DNA-Genbanken mit λ-Phage
-DNA-Genbanken mit λ-Phagen eignen sich für die Klonierung großer DNA-Fragmente, z. B. für genomische Bibliotheken.
+DNA-Genbanken mit λ-Phagen <mark style="background: #FFB86CA6;">eignen sich für die Klonierung großer DNA-Fragmente</mark>, z. B. für genomische Bibliotheken.
 #### **Ablauf**:
 1. **Fragmentierung der DNA**:
-    - Human-DNA (z. B. 3x10⁹ Basenpaare) wird mit Restriktionsenzymen (z. B. Sau3A) in Fragmente von ca. 20 kb zerlegt.
+    - Human-DNA (z. B. 3x10⁹ Basenpaare) wird mit Restriktionsenzymen (z. B. Sau3A) <mark style="background: #FFB86CA6;">in Fragmente von ca. 20 kb zerlegt</mark>.
     - Diese Fragmente besitzen "klebrige Enden" (Sticky Ends), die mit λ-DNA kompatibel sind.
 2. **Rekombination**:
-    - Die 20-kb-Fragmente werden mit den Armen der λ-DNA (enthalten COS-Sites) kombiniert und mit DNA-Ligase verbunden.
+    - Die 20-kb-Fragmente werden mit den Armen der λ-DNA (enthalten COS-Sites) kombiniert und <mark style="background: #FFB86CA6;">mit DNA-Ligase verbunden</mark>.
 3. **Verpackung in Phagenpartikel**:
-    - Die rekombinante DNA wird in vitro in Phagenköpfe verpackt und bildet funktionsfähige Phagen.
+    - Die <mark style="background: #FFB86CA6;">rekombinante DNA wird in vitro in Phagenköpfe verpackt und bildet funktionsfähige Phagen</mark>.
 4. **Infektion und Vermehrung**:
-    - Die Phagen infizieren Bakterienzellen und bilden eine hohe Anzahl identischer Phagen (ca. 10⁶ pro Mikrogramm DNA).
+    - Die Phagen <mark style="background: #FFB86CA6;">infizieren Bakterienzellen</mark> und bilden eine hohe <mark style="background: #FFB86CA6;">Anzahl identischer Phagen</mark> (ca. 10⁶ pro Mikrogramm DNA).
     - Jede Phagenplaque entspricht einem spezifischen DNA-Fragment.
 #### **Vorteile gegenüber Plasmiden**:
 - **Effizienz**:
-    - λ-Phagen können größere DNA-Fragmente (ca. 20 kb) aufnehmen als Plasmide (max. ca. 10 kb).
-    - Sie erzeugen eine höhere Anzahl an Klonen (Plaques) pro Mikrogramm DNA.
+    - λ-Phagen können <mark style="background: #FFB86CA6;">größere DNA-Fragmente (ca. 20 kb) aufnehmen als Plasmide (max. ca. 10 kb)</mark>.
+    - Sie <mark style="background: #FFB86CA6;">erzeugen eine höhere Anzahl an Klonen</mark> (Plaques) pro Mikrogramm DNA.
 - **Platzbedarf**:
     - Für die Klonierung des menschlichen Genoms benötigt man nur <mark style="background: #FFB86CA6;">20-30 Petri-Schalen mit λ-Phagen, aber tausende Platten bei der Verwendung von Plasmiden</mark>.
 ### Überlappende Klone und Genomabdeckung
@@ -192,8 +195,8 @@ Die Erstellung einer DNA-Genbank erfordert eine ausreichende Anzahl von Klonen, 
     - Überlappende Klone <mark style="background: #FFB86CA6;">ermöglichen eine lückenlose Kartierung des Genoms</mark> durch "chromosome walking".
 - **Berechnung der Anzahl Klone**:
     - Beispiel: Um 95 % des menschlichen Genoms zu repräsentieren, sind ca. 150.000 verschiedene rekombinante λ-Phagen nötig.
-**Cosmide** sind Hybridvektoren, die <mark style="background: #FFB86CA6;">Eigenschaften von Plasmiden und Phagen kombinieren</mark>. Sie können größere DNA-Inserts als Plasmide aufnehmen, <mark style="background: #FFB86CA6;">bis zu 45 kb.</mark>
 ### **Aufbau und Funktion von Cosmiden:**
+**Cosmide** sind Hybridvektoren, die <mark style="background: #FFB86CA6;">Eigenschaften von Plasmiden und Phagen kombinieren</mark>. Sie können größere DNA-Inserts als Plasmide aufnehmen, <mark style="background: #FFB86CA6;">bis zu 45 kb.</mark>
 1. **COS-Sites**:
     - Sie <mark style="background: #FFB86CA6;">stammen von λ-Phagen und ermöglichen die Verpackung der DNA in Phagenhüllen</mark>.
     - Erlauben die <mark style="background: #FFB86CA6;">effiziente Infektion von Wirtszellen</mark> (_E. coli_).
@@ -212,26 +215,26 @@ Die Erstellung einer DNA-Genbank erfordert eine ausreichende Anzahl von Klonen, 
     - Die Phagen infizieren _E. coli_-Zellen.
     - Transformierte Zellen werden auf Ampicillin-haltigem Medium selektiert.
 ### **Vorteile von Cosmiden:**
-- Größere Insertkapazität (bis zu 45 kb) im Vergleich zu Plasmiden.
-- Einfacher zu handhaben als Phagenvektoren.
+- <mark style="background: #FFB86CA6;">Größere Insertkapazität</mark> (bis zu 45 kb) im Vergleich zu Plasmiden.
+- <mark style="background: #FFB86CA6;">Einfacher zu handhaben als Phagenvektoren</mark>.
 - Effiziente Klonierung von großen Genen oder Genomfragmenten.
 ## **DNA-Genbanken in Bakteriellen Künstlichen Chromosomen (BACs)**
-**BACs (Bacterial Artificial Chromosomes)** sind Plasmid-basierte Vektoren, die für die Klonierung sehr großer DNA-Fragmente (bis zu **300 kb**) verwendet werden.
+**BACs (Bacterial Artificial Chromosomes)** sind <mark style="background: #FFB86CA6;">Plasmid-basierte Vektoren, die für die Klonierung sehr großer DNA-Fragmente (bis zu 300 kb)</mark> verwendet werden.
 ### **Eigenschaften von BACs:**
 1. **Abgeleitet vom F-Faktor-Plasmid**:
-    - Der **F-Faktor** ist ein großes natürliches Plasmid in Bakterien, das für die Konjugation (horizontaler Gentransfer) verantwortlich ist.
-    - BACs enthalten den Replikationsursprung (ORI) und die F-Faktor-Proteine, die die stabile Replikation und Verteilung des Plasmids gewährleisten.
+    - <mark style="background: #FFB86CA6;">Der F-Faktor ist ein großes natürliches Plasmid in Bakterien</mark>, das <mark style="background: #FFB86CA6;">für horizontaler Gentransfer verantwortlich</mark> ist.
+    - BACs <mark style="background: #FFB86CA6;">enthalten den Replikationsursprung (ORI)</mark> und die F-Faktor-Proteine, die die stabile Replikation und Verteilung des Plasmids gewährleisten.
 2. **Kapazität**:
-    - BACs können DNA-Inserts von 100-300 kb aufnehmen, ideal für die Klonierung großer Genome.
+    - BACs können <mark style="background: #FFB86CA6;">DNA-Inserts von 100-300 kb aufnehmen</mark>, ideal für die Klonierung großer Genome.
 3. **Niedrige Kopienzahl**:
-    - BACs liegen in Zellen in niedriger Kopienzahl vor, was die Stabilität großer Inserts erhöht.
+    - BACs <mark style="background: #FFB86CA6;">liegen in Zellen in niedriger Kopienzahl vor, was die Stabilität großer Inserts</mark> erhöht.
 ### **Klonierungsprozess in BACs:**
 1. **Fragmentierung der DNA**:
     - Große DNA-Stücke werden mit Restriktionsenzymen geschnitten, z. B. in 300 kb Fragmente.
 2. **Einfügen in den BAC-Vektor**:
-    - Die DNA-Fragmente werden an spezifischen Schnittstellen im BAC-Vektor ligiert.
+    - Die DNA-Fragmente werden an spezifischen Schnittstellen im <mark style="background: #FFB86CA6;">BAC-Vektor ligiert.</mark>
 3. **Transformation in _E. coli_**:
-    - Die rekombinanten BACs werden in _E. coli_-Zellen eingebracht.
+    - Die rekombinanten BACs werden <mark style="background: #FFB86CA6;">in _E. coli_-Zellen eingebracht.</mark>
     - Transformierte Zellen werden durch Selektion (z. B. Antibiotikaresistenz) identifiziert.
 ### **Vorteile von BACs:**
 - **Sehr hohe Kapazität**: Ideal für die Klonierung großer Genome wie dem menschlichen Genom.
@@ -245,17 +248,17 @@ Die Erstellung einer DNA-Genbank erfordert eine ausreichende Anzahl von Klonen, 
 - BACs nutzen diese Mechanismen zur Stabilisierung und Replikation des Vektors in Wirtszellen.
 ## DNA-Genbanken in Yeast Artificial Chromosomes (YACs)
 ### **Eigenschaften von YACs**
-**Yeast Artificial Chromosomes (YACs)** sind künstliche Chromosomen, die in Hefe (_Saccharomyces cerevisiae_) verwendet werden, um sehr große DNA-Fragmente zu klonieren, bis zu **3000 kb**.
+**Yeast Artificial Chromosomes (YACs)** sind künstliche Chromosomen, die in Hefe (_Saccharomyces cerevisiae_) verwendet werden, um sehr große DNA-Fragmente zu klonieren, <mark style="background: #FFB86CA6;">bis zu 3000 kb</mark>.
 - **Komponenten eines YAC-Vektors**:
-    - **Telomere (TEL)**: Schützen die Enden des Chromosoms und verhindern Degradierung.
-    - **Centromere (CEN)**: Sichern die korrekte Verteilung während der Zellteilung.
-    - **Origin of Replication (ORI)**: Ermöglicht die Replikation in Hefe.
-    - **Selektionsmarker**:
+    - <mark style="background: #FFB86CA6;">Telomere</mark> (TEL): Schützen die Enden des Chromosoms und verhindern Degradierung.
+    - <mark style="background: #FFB86CA6;">Centromere</mark> (CEN): Sichern die korrekte Verteilung während der Zellteilung.
+    - <mark style="background: #FFB86CA6;">Origin of Replication</mark> (ORI): Ermöglicht die Replikation in Hefe.
+    - <mark style="background: #FFB86CA6;">Selektionsmarker</mark>:
         - Für Hefen: Marker wie _trp1_ oder _ura3_ (ermöglichen das Wachstum nur transformierter Hefezellen).
         - Für Bakterien: Antibiotikaresistenzgene (z. B. _AmpR_ für Ampicillin).
 #### **Besonderheiten**:
-- YACs sind große, lineare DNA-Moleküle.
-- Sie sind weniger stabil als BACs, da sie anfälliger für Rekombination sind.
+- YACs sind <mark style="background: #FFB86CA6;">große, lineare DNA-Moleküle</mark>.
+- Sie sind <mark style="background: #FFB86CA6;">weniger stabil als BACs, da sie anfälliger für Rekombination sind</mark>.
 - Wurden erstmals 1983 von **Murray und Szostak** beschrieben.
 ###  Klonierung mit YACs
 **Prozess der DNA-Klonierung in YACs**:
@@ -266,14 +269,14 @@ Die Erstellung einer DNA-Genbank erfordert eine ausreichende Anzahl von Klonen, 
     - Große DNA-Fragmente (oft in der Größenordnung von Megabasen) werden ebenfalls mit Restriktionsenzymen geschnitten.
     - Die Fremd-DNA wird mit DNA-Ligase in den YAC-Vektor integriert.
 3. **Transformation in Hefezellen**:
-    - Der rekombinante YAC wird in Hefezellen eingebracht.
+    - Der rekombinante <mark style="background: #FFB86CA6;">YAC wird in Hefezellen eingebracht</mark>.
     - Transformierte Zellen werden anhand von Selektionsmarkern identifiziert (z. B. durch fehlende Aminosäuren in Wachstumsmedien).
 4. **Stabilisierung und Klonierung**:
     - Der YAC wird in der Hefe repliziert und verteilt sich während der Zellteilung wie ein normales Chromosom.
 ### **3. Vorteile von YACs**
 - **Klonierung sehr großer Fragmente**: Mit bis zu **3000 kb** sind YACs der leistungsfähigste Vektortyp für die Klonierung großer Genome (z. B. für menschliche Chromosomen).
 - **Chromosomenähnliche Eigenschaften**:
-    - Telomere und Centromere machen sie besonders geeignet für eukaryotische DNA.
+    - <mark style="background: #FFB86CA6;">Telomere und Centromere machen sie besonders geeignet für eukaryotische DNA</mark>.
 - **Selektionsmöglichkeiten**:
     - Marker erlauben die einfache Identifizierung transformierter Zellen.
 ## **Nachteile von YACs**

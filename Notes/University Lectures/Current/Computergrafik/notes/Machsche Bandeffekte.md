@@ -1,14 +1,14 @@
-**Machsche Bandeffekte** sind optische Täuschungen, bei denen die Wahrnehmung von Kanten und Übergängen zwischen unterschiedlichen Helligkeiten verstärkt wird. 
+**Machsche Bandeffekte** sind <mark style="background: #FFB86CA6;">optische Täuschungen, bei denen die Wahrnehmung von Kanten und Übergängen zwischen unterschiedlichen Helligkeiten verstärkt wird</mark>. 
 - Zum Beispiel Adelsons Schachbrett:
 ![[Pasted image 20240621083718.png|400]]
 
 - **Beschreibung:** Wenn du eine gleichmäßige Helligkeitsverteilung hast, die langsam von dunkel zu hell wechselt, nimmt unser Gehirn an den Übergängen eine Kante oder Linie wahr, die eigentlich nicht existiert. Das führt dazu, dass an diesen Übergangsstellen dunkle und helle Streifen oder „Bänder“ erscheinen.
-- **Grund:** Diese Effekte entstehen durch die Funktionsweise unserer Sehnerven und die Verarbeitung im Gehirn. Unser visueller Kortex verstärkt die Kontraste, um Kanten und Objekte in unserer Umgebung besser erkennen zu können.
+- **Grund:** Diese Effekte <mark style="background: #FFB86CA6;">entstehen durch die Funktionsweise unserer Sehnerven und die Verarbeitung im Gehirn</mark>. Unser visueller Kortex verstärkt die Kontraste, um Kanten und Objekte in unserer Umgebung besser erkennen zu können.
 ### Wahrnehmung jenseits des physikalischen Bildes
 
-- **Visuelle Illusionen:** Oft sehen wir Dinge, die nicht wirklich vorhanden sind, wie bei den Machschen Bändern oder anderen optischen Täuschungen. Diese Effekte entstehen durch die Art und Weise, wie unser Gehirn visuelle Informationen interpretiert, und nicht durch das eigentliche physikalische Bild.
+- **Visuelle Illusionen:** <mark style="background: #FFB86CA6;">Oft sehen wir Dinge, die nicht wirklich vorhanden sind</mark>, wie bei den Machschen Bändern oder anderen optischen Täuschungen. Diese Effekte entstehen durch die Art und Weise, wie unser Gehirn visuelle Informationen interpretiert, und nicht durch das eigentliche physikalische Bild.
 
-- **Unvollständige Wahrnehmung:** Es gibt auch Fälle, in denen unser Sehsystem bestimmte Teile eines Bildes oder Signals „ausblendet“ oder ignoriert. Dies kann passieren, wenn diese Teile von stärker hervorstechenden Mustern oder Kontrasten überdeckt werden.
+- **Unvollständige Wahrnehmung:** Es <mark style="background: #FFB86CA6;">gibt auch Fälle, in denen unser Sehsystem bestimmte Teile eines Bildes oder Signals „ausblendet“ oder ignoriert</mark>. Dies kann passieren, <mark style="background: #FFB86CA6;">wenn diese Teile von stärker hervorstechenden Mustern oder Kontrasten überdeckt werden</mark>.
 
 #### Beispiele für beides:
 - **Optische Täuschungen:** Bei bestimmten Mustern sehen wir Linien oder Formen, die nicht wirklich existieren, wie bei dem berühmten Kanisza-Dreieck, wo wir ein Dreieck wahrnehmen, das nur durch Linien angedeutet wird.

@@ -16,12 +16,17 @@
 ![[Pasted image 20241024113310.png#invert|200]]
 ### Große Furche
 - Proteine und andere Moleküle können hier leichter andocken
-- Diese Proteine interagieren mit den Basen, ohne die DNA-Struktur zu öffnen oder zu denaturieren, da die Informationen zur Basenpaarung direkt in der großen Furche zugänglich sind
-- -> Die großen Furchen bieten mehr Platz und Informationen für Proteine 
-#### Erkennung von Basenpaare
-- In der großen Furche kann eine eindeutige Erkennung der Basenpaare erfolgen
-- Die Kombination dieser chemischen Merkmale variiert je nach Basenpaar, wodurch eine spezifische und eindeutige Erkennung der DNA-Sequenzen in der großen Furche ermöglicht wird
-- DNA-bindende Proteine, wie Transkriptionsfaktoren, nutzen diese chemischen Erkennungsmuster in der großen Furche, um an spezifische DNA-Sequenzen zu binden. Dies ist essenziell für die Regulation der Genexpression, da nur bestimmte Sequenzen gezielt gebunden und aktiviert werden müssen.
+- Basenpaarungen können hier eindeutig erkannt werden denn alle Basenpaare besitzen einen:
+	- Wasserstofbrücke - Akzeptor (A)
+	- Wassersoffbrücken - Donor (D)
+	- Methylgruppe (M)
+	- Nicht Wasserstoffgruppe (H)
+- -> Alle in einer anderen Reihenfolge
+	- G:C -> AADH
+	- C:G -> HDAA
+	- A:T -> ADAM
+	- T:A -> MADA
+- Das ist in der kleinen Furche nicht unterschiedbar
 ### Basenpaarung
 #### A-T
 - Adenin (Purinbase) paart mit Thymin (Pyrimidinbase)

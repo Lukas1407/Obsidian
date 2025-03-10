@@ -1,29 +1,29 @@
 ![[Pasted image 20241127141611.png|300]]
 - **Grundidee**: 
-  - Eine realistische Darstellung von Oberflächen wird durch Texturierung erreicht, indem pro Pixel Feinstrukturen hinzugefügt werden.
-  - Kombination von Geometrie (3D-Modell) mit Bildern (Texturen).
-  - Vorteil: Hohe Detailgenauigkeit ohne erhöhten geometrischen Aufwand (nützlich für große Netze).
+  - Eine <mark style="background: #FFB86CA6;">realistische Darstellung von Oberflächen wird durch Texturierung</mark> erreicht, indem <mark style="background: #FFB86CA6;">pro Pixel Feinstrukturen</mark> hinzugefügt werden.
+  - <mark style="background: #FFB86CA6;">Kombination von Geometrie (3D-Modell) mit Bildern (Texturen).</mark>
+  - Vorteil: <mark style="background: #FFB86CA6;">Hohe Detailgenauigkeit ohne erhöhten geometrischen Aufwand</mark> (nützlich für große Netze).
 ### **Texturierungstechniken**
 1. **Klassisches Texture Mapping**:
-   - Verändert Reflexionseigenschaften wie Farbe, Transparenz oder Reflexionskoeffizienten einer Oberfläche.
+   - <mark style="background: #FFB86CA6;">Verändert Reflexionseigenschaften</mark> wie <mark style="background: #FFB86CA6;">Farbe, Transparenz oder Reflexionskoeffizienten</mark> einer Oberfläche.
    - Beispiel: Holzmaserung oder Metallglanz.
 
 2. **Bump Mapping / Normal Mapping**:
-   - Ändert die Oberflächennormalen, ohne die eigentliche Geometrie zu beeinflussen.
+   - <mark style="background: #FFB86CA6;">Ändert die Oberflächennormalen, ohne die eigentliche Geometrie zu beeinflussen</mark>.
    - Simulation von Unebenheiten (z. B. für Ziegel oder Haut).
 
 3. **Environment Mapping**:
-   - Darstellung von Spiegelungen basierend auf der Umgebung.
+   - <mark style="background: #FFB86CA6;">Darstellung von Spiegelungen basierend auf der Umgebung</mark>.
    - Beispiele: Reflexionen auf Wasser oder einer Metallkugel.
 
 4. **Displacement Mapping**:
-   - Modifiziert die Geometrie einer Oberfläche physisch (z. B. für Wellen auf Wasser oder strukturierte Oberflächen wie eine Orangenhaut).
+   - <mark style="background: #FFB86CA6;">Modifiziert die Geometrie einer Oberfläche physisch</mark> (z. B. für Wellen auf Wasser oder strukturierte Oberflächen wie eine Orangenhaut).
 
 ### **2D Texture Mapping**
 ![[Pasted image 20241127141658.png|300]]
 - **Wie wird ein Punkt einer Textur zugeordnet?**:
   - Die Position eines Punktes auf der Oberfläche wird durch Texturkoordinaten ($s, t$) definiert.
-  - Diese Koordinaten bestimmen, welches Pixel der Textur (Texel) auf den Punkt der Oberfläche projiziert wird.
+  - Diese Koordinaten bestimmen, welches <mark style="background: #FFB86CA6;">Pixel der Textur (Texel)</mark> auf den Punkt der Oberfläche projiziert wird.
 
 - **Beispielanwendung**:
   - Beleuchtungsmodelle, die Lichtstreuung simulieren, z. B. auf Haut (Subsurface Scattering).
@@ -39,8 +39,8 @@
   - Reduziert Speicherbedarf durch Block-Kompression (z. B. 4:1 oder 8:1).
 ### **Mapping von 2D-Texturen**
 - **Planare Projektion**:
-  - Eine Ebene wird durch einen Punkt $p$ und zwei Richtungsvektoren $s, t$ definiert.
-  - Texturkoordinaten $s, t$ werden berechnet, indem der Oberflächenpunkt $x$ auf diese Ebene projiziert wird:
+  - Eine <mark style="background: #FFB86CA6;">Ebene</mark> wird durch einen <mark style="background: #FFB86CA6;">Punkt $p$ und zwei Richtungsvektoren $s, t$ definiert</mark>.
+  - Texturkoordinaten $s, t$ werden berechnet, <mark style="background: #FFB86CA6;">indem der Oberflächenpunkt x auf diese Ebene projiziert</mark> wird:
     $$
     s = (x - p) \cdot s,\quad t = (x - p) \cdot t
     $$
@@ -54,27 +54,27 @@
   - Rechts: 1D-Textur entlang der vertikalen Achse (z. B. Farbverlauf).
 ## Parametrisierung
 ### Kugel-Parametrisierung
-- **Konzept:** Punkte auf der Oberfläche einer Kugel im Ursprung werden in Polarkoordinaten dargestellt. Dabei sind $r, \phi$ und $\theta$ die Parameter.
-  - $r$: Radius
-  - $\phi$: Azimutwinkel (horizontal)
-  - $\theta$: Polarwinkel (vertikal)
+- **Konzept:** <mark style="background: #FFB86CA6;">Punkte auf der Oberfläche einer Kugel im Ursprung werden in Polarkoordinaten dargestellt</mark>. Dabei sind $r, \phi$ und $\theta$ die Parameter.
+  - $r$: <mark style="background: #FFB86CA6;">Radius</mark>
+  - $\phi$: <mark style="background: #FFB86CA6;">Azimutwinkel</mark> (horizontal)
+  - $\theta$: <mark style="background: #FFB86CA6;">Polarwinkel</mark> (vertikal)
 - **Texturkoordinaten ($s, t$):** 
   - $s = \phi / 2\pi$: Normierter Azimutwinkel.
   - $t = \theta / \pi$: Normierter Polarwinkel.
-- **Visualisierung:** Die Textur wird wie eine Karte über die Kugel gelegt. Probleme wie Verzerrungen können auftreten, insbesondere an den Polen der Kugel.
+- **Visualisierung:** <mark style="background: #FFB86CA6;">Die Textur wird wie eine Karte über die Kugel gelegt</mark>. Probleme wie <mark style="background: #FF5582A6;">Verzerrungen</mark> können auftreten, insbesondere an den Polen der Kugel.
 ### Zylindrische Parametrisierung
-- **Konzept:** Punkte auf der Oberfläche eines Zylinders werden in Zylinderkoordinaten ($r, \phi, y$) dargestellt.
-  - $r$: Radius (oft konstant).
-  - $\phi$: Winkel entlang der Zylinderachse.
-  - $y$: Position entlang der Höhe.
+- **Konzept:** <mark style="background: #FFB86CA6;">Punkte auf der Oberfläche eines Zylinders werden in Zylinderkoordinaten</mark> ($r, \phi, y$) dargestellt.
+  - $r$: <mark style="background: #FFB86CA6;">Radius</mark> (oft konstant).
+  - $\phi$: <mark style="background: #FFB86CA6;">Winkel entlang der Zylinderachse</mark>.
+  - $y$: <mark style="background: #FFB86CA6;">Position entlang der Höhe</mark>.
 - **Texturkoordinaten ($s, t$):**
   - $s = \phi / 2\pi$: Normierter Winkel.
   - $t = y / h$: Normierte Höhe ($h$ ist die Zylinderhöhe).
 - **Beachte:** Ähnlich wie bei der Kugel treten auch hier Verzerrungen auf, insbesondere an den Übergängen der Textur.
 ### Würfel-Parametrisierung
 - **Ansätze:**
-  - **Projektion auf die sechs Würfelseiten:** Jeder Punkt wird auf eine der sechs Flächen des Würfels projiziert, basierend auf der Oberflächennormalen.
-  - **Strahl-basierte Methode:** Ein Strahl vom Würfelmittelpunkt wird durch den Punkt auf der Würfeloberfläche verlängert und trifft eine der Flächen.
+  - **Projektion auf die sechs Würfelseiten:** <mark style="background: #FFB86CA6;">Jeder Punkt wird auf eine der sechs Flächen des Würfels projiziert, basierend auf der Oberflächennormalen</mark>.
+  - **Strahl-basierte Methode:** <mark style="background: #FFB86CA6;">Ein Strahl vom Würfelmittelpunkt wird durch den Punkt auf der Würfeloberfläche verlängert und trifft eine der Flächen.</mark>
   - Diese Methoden führen zu einer direkten Zuordnung der Textur auf die Flächen des Würfels.
 ### Verwendung von Standardkörpern
 - **Idee:** Zur Vereinfachung von Texturierungskomplexität wird die Oberfläche eines Objekts zuerst auf einen Standardkörper (z. B. Ebene, Würfel, Kugel, Zylinder) gemappt.
@@ -94,13 +94,13 @@
 ![[Pasted image 20241127142052.png|300]]
 ### **Texturkoordinaten für Dreiecksnetze**
 - **Was sind Texturkoordinaten?**
-  - Texturkoordinaten sind spezielle Werte $(s, t)$, die jeden Punkt auf der Oberfläche eines 3D-Objekts mit einem Punkt in der Textur verbinden (normalerweise auf einer 2D-Ebene).
+  - <mark style="background: #FFB86CA6;">Texturkoordinaten sind spezielle Werte (s, t), die jeden Punkt auf der Oberfläche eines 3D-Objekts mit einem Punkt in der Textur verbinden</mark> (normalerweise auf einer 2D-Ebene).
 - **Speichern von Texturkoordinaten:**
-  - In Dreiecksnetzen wird die Parametrisierung explizit gespeichert.
-  - Jedem Eckpunkt $\mathbf{v_i} = (x_i, y_i, z_i)$ eines Dreiecks wird eine Texturkoordinate $(s_i, t_i)$ zugeordnet.
+  - <mark style="background: #FFB86CA6;">In Dreiecksnetzen wird die Parametrisierung explizit gespeichert</mark>.
+  - <mark style="background: #FFB86CA6;">Jedem Eckpunkt $\mathbf{v_i} = (x_i, y_i, z_i)$ eines Dreiecks wird eine Texturkoordinate $(s_i, t_i)$ zugeordnet</mark>.
   - Damit wird die Textur flexibel an die 3D-Form angepasst.
 
-- **Interpolation innerhalb eines Dreiecks:**
+- <mark style="background: #FFB86CA6;">Interpolation innerhalb eines Dreiecks</mark>:
   - Innerhalb eines Dreiecks wird die Textur interpoliert. Dies geschieht mit Hilfe von baryzentrischen Koordinaten:
     $$
     v = v_0 + \lambda_1 (v_1 - v_0) + \lambda_2 (v_2 - v_0)
@@ -114,9 +114,9 @@
   - Texturkoordinaten $< 0.0$ oder $> 1.0$ liegen außerhalb der definierten Texturgrenzen.
   - Lösung: **Adressierungsmodi** werden verwendet, um zu definieren, wie diese Werte interpretiert werden.
 - **Adressierungsmodi:**
-  - **Clamp:** Die Koordinaten werden auf den Bereich $[0, 1]$ begrenzt.
-  - **Repeat:** Die Textur wird wiederholt ("gekachelt").
-  - **Mirror:** Die Textur wird gespiegelt wiederholt.
+  - <mark style="background: #FFB86CA6;">Clamp: Die Koordinaten werden auf den Bereich $[0, 1]$ begrenzt</mark>.
+  - <mark style="background: #FFB86CA6;">Repeat: Die Textur wird wiederholt ("gekachelt").</mark>
+  - <mark style="background: #FFB86CA6;">Mirror: Die Textur wird gespiegelt wiederholt</mark>.
 ### **Texture Wrapping**
 - Hier wird gezeigt, wie die Textur sich außerhalb der Koordinatengrenzen verhält:
   - **Clamp/Clamp:** Die Textur ist auf die Koordinaten $[0, 1]$ beschränkt.
@@ -132,21 +132,21 @@
   - Das Abtastproblem betrifft die Zuordnung zwischen dem 2D-Texturraum und dem 3D-Objektraum (Parametrisierung).
   - Auch die Projektion vom 3D-Objektraum in den 2D-Bildraum kann Aliasing verursachen.
 - **Lösung:**
-  - Verwendung von **Anti-Aliasing-Techniken** und **Mipmapping**, um die Diskretisierungseffekte zu reduzieren.
+  - Verwendung von **Anti-Aliasing-Techniken** und <mark style="background: #FFB86CA6;">Mipmapping</mark>, um die Diskretisierungseffekte zu reduzieren.
 
 ## Textur-Filterung
 ### Vergrößerung/Magnification
 #### Nearest Neighbor
-- **Methode:** Wählt den Texel (Texture Pixel), der am nächsten am Pixelzentrum liegt.
-- **Ergebnis:** Es wird exakt die Farbe dieses Texels für den Pixel übernommen.
-- **Vorteil:** Einfach und schnell.
-- **Nachteil:** Kann zu "harten" Kanten oder grob wirkenden Texturen führen, da keine Glättung erfolgt.
+- **Methode:** <mark style="background: #FFB86CA6;">Wählt den Texel (Texture Pixel), der am nächsten am Pixelzentrum liegt</mark>.
+- **Ergebnis:** <mark style="background: #FFB86CA6;">Es wird exakt die Farbe dieses Texels für den Pixel übernommen</mark>.
+- **Vorteil:** <mark style="background: #FFB86CA6;">Einfach und schnell</mark>.
+- **Nachteil:** <mark style="background: #FFB86CA6;">Kann zu "harten" Kanten</mark> oder grob wirkenden Texturen führen, da keine Glättung erfolgt.
 #### Bilineare Interpolation
-- **Methode:** Nutzt die vier nächstgelegenen Texel und interpoliert ihre Farben basierend auf den relativen Abständen.
+- **Methode:** Nutzt die <mark style="background: #FFB86CA6;">vier nächstgelegenen Texel und interpoliert ihre Farben basierend auf den relativen Abständen</mark>.
   - Die Farbe eines Pixels wird durch die gewichtete Summe der Texelfarben berechnet.
-  - Dies erfolgt in zwei Schritten:
-    1. **Horizontale Interpolation:** Zwischen zwei Texeln entlang einer Achse.
-    2. **Vertikale Interpolation:** Aus den Ergebnissen der horizontalen Interpolation.
+  - Dies erfolgt in <mark style="background: #FFB86CA6;">zwei Schritten</mark>:
+    1. **Horizontale Interpolation:** <mark style="background: #FFB86CA6;">Zwischen zwei Texeln entlang einer Achse</mark>.
+    2. **Vertikale Interpolation:** <mark style="background: #FFB86CA6;">Aus den Ergebnissen der horizontalen Interpolation</mark>.
 - **Formel:**
   $$
   t = (1-b)t_{12} + b \cdot t_{34}
@@ -154,27 +154,24 @@
   - $t_{12} = t_1(1-a) + t_2a$ (interpoliert horizontal oben)
   - $t_{34} = t_3(1-a) + t_4a$ (interpoliert horizontal unten)
   - Endresultat kombiniert vertikal.
-- **Vorteil:** Glättet die Textur sichtbar, besonders bei Vergrößerungen.
-- **Nachteil:** Aufwändiger als Nearest Neighbor, da mehrere Texel und Berechnungen benötigt werden.
+- **Vorteil:** <mark style="background: #FFB86CA6;">Glättet die Textur sichtbar</mark>, besonders bei Vergrößerungen.
+- **Nachteil:** <mark style="background: #FFB86CA6;">Aufwändiger als Nearest Neighbor</mark>, da mehrere Texel und Berechnungen benötigt werden.
 #### Alternative Interpretation
 - Die Gewichte der Texel können als Flächenverhältnisse interpretiert werden (baryzentrisch):
   - Der Flächeninhalt eines Quadrats oder Dreiecks bestimmt den relativen Einfluss eines Texels auf den Zielpixel.
 
-Bitte gib mir kurz Zeit, um die Konzepte zu den hochgeladenen Folien zu erklären. Ich werde die Informationen strukturiert aufbereiten.
-
 #### **Textur-Filtrierung höherer Ordnung**
 - **Bikubische Interpolation**:
-    - Interpoliert Farben basierend auf 4 × 4 Texel (16 Texel für 2D-Texturen).
+    - <mark style="background: #FFB86CA6;">Interpoliert Farben basierend auf 4 × 4 Texel</mark> (16 Texel für 2D-Texturen).
     - Nutzt komplexere mathematische Funktionen für glattere Ergebnisse (z. B. Splines).
-    - **Nachteil**: Rechenaufwändig und wird nicht direkt von GPU-Hardware unterstützt.
+    - **Nachteil**: <mark style="background: #FFB86CA6;">Rechenaufwändig</mark> und wird nicht direkt von GPU-Hardware unterstützt.
 #### **Textur-Filtrierung (Verkleinerung/Minification)**
-
-- **Problem**: Mehrere Texel werden auf einen einzigen Pixel projiziert.
+- **Problem**: <mark style="background: #FFB86CA6;">Mehrere Texel werden auf einen einzigen Pixel projiziert</mark>.
     - Bei nur einem Texel können **Aliasing-Artefakte** auftreten, da hochfrequente Informationen verloren gehen.
     - Beispiel: In der Abbildung "Aliasing" sind störende Muster sichtbar.
 - **Lösungen**:
-    - **Vorfilterung**: Entfernt hochfrequente Inhalte vor der Abtastung.
-    - **Supersampling**: Nutzt eine höhere Abtastauflösung als nötig, um Aliasing zu reduzieren (teuer).
+    - <mark style="background: #FFB86CA6;">Vorfilterung</mark>: Entfernt hochfrequente Inhalte vor der Abtastung.
+    - <mark style="background: #FFB86CA6;">Supersampling</mark>: Nutzt eine höhere Abtastauflösung als nötig, um Aliasing zu reduzieren (teuer).
 #### **Aliasing und Sampling**
 
 - **Abtasttheorie (Nyquist-Frequenz)**:
@@ -185,71 +182,65 @@ Bitte gib mir kurz Zeit, um die Konzepte zu den hochgeladenen Folien zu erkläre
         2. **Sinc-Filter** rekonstruiert das Signal ideal (praktisch aber schwer realisierbar).
 ### Mip-Mapping
 ![[Pasted image 20241127152548.png|300]]
-Mip-Mapping (lateinisch „multum in parvo“ = „viel in wenig“) ist eine Technik der Texturvorfilterung, die in der Computergrafik verwendet wird, um Speicher und Rendering-Zeit zu sparen sowie Aliasing-Effekte zu reduzieren. 
+Mip-Mapping (lateinisch „multum in parvo“ = „viel in wenig“) ist eine <mark style="background: #FFB86CA6;">Technik der Texturvorfilterung</mark>, die in der Computergrafik verwendet wird, <mark style="background: #FFB86CA6;">um Speicher und Rendering-Zeit zu sparen sowie Aliasing-Effekte zu reduzieren</mark>. 
 - **Funktionsweise:**
-  - **Vorfilterung:** Es werden kleinere Kopien (Mipmap-Stufen) einer Originaltextur erstellt. Jede Stufe hat 1/4 der Fläche der vorherigen, indem beide Dimensionen (Breite und Höhe) halbiert werden.
+  - **Vorfilterung:** <mark style="background: #FFB86CA6;">Es werden kleinere Kopien (Mipmap-Stufen) einer Originaltextur erstellt</mark>. Jede Stufe hat <mark style="background: #FFB86CA6;">1/4 der Fläche der vorherigen</mark>, indem beide Dimensionen (Breite und Höhe) halbiert werden.
   - Das führt zu einer Pyramidenstruktur der Texturen (z. B. 64², 32², 16², ...).
-  - **Speicherbedarf:** Diese zusätzlichen Texturen benötigen nur etwa 33 % mehr Speicherplatz.
+  - **Speicherbedarf:** Diese <mark style="background: #FFB86CA6;">zusätzlichen Texturen benötigen nur etwa 33 % mehr Speicherplatz</mark>.
 - **Hauptvorteile:**
-  - Reduktion von Aliasing: Verhindert „flimmernde“ Texturen bei weit entfernten Objekten.
-  - Schnellere Berechnungen: Die GPU entscheidet basierend auf der Distanz, welche Mipmap-Stufe verwendet wird.
-- **Nachteil:** Leichte Unschärfe, da Details in niedrigeren Stufen verloren gehen.
+  - <mark style="background: #FFB86CA6;">Reduktion von Aliasing: Verhindert „flimmernde“ Texturen bei weit entfernten Objekten</mark>.
+  - <mark style="background: #FFB86CA6;">Schnellere Berechnungen: Die GPU entscheidet basierend auf der Distanz, welche Mipmap-Stufe verwendet wird</mark>.
+- **Nachteil:** <mark style="background: #FFB86CA6;">Leichte Unschärfe, da Details in niedrigeren Stufen verloren gehen</mark>.
 ### **Tiefpass und Hochpass:**
-- **Tiefpass:** Diese Filtertechnik bewirkt eine Glättung der Textur, indem hochfrequente Details reduziert werden. 
+- **Tiefpass:** Diese Filtertechnik bewirkt eine <mark style="background: #FFB86CA6;">Glättung der Textur, indem hochfrequente Details reduziert werden</mark>. 
   - Beispiel: Die linke Darstellung zeigt eine geglättete Version, bei der Details verschwimmen.
-- **Hochpass:** Dieser Filter betont die Kanten und Details in einem Bild, indem die Tiefpass-Version von der Originalversion subtrahiert wird.
+- **Hochpass:** Dieser Filter <mark style="background: #FFB86CA6;">betont die Kanten und Details in einem Bild, indem die Tiefpass-Version von der Originalversion subtrahiert</mark> wird.
   - Beispiel: Die rechte Darstellung hebt die Struktur der Türrahmen und der Wände hervor.
 ### **Anisotrope Texturfilterung:**
-Anisotrope Filterung ist eine Weiterentwicklung des Mip-Mappings, die Verzerrungen reduziert, wenn Texturen unter einem schrägen Winkel betrachtet werden.
+Anisotrope Filterung ist <mark style="background: #FFB86CA6;">eine Weiterentwicklung des Mip-Mappings</mark>, die <mark style="background: #FFB86CA6;">Verzerrungen reduziert, wenn Texturen unter einem schrägen Winkel betrachtet werden.</mark>
 - **Problem:** 
-  - Mip-Mapping ist isotrop (gleichmäßig in allen Richtungen), während der "Footprint" eines Pixels oft länglich ist.
-  - Resultat: Verschwommene Details in schrägen Ansichten.
-
+  - <mark style="background: #FFB86CA6;">Mip-Mapping ist isotrop (gleichmäßig in allen Richtungen), während der "Footprint" eines Pixels oft länglich ist</mark>.
+  - Resultat: <mark style="background: #FFB86CA6;">Verschwommene Details in schrägen Ansichten</mark>.
 - **Lösung:** 
-  - Anpassung der Vorfilterung an die tatsächliche Form des Pixel-Footprints.
-  - RIP-Maps (Rectangular Mip-Maps) werden verwendet, um längliche Formen besser zu behandeln, sind aber speicherintensiv.
+  - <mark style="background: #FFB86CA6;">Anpassung der Vorfilterung an die tatsächliche Form des Pixel-Footprints</mark>.
+  - <mark style="background: #FFB86CA6;">RIP-Maps (Rectangular Mip-Maps)</mark> werden verwendet, um längliche Formen besser zu behandeln, sind aber <mark style="background: #FFB86CA6;">speicherintensiv</mark>.
 ### **Summed Area Tables (SAT):**
-![[Pasted image 20241127152634.png#invert|200]]
+![[Pasted image 20241127152634.png#invert|400]]
 ![[Pasted image 20241127152647.png#invert|200]]
 SATs sind eine Technik zur effizienten Berechnung von Summen über rechteckige Bereiche in einer Textur.
-
-- **Funktionsweise:**
-  - Jedes Element der Tabelle speichert die Summe aller Elemente, die oberhalb und links davon liegen.
-  - Mit diesen vorberechneten Summen kann die Summe eines beliebigen Rechtecks in konstanter Zeit berechnet werden.
-
 - **Anwendung:** 
-  - Berechnung von Box-Filtern oder weichen Schattierungen in Echtzeit.
+  - <mark style="background: #FFB86CA6;">Berechnung von Box-Filtern oder weichen Schattierungen in Echtzeit</mark>.
   - Beispiel: Die Summe der markierten Bereiche wird mit der Formel berechnet: $D - B - C + A$.
 
 ## Bestimmen des Footprints
 #### 1. Einfache Möglichkeit, den Footprint zu bestimmen
-Ein **Footprint** beschreibt den Bereich im Texturraum, der einem Pixel auf dem Bildschirm entspricht. Das Ziel ist, Texturen möglichst genau abzubilden, ohne Verzerrungen oder Alias-Effekte.
+<mark style="background: #FFB86CA6;">Ein Footprint beschreibt den Bereich im Texturraum, der einem Pixel auf dem Bildschirm entspricht</mark>. Das Ziel ist, Texturen möglichst genau abzubilden, ohne Verzerrungen oder Alias-Effekte.
 - **Grundidee:**
-  - Jeder Pixel auf dem Bildschirm projiziert sich in den Texturraum.
-  - Die Ecken des Pixels werden verfolgt, indem ein **Primärstrahl** (Ray) durch sie geschickt wird.
-  - Diese Ecken definieren einen **2×2-Pixelblock** im Texturraum.
+  - <mark style="background: #FFB86CA6;">Jeder Pixel auf dem Bildschirm projiziert sich in den Texturraum</mark>.
+  - <mark style="background: #FFB86CA6;">Die Ecken des Pixels werden verfolgt, indem ein Primärstrahl (Ray) durch sie geschickt wird</mark>.
+  - Diese Ecken definieren <mark style="background: #FFB86CA6;">einen 2×2-Pixelblock im Texturraum</mark>.
 - **Bestimmung der Größe und Form:**
-  - Die **Differenzen der Texturkoordinaten** zwischen den Pixeln liefern die Größe und Form des Footprints.
+  - <mark style="background: #FFB86CA6;">Die Differenzen der Texturkoordinaten zwischen den Pixeln liefern die Größe und Form des Footprints</mark>.
   - Für verschiedene Verfahren:
-    - **Mip-Mapping:** Es wird der größte Wert zwischen Breite und Höhe bestimmt, und daraus wird die Mip-Map-Stufe $n$ gewählt.
-    - **RIP-Mapping oder SAT (Summed Area Tables):** Breite und Höhe werden separat behandelt.
+    - **Mip-Mapping:** Es <mark style="background: #FFB86CA6;">wird der größte Wert zwischen Breite und Höhe bestimmt, und daraus wird die Mip-Map-Stufe $n$ gewählt</mark>.
+    - **RIP-Mapping oder SAT (Summed Area Tables):** <mark style="background: #FFB86CA6;">Breite und Höhe werden separat behandelt</mark>.
 - **Filterung:**
   - Nach Berechnung der Stelle im Texturraum wird an dieser Stelle mit der geeigneten Methode gefiltert (z. B. bilineare Interpolation).
 #### 2. Ray Differentials zur Bestimmung der Footprints
-Dieses Verfahren nutzt die **Ableitung der Texturkoordinaten** im Bildschirmraum, um den Footprint genauer zu bestimmen.
-- **Prinzip:**
-  - Der **Primärstrahl** trifft auf ein Objekt. Daraus ergeben sich:
-    - Die Schnittposition $x$,
-    - Die Normale $n$, die die **Tangentialebene** definiert.
-  - Die Tangentialebene bildet den Übergang zwischen:
-    - Texturkoordinaten (z. B. $(s, t)$) und
-    - der Position im Raum (z. B. $(x, y, z)$).
+Dieses Verfahren <mark style="background: #FFB86CA6;">nutzt die Ableitung der Texturkoordinaten im Bildschirmraum, um den Footprint genauer zu bestimmen.</mark>
+- **Prinzip:****
+  - Der <mark style="background: #FFB86CA6;">Primärstrahl trifft auf ein Objekt</mark>. Daraus ergeben sich:
+    - Die <mark style="background: #FFB86CA6;">Schnittposition</mark> $x$,
+    - Die <mark style="background: #FFB86CA6;">Normale</mark> $n$, die die <mark style="background: #FFB86CA6;">Tangentialebene definiert</mark>.
+  - Die Tangentialebene <mark style="background: #FFB86CA6;">bildet den Übergang zwischen</mark>:
+    - <mark style="background: #FFB86CA6;">Texturkoordinaten</mark> (z. B. $(s, t)$) und
+    - der <mark style="background: #FFB86CA6;">Position im Raum</mark> (z. B. $(x, y, z)$).
 - **Differenzen in den Texturkoordinaten:**
-  - Die Ableitung der Texturkoordinaten (meist entlang der Bildschirmachsen) gibt an, wie sich diese Koordinaten verändern. Dies erlaubt Rückschlüsse auf die Größe und Form des Footprints.
+  - Die <mark style="background: #FFB86CA6;">Ableitung der Texturkoordinaten gibt an, wie sich diese Koordinaten verändern</mark>. Dies <mark style="background: #FFB86CA6;">erlaubt Rückschlüsse auf die Größe und Form des Footprints</mark>.
 - **Allgemeiner Nutzen:**
   - Diese Methode lässt sich verallgemeinern, z. B. für Effekte wie Spiegelungen oder Lichttransmission.
 #### Anwendung:
-1. In Raytracing-Szenen ermöglicht das Verfahren, **schärfere und genauere Texturdetails** darzustellen, indem es die Texturdetails besser an die Pixelauflösung anpasst.
+1. In Raytracing-Szenen ermöglicht das Verfahren, <mark style="background: #FFB86CA6;">schärfere und genauere Texturdetails</mark> darzustellen, indem es die Texturdetails besser an die Pixelauflösung anpasst.
 2. Für dynamische Szenen wird häufig die zweite Methode verwendet, da sie präzisere Ergebnisse bei unterschiedlichen Blickwinkeln liefert.
 ## Texturierungstechniken
 ### **Diffuse Textur**
@@ -270,25 +261,25 @@ Dieses Verfahren nutzt die **Ableitung der Texturkoordinaten** im Bildschirmraum
   - $V$: Richtung zum Betrachter.
   - $n$: Glanzexponent (Kontrolle der Streuung der Reflexion).
 ### **Bump Mapping / Normal Mapping**
-- **Ziel**: Erzeugung von Oberflächendetails durch Manipulation der Normalen ohne geometrische Änderung der Oberfläche.
+- **Ziel**: <mark style="background: #FFB86CA6;">Erzeugung von Oberflächendetails durch Manipulation der Normalen ohne geometrische Änderung der Oberfläche</mark>.
 ![[Pasted image 20241206114727.png#invert|300]]
 - **Unterschiede**:
-  - **Bump Mapping**: Verändert die Helligkeitswerte basierend auf einer Höhe (Graustufen-Textur).
-  - **Normal Mapping**: Verwendet eine Farbkodierung (RGB) zur Definition der Normalen.
+  - **Bump Mapping**: <mark style="background: #FFB86CA6;">Verändert die Helligkeitswerte basierend auf einer Höhe</mark> (Graustufen-Textur).
+  - **Normal Mapping**: <mark style="background: #FFB86CA6;">Verwendet eine Farbkodierung (RGB) zur Definition der Normalen</mark>.
 - **Vorgehen**:
-  - Die Normale $N$ wird durch Texturen modifiziert, was zu Änderungen im Beleuchtungsmodell führt.
+  - Die Normale $N$ wird durch Texturen modifiziert, was <mark style="background: #FFB86CA6;">zu Änderungen im Beleuchtungsmodell führt</mark>.
   - Die berechneten Werte für $(N \cdot L)$ und $(R \cdot V)^n$ ändern sich, was die Oberflächendetails beeinflusst.
 ### **Displacement Mapping**
 ![[Pasted image 20241206114809.png|300]]
 - **Unterschied zu Bump/Normal Mapping**:
-  - **Displacement Mapping** verändert die tatsächliche Geometrie der Oberfläche (z. B. durch GPU-Tessellation).
+  - **Displacement Mapping** <mark style="background: #FFB86CA6;">verändert die tatsächliche Geometrie der Oberfläche</mark> (z. B. durch GPU-Tessellation).
   - Im Gegensatz zu Bump Mapping wird die Oberfläche physisch verschoben.
 - **Beispiel**:
   - Eine flache Oberfläche wird durch eine Höhenkarte (Heightmap) zu einer welligen oder strukturierten Oberfläche transformiert.
 - **Vorteil**:
   - Realistische Silhouetten, da die Geometrie tatsächlich angepasst wird.
-### **Inverse Displacement Mapping**
-- **Prinzip**: Eine Approximation von Displacement Mapping.
+#### **Inverse Displacement Mapping**
+- **Prinzip**: Eine Approximation von Displacement Mapping</mark>.
 - **Merkmale**:
   - Verwendet Parallax Occlusion Mapping, um Details in einer Textur zu simulieren, ohne die Geometrie zu ändern.
   - Schnelle Berechnung, aber problematisch bei Silhouetten.
@@ -307,7 +298,7 @@ Dieses Verfahren nutzt die **Ableitung der Texturkoordinaten** im Bildschirmraum
   - Fügt Tiefe und Schatten hinzu, ohne teure Echtzeitberechnungen durchzuführen.
 ## Textur-Atlas
 ![[Pasted image 20241206115340.png#invert|400]]
-- **Definition**: Ein Textur-Atlas ist eine spezielle (bijektive) Parametrisierung, bei der jeder Oberflächenpunkt eines 3D-Modells genau einer Stelle in der Textur zugeordnet wird.
+- **Definition**: Ein <mark style="background: #FFB86CA6;">Textur-Atlas ist eine spezielle (bijektive) Parametrisierung, bei der jeder Oberflächenpunkt eines 3D-Modells genau einer Stelle in der Textur zugeordnet wird</mark>.
 - **Besonderheiten**:
   - Jeder Punkt in der Textur wird nur einmal genutzt, außer bei symmetrischen Objekten.
   - Die Erstellung erfordert das Zerschneiden und „Ausrollen“ des 3D-Modells (Netz), was zu Verzerrungen führen kann, abhängig von der Anzahl und Lage der Schnitte.
@@ -320,28 +311,28 @@ Dieses Verfahren nutzt die **Ableitung der Texturkoordinaten** im Bildschirmraum
   - Rasterbilder und Texturen speichern häufig Transparenz in einem **Alpha-Kanal** (RGBA-Format).
   - Der Alpha-Wert ($\alpha$) bestimmt die Opazität (0 = transparent, 1 = undurchsichtig).
 - **Alpha-Test**:
-  - Verwirft Fragmente basierend auf einem Schwellenwert ($\alpha < \text{threshold}$).
+  - <mark style="background: #FFB86CA6;">Verwirft Fragmente basierend auf einem Schwellenwert</mark> ($\alpha < \text{threshold}$).
   - Nützlich für semitransparente Objekte oder Maskierungen.
 - **Verwendung**:
   - Raytracing: Alpha-Kanal (z. B. $k_t$) zur Bestimmung der Transparenz eines Oberflächenpunktes.
   - Rasterisierung: Erzeugung von Aussparungen oder Maskeneffekten durch Alpha-Tests.
 ## Impostors
 ![[Pasted image 20241206115414.png|300]]
-- **Definition**: Impostors sind texturierte Polygone, die stets senkrecht zur Kamera ausgerichtet sind.
+- **Definition**: <mark style="background: #FFB86CA6;">Impostors sind texturierte Polygone, die stets senkrecht zur Kamera ausgerichtet sind</mark>.
 - **Vorteile**:
-  - Sehr effizient für weit entfernte Objekte, die keine detaillierte Geometrie benötigen (z. B. Wolken, Rauch, Funken).
+  - <mark style="background: #FFB86CA6;">Sehr effizient für weit entfernte Objekte, die keine detaillierte Geometrie benötigen</mark> (z. B. Wolken, Rauch, Funken).
   - Reduziert die Renderkosten erheblich, da nur ein einfaches, flaches Polygon verwendet wird.
 - **Beispiele**:
   - Darstellung von Partikelsystemen in Spielen oder Animationen.
   - Wolken, die sich nicht dynamisch verändern, aber realistisch aussehen sollen.
 ## 3D-Texturen für Oberflächen
 - **2D-Texturen**:
-  - Probleme wie der „Tapeten-Effekt“ entstehen, wenn Texturen wiederholt werden.
-  - Schwierige Parametrisierung bei komplexen Objekten.
+  - Probleme wie der „<mark style="background: #FFB86CA6;">Tapeten-Effekt“ entstehen, wenn Texturen wiederholt werden</mark>.
+  - <mark style="background: #FFB86CA6;">Schwierige Parametrisierung bei komplexen Objekten</mark>.
 - **3D-Texturen**:
-  - Volumendaten, bei denen jeder Punkt im Volumen eigene Texturkoordinaten hat.
-  - Vorteil: Keine Probleme mit Parametrisierung, da die Textur direkt im Volumen gespeichert wird.
-  - Nachteil: Hoher Speicherbedarf (z. B. $512^3$ RGB = 384 MB).
+  - <mark style="background: #FFB86CA6;">Volumendaten</mark>, bei denen jeder Punkt im Volumen eigene Texturkoordinaten hat.
+  - Vorteil: <mark style="background: #FFB86CA6;">Keine Probleme mit Parametrisierung</mark>, da die Textur direkt im Volumen gespeichert wird.
+  - Nachteil: <mark style="background: #FFB86CA6;">Hoher Speicherbedarf</mark> (z. B. $512^3$ RGB = 384 MB).
 - **Verwendung**:
   - „Herausschneiden“ einer Skulptur durch Texturkoordinaten-Zuweisung.
   - Volumen-Rendering von inneren Strukturen wie Organen oder Materialdichte.
@@ -357,7 +348,7 @@ Dieses Verfahren nutzt die **Ableitung der Texturkoordinaten** im Bildschirmraum
 ## Environment Mapping
 **Motivation**  
 - Environment Mapping ermöglicht die Darstellung reflektierender Objekte mit Spiegelungen einer Umgebung, ohne dass diese Umgebung geometrisch repräsentiert werden muss.  
-- Es ist eine schnelle Approximation für Reflexionen und ersetzt komplexe Raytracing-Berechnungen, indem das Bild der Umgebung in einer Textur gespeichert wird.
+- Es ist eine schnelle Approximation für Reflexionen und <mark style="background: #FFB86CA6;">ersetzt komplexe Raytracing-Berechnungen, indem das Bild der Umgebung in einer Textur gespeichert wird.</mark>
 
 **Grundprinzip**  
 1. **Reflexionsrichtung berechnen**:  
@@ -368,25 +359,24 @@ Dieses Verfahren nutzt die **Ableitung der Texturkoordinaten** im Bildschirmraum
 2. **Zugriff auf Environment Map**:  
    - Die Richtung $r$ wird in Texturkoordinaten umgewandelt, um die passende Farbe aus der Umgebungstextur (Environment Map) zu lesen.
 **Annahmen und Einschränkungen**  
-- Nur die Richtung $r$ wird verwendet, ohne Berücksichtigung der Entfernung.  
-  - Diese Vereinfachung ist akzeptabel, wenn die Umgebung weit entfernt ist (z. B. Himmel oder weite Landschaften).
+- <mark style="background: #FFB86CA6;">Nur die Richtung $r$ wird verwendet, ohne Berücksichtigung der Entfernung</mark>.  
+  - Diese Vereinfachung <mark style="background: #FFB86CA6;">ist akzeptabel, wenn die Umgebung weit entfernt</mark> ist (z. B. Himmel oder weite Landschaften).
 - Die Umgebung wird auf der inneren Oberfläche einer virtuellen Kugel abgebildet.
-**Parametrisierungen**  
-- **Latitude/Longitude-Maps**:  
-  - Die Kugel wird durch Polarkoordinaten parametriert:
+### **Parametrisierungen**  
+#### **Latitude/Longitude-Maps**:  
+  - Die <mark style="background: #FFB86CA6;">Kugel wird durch Polarkoordinaten parametriert</mark>:
     - $\theta$: Polarwinkel (0 bis $\pi$).
     - $\phi$: Azimuthwinkel (0 bis $2\pi$).  
   - Nachteile:
-    - Ungleichmäßige Verteilung der Texturdaten, besonders an den Polen.
-    - Höherer Rechenaufwand bei der Umrechnung von $r$ in Texturkoordinaten.
-- **Sphere Mapping**:  
-  - Darstellung der Umgebung auf einer virtuellen Spiegelkugel.  
-  - Bild der Kugel wird als Texture verwendet (z. B. „chrome ball“ Methode).
-  - Vorteil: Sehr einfach umzusetzen.
-  - Nachteil: Verzerrungen bei ungleichmäßigen Oberflächen.
-**Hardwareeinsatz**  
-- Environment Mapping wird oft mit GPU-Hardware beschleunigt, besonders bei Echtzeit-Anwendungen wie Spielen.  
-- Beim Raytracing wird das Licht aus der Environment Map abgerufen, wenn ein Reflexionsstrahl kein weiteres Objekt trifft.
+    - <mark style="background: #FFB86CA6;">Ungleichmäßige Verteilung der Texturdaten, besonders an den Polen</mark>.
+    - <mark style="background: #FFB86CA6;">Höherer Rechenaufwand</mark> bei der Umrechnung von $r$ in Texturkoordinaten.
+#### **Sphere Mapping**:  
+  - <mark style="background: #FFB86CA6;">Darstellung der Umgebung auf einer virtuellen Spiegelkugel</mark>.  
+  - <mark style="background: #FFB86CA6;">Bild der Kugel wird als Texture verwendet</mark> (z. B. „chrome ball“ Methode).
+  - Vorteil: <mark style="background: #FFB86CA6;">Sehr einfach umzusetzen</mark>.
+  - Nachteil: <mark style="background: #FFB86CA6;">Verzerrungen bei ungleichmäßigen Oberflächen</mark>.
+#### Cube Environment Maps
+- die Umgebung auf die sechs Flächen eines Würfels projiziert wird.
 ### Sphere Mapping
 **Definition**  
 Sphere Mapping ist eine Technik des Environment Mapping, bei der eine Umgebung auf die Oberfläche einer virtuellen Spiegelkugel projiziert wird, um Reflexionen auf Objekten darzustellen.
@@ -448,26 +438,25 @@ Eine andere Parametrisierung des Environment Mapping, bei der die Umgebung auf d
 - Bessere Ergebnisse für Betrachtungsrichtungen, die stark von $v_0$ abweichen.
 ### Vorfilterung von Environment Maps
 **Ziel der Vorfilterung**  
-Die Vorfilterung von Environment Maps dient dazu, die Reflexion von Licht auf Oberflächen realistisch darzustellen, indem der Einfluss von Licht aus verschiedenen Richtungen zusammengefasst wird. Dies wird für unterschiedliche Zwecke wie spiegelnde Objekte, imperfekte Spiegelungen oder diffuse Reflexionen verwendet.
+Die Vorfilterung von Environment Maps <mark style="background: #FFB86CA6;">dient dazu, die Reflexion von Licht auf Oberflächen realistisch darzustellen</mark>, <mark style="background: #FFB86CA6;">indem der Einfluss von Licht aus verschiedenen Richtungen zusammengefasst wird</mark>. Dies wird für unterschiedliche Zwecke wie spiegelnde Objekte, imperfekte Spiegelungen oder diffuse Reflexionen verwendet.
 
 **Konzepte der Vorfilterung**  
 1. **Reflexionsrichtung ($r$)**:  
-   - Für **spiegelnde Objekte** wird die genaue Reflexionsrichtung verwendet, um den Lichtwert aus der Umgebung zu bestimmen.  
+   - Für <mark style="background: #FFB86CA6;">spiegelnde Objekte wird die genaue Reflexionsrichtung verwendet</mark>, um den Lichtwert aus der Umgebung zu bestimmen.  
    - Beispiel: Ein glänzender Chromball spiegelt exakt das Umgebungsbild wider.
 2. **Imperfekte Spiegelung**:  
-   - Für Oberflächen mit leicht unscharfen Reflexionen wird Licht aus mehreren Richtungen gewichtet.  
-   - Dies orientiert sich am Phong-Modell mit:
+   - Für <mark style="background: #FFB86CA6;">Oberflächen mit leicht unscharfen Reflexionen wird Licht aus mehreren Richtungen gewichtet</mark>.  
+   - Dies <mark style="background: #FFB86CA6;">orientiert sich am Phong-Modell</mark> mit:
      $$
      (r \cdot d)^n
      $$
      wobei $d$ die Richtung des einfallenden Lichts ist und $n$ den Glanzexponenten bestimmt.
 3. **Diffuse Reflexion**:  
-   - Für matte Oberflächen wird die Menge an Licht berechnet, die von allen möglichen Richtungen kommt und von der Normale $n$ beeinflusst wird.
+   - Für matte Oberflächen wird die <mark style="background: #FFB86CA6;">Menge an Licht berechnet, die von allen möglichen Richtungen kommt</mark> und von der Normale $n$ beeinflusst wird.
 4. **Kombination von Texturen**:  
    - Oft werden mehrere vorgefilterte Texturen kombiniert, um Reflexionen für unterschiedliche Oberflächenmaterialien darzustellen.
-
 **Techniken der Vorfilterung**  
-- **Summed Area Tables**:  
+- <mark style="background: #FFB86CA6;">Summed Area Tables</mark>:  
   - Ermöglichen eine effiziente Approximation der Vorfilterung, indem die Texturwerte über einen Winkelbereich zusammengefasst werden.  
   - Vorteil: Kann on-the-fly berechnet werden.
 ### (Selbst-)Verschattung

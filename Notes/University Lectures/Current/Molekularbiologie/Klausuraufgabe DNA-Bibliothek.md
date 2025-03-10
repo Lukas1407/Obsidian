@@ -13,7 +13,7 @@
     - Ile: **ATT/ATC/ATA** → 3 Möglichkeiten
     - Tyr: **TAT/TAC** → 2 Möglichkeiten
     - usw.
-3. Die Gesamtanzahl der möglichen DNA-Sequenzen ergibt sich durch Multiplikation der Codon-Varianten: 2×3×2×...2 \times 3 \times 2 \times ....
+3. Die <mark style="background: #FFB86CA6;">Gesamtanzahl der möglichen DNA-Sequenzen ergibt sich durch Multiplikation der Codon-Varianten: 2×3×2×...</mark>
 
 #### **Reduktion der Degeneration:**
 
@@ -28,8 +28,8 @@
     - Peptid 2: **Phe - Tyr - Ile - Asp - Lys - Phe - Gln - Val**
 - Durch Berechnung der Codon-Degeneration ergibt sich:
     - Peptid 1 hat 210=10242^{10} = 1024 mögliche Sequenzen.
-    - Peptid 2 hat 28=2562^8 = 256 mögliche Sequenzen.
-- **Ergebnis:** Peptid 2 ist besser geeignet, da es eine geringere Degeneration aufweist.
+    - Peptid 2 hat $2^8 = 256$ mögliche Sequenzen.
+- **Ergebnis:** <mark style="background: #FFB86CA6;">Peptid 2 ist besser geeignet, da es eine geringere Degeneration aufweist</mark>.
 
 
 ### **3. Primer-Design**
@@ -38,10 +38,10 @@ Primers sind kurze DNA-Sequenzen, die an spezifische Regionen der DNA binden, um
 
 #### **Vorgehen beim Primer-Design:**
 
-1. **Forward-Primer:**
+4. **Forward-Primer:**
     - Wird aus der angegebenen DNA-Sequenz in 5'-3'-Richtung abgeleitet.
     - Beispiel für Peptid 1: Forward-Primer ist 5′5' **ATT CTT ATT AAT TGT CAA 3'**.
-2. **Reverse-Primer:**
+5. **Reverse-Primer:**
     - Ist die komplementäre und in 5'-3'-Richtung umgekehrte Sequenz des antisense-Strangs.
     - Beispiel für Peptid 1: Reverse-Primer ist 5′5' **TTG ACA ATT AAT AAG AAT 3'**.
 
@@ -51,7 +51,7 @@ Primers sind kurze DNA-Sequenzen, die an spezifische Regionen der DNA binden, um
 
 - Die Primer müssen spezifisch sein und keine unspezifischen Bindungen eingehen.
 - Forward- und Reverse-Primer müssen in entgegengesetzten Richtungen liegen, um die richtige Region der DNA zu amplifizieren.
-- Primer sollten eine ähnliche Schmelztemperatur (Tm) haben, damit sie während der PCR gleichzeitig binden können.
+- <mark style="background: #FFB86CA6;">Primer sollten eine ähnliche Schmelztemperatur (Tm) haben, damit sie während der PCR gleichzeitig binden können</mark>.
 
 #### **Fehlervermeidung:**
 

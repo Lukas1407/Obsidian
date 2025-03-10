@@ -5,29 +5,29 @@ Eine **DNA-Bibliothek** besteht aus einer Sammlung von DNA-Fragmenten, die in Ve
 - Weizen aber z.B. 17 GB
 - Bakterien (Prokaryoten) haben kleinere Genome mit weniger Genen, während Eukaryoten größere Genome besitzen.
 ## Durchsuchen der Bibliothek
-- Eine Sonde wird eingesetzt, um ein Ziel-DNA-Stück zu finden.
+- Eine <mark style="background: #FFB86CA6;">Sonde wird eingesetzt, um ein Ziel-DNA-Stück zu finden.</mark>
 - Die DNA-Bibliothek enthält viele verschiedene Fragmente, und die Sonde fungiert wie ein Köder.
 ![[Pasted image 20241203140840.png#invert|200]]
-- Antikörper können als Sonden verwendet werden, um spezifische Proteine zu erkennen.
-- DNA- oder RNA-Sonden sind mit Markern wie $^{32}P$ oder DIG markiert und helfen, komplementäre DNA/RNA-Sequenzen zu identifizieren.
+- <mark style="background: #FFB86CA6;">Antikörper können als Sonden verwendet werden, um spezifische Proteine zu erkennen</mark>.
+- <mark style="background: #FFB86CA6;">DNA- oder RNA-Sonden</mark> sind mit Markern wie $^{32}P$ oder DIG markiert und helfen, komplementäre DNA/RNA-Sequenzen zu identifizieren.
 - Proteine in Bibliotheken müssen exprimiert werden
 ### Wann benutzt man Antikörper als Sonden
 1. **Herstellung der Bibliothek:**
-    - DNA-Fragmente werden in einen Vektor (z. B. Phagenvektor) eingefügt, der hinter einem Promotor liegt. Dies ermöglicht die Expression des eingefügten DNA-Stücks als Protein.
+    - <mark style="background: #FFB86CA6;">DNA-Fragmente werden in einen Vektor (z. B. Phagenvektor) eingefügt, der hinter einem Promotor liegt. Dies ermöglicht die Expression des eingefügten DNA-Stücks als Protein.</mark>
 2. **Expression und Screening:**
     - Die Phagen werden auf eine Bakterienrasenplatte aufgetragen, wo sie Klone bilden.
-    - Ein **Nitrozellulosefilter** wird auf die Platte gelegt, wodurch die exprimierten Proteine an den Filter binden.
+    - Ein Filter wird auf die Platte gelegt, wodurch die exprimierten Proteine an den Filter binden.
 3. **Nachweis mit Antikörpern:**
-    - Der Filter wird mit einem spezifischen Antikörper inkubiert, der das Zielprotein erkennt.
-    - Ein sekundärer Antikörper, markiert mit einem Detektionsmolekül (z. B. radioaktives Isotop oder Enzym), bindet an den primären Antikörper.
+    - <mark style="background: #FFB86CA6;">Der Filter wird mit einem spezifischen Antikörper inkubiert, der das Zielprotein erkennt</mark>.
+    - Ein <mark style="background: #FFB86CA6;">sekundärer Antikörper, markiert mit einem Detektionsmolekül</mark> (z. B. radioaktives Isotop oder Enzym), <mark style="background: #FFB86CA6;">bindet an den primären Antikörper</mark>.
     - Durch Autoradiographie oder Farbreaktionen werden die positiven Klone sichtbar gemacht.
 ### Wann benutzt man DNA- oder RNA-Sonden
 - **Klon-Screening:**
     - Jede Kolonie in der DNA-Bibliothek enthält ein Plasmid mit einem spezifischen DNA-Insert.
-    - Eine **DNA-Sonde** ist ein markiertes Stück DNA oder RNA, das komplementär zur Zielsequenz ist.
+    - Eine <mark style="background: #FFB86CA6;">DNA-Sonde ist ein markiertes Stück DNA oder RNA, das komplementär zur Zielsequenz ist</mark>.
 - **Hybridisierung:**
-    - Kolonien werden auf einen Filter übertragen, die DNA wird durch Zelllyse freigesetzt und denaturiert (in Einzelstränge zerlegt).
-    - Die markierte Sonde wird hinzugefügt und hybridisiert nur mit der komplementären Zielsequenz.
+    - <mark style="background: #FFB86CA6;">Kolonien werden auf einen Filter übertragen, die DNA wird durch Zelllyse freigesetzt und denaturiert</mark> (in Einzelstränge zerlegt).
+    - Die <mark style="background: #FFB86CA6;">markierte Sonde wird hinzugefügt</mark> und hybridisiert nur mit der komplementären Zielsequenz.
 - **Nachweis:**
     - Ungebundene Sonden werden ausgewaschen, und die hybridisierten Bereiche werden durch Autoradiographie oder andere Techniken detektiert.
 #### Markierung von DNA-Sonden
@@ -54,10 +54,10 @@ Eine **DNA-Bibliothek** besteht aus einer Sammlung von DNA-Fragmenten, die in Ve
 - **Homologe Sonden:** Sie hybridisieren spezifischer und bei höheren Temperaturen.
 - **Heterologe Sonden:** Können verwandte Gene erkennen, aber die Bindung ist weniger spezifisch.
 ### Membran-Hybridisierung und Southern Blot
-Der **Southern Blot** ist eine spezifische Technik zur Identifikation von DNA-Sequenzen:
-1. **DNA-Denaturierung:** Die doppelsträngige DNA wird in Einzelstränge aufgetrennt (z. B. durch Hitze oder chemische Denaturierung).
-2. **Transfer auf Membran:** Die DNA wird durch Kapillarkräfte auf eine Nylon- oder Nitrozellulosemembran übertragen.
-3. **Hybridisierung:** Die Membran wird mit einer markierten DNA-Sonde inkubiert, die spezifisch an die Ziel-DNA bindet.
+Der **Southern Blot** ist eine <mark style="background: #FFB86CA6;">spezifische Technik zur Identifikation von DNA-Sequenzen</mark>:
+1. **DNA-Denaturierung:** Die doppelsträngige DNA wird in <mark style="background: #FFB86CA6;">Einzelstränge</mark> aufgetrennt (z. B. durch Hitze oder chemische Denaturierung).
+2. **Transfer auf Membran:** Die <mark style="background: #FFB86CA6;">DNA wird durch Kapillarkräfte auf eine Nylon- oder Nitrozellulosemembran übertragen</mark>.
+3. **Hybridisierung:** Die Membran wird <mark style="background: #FFB86CA6;">mit einer markierten DNA-Sonde inkubiert</mark>, die spezifisch an die Ziel-DNA bindet.
 4. **Signalnachweis:** Durch Autoradiographie oder chemische Reaktionen wird die gebundene Sonde sichtbar gemacht.
 #### Anwendung
 - Die DNA wird auf ein Gel aufgetragen, getrennt, und auf eine Membran transferiert.
@@ -65,19 +65,19 @@ Der **Southern Blot** ist eine spezifische Technik zur Identifikation von DNA-Se
 - Die Position des Signals zeigt die Größe und Anwesenheit der Zielsequenz.
 ### Oligonukleotide als Sonden
 - Primer
-- Oligonukleotide sind kurze DNA- oder RNA-Fragmente (ca. 20 Nukleotide), die gezielt an komplementäre DNA-Sequenzen binden können. Sie werden als Werkzeuge zur Identifikation spezifischer Klone in einer DNA-Bibliothek genutzt.
+- Oligonukleotide sind kurze DNA- oder RNA-Fragmente (<mark style="background: #FFB86CA6;">ca. 20 Nukleotide</mark>), die <mark style="background: #FFB86CA6;">gezielt an komplementäre DNA-Sequenzen binden</mark> können. Sie werden als Werkzeuge zur Identifikation spezifischer Klone in einer DNA-Bibliothek genutzt.
 #### **Warum 20 Nukleotide?**
-- Eine spezifische 20-Nukleotid-Sequenz ist in einem Genom sehr selten. Die Wahrscheinlichkeit, dass eine 20er-Sequenz zufällig irgendwo vorkommt, beträgt $4^{20}$ (ca. $10^{12}$).
+- Eine spezifische 20-Nukleotid-Sequenz ist in <mark style="background: #FFB86CA6;">einem Genom sehr selten</mark>. Die Wahrscheinlichkeit, dass eine 20er-Sequenz zufällig irgendwo vorkommt, beträgt $4^{20}$ (ca. $10^{12}$).
 - Dies ist besonders geeignet für Genome mit Größen von Milliarden Basenpaaren (z. B. Mensch: 3 Milliarden bp).
 #### Herkunft der Oligonukleotid-Sequenzen
 Die 20 Nukleotide, die für die Sonden benötigt werden, stammen aus verschiedenen Quellen:
 1. **Bekannte DNA-Fragmente:**
-    - DNA-Sequenzen, die bereits sequenziert wurden, wie **expressed sequence tags (ESTs)**.
+    - <mark style="background: #FFB86CA6;">DNA-Sequenzen, die bereits sequenziert wurden</mark>, wie **expressed sequence tags (ESTs)**.
     - ESTs sind kurze cDNA-Fragmente, die aus mRNA durch Reverse Transkription hergestellt wurden. Sie repräsentieren exprimierte Gene und können leicht sequenziert werden.
 2. **Heterologe Sonden:**
-    - Diese stammen von verwandten Genen aus anderen Spezies. Da homologe Gene oft konservierte Sequenzen haben, können diese Sonden an ähnliche Gene binden.
+    - Diese <mark style="background: #FFB86CA6;">stammen von verwandten Genen aus anderen Spezies</mark>. Da homologe Gene oft konservierte Sequenzen haben, können diese Sonden an ähnliche Gene binden.
 3. **Von Proteinsequenzen:**
-    - Falls die Aminosäuresequenz des Zielproteins bekannt ist, kann diese in die entsprechende DNA-Sequenz umgerechnet werden. Dies erfordert die Kenntnis des genetischen Codes.
+    - Falls die <mark style="background: #FFB86CA6;">Aminosäuresequenz des Zielproteins bekannt ist, kann diese in die entsprechende DNA-Sequenz umgerechnet</mark> werden. Dies erfordert die Kenntnis des genetischen Codes.
     - Für 7 spezifische Aminosäuren benötigt man eine DNA-Sonde von 21 Basenpaaren.
 #### Herstellung von Oligonukleotid-Sonden aus Proteinsequenzen
 Die Sequenz des Zielproteins kann durch biochemische Methoden bestimmt werden:

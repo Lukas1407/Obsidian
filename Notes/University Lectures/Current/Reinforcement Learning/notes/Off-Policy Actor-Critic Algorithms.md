@@ -41,10 +41,10 @@ The update rule works as follows:
 ![[Value-Function Approximation#Overestimation Bias in Q-Values]]
 ![[Twin-Delayed DDPG (TD3)]]
 #### Variational actor update: Soft-Actor Critic (SAC)
-- So far, we still only looked at deterministic policies: 
-	- Sub-optimal exploration strategy 
-	- Hard to set hyper-parameters 
-	- Can get stuck in local minima 
-	- Can only learn one solution
-- Solution: Keep diversity of the policy high! -> [[Maximum Entropy Reinforcement Learning]]
+- So far, we still only looked at <mark style="background: #FFB86CA6;">deterministic policies</mark>: 
+	- <mark style="background: #FFB86CA6;">Sub-optimal exploration strategy</mark> 
+	- <mark style="background: #FFB86CA6;">Hard to set hyper-parameters</mark> 
+	- <mark style="background: #FFB86CA6;">Can get stuck in local minima</mark> 
+	- <mark style="background: #FFB86CA6;">Can only learn one solution</mark>
+- <mark style="background: #FFB86CA6;">Solution: Keep diversity of the policy high</mark>! -> [[Maximum Entropy Reinforcement Learning]]
 ![[Soft-Actor Critic (SAC)]]

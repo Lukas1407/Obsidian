@@ -35,7 +35,7 @@ A MDP is a 4-tuple $(S,A,p,r)$:
 
 ## MDP Search Trees
 - When we know everything, e.i. all state transitions and rewards, we can solve a MDP as a search tree
-![[Untitled.png#invert|600]]
+![[University Lectures/Current/Reinforcement Learning/notes/images/Untitled.png#invert|600]]
 - Problem:
 	- <mark style="background: #FFB86CA6;">Computationally inefficient</mark> due to the repetition of states and the potentially infinite horizon of the MDP
 	- <mark style="background: #FFB86CA6;">No reuse of computation</mark>, tree has to be computed from every state
